@@ -1,0 +1,564 @@
+<window id="56">
+<defaultcontrol always="true">300</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+  
+<controls>
+	<control type="image">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>1280</width>
+		<height>720</height>
+		<visible>true</visible>
+		<texture>sample.png</texture>
+		<aspectratio>stretch</aspectratio>
+	</control>
+			
+	<control type="image">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>1280</width>
+		<height>720</height>
+		<visible>true</visible>
+		<texture>background/grain.png</texture>
+		<aspectratio>stretch</aspectratio>
+	</control>
+	<control type="image">
+		<description>top divider</description>
+		<posx>0</posx>
+		<posy>100</posy>
+		<width>318</width>
+		<height>2</height>
+		<visible>true</visible>
+		<texture>settings/divider.png</texture>
+		<aspectratio>stretch</aspectratio>
+	</control>
+
+	<control type="list" id="300">
+		<posx>0</posx>
+		<posy>102</posy>
+		<width>318</width>
+		<height>720</height>
+		<scrolltime>200</scrolltime>
+		<orientation>vertical</orientation>
+		<focusposition>1</focusposition>
+		<itemgap>0</itemgap>
+		<defaultcontrol always="true">0</defaultcontrol>
+		<onright>200</onright>
+		<itemlayout width="318" height="47">
+			<control type="image">
+				<posx>0</posx>
+				<!--><posy>0</posy>-->
+				<posy>-1</posy>
+				<width>318</width>
+				<height>47</height>
+				<visible>true</visible>
+				<texture>settings/bar_button.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			<control type="label">
+				<posx>20</posx>
+				<!--><posy>4</posy>-->
+				<posy>1</posy>
+				<width>298</width>
+				<info>ListItem.Label</info>
+				<textcolor>ffffffff</textcolor>
+				<scroll>false</scroll>
+				<font>Settings</font>
+				<align>left</align>
+			</control>
+		</itemlayout>
+		<focusedlayout width="318" height="47">
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>318</width>
+				<height>47</height>
+				<visible>true</visible>
+				<texture>settings/bar_button_highlight.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			<control type="label">
+				<posx>20</posx>
+				<posy>-1</posy>
+				<width>298</width>
+				<info>ListItem.Label</info>
+				<font>Settings</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+			</control>
+			<control type="label">
+				<posx>20</posx>
+				<posy>1</posy>
+				<width>318</width>
+				<label>$INFO[ListItem.Label]</label>
+				<font>Settings</font>
+				<textcolor>ffffffff</textcolor>
+				<align>left</align>
+			</control>
+		</focusedlayout>
+		<content>
+			<item id="1">
+				<label>$LOCALIZE[31201]</label>
+				<onclick>-</onclick>
+			</item>
+			<item id="2">
+				<label>$LOCALIZE[31210]</label>
+				<onclick>-</onclick>
+			</item>
+			<item id="6">
+				<label>$LOCALIZE[31202]</label>
+				<onclick>-</onclick>
+			</item>
+		</content>
+	</control>
+	<control type="image">
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>1280</width>
+		<height>720</height>
+		<visible>true</visible>
+		<texture>settings/silver_bg.png</texture>
+		<aspectratio>stretch</aspectratio>
+	</control>
+	<control type="image">
+		<description>top divider</description>
+		<posx>327</posx>
+		<posy>100</posy>
+		<width>919</width>
+		<height>2</height>
+		<visible>true</visible>
+		<texture>settings/divider.png</texture>
+		<aspectratio>stretch</aspectratio>
+	</control>
+	<control type="group" id="200">
+		<control type="grouplist" id="201">
+			<description>Control Area</description>
+			<visible>Container(300).Hasfocus(1)</visible>
+			<posx>323</posx>
+			<posy>102</posy>
+			<width>927</width>
+			<height>618</height>
+			<itemgap>0</itemgap>
+			<onleft>300</onleft>
+			<onright>-</onright>
+			<onup>-</onup>
+			<ondown>-</ondown>
+			<orientation>vertical</orientation>	
+			<!--	
+			<control type="radiobutton" id="2015">
+				<label>$LOCALIZE[31203]</label>
+				<selected>Skin.HasSetting(ken_burns)</selected>
+				<onclick>Skin.ToggleSetting(ken_burns)</onclick>
+				
+				<width>927</width>
+				<height>47</height>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7f7c7c72</disabledcolor>
+				<font>SettingItem</font>
+
+				<align>left</align>
+				<aligny>top</aligny>
+
+				<textoffsetx>26</textoffsetx>
+				<textoffsety>-5</textoffsety>
+
+				<texturefocus>settings/long_bar_button.png</texturefocus>
+				<texturenofocus>settings/long_bar_button_divider.png</texturenofocus>
+				<radioposx>815</radioposx>
+				<radiowidth>86</radiowidth>
+				<radioheight>45</radioheight>
+				<textureradiofocus>buttons/radiobutton/on.png</textureradiofocus>
+				<textureradionofocus>buttons/radiobutton/off.png</textureradionofocus>
+			</control>
+			-->
+			<control type="radiobutton" id="2016">
+				<label>$LOCALIZE[31204]</label>
+				<selected>!Skin.HasSetting(fanart)</selected>
+				<onclick>Skin.ToggleSetting(fanart)</onclick>
+				
+				
+				<width>927</width>
+				<height>47</height>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7f7c7c72</disabledcolor>
+				<font>SettingItem</font>
+
+				<align>left</align>
+				<aligny>top</aligny>
+
+				<textoffsetx>26</textoffsetx>
+				<textoffsety>-5</textoffsety>
+
+				<texturefocus>settings/long_bar_button.png</texturefocus>
+				<texturenofocus>settings/long_bar_button_divider.png</texturenofocus>
+				<!--
+				<radioposx>576</radioposx>
+				-->
+				<radioposx>815</radioposx>
+				<radiowidth>86</radiowidth>
+				<radioheight>45</radioheight>
+				<textureradiofocus>buttons/radiobutton/on.png</textureradiofocus>
+				<textureradionofocus>buttons/radiobutton/off.png</textureradionofocus>
+			</control>
+		
+			<control type="panel" id="2012">
+				<!--><visible allowhiddenfocus="true">Control.hasfocus(9004)</visible>-->
+				<posx>100</posx>
+				<orientation>vertical</orientation>
+				<ondown>-</ondown>
+				<width>927</width>
+				<height>540</height>
+				<itemlayout width="463.5" height="260">
+					<control type="image">
+						<posx>62.5</posx>
+						<posy>20</posy>
+						<width>382</width>
+						<height>219</height>
+						<info>ListItem.Thumb</info>
+						<texture background="true" diffuse="views/fanart/thumb_mask.png">NoThumb.png</texture>
+						<bordertexture border="5">views/fanart/thumb_shadow.png</bordertexture>
+						<bordersize>0</bordersize>
+						<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+					</control>					
+					<control type="group">
+						<posx>253.5</posx>
+						<posy>236</posy>						
+						<control type="label">
+							<posy>2</posy>
+							<width>372</width>
+							<height>30</height>
+							<textcolor>ff000000</textcolor>
+							<font>Cover_title</font>
+							<label>$INFO[ListItem.label]</label>
+							<align>center</align>
+							<scroll>False</scroll>
+						</control>
+						<control type="group">
+							<posx>138</posx>
+							<control type="image">
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31205]) + IsEmpty(Skin.String(Custom_Background))</visible>
+								<height>43</height>
+								<width>43</width>
+								<texture>settings/nib_off.png</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="image">
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31205]) + !IsEmpty(Skin.String(Custom_Background))</visible>
+								<height>43</height>
+								<width>43</width>
+								<texture>settings/nib_on.png</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+
+							<control type="image">
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31206]) + Skin.HasSetting(Background1)</visible>
+								<height>43</height>
+								<width>43</width>
+								<texture>settings/nib_off.png</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="image">
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31206]) + !Skin.HasSetting(Background1)</visible>
+								<height>43</height>
+								<width>43</width>
+								<texture>settings/nib_on.png</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+
+							<control type="image">
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31207]) + !Skin.HasSetting(Background1)</visible>
+								<height>43</height>
+								<width>43</width>
+								<texture>settings/nib_off.png</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="image">
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31207]) + Skin.HasSetting(Background1)</visible>
+								<height>43</height>
+								<width>43</width>
+								<texture>settings/nib_on.png</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+						</control>
+					</control>
+				</itemlayout>
+				<focusedlayout width="463.5" height="260">
+					<control type="image">
+						<animation effect="zoom" start="84" end="100" center="auto" time="100">Focus</animation>
+						<posx>43.5</posx>
+						<posy>10</posy>
+						<width>420</width>
+						<height>241</height>
+						<info>ListItem.Thumb</info>
+						<texture background="true" diffuse="views/fanart/thumb_mask_big.png">NoThumb.png</texture>
+						<bordertexture border="5">views/fanart/thumb_shadow.png</bordertexture>
+						<bordersize>0</bordersize>
+						<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+					</control>
+					<control type="group">
+						<animation effect="slide" end="0,8" time="100">Focus</animation>
+						<posx>253.5</posx>
+						<posy>236</posy>
+						<control type="label">
+							<posy>2</posy>
+							<width>372</width>
+							<height>30</height>
+							<textcolor>ff000000</textcolor>
+							<font>Cover_title</font>
+							<label>$INFO[ListItem.label]</label>
+							<align>center</align>
+							<scroll>False</scroll>
+						</control>
+						<control type="group">
+							<posx>138</posx>
+							<control type="image">
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31205]) + IsEmpty(Skin.String(Custom_Background))</visible>
+								<height>43</height>
+								<width>43</width>
+								<texture>settings/nib_off.png</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="image">
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31205]) + !IsEmpty(Skin.String(Custom_Background))</visible>
+								<height>43</height>
+								<width>43</width>
+								<texture>settings/nib_on.png</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+
+							<control type="image">
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31206]) + Skin.HasSetting(Background1)</visible>
+								<height>43</height>
+								<width>43</width>
+								<texture>settings/nib_off.png</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="image">
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31206]) + !Skin.HasSetting(Background1)</visible>
+								<height>43</height>
+								<width>43</width>
+								<texture>settings/nib_on.png</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+
+							<control type="image">
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31207]) + !Skin.HasSetting(Background1)</visible>
+								<height>43</height>
+								<width>43</width>
+								<texture>settings/nib_off.png</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+							<control type="image">
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31207]) + Skin.HasSetting(Background1)</visible>
+								<height>43</height>
+								<width>43</width>
+								<texture>settings/nib_on.png</texture>
+								<aspectratio>keep</aspectratio>
+							</control>
+						</control>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="1">
+					    <label>$LOCALIZE[31205]</label>
+					    <label2>Label 2</label2>
+					    <thumb>$INFO[Skin.String(Custom_Background)]</thumb>
+					    <onclick>Skin.SetImage(Custom_Background)</onclick>
+					    <property name="foo">Some1stValueHere</property>
+					    <property name="foo2">Some2ndValueHere</property>
+					</item>
+					<item id="2">
+					    <label>$LOCALIZE[31206]</label>
+					    <label2>Label 2</label2>
+					    <thumb>background/stream.png</thumb>
+					    <include>background_reset</include>
+					    <visible>true</visible>
+					    <property name="foo">Some1stValueHere</property>
+					    <property name="foo2">Some2ndValueHere</property>
+					  </item>
+					<item id="3">
+					    <label>$LOCALIZE[31207]</label>
+					    <label2>Label 2</label2>
+					    <thumb>background/bokeh.png</thumb>
+						<include>background_reset</include>
+					    <onclick>Skin.SetBool(Background1)</onclick>
+						<onclick>Skin.SetBool(Background2)</onclick>
+					    <visible>true</visible>
+					    <property name="foo">Some1stValueHere</property>
+					    <property name="foo2">Some2ndValueHere</property>
+					  </item>
+				</content>
+			</control>
+
+		</control>
+		<control type="grouplist" id="201">
+			<description>Control Area</description>
+			<visible>Container(300).Hasfocus(2)</visible>
+			<posx>323</posx>
+			<posy>102</posy>
+			<width>927</width>
+			<height>618</height>
+			<itemgap>0</itemgap>
+			<onleft>300</onleft>
+			<onright>-</onright>
+			<onup>-</onup>
+			<ondown>-</ondown>
+			<orientation>vertical</orientation>	
+			<control type="radiobutton" id="100">
+				<label>$LOCALIZE[33030]</label>
+				<selected>!Skin.HasSetting(quicklist_left_right)</selected>
+				<onclick>Skin.ToggleSetting(quicklist_left_right)</onclick>
+				
+				
+				<width>927</width>
+				<height>47</height>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7f7c7c72</disabledcolor>
+				<font>SettingItem</font>
+
+				<align>left</align>
+				<aligny>top</aligny>
+
+				<textoffsetx>26</textoffsetx>
+				<textoffsety>-5</textoffsety>
+
+				<texturefocus>settings/long_bar_button.png</texturefocus>
+				<texturenofocus>settings/long_bar_button_divider.png</texturenofocus>
+				<!--
+				<radioposx>576</radioposx>
+				-->
+				<radioposx>815</radioposx>
+				<radiowidth>86</radiowidth>
+				<radioheight>45</radioheight>
+				<textureradiofocus>buttons/radiobutton/on.png</textureradiofocus>
+				<textureradionofocus>buttons/radiobutton/off.png</textureradionofocus>
+			</control>
+			<control type="radiobutton" id="101">
+				<label>$LOCALIZE[31212]</label>
+				<selected>Skin.HasSetting(quicklist_left_right)</selected>
+				<onclick>Skin.ToggleSetting(quicklist_left_right)</onclick>
+				
+				
+				<width>927</width>
+				<height>47</height>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7f7c7c72</disabledcolor>
+				<font>SettingItem</font>
+
+				<align>left</align>
+				<aligny>top</aligny>
+
+				<textoffsetx>26</textoffsetx>
+				<textoffsety>-5</textoffsety>
+
+				<texturefocus>settings/long_bar_button.png</texturefocus>
+				<texturenofocus>settings/long_bar_button_divider.png</texturenofocus>
+				<!--
+				<radioposx>576</radioposx>
+				-->
+				<radioposx>815</radioposx>
+				<radiowidth>86</radiowidth>
+				<radioheight>45</radioheight>
+				<textureradiofocus>buttons/radiobutton/on.png</textureradiofocus>
+				<textureradionofocus>buttons/radiobutton/off.png</textureradionofocus>
+			</control>
+
+		</control>
+		
+		<control type="grouplist" id="201">
+			<description>Control Area</description>
+			<visible>Container(300).Hasfocus(6)</visible>
+			<posx>323</posx>
+			<posy>102</posy>
+			<width>927</width>
+			<height>480</height>
+			<itemgap>0</itemgap>
+			<onleft>300</onleft>
+			<onright>-</onright>
+			<onup>-</onup>
+			<ondown>-</ondown>
+			<orientation>vertical</orientation>
+			<control type="radiobutton" id="100">
+				<label>Developer Mode</label>
+				<selected>Skin.HasSetting(developer)</selected>
+				<onclick>Skin.ToggleSetting(developer)</onclick>
+				
+				<width>927</width>
+				<height>47</height>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7f7c7c72</disabledcolor>
+				<font>SettingItem</font>
+
+				<align>left</align>
+				<aligny>top</aligny>
+
+				<textoffsetx>26</textoffsetx>
+				<textoffsety>-5</textoffsety>
+
+				<texturefocus>settings/long_bar_button.png</texturefocus>
+				<texturenofocus>settings/long_bar_button_divider.png</texturenofocus>
+				<!--
+				<radioposx>576</radioposx>
+				-->
+				<radioposx>815</radioposx>
+				<radiowidth>86</radiowidth>
+				<radioheight>45</radioheight>
+				<textureradiofocus>buttons/radiobutton/on.png</textureradiofocus>
+				<textureradionofocus>buttons/radiobutton/off.png</textureradionofocus>
+			</control>
+			<control type="button" id="101">
+				<label>$LOCALIZE[31209]</label>
+				<onclick>Skin.ResetSettings</onclick>
+				<onclick>XBMC.ReloadSkin()</onclick>
+				<onclick>Control.Move(50,5)</onclick>
+				
+				<width>927</width>
+				<height>47</height>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7f7c7c72</disabledcolor>
+				<font>SettingItem</font>
+
+				<aligny>top</aligny>
+				<align>left</align>
+
+				<textoffsetx>26</textoffsetx>
+				<textoffsety>-5</textoffsety>
+
+				<texturefocus>settings/long_bar_button.png</texturefocus>
+				<texturenofocus>settings/long_bar_button_divider.png</texturenofocus>
+			</control>
+			<control type="button" id="102">
+				<label>$LOCALIZE[184]</label>
+				<onclick>XBMC.ReloadSkin()</onclick>
+				<onclick>Control.Move(50,5)</onclick>
+				
+				<width>927</width>
+				<height>47</height>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7f7c7c72</disabledcolor>
+				<font>SettingItem</font>
+
+				<aligny>top</aligny>
+				<align>left</align>
+
+				<textoffsetx>26</textoffsetx>
+				<textoffsety>-5</textoffsety>
+
+				<texturefocus>settings/long_bar_button.png</texturefocus>
+				<texturenofocus>settings/long_bar_button_divider.png</texturenofocus>
+			</control>
+			
+		</control>
+		
+	</control>
+	<include>header</include>
+</controls>
+  
+</window>

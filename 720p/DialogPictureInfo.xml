@@ -1,0 +1,76 @@
+<window id="139">
+<defaultcontrol always="true">5</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+  
+<coordinates>
+  <system>1</system>
+  <posx>100</posx>
+  <posy>80</posy>
+</coordinates>
+  
+<controls>
+    
+<include>DialogBack</include>
+
+  <control type="label">
+	  <include>DialogID</include>
+	  <label>DialogPictureInfo.xml</label>
+  </control>
+
+  <control type="list" id="5">
+	  <posx>10</posx>
+	  <posy>40</posy>
+	  <width>520</width>
+	  <height>382</height>
+	  <onleft>450</onleft>
+	  <onright>450</onright>
+	  <onup>450</onup>
+	  <ondown>450</ondown>
+	  <itemlayout height="32">
+      <control type="image">
+        <width>500</width>
+        <height>30</height>
+        <texture>ButtonNF.png</texture>
+      </control>
+		  <control type="label">
+			  <posx>5</posx>
+			  <width>465</width>
+        <height>30</height>
+			  <info>ListItem.Label</info>
+        <scroll>false</scroll>
+		  </control>
+      <control type="label">
+        <posx>487</posx>
+        <width>465</width>
+        <height>30</height>
+        <align>right</align>
+        <info>ListItem.Label2</info>
+      </control>
+	  </itemlayout>
+	  <focusedlayout height="32">
+		  <control type="image">
+			  <width>500</width>
+			  <height>30</height>
+			  <texture>ButtonFo.png</texture>
+		  </control>
+		  <control type="label">
+			  <posx>5</posx>
+			  <width>465</width>
+			  <height>30</height>
+        <textcolor>White</textcolor>
+			  <info>ListItem.Label</info>
+		  </control>
+      <control type="label">
+        <posx>487</posx>
+        <width>465</width>
+        <height>30</height>
+        <align>right</align>
+        <textcolor>White</textcolor>
+        <info>ListItem.Label2</info>
+      </control>
+	  </focusedlayout>
+  </control>
+
+</controls>
+  
+</window>

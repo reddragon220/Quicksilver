@@ -1,0 +1,90 @@
+<window id="131">
+<defaultcontrol always="true">5</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+  
+<coordinates>
+  <system>1</system>
+  <posx>100</posx>
+  <posy>80</posy>
+</coordinates>
+  
+<controls>
+    
+<include>DialogBack</include>
+
+  <control type="label">
+	  <include>DialogID</include>
+	  <label>LockSettings.xml</label>
+  </control>
+  
+	<control type="label" id="2">
+		<description>Settings</description>
+		<posx>10</posx>
+		<posy>40</posy>
+		<width>500</width>
+		<align>left</align>
+	</control>
+	<control type="label" id="3">
+		<description>No Settings</description>
+		<posx>0</posx>
+		<posy>40</posy>
+		<width>500</width>
+		<align>left</align>
+		<label>$LOCALIZE[12016]</label>
+	</control>
+  
+  <control type="grouplist" id="5">
+    <description>Control Area</description>
+    <posx>10</posx>
+    <posy>72</posy>
+    <width>500</width>
+    <height>350</height>
+    <itemgap>2</itemgap>
+    <orientation>vertical</orientation>
+    <pagecontrol>60</pagecontrol>
+    <onleft>28</onleft>
+    <onright>28</onright>
+    <onup>28</onup>
+    <ondown>28</ondown>
+  </control>
+  <control type="button" id="7">
+    <description>button</description>
+  </control>
+  <control type="radiobutton" id="8">
+    <description>radio_button</description>
+  </control>
+  <control type="spincontrolex" id="9">
+    <description>spin_controlex</description>
+  </control>
+	<control type="sliderex" id="10">
+		<description>slider</description>
+	</control>
+
+  <control type="button" id="28">
+    <description>Ok</description>
+    <posx>200</posx>
+    <posy>390</posy>
+    <label>$LOCALIZE[186]</label>
+    <texturefocus border="1">ButtonFo.png</texturefocus>
+    <texturenofocus border="1">ButtonNF.png</texturenofocus>
+    <onleft>5</onleft>
+    <onright>29</onright>
+    <onup>5</onup>
+    <ondown>5</ondown>
+  </control>
+  <control type="button" id="29">
+    <description>Cancel</description>
+    <posx>360</posx>
+    <posy>390</posy>
+    <label>$LOCALIZE[222]</label>
+    <texturefocus border="1">ButtonFo.png</texturefocus>
+    <texturenofocus border="1">ButtonNF.png</texturenofocus>
+    <onleft>28</onleft>
+    <onright>5</onright>
+    <onup>5</onup>
+    <ondown>5</ondown>
+  </control>
+  
+</controls>
+  
+</window>

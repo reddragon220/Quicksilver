@@ -1,0 +1,183 @@
+<window id="2001">
+<defaultcontrol always="true">5</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+  
+<coordinates>
+  <system>1</system>
+  <posx>100</posx>
+  <posy>80</posy>
+</coordinates>
+  
+<controls>
+    
+<include>DialogBack</include>
+
+  <control type="label">
+	  <include>DialogID</include>
+	  <label>DialogAlbumInfo.xml</label>
+  </control>
+
+  <control type="image" id="3">
+    <description>Cover Image</description>
+    <posx>10</posx>
+    <posy>40</posy>
+    <width>150</width>
+    <height>140</height>
+    <texture>-</texture>
+    <texture>$INFO[ListItem.Icon]</texture>
+    <aspectratio align="left" aligny="top">keep</aspectratio>
+    <bordertexture border="14">ButtonNF.png</bordertexture>
+    <bordersize>5</bordersize>
+  </control>
+
+  <control type="label" id="20">
+    <description>Title</description>
+    <posx>170</posx>
+    <posy>40</posy>
+    <width>340</width>
+    <label>$INFO[ListItem.Title]</label>
+    <font>Large</font>
+    <scroll>true</scroll>
+  </control>
+
+  <control type="label">
+    <description>Genre</description>
+    <posx>170</posx>
+    <posy>72</posy>
+    <width>340</width>
+    <label>$INFO[ListItem.Genre]</label>
+    <font>Small</font>
+    <scroll>true</scroll>
+  </control>
+
+  <control type="textbox" id="4">
+    <description>Review</description>
+    <posx>170</posx>
+    <posy>190</posy>
+    <width>350</width>
+    <height>222</height>
+    <spinposx>500</spinposx>
+    <spinposy>-30</spinposy>
+    <spinwidth>20</spinwidth>
+    <spinheight>11</spinheight>
+    <font>Small</font>
+    <textcolor>Black</textcolor>
+    <textureup>-</textureup>
+    <texturedown flipy="true">-</texturedown>
+    <textureupfocus>-</textureupfocus>
+    <texturedownfocus flipy="true">-</texturedownfocus>
+    <autoscroll delay="6000" time="2000" repeat="10000"></autoscroll>
+  </control>
+  <control type="list" id="50">
+    <description>Tracks</description>
+    <posx>170</posx>
+    <posy>190</posy>
+    <width>350</width>
+    <height>222</height>
+    <onup>50</onup>
+    <ondown>50</ondown>
+    <onleft>5</onleft>
+    <onright>5</onright>
+    <orientation>vertical</orientation>
+    <scrolltime>200</scrolltime>
+    <itemlayout height="32">
+      <control type="image">
+        <width>340</width>
+        <height>30</height>
+        <texture>ButtonNF.png</texture>
+      </control>
+      <control type="image">
+        <posy>2</posy>
+        <width>26</width>
+        <height>26</height>
+        <info>ListItem.Icon</info>
+      </control>
+      <control type="label">
+        <posx>30</posx>
+        <width>304</width>
+        <height>30</height>
+        <info>ListItem.Label</info>
+        <scroll>false</scroll>
+      </control>
+    </itemlayout>
+    <focusedlayout height="32">
+      <control type="image">
+        <width>340</width>
+        <height>30</height>
+        <texture>ButtonFo.png</texture>
+      </control>
+      <control type="image">
+        <posy>2</posy>
+        <width>26</width>
+        <height>26</height>
+        <info>ListItem.Icon</info>
+      </control>
+      <control type="label">
+        <posx>30</posx>
+        <width>304</width>
+        <height>30</height>
+        <textcolor>White</textcolor>
+        <info>ListItem.Label</info>
+      </control>
+    </focusedlayout>
+  </control>
+  
+	<control type="group">
+    <posx>10</posx>
+    <posy>190</posy>
+    <orientation>vertical</orientation>
+		<control type="button" id="5">
+			<description>Review/Tracks</description>
+			<width>150</width>
+			<label>$LOCALIZE[182]</label>
+      <texturefocus border="1">ButtonFo.png</texturefocus>
+      <texturenofocus border="1">ButtonNF.png</texturenofocus>
+      <visible>!Container.Content(artists)</visible>
+      <onleft>50</onleft>
+      <onright>50</onright>
+      <onup>10</onup>
+      <ondown>6</ondown>
+		</control>
+    <control type="button" id="5">
+      <description>Review/Tracks</description>
+      <width>150</width>
+      <label>$LOCALIZE[182]</label>
+      <texturefocus border="1">ButtonFo.png</texturefocus>
+      <texturenofocus border="1">ButtonNF.png</texturenofocus>
+      <visible>Container.Content(artists)</visible>
+      <onleft>50</onleft>
+      <onright>50</onright>
+      <onup>10</onup>
+      <ondown>6</ondown>
+    </control>
+    <control type="group">
+      <animation effect="slide" start="0,0" end="32,0" time="0" condition="container.content(artists)">conditional</animation>
+		<control type="button" id="6">
+			<description>Refresh button</description>
+      <posy>32</posy>
+			<width>150</width>
+			<label>$LOCALIZE[184]</label>
+      <texturefocus border="1">ButtonFo.png</texturefocus>
+      <texturenofocus border="1">ButtonNF.png</texturenofocus>
+      <onleft>50</onleft>
+      <onright>50</onright>
+      <onup>5</onup>
+      <ondown>10</ondown>
+		</control>
+		<control type="button" id="10">
+			<description>Thumb button</description>
+      <posy>64</posy>
+			<width>150</width>
+			<label>$LOCALIZE[13405]</label>
+      <texturefocus border="1">ButtonFo.png</texturefocus>
+      <texturenofocus border="1">ButtonNF.png</texturenofocus>
+      <onleft>50</onleft>
+      <onright>50</onright>
+      <onup>6</onup>
+      <ondown>5</ondown>
+		</control>
+    </control>
+	</control>
+	
+</controls>
+</window>

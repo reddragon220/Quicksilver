@@ -1,0 +1,745 @@
+<window id="103">
+	<defaultcontrol always="true">65</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+		<include>dialog_overlay</include>
+		<control type="group">
+			<include>dialog_animation</include>
+			<posy>267</posy>
+			<control type="label" id="311">
+				<description>Heading Label</description>
+				<posx>0</posx>
+				<posy>-50</posy>
+				<width>1280</width>
+				<height>38</height>
+				<align>center</align>
+				<font>Search</font>
+				<textcolor>ffffffff</textcolor>
+			</control>
+			<control type="group">
+				<description>Keyboard and text field </description>
+				<posy>0</posy>
+				<posx>386</posx>
+				<control type="image">
+					<description>text field bg</description>
+					<width>508</width>
+					<height>44</height>
+					<texture>search/input_long.png</texture>
+				</control>
+				<control type="label" id="310">
+					<description>text field</description>
+					<posx>-25</posx>
+					<posy>-5</posy>
+					<font>Search</font>
+					<textcolor>ff000000</textcolor>
+					<focusedcolor>ff000000</focusedcolor>
+					<width>559</width>
+					<height>44</height>
+					<onleft>-</onleft>
+					<ondown>9001</ondown>
+					<onright>350</onright>
+					<emptylabel>search</emptylabel>
+					<emptycolor>ff000000</emptycolor>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textoffsetx>42</textoffsetx>
+				</control>
+			</control>
+			<control type="group">
+				<posy>43</posy>
+				<control type="grouplist" id="350">
+					<align>center</align>
+					<width>1280</width>
+					<height>51</height>
+					<orientation>horizontal</orientation>
+					<itemgap>-10</itemgap>	
+					<ondown>Control.SetFocus(351)</ondown>
+					<control type="button" id="48">
+						<description>'0' button</description>
+						<label>$LOCALIZE[12310]</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="49">
+						<description>'1' button</description>
+						<label>$LOCALIZE[12311]</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="50">
+						<description>'2' button</description>
+						<label>$LOCALIZE[12312]</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="51">
+						<description>'3' button</description>
+						<label>$LOCALIZE[12313]</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="52">
+						<description>'4' button</description>
+						<label>$LOCALIZE[12314]</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="53">
+						<description>'5' button</description>
+						<label>$LOCALIZE[12315]</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="54">
+						<description>'6' button</description>
+						<label>$LOCALIZE[12316]</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="55">
+						<description>'7' button</description>
+						<label>$LOCALIZE[12317]</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="56">
+						<description>'8' button</description>
+						<label>$LOCALIZE[12318]</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="57">
+						<description>'9' button</description>
+						<label>$LOCALIZE[12319]</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+				</control>
+				<control type="grouplist" id="351">
+					<posy>45</posy>
+					<width>1280</width>
+					<height>51</height>
+					<orientation>horizontal</orientation>
+					<itemgap>-12</itemgap>
+					<align>center</align>
+					<ondown>Control.SetFocus(352)</ondown>
+
+					<control type="button" id="65">
+						<description>'A' button</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<label>A</label>
+						<width>48</width>
+						<height>51</height>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<font>Search</font>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="66">
+						<description>'B' button</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<label>B</label>
+						<width>48</width>
+						<height>51</height>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<font>Search</font>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="67">
+						<include>Search_Keyboard_Button</include>
+						<description>'C' button</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<label>C</label>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="68">
+						<include>Search_Keyboard_Button</include>
+						<description>'D' button</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<label>D</label>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="69">
+						<include>Search_Keyboard_Button</include>
+						<description>'E' button</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<label>E</label>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="70">
+						<include>Search_Keyboard_Button</include>
+						<description>'F' button</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<label>F</label>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="71">
+						<include>Search_Keyboard_Button</include>
+						<description>'G' button</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<label>G</label>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="72">
+						<include>Search_Keyboard_Button</include>
+						<description>'H' button</description>
+						<posx>0</posx>
+						<posy>0</posy>
+						<label>H</label>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="73">
+						<include>Search_Keyboard_Button</include>
+						<description>'I' button</description>
+						<label>I</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="74">
+						<include>Search_Keyboard_Button</include>
+						<description>'J' button</description>
+						<label>J</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="75">
+						<include>Search_Keyboard_Button</include>
+						<description>'K' button</description>
+						<label>K</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="76">
+						<include>Search_Keyboard_Button</include>
+						<description>'L' button</description>
+						<label>L</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="77">
+						<include>Search_Keyboard_Button</include>
+						<description>'M' button</description>
+						<label>M</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="78">
+						<include>Search_Keyboard_Button</include>
+						<description>'N' button</description>
+						<label>N</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="79">
+						<include>Search_Keyboard_Button</include>
+						<description>'O' button</description>
+						<label>O</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="80">
+						<include>Search_Keyboard_Button</include>
+						<description>'P' button</description>
+						<label>P</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="81">
+						<include>Search_Keyboard_Button</include>
+						<description>'Q' button</description>
+						<label>Q</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="82">
+						<include>Search_Keyboard_Button</include>
+						<description>'R' button</description>
+						<label>R</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="83">
+						<include>Search_Keyboard_Button</include>
+						<description>'S' button</description>
+						<label>S</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="84">
+						<include>Search_Keyboard_Button</include>
+						<description>'T' button</description>
+						<label>T</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="85">
+						<include>Search_Keyboard_Button</include>
+						<description>'U' button</description>
+						<label>U</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="86">
+						<include>Search_Keyboard_Button</include>
+						<description>'V' button</description>
+						<label>V</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="87">
+						<include>Search_Keyboard_Button</include>
+						<description>'W' button</description>
+						<label>W</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="88">
+						<include>Search_Keyboard_Button</include>
+						<description>'X' button</description>
+						<label>X</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="89">
+						<include>Search_Keyboard_Button</include>
+						<description>'Y' button</description>
+						<label>Y</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="90">
+						<include>Search_Keyboard_Button</include>
+						<description>'Z' button</description>
+						<label>Z</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+				</control>
+				<control type="grouplist" id="352">
+					<posy>90</posy>
+					<width>1280</width>
+					<height>51</height>
+					<orientation>horizontal</orientation>
+					<itemgap>-10</itemgap>	
+					<ondown>Control.SetFocus(300)</ondown>
+					<control type="button" id="21380">
+						<description>spacer button</description>
+						<label></label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>545</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<onfocus>Control.SetFocus(304)</onfocus>
+						<texturefocus></texturefocus>
+					</control>
+					<control type="togglebutton" id="304">
+						<include>Search_Keyboard_Button</include>
+						<description>Symbols</description>
+						<label>@</label>
+						<altlabel>A</altlabel>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+						<alttexturefocus>search/letter_highlight.png</alttexturefocus>
+						<alttexturenofocus>search/letter_highlight_toggle.png</alttexturenofocus>
+					</control>
+					<control type="togglebutton" id="302">
+						<include>Shift_Keyboard_Button</include>
+						<description>Symbols</description>
+						<label></label>
+						<altlabel></altlabel>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/shift_highlight.png</texturefocus>
+						<texturenofocus>search/shift.png</texturenofocus>
+						<alttexturefocus>search/shift_highlight.png</alttexturefocus>
+						<alttexturenofocus>search/shift_highlight_toggle.png</alttexturenofocus>
+					</control>
+					<control type="togglebutton" id="303">
+						<include>Shift_Keyboard_Button</include>
+						<description>Symbols</description>
+						<label></label>
+						<altlabel></altlabel>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/caps_highlight.png</texturefocus>
+						<texturenofocus>search/caps.png</texturenofocus>
+						<alttexturefocus>search/caps_highlight.png</alttexturefocus>
+						<alttexturenofocus>search/caps_highlight_toggle.png</alttexturenofocus>
+					</control>
+					<control type="button" id="32">
+						<description>Space button</description>
+						<label>&#xA0;</label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturefocus>search/letter_highlight.png</texturefocus>
+					</control>
+					<control type="button" id="8">
+						<description>Delete button</description>
+						<label></label>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>48</width>
+						<height>51</height>
+						<font>Search</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<aligny>bottom</aligny>
+						<textoffsety>-9</textoffsety>
+						<texturenofocus>search/backspace.png</texturenofocus>
+						<texturefocus>search/backspace_highlight.png</texturefocus>
+					</control>
+				</control>
+				
+				
+				<!--
+				<control type="grouplist">
+					<posx>0</posx>
+					<posy>0</posy>
+					<height>153</height>
+					<orientation>vertical</orientation>
+					<itemgap>0</itemgap>
+					<width>1280</width>
+					<align>center</align>	
+					<ondown>Control.SetFocus(300)</ondown>
+
+				</control>
+				-->
+				<control type="button" id="300">
+					<description>DONE button</description>
+					<posx>553</posx>
+					<posy>137</posy>
+					<width>174</width>
+					<height>50</height>
+					<textcolor>ffffffff</textcolor>
+					<font>ContextHeader</font>
+					<label>$LOCALIZE[20177]</label>
+					<texturefocus>buttons/button/button_focus.png</texturefocus>
+					<texturenofocus>buttons/button/button.png</texturenofocus>
+					<onleft>-</onleft>
+					<onright>-</onright>
+					<onup>352</onup>
+					<ondown>-</ondown>
+					<aligny>bottom</aligny>
+					<textoffsety>-8</textoffsety>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

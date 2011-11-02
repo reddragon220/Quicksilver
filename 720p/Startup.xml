@@ -1,0 +1,16 @@
+﻿<window>
+<defaultcontrol always="true">10</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+  
+<controls>
+  
+	<control type="button" id="10">
+		<description>Startup Trigger</description>
+		<onfocus>ReplaceWindow(Home)</onfocus>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+	</control>
+  
+</controls>
+
+</window>

@@ -1,0 +1,1495 @@
+<window id="0">
+	<allowoverlay>yes</allowoverlay>
+	<defaultcontrol always="true">299</defaultcontrol>
+	<controls>
+		<control type="group">
+			<include condition="Skin.HasSetting(ken_burns)">bg_animation</include>
+			<control type="image">
+				<animation effect="fade" start="0" end="100" time="1000" condition="Control.HasFocus(301) | Skin.HasSetting(fanart)">Conditional</animation>
+				<description>Background Image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>scale</aspectratio>
+
+				<include condition="Skin.String(Custom_Background)">Custom_Background</include>
+				<include condition="!Skin.String(Custom_Background) + !Skin.HasSetting(Background1)">Background1</include>
+				<include condition="!Skin.String(Custom_Background) + Skin.HasSetting(Background2)">Background2</include>
+				<fadetime>1000</fadetime>
+			</control>
+			<!-- Fanart -->
+			<control type="group">
+				<visible>!Skin.HasSetting(fanart)</visible>
+				<control type="multiimage" id="10101">
+					<visible>Control.HasFocus(300) | Control.HasFocus(11000) | Control.HasFocus(11001) | Control.HasFocus(11002) | Control.HasFocus(11003) |  Control.HasFocus(1)</visible>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<aligny>top</aligny>
+					<timeperimage>10000</timeperimage>
+					<fadetime>1000</fadetime>
+					<randomize>true</randomize>
+					<loop>yes</loop>
+					<aspectratio>scale</aspectratio>
+				</control>
+				<control type="multiimage">
+					<visible>Control.HasFocus(11000)</visible>
+					<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+					<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+					<info background="true">Container(11000).ListItem.Property(fanart_image)</info>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<visible>true</visible>
+					<fadetime>1000</fadetime>
+					<aspectratio>scale</aspectratio>
+				</control>
+				<control type="multiimage">
+					<visible>Control.HasFocus(11001)</visible>
+					<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+					<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+					<info background="true">Container(11001).ListItem.Property(fanart_image)</info>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<visible>true</visible>
+					<fadetime>1000</fadetime>
+					<aspectratio>scale</aspectratio>
+				</control>
+				<control type="multiimage">
+					<visible>Control.HasFocus(11002)</visible>
+					<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+					<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+					<info background="true">Container(11003).ListItem.Property(fanart_image)</info>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<visible>true</visible>
+					<fadetime>1000</fadetime>
+					<aspectratio>scale</aspectratio>
+				</control>
+				<control type="multiimage">
+					<visible>Control.HasFocus(11003)</visible>
+					<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+					<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+					<info background="true">Container(11003).ListItem.Property(fanart_image)</info>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>1280</width>
+					<height>720</height>
+					<visible>true</visible>
+					<fadetime>1000</fadetime>
+					<aspectratio>scale</aspectratio>
+				</control>
+			</control>
+		</control>
+		<!-- Menu Items -->
+		<control type="group">
+			<posy>326</posy>
+			
+			<!-- 
+				Check if a Quick List is available and Jump to the appropriate list.
+				If no list is available bounce the focus back to the main menu.
+				
+				If it's a movie list go to recently added first.
+				If it's an episode list go to on deck first.
+			-->
+			<control type="button" id="1">
+				  <visible>![[Control.hasFocus(300) | Control.IsVisible(11000) | Control.hasFocus(11001) | Control.hasFocus(11002) | Control.hasFocus(11003)] + [Control.IsVisible(11000) |Control.IsVisible(11001) | Control.IsVisible(11002) | Control.IsVisible(11003)]]</visible>
+			      <description>quick</description>
+			      <posx>0</posx>
+			      <posy>0</posy>
+			      <width>0</width>
+			      <height>0</height>
+			      <visible>true</visible>
+			      <colordiffuse>-</colordiffuse>
+			      <texturefocus>-</texturefocus>
+			      <texturenofocus>-</texturenofocus>
+			      <label> </label>
+			 	  <onfocus>Setfocus(300)</onfocus>
+			</control>
+			<control type="button" id="1">
+				  <visible>[[Control.hasFocus(300) | Control.hasFocus(11000) | Control.hasFocus(11001) | Control.hasFocus(11002) | Control.hasFocus(11003)] + [Control.IsVisible(11002) | Control.IsVisible(11003)] + ![Control.IsVisible(11000) | Control.IsVisible(11001)]]</visible>
+			      <description>quick</description>
+			      <posx>0</posx>
+			      <posy>0</posy>
+			      <width>0</width>
+			      <height>0</height>
+			      <visible>true</visible>
+			      <colordiffuse>-</colordiffuse>
+			      <texturefocus>-</texturefocus>
+			      <texturenofocus>-</texturenofocus>
+			      <label> </label>
+			 	  <onfocus>Setfocus(10999)</onfocus>
+			</control>
+			<control type="group">
+				<visible>!Container(11000).ListItem(0).Type(album)</visible>
+			<control type="button" id="1">
+				  <visible>Container(11000).ListItem(0).Type(movie) + !IsEmpty(Container(11000).ListItem(0).label)</visible>
+			      <description>quick</description>
+			      <posx>0</posx>
+			      <posy>0</posy>
+			      <width>0</width>
+			      <height>0</height>
+			      <visible>true</visible>
+			      <colordiffuse>-</colordiffuse>
+			      <texturefocus>-</texturefocus>
+			      <texturenofocus>-</texturenofocus>
+			      <label> </label>
+			 	  <onfocus>Setfocus(11000)</onfocus>
+			</control>
+			<control type="button" id="1">
+				  <visible>Container(11001).ListItem(0).Type(movie) + IsEmpty(Container(11000).ListItem(0).label)</visible>
+			      <description>quick</description>
+			      <posx>0</posx>
+			      <posy>0</posy>
+			      <width>0</width>
+			      <height>0</height>
+			      <visible>true</visible>
+			      <colordiffuse>-</colordiffuse>
+			      <texturefocus>-</texturefocus>
+			      <texturenofocus>-</texturenofocus>
+			      <label> </label>
+			 	  <onfocus>Setfocus(11001)</onfocus>
+			</control>
+			<control type="button" id="1">
+				  <visible>Container(11001).ListItem(0).Type(episode) + !IsEmpty(Container(11001).ListItem(0).label)</visible>
+			      <description>quick</description>
+			      <posx>0</posx>
+			      <posy>0</posy>
+			      <width>0</width>
+			      <height>0</height>
+			      <visible>true</visible>
+			      <colordiffuse>-</colordiffuse>
+			      <texturefocus>-</texturefocus>
+			      <texturenofocus>-</texturenofocus>
+			      <label> </label>
+			 	  <onfocus>Setfocus(11001)</onfocus>
+			</control>
+			<control type="button" id="1">
+				  <visible>Container(11000).ListItem(0).Type(episode) + IsEmpty(Container(11001).ListItem(0).label)</visible>
+			      <description>quick</description>
+			      <posx>0</posx>
+			      <posy>0</posy>
+			      <width>0</width>
+			      <height>0</height>
+			      <visible>true</visible>
+			      <colordiffuse>-</colordiffuse>
+			      <texturefocus>-</texturefocus>
+			      <texturenofocus>-</texturenofocus>
+			      <label> </label>
+			 	  <onfocus>Setfocus(11000)</onfocus>
+			</control>
+			</control>
+			<control type="button" id="1">
+				  <visible>Container(11000).ListItem(0).Type(album)</visible>
+			      <description>quick</description>
+			      <posx>0</posx>
+			      <posy>0</posy>
+			      <width>0</width>
+			      <height>0</height>
+			      <visible>true</visible>
+			      <colordiffuse>-</colordiffuse>
+			      <texturefocus>-</texturefocus>
+			      <texturenofocus>-</texturenofocus>
+			      <label> </label>
+			 	  <onfocus>Setfocus(11000)</onfocus>
+			</control>
+
+			<!-- The Quick lists -->
+			<control type="group" id="10999">
+				<visible>[Control.hasFocus(300) | Control.hasFocus(11000) | Control.hasFocus(11001) | Control.hasFocus(11002) | Control.hasFocus(11003)] + [Control.IsVisible(11000) | Control.IsVisible(11001) | Control.IsVisible(11002) | Control.IsVisible(11003)]</visible>
+
+				<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+				<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+
+				<control type="image">
+					<description>Background Overlay</description>
+					<posx>0</posx>
+					<posy>-326</posy>
+					<width>1280</width>
+					<height>720</height>
+					<aspectratio>stretch</aspectratio>
+					<texture diffuse="home/overlay_mask.png">background/overlay.png</texture>
+					<fadetime>200</fadetime>
+				</control>
+
+				<control type="group">
+					<visible>!Skin.HasSetting(quicklist_left_right)</visible>
+					<control type="group">
+						<visible>Container(11001).ListItem(0).Type(episode) + Control.HasFocus(11001) + Control.IsVisible(11000)</visible>
+						<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+						<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+						<control type="image">
+							<texture>home/right_arrow.png</texture>
+							<posx>1244</posx>
+							<posy>352</posy>
+							<width>26</width>
+							<height>32</height>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="label">
+							<posx>1233</posx>
+							<posy>339</posy>
+							<width>1280</width>
+							<height>48</height>
+							<textcolor>ffffffff</textcolor>
+							<font>RecentList</font>
+							<label>$LOCALIZE[31010]</label>
+							<scroll>false</scroll>
+							<align>right</align>
+						</control>
+					</control>
+					<control type="group">
+						<visible>Container(11000).ListItem(0).Type(episode) + Control.HasFocus(11000) + Control.IsVisible(11001)</visible>
+						<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+						<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+						<control type="image">
+							<texture>home/left_arrow.png</texture>
+							<posx>10</posx>
+							<posy>352</posy>
+							<width>26</width>
+							<height>32</height>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="label">
+							<posx>46</posx>
+							<posy>339</posy>
+							<width>1280</width>
+							<height>48</height>
+							<textcolor>ffffffff</textcolor>
+							<font>RecentList</font>
+							<label>$LOCALIZE[31009]</label>
+							<scroll>false</scroll>
+							<align>left</align>
+						</control>
+					</control>
+
+					<control type="group">
+						<visible>Container(11000).ListItem(0).Type(movie) + Control.HasFocus(11000) + Control.IsVisible(11001)</visible>
+						<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+						<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+						<control type="image">
+							<texture>home/right_arrow.png</texture>
+							<posx>1244</posx>
+							<posy>352</posy>
+							<width>26</width>
+							<height>32</height>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="label">
+							<posx>1233</posx>
+							<posy>339</posy>
+							<width>1280</width>
+							<height>48</height>
+							<textcolor>ffffffff</textcolor>
+							<font>RecentList</font>
+							<label>$LOCALIZE[31009]</label>
+							<scroll>false</scroll>
+							<align>right</align>
+						</control>
+					</control>
+					<control type="group">
+						<visible>Container(11001).ListItem(0).Type(movie) + Control.HasFocus(11001) + Control.IsVisible(11000)</visible>
+						<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+						<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+						<control type="image">
+							<texture>home/left_arrow.png</texture>
+							<posx>10</posx>
+							<posy>352</posy>
+							<width>26</width>
+							<height>32</height>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="label">
+							<posx>46</posx>
+							<posy>339</posy>
+							<width>1280</width>
+							<height>48</height>
+							<textcolor>ffffffff</textcolor>
+							<font>RecentList</font>
+							<label>$LOCALIZE[31010]</label>
+							<scroll>false</scroll>
+							<align>left</align>
+						</control>
+					</control>
+				</control>
+				<control type="group">
+					<visible>Skin.HasSetting(quicklist_left_right)</visible>
+					<control type="group">
+						<visible>Container(11001).ListItem(0).Type(episode) + Control.HasFocus(11001) + Control.IsVisible(11000)</visible>
+						<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+						<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+						<control type="image">
+							<texture>home/down_arrow.png</texture>
+							<posx>1237</posx>
+							<posy>354</posy>
+							<width>33</width>
+							<height>27</height>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="label">
+							<posx>1233</posx>
+							<posy>339</posy>
+							<width>1280</width>
+							<height>48</height>
+							<textcolor>ffffffff</textcolor>
+							<font>RecentList</font>
+							<label>$LOCALIZE[31010]</label>
+							<scroll>false</scroll>
+							<align>right</align>
+						</control>
+					</control>
+					<control type="group">
+						<visible>Container(11000).ListItem(0).Type(episode) + Control.HasFocus(11000) + Control.IsVisible(11001)</visible>
+						<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+						<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+						<control type="image">
+							<texture>home/up_arrow.png</texture>
+							<posx>1237</posx>
+							<posy>354</posy>
+							<width>33</width>
+							<height>27</height>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						
+						<control type="label">
+							<posx>1233</posx>
+							<posy>339</posy>
+							<width>1280</width>
+							<height>48</height>
+							<textcolor>ffffffff</textcolor>
+							<font>RecentList</font>
+							<label>$LOCALIZE[31009]</label>
+							<scroll>false</scroll>
+							<align>right</align>
+						</control>
+					</control>
+
+					<control type="group">
+						<visible>Container(11000).ListItem(0).Type(movie) + Control.HasFocus(11000) + Control.IsVisible(11001)</visible>
+						<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+						<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+						<control type="image">
+							<texture>home/down_arrow.png</texture>
+							<posx>1237</posx>
+							<posy>354</posy>
+							<width>33</width>
+							<height>27</height>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="label">
+							<posx>1233</posx>
+							<posy>339</posy>
+							<width>1280</width>
+							<height>48</height>
+							<textcolor>ffffffff</textcolor>
+							<font>RecentList</font>
+							<label>$LOCALIZE[31009]</label>
+							<scroll>false</scroll>
+							<align>right</align>
+						</control>
+					</control>
+					<control type="group">
+						<visible>Container(11001).ListItem(0).Type(movie) + Control.HasFocus(11001) + Control.IsVisible(11000)</visible>
+						<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+						<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+						<control type="image">
+							<texture>home/up_arrow.png</texture>
+							<posx>1237</posx>
+							<posy>354</posy>
+							<width>33</width>
+							<height>27</height>
+							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="label">
+							<posx>1233</posx>
+							<posy>339</posy>
+							<width>1280</width>
+							<height>48</height>
+							<textcolor>ffffffff</textcolor>
+							<font>RecentList</font>
+							<label>$LOCALIZE[31010]</label>
+							<scroll>false</scroll>
+							<align>right</align>
+						</control>
+						
+					</control>
+				</control>
+				
+				<control type="fixedlist" id="11002">
+					<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+					<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+					<onup>300</onup>
+					<posx>-228</posx>
+					<posy>110</posy>
+					<width>1736</width>
+					<height>300</height>
+					<visible>true</visible>
+					<viewtype label="flow">list</viewtype>
+					<orientation>horizontal</orientation>
+					<pagecontrol>25</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<focusposition>3</focusposition>
+					<itemlayout width="248" height="248">
+						<control type="image">
+							<posx>17</posx>
+							<posy>17</posy>
+							<width>214</width>
+							<height>214</height>
+							<info>ListItem.Icon</info>
+							<texture background="true" diffuse="views/flow/wide_thumb_mask.png">NoThumb.png</texture>
+							<bordersize>5</bordersize>
+							<bordertexture border="5">views/flow/wide_thumb_shadow.png</bordertexture>
+							<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+						</control>
+					</itemlayout>
+					<focusedlayout width="248" height="248">
+						<control type="image">
+							<animation effect="zoom" start="86" end="100" center="auto" time="200">Focus</animation>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>248</width>
+							<height>248</height>
+							<info>ListItem.Icon</info>
+							<texture background="true" diffuse="views/flow/wide_thumb_mask.png">NoThumb.png</texture>
+							<bordersize>5</bordersize>
+							<bordertexture border="5">views/flow/large_square_thumb_shadow_highlight.png</bordertexture>
+							<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+						</control>
+					</focusedlayout>
+				</control>
+				
+
+				<control type="group">
+					<visible>!Container(11000).ListItem(0).Type(album) + !Control.isVisible(11002)</visible>
+					<control type="grouplist">
+						<include condition="!Skin.HasSetting(quicklist_left_right)">home_quicklist_left_right</include>
+						<include condition="Skin.HasSetting(quicklist_left_right)">home_quicklist_up_down</include>
+						<onup>300</onup>
+						<ondown>-</ondown>
+						<posx>-148</posx>
+						<posy>110</posy>
+						<width>1431</width>
+						<height>288</height>
+						<control type="fixedlist" id="11000">
+							<visible>![Container(11000).ListItem(0).Type(episode) | Container(11001).ListItem(0).Type(episode)] + [Container(11000).ListItem(0).Type(movie) | Container(11001).ListItem(0).Type(movie)]</visible>
+							<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+							<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+							<onup>300</onup>
+							<onleft>-</onleft>
+							<posx>-148</posx>
+							<posy>110</posy>
+							<width>1431</width>
+							<height>288</height>
+							<orientation>horizontal</orientation>
+							<pagecontrol>25</pagecontrol>
+							<scrolltime>200</scrolltime>
+							<focusposition>4</focusposition>
+							<itemlayout width="175" height="224">
+								<control type="image">
+									<posx>9</posx>
+									<posy>12</posy>
+									<width>156</width>
+									<height>224</height>
+									<info background="true">ListItem.Icon</info>
+									<texture background="true" diffuse="views/flow/thumb_mask.png">NoThumb.png</texture>
+									<bordersize>5</bordersize>
+									<bordertexture border="5">views/flow/thumb_shadow.png</bordertexture>
+									<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>101</posx>
+									<posy>25</posy>
+									<control type="image">
+										<visible>StringCompare(ListItem.Overlay,OverlayInProgress.png) + ListItem.Type(Movie)</visible> 
+										<posx>0</posx>
+										<posy>0</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
+									</control>
+								</control>
+							</itemlayout>
+							<focusedlayout width="175" height="288">
+								<control type="image">
+									<animation effect="zoom" start="90" end="100" center="auto" time="200">Focus</animation>
+									<posx>1.5</posx>
+									<posy>0</posy>
+									<width>172</width>
+									<height>248</height>
+									<info background="true">ListItem.Icon</info>
+									<texture background="true" diffuse="views/flow/large_thumb_mask.png">NoThumb.png</texture>
+									<bordersize>5</bordersize>
+									<bordertexture border="5">views/flow/large_thumb_shadow_highlight.png</bordertexture>
+									<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+									<onfocus>skin.ToggleSetting(info_panel_timer)</onfocus>
+								</control>
+								<control type="group">
+									<posx>101</posx>
+									<posy>25</posy>
+									<animation effect="slide" end="9,-11" time="200" >Focus</animation>
+									<control type="image">
+										<visible>StringCompare(ListItem.Overlay,OverlayInProgress.png) + ListItem.Type(Movie)</visible> 
+										<posx>0</posx>
+										<posy>0</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
+									</control>
+								</control>
+							</focusedlayout>
+						</control>
+						<control type="fixedlist" id="11001">
+							<visible>![Container(11000).ListItem(0).Type(episode) | Container(11001).ListItem(0).Type(episode)] + [Container(11000).ListItem(0).Type(movie) | Container(11001).ListItem(0).Type(movie)]</visible>
+							<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+							<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+							<onup>300</onup>
+							<onright>-</onright>
+							<ondown>-</ondown>
+							<posx>-148</posx>
+							<posy>110</posy>
+							<width>1431</width>
+							<height>288</height>
+							<orientation>horizontal</orientation>
+							<pagecontrol>25</pagecontrol>
+							<scrolltime>200</scrolltime>
+							<focusposition>4</focusposition>
+							<itemlayout width="175" height="224">
+								<control type="image">
+									<posx>9</posx>
+									<posy>12</posy>
+									<width>156</width>
+									<height>224</height>
+									<info background="true">ListItem.Icon</info>
+									<texture background="true" diffuse="views/flow/thumb_mask.png">NoThumb.png</texture>
+									<bordersize>5</bordersize>
+									<bordertexture border="5">views/flow/thumb_shadow.png</bordertexture>
+									<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>101</posx>
+									<posy>25</posy>
+									<control type="image">
+										<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + ListItem.Type(Movie)</visible> 
+										<posx>0</posx>
+										<posy>0</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
+									</control>
+									<control type="image">
+										<visible>StringCompare(ListItem.Overlay,OverlayInProgress.png) + ListItem.Type(Movie)</visible> 
+										<posx>0</posx>
+										<posy>0</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
+									</control>
+								</control>
+							</itemlayout>
+							<focusedlayout width="175" height="288">
+								<control type="image">
+									<animation effect="zoom" start="90" end="100" center="auto" time="200">Focus</animation>
+									<posx>1.5</posx>
+									<posy>0</posy>
+									<width>172</width>
+									<height>248</height>
+									<info background="true">ListItem.Icon</info>
+									<texture background="true" diffuse="views/flow/large_thumb_mask.png">NoThumb.png</texture>
+									<bordersize>5</bordersize>
+									<bordertexture border="5">views/flow/large_thumb_shadow_highlight.png</bordertexture>
+									<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+									<onfocus>skin.ToggleSetting(info_panel_timer)</onfocus>
+								</control>
+								<control type="group">
+									<posx>101</posx>
+									<posy>25</posy>
+									<animation effect="slide" end="9,-11" time="200" >Focus</animation>
+									<control type="image">
+										<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + ListItem.Type(Movie)</visible> 
+										<posx>0</posx>
+										<posy>0</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
+									</control>
+									<control type="image">
+										<visible>StringCompare(ListItem.Overlay,OverlayInProgress.png) + ListItem.Type(Movie)</visible> 
+										<posx>0</posx>
+										<posy>0</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
+									</control>
+								</control>
+							</focusedlayout>
+						</control>
+					</control>
+
+					<control type="grouplist">
+						<include condition="!Skin.HasSetting(quicklist_left_right)">home_quicklist_left_right</include>
+						<include condition="Skin.HasSetting(quicklist_left_right)">home_quicklist_up_down</include>
+						<onup>300</onup>
+						<ondown>-</ondown>
+						<posx>-148</posx>
+						<posy>110</posy>
+						<width>1431</width>
+						<height>288</height>
+						<control type="fixedlist" id="11001">
+							<visible>![Container(11000).ListItem(0).Type(movie) | Container(11001).ListItem(0).Type(movie)] + [Container(11000).ListItem(0).Type(episode) | Container(11001).ListItem(0).Type(episode)]</visible>
+							<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+							<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+							<onup>300</onup>
+							<onleft>-</onleft>
+							<posx>-148</posx>
+							<posy>110</posy>
+							<width>1431</width>
+							<height>288</height>
+							<orientation>horizontal</orientation>
+							<pagecontrol>25</pagecontrol>
+							<scrolltime>200</scrolltime>
+							<focusposition>4</focusposition>
+							<itemlayout width="175" height="224">
+								<control type="image">
+									<posx>9</posx>
+									<posy>12</posy>
+									<width>156</width>
+									<height>224</height>
+									<info background="true">ListItem.GrandparentThumb</info>
+									<texture background="true" diffuse="views/flow/thumb_mask.png">NoThumb.png</texture>
+									<bordersize>5</bordersize>
+									<bordertexture border="5">views/flow/thumb_shadow.png</bordertexture>
+									<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>101</posx>
+									<posy>25</posy>
+									<control type="image">
+										<visible>StringCompare(ListItem.Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible> 
+										<posx>0</posx>
+										<posy>0</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
+									</control>
+								</control>
+							</itemlayout>
+							<focusedlayout width="175" height="228">
+								<control type="image">
+									<animation effect="zoom" start="90" end="100" center="auto" time="200">Focus</animation>
+									<posx>1.5</posx>
+									<posy>0</posy>
+									<width>172</width>
+									<height>248</height>
+									<info background="true">ListItem.GrandparentThumb</info>
+									<texture background="true" diffuse="views/flow/large_thumb_mask.png">NoThumb.png</texture>
+									<bordersize>5</bordersize>
+									<bordertexture border="5">views/flow/large_thumb_shadow_highlight.png</bordertexture>
+									<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+									<onfocus>skin.ToggleSetting(info_panel_timer)</onfocus>
+								</control>
+								<control type="group">
+									<posx>101</posx>
+									<posy>25</posy>
+									<animation effect="slide" end="9,-11" time="200" >Focus</animation>
+									<control type="image">
+										<visible>StringCompare(ListItem.Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible> 
+										<posx>0</posx>
+										<posy>0</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
+									</control>
+								</control>
+						
+								<control type="group">
+									<visible>Container.Content(episodes)</visible>
+									<posy>213</posy>
+									<control type="label">
+										<posx>199</posx>
+										<posy>0</posy>
+										<width>398</width>
+										<height>48</height>
+										<textcolor>4b000000</textcolor>
+										<font>Episode_number</font>
+										<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+									<control type="label">
+										<posx>199</posx>
+										<posy>2</posy>
+										<width>398</width>
+										<height>48</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Episode_number</font>
+										<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+							</focusedlayout>
+						</control>
+						<control type="fixedlist" id="11000">
+							<visible>![Container(11000).ListItem(0).Type(movie) | Container(11001).ListItem(0).Type(movie)] + [Container(11000).ListItem(0).Type(episode) | Container(11001).ListItem(0).Type(episode)]</visible>
+							<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+							<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+							<onup>300</onup>
+							<onright>-</onright>
+							<ondown>-</ondown>
+							<posx>-148</posx>
+							<posy>110</posy>
+							<width>1431</width>
+							<height>288</height>
+							<orientation>horizontal</orientation>
+							<pagecontrol>25</pagecontrol>
+							<scrolltime>200</scrolltime>
+							<focusposition>4</focusposition>
+							<itemlayout width="175" height="224">
+								<control type="image">
+									<posx>9</posx>
+									<posy>12</posy>
+									<width>156</width>
+									<height>224</height>
+									<info background="true">ListItem.GrandparentThumb</info>
+									<texture background="true" diffuse="views/flow/thumb_mask.png">NoThumb.png</texture>
+									<bordersize>5</bordersize>
+									<bordertexture border="5">views/flow/thumb_shadow.png</bordertexture>
+									<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>101</posx>
+									<posy>25</posy>
+									<control type="image">
+										<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible> 
+										<posx>0</posx>
+										<posy>0</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
+									</control>
+									<control type="image">
+										<visible>StringCompare(ListItem.Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible> 
+										<posx>0</posx>
+										<posy>0</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
+									</control>
+								</control>
+							</itemlayout>
+							<focusedlayout width="175" height="288">
+								<control type="image">
+									<animation effect="zoom" start="90" end="100" center="auto" time="200">Focus</animation>
+									<posx>1.5</posx>
+									<posy>0</posy>
+									<width>172</width>
+									<height>248</height>
+									<info background="true">ListItem.GrandparentThumb</info>
+									<texture background="true" diffuse="views/flow/large_thumb_mask.png">NoThumb.png</texture>
+									<bordersize>5</bordersize>
+									<bordertexture border="5">views/flow/large_thumb_shadow_highlight.png</bordertexture>
+									<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+									<onfocus>skin.ToggleSetting(info_panel_timer)</onfocus>
+								</control>
+								<control type="group">
+									<posx>101</posx>
+									<posy>25</posy>
+									<animation effect="slide" end="9,-11" time="200" >Focus</animation>
+									<control type="image">
+										<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible> 
+										<posx>0</posx>
+										<posy>0</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
+									</control>
+									<control type="image">
+										<visible>StringCompare(ListItem.Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible> 
+										<posx>0</posx>
+										<posy>0</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
+									</control>
+								</control>
+							</focusedlayout>
+						</control>
+					</control>
+				</control>
+				<control type="fixedlist" id="11000">
+					<visible>!Container.ListItem(0).Type(movie) + !Container.ListItem(0).Type(movie) + !Container.ListItem(0).Type(episode) + !Container.ListItem(0).Type(episode) + Container(11000).ListItem(0).Type(album)</visible>
+					<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+					<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+					<onup>300</onup>
+					<ondown>-</ondown>
+					<posx>-228</posx>
+					<posy>110</posy>
+					<width>1736</width>
+					<height>300</height>
+					<visible>true</visible>
+					<viewtype label="flow">list</viewtype>
+					<orientation>horizontal</orientation>
+					<pagecontrol>25</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<focusposition>3</focusposition>
+					<itemlayout width="248" height="248">
+						<!--
+						<control type="image">
+							<posx>17</posx>
+							<posy>17</posy>
+							<width>214</width>
+							<height>214</height>
+							<info>ListItem.Icon</info>
+							<texture diffuse="views/flow/wide_thumb_mask.png"/>
+							<bordersize>5</bordersize>
+							<bordertexture border="5">views/flow/wide_thumb_shadow.png</bordertexture>
+							<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+						</control>
+						-->
+						<control type="image">
+							<posx>17</posx>
+							<posy>17</posy>
+							<width>214</width>
+							<height>214</height>
+							<info background="true">ListItem.Icon</info>
+							<texture background="true" diffuse="views/flow/wide_thumb_mask.png">NoThumb.png</texture>
+							<bordersize>5</bordersize>
+							<bordertexture border="5">views/flow/wide_thumb_shadow.png</bordertexture>
+							<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+						</control>
+					</itemlayout>
+					<focusedlayout width="248" height="248">
+						<control type="image">
+							<animation effect="zoom" start="86" end="100" center="auto" time="200">Focus</animation>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>248</width>
+							<height>248</height>
+							<info background="true">ListItem.Icon</info>
+							<texture background="true" diffuse="views/flow/wide_thumb_mask.png">NoThumb.png</texture>
+							<bordersize>5</bordersize>
+							<bordertexture border="5">views/flow/large_square_thumb_shadow_highlight.png</bordertexture>
+							<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+						</control>
+					</focusedlayout>
+				</control>
+				
+				
+				
+				<control type="fixedlist" id="11003">
+					<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+					<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+					<onup>300</onup>
+					<ondown>-</ondown>
+					<posx>-355</posx>
+					<posy>120</posy>
+					<width>1640</width>
+					<height>300</height>
+					<viewtype label="flow">list</viewtype>
+					<orientation>horizontal</orientation>
+					<pagecontrol>25</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<focusposition>2</focusposition>
+					<itemlayout width="398" height="228">
+						<control type="image">
+							<posx>18</posx>
+							<posy>10</posy>
+							<width>362</width>
+							<height>208</height>
+							<info background="true">ListItem.Icon</info>
+							<texture background="true" diffuse="views/flow/wide_thumb_mask.png">NoThumb.png</texture>
+							<bordersize>5</bordersize>
+							<bordertexture border="5">views/flow/wide_thumb_shadow.png</bordertexture>
+							<aspectratio scalediffuse="false" align="center" aligny="bottom">stretch</aspectratio>
+						</control>
+						<control type="group">
+							<posx>316</posx>
+							<posy>30</posy>
+							<control type="image">
+								<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png)</visible> 
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>67</width>
+								<height>50</height>
+								<aspectratio>stretch</aspectratio>
+								<texture>views/covers/new.png</texture>
+							</control>
+							<control type="image">
+								<visible>StringCompare(ListItem.Overlay,OverlayInProgress.png)</visible> 
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>67</width>
+								<height>50</height>
+								<aspectratio>stretch</aspectratio>
+								<texture>views/covers/inprogress.png</texture>
+							</control>
+						</control>
+					</itemlayout>
+					<focusedlayout width="398" height="228">
+						<control type="image">
+							<animation effect="zoom" start="90" end="100" center="auto" time="200">Focus</animation>
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>398</width>
+							<height>228</height>
+							<info background="true">ListItem.Icon</info>
+							<texture background="true" diffuse="views/flow/large_wide_thumb_mask.png"/>
+							<bordersize>5</bordersize>
+							<bordertexture border="5">views/flow/large_wide_thumb_shadow_highlight.png</bordertexture>
+							<aspectratio scalediffuse="false" align="center" aligny="bottom">stretch</aspectratio>
+						</control>
+						<control type="group">
+							<visible>Container.Content(episodes)</visible>
+							<posy>213</posy>
+							<control type="label">
+								<posx>199</posx>
+								<posy>0</posy>
+								<width>398</width>
+								<height>48</height>
+								<textcolor>4b000000</textcolor>
+								<font>Episode_number</font>
+								<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+								<scroll>false</scroll>
+								<align>center</align>
+							</control>
+							<control type="label">
+								<posx>199</posx>
+								<posy>2</posy>
+								<width>398</width>
+								<height>48</height>
+								<textcolor>ffffffff</textcolor>
+								<font>Episode_number</font>
+								<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+								<scroll>false</scroll>
+								<align>center</align>
+							</control>
+						</control>
+						<control type="group">
+							<animation effect="slide" end="18,-10" time="200">Focus</animation>
+							<posx>316</posx>
+							<posy>30</posy>
+							<control type="image">
+								<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png)</visible>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>67</width>
+								<height>50</height>
+								<aspectratio>stretch</aspectratio>
+								<texture>views/flow/new.png</texture>
+							</control>
+							<control type="image">
+								<visible>StringCompare(ListItem.Overlay,OverlayInProgress.png)</visible>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>67</width>
+								<height>50</height>
+								<aspectratio>stretch</aspectratio>
+								<texture>views/flow/inprogress.png</texture>
+							</control>
+						</control>
+					</focusedlayout>
+				</control>
+
+				
+
+				<control type="label">
+					<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(movie)</visible>
+					<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+					<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+					<posx>0</posx>
+					<posy>349</posy>
+					<width>1280</width>
+					<height>48</height>
+					<textcolor>ffffffff</textcolor>
+					<font>RecentList</font>
+					<label>$INFO[Container(11000).ListItem.Label]</label>
+					<scroll>false</scroll>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(movie)</visible>
+					<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+					<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+					<posx>0</posx>
+					<posy>349</posy>
+					<width>1280</width>
+					<height>48</height>
+					<textcolor>ffffffff</textcolor>
+					<font>RecentList</font>
+					<label>$INFO[Container(11001).ListItem.Label]</label>
+					<scroll>false</scroll>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(album)</visible>
+					<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+					<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+					<posx>0</posx>
+					<posy>349</posy>
+					<width>1280</width>
+					<height>48</height>
+					<textcolor>ffffffff</textcolor>
+					<font>RecentList</font>
+					<label>$INFO[Container(11000).ListItem.Artist] [COLOR ff95c9f7]&#xB7;[/COLOR] $INFO[Container(11000).ListItem.label]</label>
+					<scroll>false</scroll>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<visible>Control.HasFocus(11001) + Container(11001).ListItem(0).Type(episode)</visible>
+					<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+					<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+					<posx>0</posx>
+					<posy>349</posy>
+					<width>1280</width>
+					<height>48</height>
+					<textcolor>ffffffff</textcolor>
+					<font>RecentList</font>
+					<label>$INFO[Container(11001).ListItem.TVShowTitle] [COLOR ff95c9f7]&#xB7;[/COLOR] s$INFO[Container(11001).ListItem.Season]e$INFO[Container(11001).ListItem.Episode]</label>
+					<scroll>false</scroll>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(episode)</visible>
+					<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+					<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+					<posx>0</posx>
+					<posy>349</posy>
+					<width>1280</width>
+					<height>48</height>
+					<textcolor>ffffffff</textcolor>
+					<font>RecentList</font>
+					<label>$INFO[Container(11000).ListItem.TVShowTitle] [COLOR ff95c9f7]&#xB7;[/COLOR] s$INFO[Container(11000).ListItem.Season]e$INFO[Container(11000).ListItem.Episode]</label>
+					<scroll>false</scroll>
+					<align>center</align>
+				</control>
+				<control type="label">
+					<visible>Control.HasFocus(11003)</visible>
+					<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+					<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+					<posx>0</posx>
+					<posy>349</posy>
+					<width>1280</width>
+					<height>48</height>
+					<textcolor>ffffffff</textcolor>
+					<font>RecentList</font>
+					<label>$INFO[Container(11003).ListItem.Title] [COLOR ff95c9f7]&#xB7;[/COLOR] $INFO[Container(11003).ListItem.Property(sourceTitle)]</label>
+					<scroll>false</scroll>
+					<align>center</align>
+				</control>
+
+				<control type="label">
+					<visible>Control.HasFocus(11002)</visible>
+					<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+					<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+					<posx>0</posx>
+					<posy>349</posy>
+					<width>1280</width>
+					<height>48</height>
+					<textcolor>ffffffff</textcolor>
+					<font>RecentList</font>
+					<label>$INFO[Container(11002).ListItem.Title]</label>
+					<scroll>false</scroll>
+					<align>center</align>
+				</control>
+
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>110</height>
+				<visible>true</visible>
+				<texture>home/background.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>			
+
+			<!-- Main Menu -->
+			<control type="grouplist" id="299">
+				<posy>11</posy>
+				<orientation>horizontal</orientation>
+				<control type="fixedlist" id="300">
+					<posx>0</posx>
+					<posy>11</posy>
+					<width>1280</width>
+					<height>720</height>
+					<onup>Setfocus(300)</onup>
+					<ondown>Setfocus(1)</ondown>
+					<onleft>Setfocus(300)</onleft>
+					<onright>Setfocus(301,0)</onright>
+					<onfocus>Setfocus(300)</onfocus>
+					<scrolltime>200</scrolltime>
+					<orientation>horizontal</orientation>
+					<focusposition>1</focusposition>
+
+					<itemlayout width="500" height="300">
+						<control type="label">
+							<posx>142</posx>
+							<posy>15</posy>
+							<width>500</width>
+							<info>ListItem.Label</info>
+							<textcolor>7fffffff</textcolor>
+							<scroll>false</scroll>
+							<font>Section</font>
+							<align>center</align>
+							<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+							<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+						</control>
+					</itemlayout>
+					<focusedlayout width="500" height="300">
+						<control type="label">
+							<posx>143</posx>
+							<posy>16</posy>
+							<width>500</width>
+							<info>ListItem.Label</info>
+							<font>Section</font>
+							<textcolor>4b000000</textcolor>
+							<align>center</align>
+							<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+							<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+						</control>
+						<control type="label">
+							<posx>142</posx>
+							<posy>15</posy>
+							<width>500</width>
+							<label>$INFO[ListItem.Label]</label>
+							<font>Section</font>
+							<textcolor>ffffffff</textcolor>
+							<align>center</align>
+							<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+							<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+						</control>
+					</focusedlayout>
+					<content>
+						<item id="10">
+							<description>DVD Button</description>
+							<label>$LOCALIZE[31001]</label>
+							<visible>System.HasMediadvd</visible>
+							<onclick>XBMC.PlayDVD</onclick>
+						</item>
+						<item id="12">
+							<description>Search</description>
+							<label>$LOCALIZE[31000]</label>
+							<onclick>Plex.ActivateWindow(10051)</onclick>
+						</item>
+						<item id="1">
+							<description>Video Plug-ins</description>
+							<label>$LOCALIZE[31005]</label>
+							<onclick>XBMC.ActivateWindow(24)</onclick>
+						</item>
+						<item id="2">
+							<description>Music Plug-ins</description>
+							<label>$LOCALIZE[31006]</label>
+							<visible>[!Skin.HasSetting(HideMusic)]</visible>
+							<onclick>XBMC.ActivateWindow(5)</onclick>
+						</item>
+						<item id="3">
+							<description>Picture Plug-ins</description>
+							<label>$LOCALIZE[31007]</label>
+							<visible>[!Skin.HasSetting(HidePictures)]</visible>
+							<onclick>XBMC.ActivateWindow(2)</onclick>
+						</item>
+
+						<item id="0">
+							<visible>IsEmpty(system.selectedplexmediaserver)</visible>
+							<description>No Library Plex Crash Bug</description>
+							<label>$LOCALIZE[31012]</label>
+							<visible></visible>
+							<onclick>-</onclick>
+						</item>
+					</content>
+				</control>
+				<control type="fixedlist" id="301">
+					<posx>0</posx>
+					<posy>11</posy>
+					<width>1280</width>
+					<height>720</height>
+					<onup>Setfocus(301)</onup>
+					<ondown>Setfocus(301)</ondown>
+					<onleft>Setfocus(300)</onleft>
+					<onright>Setfocus(301)</onright>
+					<onfocus>Setfocus(301)</onfocus>
+					<scrolltime>200</scrolltime>
+					<orientation>horizontal</orientation>
+					<focusposition>1</focusposition>
+		
+					<itemlayout width="500" height="300">
+						<control type="label">
+							<posx>142</posx>
+							<posy>15</posy>
+							<width>500</width>
+							<info>ListItem.Label</info>
+							<textcolor>7fffffff</textcolor>
+							<scroll>false</scroll>
+							<font>Section</font>
+							<align>center</align>
+						</control>
+					</itemlayout>
+					<focusedlayout width="500" height="300">
+						<control type="label">
+							<posx>143</posx>
+							<posy>16</posy>
+							<width>500</width>
+							<info>ListItem.Label</info>
+							<font>Section</font>
+							<textcolor>4b000000</textcolor>
+							<align>center</align>
+						</control>
+						<control type="label">
+							<posx>142</posx>
+							<posy>15</posy>
+							<width>500</width>
+							<label>$INFO[ListItem.Label]</label>
+							<font>Section</font>
+							<textcolor>ffffffff</textcolor>
+							<align>center</align>
+						</control>
+					</focusedlayout>
+					<content>
+
+						<item id="4">
+							<visible>!IsEmpty(system.selectedplexmediaserver)</visible>
+							<description>Plex Channels</description>
+							<label>$LOCALIZE[31008]</label>
+							<onclick>Plex.ActivateWindow(1,plex://127.0.0.1/system/plexonline,return)</onclick>
+						</item>
+
+						<item id="5">
+							<description>Settings</description>
+							<label>$LOCALIZE[31003]</label>
+							<onclick>xbmc.activatewindow(settings)</onclick>
+						</item>
+						<item id="6">
+							<description>Quit</description>
+							<label>$LOCALIZE[31013]</label>
+							<onclick>xbmc.ShutDown</onclick>
+						</item>
+						<item id="7">
+							<visible>Skin.HasSetting(developer)</visible>
+							<description>Refresh</description>
+							<label>$LOCALIZE[184]</label>
+							<onclick>XBMC.ReloadSkin()</onclick>
+						</item>
+					</content>
+				</control>
+			</control>
+			<control type="group">
+				<posy>75</posy>
+
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>[Control.HasFocus(300) | Control.HasFocus(11000) | Control.HasFocus(11001)] + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[31000]) + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[31001]) + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[31005]) + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[31006]) + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[31007]) + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[31002]) + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[31011]) +
+!StringCompare(Container(300).ListItem.Label,$LOCALIZE[31012]) + IsEmpty(Container(300).ListItem.Label2)						
+					</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<align>center</align>
+					<label>$LOCALIZE[31024]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+				</control>
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>[Control.HasFocus(300) | Control.HasFocus(11002)] + [StringCompare(Container(300).ListItem.Label,$LOCALIZE[31001]) | StringCompare(Container(300).ListItem.Label,$LOCALIZE[31005]) | StringCompare(Container(300).ListItem.Label,$LOCALIZE[31006]) | StringCompare(Container(300).ListItem.Label,$LOCALIZE[31007])]</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<align>center</align>
+					<label>$LOCALIZE[31023]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+				</control>
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>Control.HasFocus(300) + StringCompare(Container(300).ListItem.Label,$LOCALIZE[31000])</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<align>center</align>
+					<label>$LOCALIZE[31025]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+				</control>
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>Container(300).hasfocus(4)</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<align>center</align>
+					<label>$LOCALIZE[31026]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+				</control>
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>StringCompare(Container(300).ListItem.Label,$LOCALIZE[31002]) + [Control.HasFocus(300) | Control.HasFocus(11003)]</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<align>center</align>
+					<label>$LOCALIZE[31027]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+				</control>
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>StringCompare(Container(300).ListItem.Label,$LOCALIZE[31011]) + Control.HasFocus(300)</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<align>center</align>
+					<label>$LOCALIZE[31020]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+				</control>
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>Control.HasFocus(300) + StringCompare(Container(300).listitem.label,$LOCALIZE[31012])</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<align>center</align>
+					<label>$LOCALIZE[31021]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+				</control>
+				
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>!Control.HasFocus(301) + !IsEmpty(Container(300).ListItem.Label2)</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<align>center</align>
+					<label>$INFO[Container(300).ListItem.Label2]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+				</control>
+				
+
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>Control.HasFocus(301) + Container(301).hasfocus(1)</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<label>$LOCALIZE[31028]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>Control.HasFocus(301) + Container(301).hasfocus(2)</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<label>$LOCALIZE[31029]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>Control.HasFocus(301) + Container(301).hasfocus(3)</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<label>$LOCALIZE[31030]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>Control.HasFocus(301) + Container(301).hasfocus(4)</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<label>$LOCALIZE[31031]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>Control.HasFocus(301) + Container(301).hasfocus(5)</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<label>$LOCALIZE[31032]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>Control.HasFocus(301) + Container(301).hasfocus(6)</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<label>$LOCALIZE[31022]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+					<align>center</align>
+				</control>
+				<!--
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>!IsEmpty(Container(300).ListItem(0).Label2)</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<label>$INFO[Container(300).ListItem(0).Label2]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+					<align>center</align>
+				</control>
+				<control type="rss">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>IsEmpty(Container(300).ListItem(0).Label2)</visible>
+					<description>RSS Feed</description>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<font>RSS</font>
+					<urlset>1</urlset>
+					<titlecolor>ff95c9f7</titlecolor>
+					<headlinecolor>ffffffff</headlinecolor>
+					<textcolor>ff95c9f7</textcolor>
+				</control>
+				-->
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>110</height>
+				<visible>true</visible>
+				<texture>home/gradient.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+		</control>
+		<include>header</include>
+	</controls>	
+</window>

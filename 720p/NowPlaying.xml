@@ -1,0 +1,323 @@
+<window id="50">
+	<controls>
+		<control type="image">
+			<description>Background Image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<aspectratio>stretch</aspectratio>
+			<!--><info>MusicPlayer.cover</info>-->
+			<texture background="true">$INFO[MusicPlayer.Property(fanart_image)]</texture>
+			<fadetime>200</fadetime>
+		</control>
+		<control type="image">
+			<description>Background Overlay</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<aspectratio>stretch</aspectratio>
+			<texture>background/overlay.png</texture>
+			<fadetime>200</fadetime>
+		</control>
+
+		<control type="group">
+			<posx>-2</posx>
+			<control type="label">
+				<posx>660</posx>
+				<posy>281</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[MusicPlayer.Title]</label>
+				<font>Visualizer_Song</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+			<control type="label">
+				<posx>660</posx>
+				<posy>327</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[MusicPlayer.Artist]</label>
+				<font>Visualizer_Info</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+			<control type="label">
+				<posx>660</posx>
+				<posy>366</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[MusicPlayer.Album]</label>
+				<font>Visualizer_Info</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+			<control type="label">
+				<posx>660</posx>
+				<posy>410</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[musicplayer.time] / $INFO[MusicPlayer.Duration]</label>
+				<font>Visualizer_Info</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+		</control>
+		<control type="group">
+			<posx>2</posx>
+			<control type="label">
+				<posx>660</posx>
+				<posy>281</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[MusicPlayer.Title]</label>
+				<font>Visualizer_Song</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+			<control type="label">
+				<posx>660</posx>
+				<posy>327</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[MusicPlayer.Artist]</label>
+				<font>Visualizer_Info</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+			<control type="label">
+				<posx>660</posx>
+				<posy>366</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[MusicPlayer.Album]</label>
+				<font>Visualizer_Info</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+			<control type="label">
+				<posx>660</posx>
+				<posy>410</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[musicplayer.time] / $INFO[MusicPlayer.Duration]</label>
+				<font>Visualizer_Info</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+		</control>
+		<control type="group">
+			<posy>2</posy>
+			<control type="label">
+				<posx>660</posx>
+				<posy>281</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[MusicPlayer.Title]</label>
+				<font>Visualizer_Song</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+			<control type="label">
+				<posx>660</posx>
+				<posy>327</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[MusicPlayer.Artist]</label>
+				<font>Visualizer_Info</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+			<control type="label">
+				<posx>660</posx>
+				<posy>366</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[MusicPlayer.Album]</label>
+				<font>Visualizer_Info</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+			<control type="label">
+				<posx>660</posx>
+				<posy>410</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[musicplayer.time] / $INFO[MusicPlayer.Duration]</label>
+				<font>Visualizer_Info</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+		</control>
+		<control type="group">
+			<posy>-2</posy>
+			<control type="label">
+				<posx>660</posx>
+				<posy>281</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[MusicPlayer.Title]</label>
+				<font>Visualizer_Song</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+			<control type="label">
+				<posx>660</posx>
+				<posy>327</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[MusicPlayer.Artist]</label>
+				<font>Visualizer_Info</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+			<control type="label">
+				<posx>660</posx>
+				<posy>366</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[MusicPlayer.Album]</label>
+				<font>Visualizer_Info</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+			<control type="label">
+				<posx>660</posx>
+				<posy>410</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[musicplayer.time] / $INFO[MusicPlayer.Duration]</label>
+				<font>Visualizer_Info</font>
+				<textcolor>4b000000</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+		</control>
+		<control type="group">
+			<control type="label">
+				<posx>660</posx>
+				<posy>281</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[MusicPlayer.Title]</label>
+				<font>Visualizer_Song</font>
+				<textcolor>ffffffff</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+			<control type="label">
+				<posx>660</posx>
+				<posy>327</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[MusicPlayer.Artist]</label>
+				<font>Visualizer_Info</font>
+				<textcolor>ff95c9f7</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+			<control type="label">
+				<posx>660</posx>
+				<posy>366</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[MusicPlayer.Album]</label>
+				<font>Visualizer_Info</font>
+				<textcolor>ffffffff</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+			<control type="label">
+				<posx>660</posx>
+				<posy>410</posy>
+				<label>-</label>
+				<width>620</width>
+				<label>$INFO[musicplayer.time] / $INFO[MusicPlayer.Duration]</label>
+				<font>Visualizer_Info</font>
+				<textcolor>ff95c9f7</textcolor>
+				<align>left</align>
+				<scroll>true</scroll>
+		        <scrollout>false</scrollout>
+		        <pauseatend>6000</pauseatend>
+			</control>
+		</control>
+		<control type="image">
+			<posx>660</posx>
+			<posy>405</posy>
+			<width>214</width>
+			<height>2</height>
+			<aspectratio>stretch</aspectratio>
+			<texture>musicVisualisation/divider.png</texture>
+			<fadetime>200</fadetime>
+		</control>
+
+		<control type="image">
+			<posx>193</posx>
+			<posy>134</posy>
+			<width>452</width>
+			<height>452</height>
+			<info>MusicPlayer.cover</info>
+			<texture background="true" diffuse="musicVisualisation/thumb_mask.png">NoThumb.png</texture>
+			<bordertexture border="5">musicVisualisation/thumb_shadow.png</bordertexture>
+			<bordersize>5</bordersize>
+			<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+		</control>
+		
+
+	</controls>
+</window>

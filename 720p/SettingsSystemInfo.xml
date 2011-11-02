@@ -1,0 +1,573 @@
+<window id="7">
+<defaultcontrol always="true">9000</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+  
+<controls>
+  
+  <control type="label">
+    <include>WindowID</include>
+    <label>SettingsSystemInfo.xml</label>
+  </control>
+  
+	<control type="group">
+		<posy>-20</posy>
+    
+		<control type="grouplist" id="9000">
+			<posx>10</posx>
+      <posy>60</posy>
+			<width>150</width>
+			<height>345</height>
+			<itemgap>2</itemgap>
+			<onleft>-</onleft>
+			<onright>-</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<control type="button" id="100">
+				<description>General</description>
+        <width>150</width>
+				<label>$LOCALIZE[128]</label>
+        <textcolor>White</textcolor>
+        <texturefocus border="1">ButtonFo.png</texturefocus>
+        <texturenofocus border="1">ButtonNF.png</texturenofocus>
+			</control>
+			<control type="button" id="101">
+				<description>Storage</description>
+        <width>150</width>
+				<label>$LOCALIZE[13277]</label>
+        <textcolor>White</textcolor>
+        <texturefocus border="1">ButtonFo.png</texturefocus>
+        <texturenofocus border="1">ButtonNF.png</texturenofocus>
+      </control>
+      <control type="button" id="102">
+        <description>HDD</description>
+        <width>150</width>
+        <label>$LOCALIZE[13275]</label>
+        <textcolor>White</textcolor>
+        <texturefocus border="1">ButtonFo.png</texturefocus>
+        <texturenofocus border="1">ButtonNF.png</texturenofocus>
+			</control>
+			<control type="button" id="103">
+				<description>DVD</description>
+        <width>150</width>
+				<label>$LOCALIZE[13276]</label>
+        <textcolor>White</textcolor>
+        <texturefocus border="1">ButtonFo.png</texturefocus>
+        <texturenofocus border="1">ButtonNF.png</texturenofocus>
+			</control>
+			<control type="button" id="104">
+				<description>Network</description>
+        <width>150</width>
+				<label>$LOCALIZE[13279]</label>
+        <textcolor>White</textcolor>
+        <texturefocus border="1">ButtonFo.png</texturefocus>
+        <texturenofocus border="1">ButtonNF.png</texturenofocus>
+			</control>
+			<control type="button" id="105">
+				<description>Video</description>
+        <width>150</width>
+				<label>$LOCALIZE[13280]</label>
+        <textcolor>White</textcolor>
+        <texturefocus border="1">ButtonFo.png</texturefocus>
+        <texturenofocus border="1">ButtonNF.png</texturenofocus>
+			</control>
+			<control type="button" id="106">
+				<description>Hardware</description>
+        <width>150</width>
+				<label>$LOCALIZE[13281]</label>
+        <textcolor>White</textcolor>
+        <texturefocus border="1">ButtonFo.png</texturefocus>
+        <texturenofocus border="1">ButtonNF.png</texturenofocus>
+			</control>
+			<control type="button" id="107">
+				<description>About</description>
+        <width>150</width>
+				<label>$LOCALIZE[482]</label>
+        <textcolor>White</textcolor>
+        <texturefocus border="1">ButtonFo.png</texturefocus>
+        <texturenofocus border="1">ButtonNF.png</texturenofocus>
+			</control>
+		</control>
+
+		<control type="group">
+      <posx>170</posx>
+			<description>General</description>
+			<visible>ControlGroup(9000).HasFocus(100)</visible>
+			<control type="label">
+				<description>2</description>
+				<posy>55</posy>
+				<label>$LOCALIZE[13271] $INFO[System.CpuUsage]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>3</description>
+				<posy>90</posy>
+				<label>$LOCALIZE[139] $LOCALIZE[22011] $INFO[System.CpuTemperature]  -  $LOCALIZE[22010] $INFO[System.GpuTemperature]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>4</description>
+				<posy>125</posy>
+				<label>$LOCALIZE[13300]: $INFO[System.FanSpeed]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>5</description>
+				<posy>160</posy>
+				<label>$LOCALIZE[158]: $INFO[System.FreeMemory]  -  $LOCALIZE[20161]: $INFO[System.Memory(Total)]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>6</description>
+				<posy>195</posy>
+				<label>$LOCALIZE[150]: $INFO[Network.IPAddress]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>7</description>
+				<posy>230</posy>
+				<label>$LOCALIZE[13287] $INFO[System.ScreenResolution]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>8</description>
+				<posy>265</posy>
+				<label>$LOCALIZE[13283] $INFO[System.KernelVersion]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>9</description>
+				<posy>300</posy>
+				<label>$LOCALIZE[12390]: $INFO[System.UpTime]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>10</description>
+				<posy>335</posy>
+				<label>$LOCALIZE[12394]: $INFO[System.TotalUptime]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+      <control type="label" id="52">
+        <description>XBMC Build Revision</description>
+        <posy>370</posy>
+        <width>510</width>
+        <align>left</align>
+        <textcolor>White</textcolor>
+      </control>
+		</control>
+
+		<control type="group">
+      <posx>170</posx>
+			<description>Storage Contents</description>
+			<visible>controlgroup(9000).hasfocus(101)</visible>
+			<control type="label">
+				<description>2</description>
+				<posy>55</posy>
+				<label>$INFO[System.DVDTrayState]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>3</description>
+				<posy>90</posy>
+				<label>$INFO[System.FreeSpace(c)]  -  $INFO[System.TotalSpace(c)]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>4</description>
+				<posy>125</posy>
+				<label>$INFO[System.FreeSpace(e)]  -  $INFO[System.TotalSpace(e)]</label>
+        <width>510</width>
+        <align>left</align>
+			</control>
+			<control type="label">
+				<description>5</description>
+				<posy>160</posy>
+				<label>$INFO[System.FreeSpace(F)]  -  $INFO[System.TotalSpace(F)]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>6</description>
+				<posy>195</posy>
+				<label>$INFO[System.FreeSpace(G)]  -  $INFO[System.TotalSpace(G)]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>7</description>
+				<posy>230</posy>
+				<label>$INFO[System.FreeSpace(X)]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>8</description>
+				<posy>265</posy>
+				<label>$INFO[System.FreeSpace(Y)]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>9</description>
+				<posy>300</posy>
+				<label>$INFO[System.FreeSpace(Z)]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>10</description>
+				<posy>335</posy>
+				<label>$LOCALIZE[20161]: $INFO[System.FreeSpace]  -  $LOCALIZE[20161]: $INFO[System.TotalSpace]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+		</control>
+
+		<control type="group">
+      <posx>170</posx>
+			<description>Harddisk Contents</description>
+			<visible>controlgroup(9000).hasfocus(102)</visible>
+			<control type="label">
+				<description>2</description>
+				<posy>55</posy>
+				<label>$INFO[System.HddInfoModel]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>3</description>
+				<posy>90</posy>
+				<label>$INFO[System.HddInfoserial]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>4</description>
+				<posy>125</posy>
+				<label>$INFO[System.HddInfoFirmware]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>5</description>
+				<posy>160</posy>
+				<label>$INFO[System.HddInfoPW]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>6</description>
+				<posy>195</posy>
+				<label>$INFO[System.HddInfoLockState]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>7</description>
+				<posy>230</posy>
+				<label>$INFO[System.HddLockKey]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>8</description>
+				<posy>265</posy>
+				<label>$INFO[System.HddBootDate]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>9</description>
+				<posy>300</posy>
+				<label>$INFO[System.HddCycleCount]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>10</description>
+				<posy>335</posy>
+				<label>$INFO[System.HddTemperature]</label>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+		</control>
+
+		<control type="group">
+      <posx>170</posx>
+			<description>DVD Rom Contents</description>
+			<visible>controlgroup(9000).hasfocus(103)</visible>
+			<control type="label">
+				<description>2</description>
+				<posy>55</posy>
+				<label>$INFO[System.DvdInfoModel]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>3</description>
+				<posy>90</posy>
+				<label>$INFO[System.DvdInfoFirmware]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>4</description>
+				<posy>125</posy>
+				<label>$INFO[System.DvdZone]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>5</description>
+				<posy>160</posy>
+				<label>$INFO[System.DvdTrayState]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+		</control>
+
+		<control type="group">
+      <posx>170</posx>
+			<description>Network Contents</description>
+			<visible>controlgroup(9000).hasfocus(104)</visible>
+			<control type="label">
+				<description>2</description>
+				<posy>55</posy>
+				<label>$INFO[Network.IsDhcp]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>3</description>
+				<posy>90</posy>
+				<label>$INFO[Network.LinkState]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>4</description>
+				<posy>125</posy>
+				<label>$LOCALIZE[149]: $INFO[Network.MacAddress]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>5</description>
+				<posy>160</posy>
+				<label>$LOCALIZE[150]: $INFO[Network.IPAddress]</label>
+        <height>30</height>
+        <width>510</width>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>6</description>
+				<posy>195</posy>
+				<label>$LOCALIZE[13159]: $INFO[Network.SubnetAddress]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>7</description>
+				<posy>230</posy>
+				<label>$LOCALIZE[13160]: $INFO[Network.GatewayAddress]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>8</description>
+				<posy>265</posy>
+				<label>$LOCALIZE[13161]: $INFO[Network.Dns1Address]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>9</description>
+				<posy>300</posy>
+				<label>$LOCALIZE[20307]: $INFO[Network.Dns2Address]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>10</description>
+				<posy>335</posy>
+				<label>$LOCALIZE[13295] $INFO[System.InternetState]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+		</control>
+
+		<control type="group">
+      <posx>170</posx>
+			<description>Video Contents</description>
+			<visible>controlgroup(9000).hasfocus(105)</visible>
+			<control type="label">
+				<description>2</description>
+				<posy>55</posy>
+				<label>$INFO[System.VideoEncoderInfo]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>3</description>
+				<posy>90</posy>
+				<label>$LOCALIZE[13287] $INFO[System.ScreenResolution]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>4</description>
+				<posy>125</posy>
+				<label>$INFO[System.AvPackInfo]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>5</description>
+				<posy>160</posy>
+				<label>$INFO[System.XbeRegion]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+		</control>
+
+		<control type="group">
+      <posx>170</posx>
+			<description>Hardware Contents</description>
+			<visible>controlgroup(9000).hasfocus(106)</visible>
+			<control type="label">
+				<description>2</description>
+				<posy>55</posy>
+				<label>$INFO[System.XboxVersion]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>3</description>
+				<posy>90</posy>
+				<label>$INFO[System.XboxSerial]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>4</description>
+				<posy>125</posy>
+				<label>$LOCALIZE[13284] $INFO[System.CpuFrequency]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>5</description>
+				<posy>160</posy>
+				<label>$INFO[System.ModChip]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>6</description>
+				<posy>195</posy>
+				<label>$INFO[System.Bios]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>7</description>
+				<posy>230</posy>
+				<label>$INFO[System.XboxProduceInfo]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>8</description>
+				<posy>265</posy>
+				<label>$INFO[System.ControllerPort(1)]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>9</description>
+				<posy>300</posy>
+				<label>$INFO[System.ControllerPort(2)]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>10</description>
+				<posy>335</posy>
+				<label>$INFO[System.ControllerPort(3)]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+			<control type="label">
+				<description>11</description>
+				<posy>370</posy>
+				<label>$INFO[System.ControllerPort(4)]</label>
+        <width>510</width>
+        <align>left</align>
+				<textcolor>White</textcolor>
+			</control>
+		</control>
+	</control>
+
+</controls>
+  
+</window>

@@ -1,0 +1,21 @@
+<window id="104">
+<defaultcontrol always="true">-</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+  
+<coordinates>
+  <system>1</system>
+  <posx>10</posx>
+  <posy>480</posy>
+</coordinates>
+
+<controls>
+    
+  <control type="label">
+    <posy>40</posy>
+    <include>DialogID</include>
+    <label>[COLOR=White]$INFO[player.volume][/COLOR] DialogVolumeBar.xml</label>
+  </control>
+  
+</controls>
+  
+</window>

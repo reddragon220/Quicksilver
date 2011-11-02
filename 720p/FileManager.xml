@@ -1,0 +1,275 @@
+<window id="3">
+<defaultcontrol always="true">20</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+  
+<controls>
+  
+  <control type="label">
+    <include>WindowID</include>
+    <label>FileManager.xml</label>
+  </control>
+  
+<!-- Left -->
+  <control type="group">
+    <posx>10</posx>
+    <posy>30</posy>
+    <control type="image">
+      <description>Header Back</description>
+      <width>340</width>
+      <height>45</height>
+      <align>left</align>
+      <texture>ButtonNF.png</texture>
+    </control>
+    <control type="label" id="101">
+      <description>Header Label</description>
+      <posx>15</posx>
+      <width>320</width>
+      <height>45</height>
+      <align>left</align>
+      <label>-</label>
+      <textcolor>White</textcolor>
+    </control>
+    <control type="list" id="20">
+      <description>Left File List</description>
+      <posx>10</posx>
+      <posy>55</posy>
+      <width>322</width>
+      <height>380</height>
+      <onleft>21</onleft>
+      <onright>21</onright>
+      <onup>20</onup>
+      <ondown>20</ondown>
+      <itemlayout height="32" width="320">
+        <control type="image">
+          <posx>0</posx>
+          <posy>0</posy>
+          <width>320</width>
+          <height>30</height>
+          <texture>ButtonNF.png</texture>
+          <aspectratio aligny="middle">keep</aspectratio>
+        </control>
+        <control type="image">
+          <posx>5</posx>
+          <posy>5</posy>
+          <width>20</width>
+          <height>20</height>
+          <info>ListItem.Icon</info>
+          <aspectratio aligny="left">keep</aspectratio>
+        </control>
+        <control type="label">
+          <posx>30</posx>
+          <width>280</width>
+          <height>30</height>
+          <align>left</align>
+          <textcolor>White</textcolor>
+          <info>ListItem.Label</info>
+          <scroll>false</scroll>
+        </control>
+        <control type="label">
+          <posx>310</posx>
+          <width>280</width>
+          <align>right</align>
+          <textcolor>White</textcolor>
+          <info>ListItem.Label2</info>
+          <scroll>false</scroll>
+        </control>
+      </itemlayout>
+      <focusedlayout height="32" width="320">
+        <control type="image">
+          <width>320</width>
+          <height>30</height>
+          <texture>ButtonFo.png</texture>
+          <aspectratio aligny="middle">keep</aspectratio>
+          <visible>Control.HasFocus(20)</visible>
+        </control>
+        <control type="image">
+          <width>320</width>
+          <height>30</height>
+          <texture>ButtonNF.png</texture>
+          <aspectratio aligny="middle">keep</aspectratio>
+          <visible>!Control.HasFocus(20)</visible>
+        </control>
+        <control type="image">
+          <posx>5</posx>
+          <posy>5</posy>
+          <width>20</width>
+          <height>20</height>
+          <info>ListItem.Icon</info>
+          <aspectratio aligny="left">keep</aspectratio>
+        </control>
+        <control type="label">
+          <posx>30</posx>
+          <width>280</width>
+          <height>30</height>
+          <align>left</align>
+          <textcolor>White</textcolor>
+          <info>ListItem.Label</info>
+          <scroll>false</scroll>
+        </control>
+        <control type="label">
+          <posx>310</posx>
+          <width>280</width>
+          <align>right</align>
+          <textcolor>White</textcolor>
+          <info>ListItem.Label2</info>
+          <scroll>false</scroll>
+        </control>
+      </focusedlayout>
+    </control>
+  </control>
+    
+	<control type="group">
+		<posx>10</posx>
+		<posy>511</posy>
+    <control type="image">
+      <description>Footer Back</description>
+      <width>340</width>
+      <height>45</height>
+      <align>left</align>
+      <texture>ButtonNF.png</texture>
+    </control>
+    <control type="label" id="12">
+      <description>Header Label</description>
+      <posx>15</posx>
+      <width>320</width>
+      <height>45</height>
+      <align>left</align>
+      <label>-</label>
+      <textcolor>White</textcolor>
+    </control>
+	</control>
+  
+<!-- Right -->
+  <control type="group">
+		<posx>370</posx>
+		<posy>30</posy>
+    <control type="image">
+      <description>Header Back</description>
+      <width>340</width>
+      <height>45</height>
+      <align>left</align>
+      <texture>ButtonNF.png</texture>
+    </control>
+    <control type="label" id="102">
+      <description>Header Label</description>
+      <posx>15</posx>
+      <width>320</width>
+      <height>45</height>
+      <align>left</align>
+      <label>-</label>
+      <textcolor>White</textcolor>
+    </control>
+    <control type="list" id="21">
+      <description>Right File List</description>
+      <posx>10</posx>
+      <posy>55</posy>
+      <width>320</width>
+      <height>380</height>
+      <onleft>20</onleft>
+      <onright>20</onright>
+      <onup>21</onup>
+      <ondown>21</ondown>
+      <itemlayout height="32" width="320">
+        <control type="image">
+          <width>320</width>
+          <height>30</height>
+          <texture>ButtonNF.png</texture>
+          <aspectratio aligny="middle">keep</aspectratio>
+        </control>
+        <control type="image">
+          <posx>5</posx>
+          <posy>5</posy>
+          <width>20</width>
+          <height>20</height>
+          <info>ListItem.Icon</info>
+          <aspectratio aligny="left">keep</aspectratio>
+        </control>
+        <control type="label">
+          <posx>30</posx>
+          <width>280</width>
+          <height>30</height>
+          <align>left</align>
+          <textcolor>White</textcolor>
+          <info>ListItem.Label</info>
+          <scroll>false</scroll>
+        </control>
+        <control type="label">
+          <posx>310</posx>
+          <width>280</width>
+          <align>right</align>
+          <textcolor>White</textcolor>
+          <info>ListItem.Label2</info>
+          <scroll>false</scroll>
+        </control>
+      </itemlayout>
+      <focusedlayout height="32" width="320">
+        <control type="image">
+          <posx>0</posx>
+          <posy>0</posy>
+          <width>320</width>
+          <height>30</height>
+          <texture>ButtonFo.png</texture>
+          <aspectratio aligny="middle">keep</aspectratio>
+          <visible>Control.HasFocus(21)</visible>
+        </control>
+        <control type="image">
+          <posx>0</posx>
+          <posy>0</posy>
+          <width>320</width>
+          <height>30</height>
+          <texture>ButtonNF.png</texture>
+          <aspectratio aligny="middle">keep</aspectratio>
+          <visible>!Control.HasFocus(21)</visible>
+        </control>
+        <control type="image">
+          <posx>5</posx>
+          <posy>5</posy>
+          <width>20</width>
+          <height>20</height>
+          <info>ListItem.Icon</info>
+          <aspectratio aligny="left">keep</aspectratio>
+        </control>
+        <control type="label">
+          <posx>30</posx>
+          <width>280</width>
+          <align>left</align>
+          <textcolor>White</textcolor>
+          <info>ListItem.Label</info>
+          <scroll>false</scroll>
+        </control>
+        <control type="label">
+          <posx>310</posx>
+          <width>280</width>
+          <align>right</align>
+          <textcolor>White</textcolor>
+          <info>ListItem.Label2</info>
+          <scroll>false</scroll>
+        </control>
+      </focusedlayout>
+    </control>
+	</control>
+
+  <control type="group">
+    <posx>370</posx>
+    <posy>511</posy>
+    <control type="image">
+      <description>Footer Back</description>
+      <width>340</width>
+      <height>45</height>
+      <align>left</align>
+      <texture>ButtonNF.png</texture>
+    </control>
+    <control type="label" id="13">
+      <description>Header Label</description>
+      <posx>15</posx>
+      <width>320</width>
+      <height>45</height>
+      <align>left</align>
+      <label>-</label>
+      <textcolor>White</textcolor>
+    </control>
+  </control>
+  
+</controls>
+
+</window>

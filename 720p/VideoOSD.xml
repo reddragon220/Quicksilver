@@ -1,0 +1,241 @@
+<window id="2901">
+	<defaultcontrol always="true">4</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<include>dialog_animation</include>
+	<controls>
+		<control type="group">
+			<!--
+			<visible>Window.IsActive(videoosd) + ![Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)]</visible>
+			-->
+			<visible>!Window.IsVisible(123) + !Window.IsVisible(124)</visible>
+			<animation type="Visible" reversible="false">
+				<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300"/>
+				<effect type="fade" delay="200" start="0" end="100" time="300"/>
+			</animation>
+			<animation type="Hidden" reversible="false">
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+				<effect type="fade" start="100" end="0" time="300"/>
+			</animation>
+			
+			<control type="image">
+				<posx>149.5</posx>
+				<posy>604</posy>
+				<width>981</width>
+				<height>112</height>
+				<texture>osd/background.png</texture>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<!--
+			<control type="label">
+				<posx>155</posx>
+				<posy>617</posy>
+				<width>110</width>
+				<height>25</height>
+				<font>OSD</font>
+				<textcolor>ffffffff</textcolor>
+				<label>$INFO[Player.Time]</label>
+				<align>center</align>
+			</control>
+			<control type="label">
+				<posx>1023</posx>
+				<posy>617</posy>
+				<width>110</width>
+				<height>25</height>
+				<font>OSD</font>
+				<textcolor>ffffffff</textcolor>
+				<label>$INFO[Player.Duration]</label>
+				<align>center</align>
+			</control>
+			-->
+			<control type="label">
+				<posx>160</posx>
+				<posy>617</posy>
+				<width>90</width>
+				<height>25</height>
+				<font>OSD</font>
+				<textcolor>ffffffff</textcolor>
+				<label>$INFO[Player.Time]</label>
+				<align>center</align>
+			</control>	
+			<control type="label">
+				<posx>1028</posx>
+				<posy>617</posy>
+				<width>90</width>
+				<height>25</height>
+				<font>OSD</font>
+				<textcolor>ffffffff</textcolor>
+				<label>$INFO[Player.Duration]</label>
+				<align>center</align>
+			</control>
+	
+			<control type="progress">
+				<posx>257</posx>
+				<posy>620</posy>
+				<width>766</width>
+				<height>22</height>
+				<visible>true</visible>
+				<reveal>true</reveal>
+				<texturebg>osd/progress_bg_outline.png</texturebg>
+				<midtexture>osd/progress_center.png</midtexture>
+				<lefttexture>osd/progress_left.png</lefttexture>
+				<righttexture>osd/progress_right.png</righttexture>
+				<overlaytexture>-</overlaytexture>
+				<info>Player.Progress</info>
+				<aspectratio>keep</aspectratio>
+			</control>
+
+			<control type="grouplist" id="1">
+				<posx>260</posx>
+				<posy>645</posy>
+				<width>1280</width>
+				<height>350</height>
+				<itemgap>20</itemgap>
+				<orientation>horizontal</orientation>
+				<onleft>-</onleft>
+				<onright>-</onright>
+				<onup>1</onup>
+				<ondown>1</ondown>
+				<!--
+				<control type="button" id="12">
+					<description>Bookmarks</description>
+					<texturefocus>osd/buttons/subtitles_focus.png</texturefocus>
+					<texturenofocus diffuse="osd/buttons/button_mask.png">osd/buttons/subtitles.png</texturenofocus>
+					<onclick>XBMC.ActivateWindow(125)</onclick>
+					<width>58</width>
+					<height>57</height>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="button" id="8">
+					<description>Bookmarks</description>
+					<texturefocus>osd/buttons/bookmarks_focus.png</texturefocus>
+					<texturenofocus diffuse="osd/buttons/button_mask.png">osd/buttons/bookmarks.png</texturenofocus>
+					<onclick>XBMC.ActivateWindow(125)</onclick>
+					<width>58</width>
+					<height>57</height>
+					<aspectratio>keep</aspectratio>
+				</control>
+				-->
+				<control type="button" id="13">
+					<visible>VideoPlayer.HasMenu</visible>
+					<description>DVD Menu</description>
+					<texturefocus>osd/buttons/bookmarks_focus.png</texturefocus>
+					<texturenofocus diffuse="osd/buttons/button_mask.png">osd/buttons/bookmarks.png</texturenofocus>
+					<onclick>XBMC.PlayerControl(ShowVideoMenu)</onclick>
+					<width>58</width>
+					<height>57</height>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="image" id="14">
+					<visible>VideoPlayer.HasMenu</visible>
+					<description>spacer</description>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<width>9</width>
+					<height>57</height>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="image" id="8">
+					<visible>!VideoPlayer.HasMenu</visible>
+					<description>spacer</description>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<width>87</width>
+					<height>57</height>
+					<aspectratio>keep</aspectratio>
+				</control>
+
+				<control type="button" id="2">
+					<description>Skip Back</description>
+					<texturefocus>osd/buttons/previous_focus.png</texturefocus>
+					<texturenofocus diffuse="osd/buttons/button_mask.png">osd/buttons/previous.png</texturenofocus>
+					<onclick>xbmc.playercontrol(previous)</onclick>
+					<width>58</width>
+					<height>57</height>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="button" id="3">
+					<description>Rewind</description>
+					<texturefocus>osd/buttons/rewind_focus.png</texturefocus>
+					<texturenofocus diffuse="osd/buttons/button_mask.png">osd/buttons/rewind.png</texturenofocus>
+					<onclick>xbmc.playercontrol(rewind)</onclick>
+					<width>58</width>
+					<height>57</height>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="button" id="11">
+					<description>Play</description>
+					<texturefocus>osd/buttons/stop_focus.png</texturefocus>
+					<texturenofocus diffuse="osd/buttons/button_mask.png">osd/buttons/stop.png</texturenofocus>
+					<onclick>xbmc.playercontrol(stop)</onclick>
+					<width>58</width>
+					<height>57</height>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="togglebutton" id="4">
+					<description>Play</description>
+					<onclick>xbmc.playercontrol(play)</onclick>
+					<onclick>SetFocus(4)</onclick>
+					<texturefocus>osd/buttons/pause_focus.png</texturefocus>
+					<texturenofocus diffuse="osd/buttons/button_mask.png">osd/buttons/pause.png</texturenofocus>
+					<alttexturefocus>osd/buttons/play_focus.png</alttexturefocus>
+					<alttexturenofocus diffuse="osd/buttons/button_mask.png">osd/buttons/play.png</alttexturenofocus>
+					<usealttexture>Player.Paused</usealttexture>
+					<width>58</width>
+					<height>58</height>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="button" id="5">
+					<description>Forward</description>
+					<texturefocus>osd/buttons/fastfoward_focus.png</texturefocus>
+					<texturenofocus diffuse="osd/buttons/button_mask.png">osd/buttons/fastfoward.png</texturenofocus>
+					<onclick>xbmc.playercontrol(forward)</onclick>
+					<width>58</width>
+					<height>57</height>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="button" id="6">
+					<description>Skip Forward</description>
+					<texturefocus>osd/buttons/next_focus.png</texturefocus>
+					<texturenofocus diffuse="osd/buttons/button_mask.png">osd/buttons/next.png</texturenofocus>
+					<onclick>xbmc.playercontrol(next)</onclick>
+					<width>58</width>
+					<height>57</height>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="image" id="12">
+					<description>spacer</description>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<width>29</width>
+					<height>57</height>
+					<aspectratio>keep</aspectratio>
+				</control>
+
+				<control type="button" id="9">
+					<description>Audio Settings</description>
+					<texturefocus>osd/buttons/audio_focus.png</texturefocus>
+					<texturenofocus diffuse="osd/buttons/button_mask.png">osd/buttons/audio.png</texturenofocus>
+					<onclick>xbmc.activatewindow(124)</onclick>
+					<width>58</width>
+					<height>57</height>
+					<aspectratio>keep</aspectratio>
+				</control>
+				<control type="button" id="10">
+					<description>Video Settings</description>
+					<texturefocus>osd/buttons/video_focus.png</texturefocus>
+					<texturenofocus diffuse="osd/buttons/button_mask.png">osd/buttons/video.png</texturenofocus>
+					<onclick>xbmc.activatewindow(123)</onclick>
+					<width>58</width>
+					<height>57</height>
+					<aspectratio>keep</aspectratio>
+				</control>
+			</control>
+		
+		</control>
+	</controls>
+</window>

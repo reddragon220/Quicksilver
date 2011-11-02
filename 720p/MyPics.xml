@@ -1,0 +1,9 @@
+<window id="2">
+<defaultcontrol always="true">50</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+  
+<controls>
+	<include>views</include>
+</controls>
+
+</window>

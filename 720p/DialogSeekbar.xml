@@ -1,0 +1,255 @@
+﻿<window id="115">
+	<defaultcontrol always="true">901</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<visible>[player.seeking | player.displayafterSeek | player.paused | player.forwarding | player.rewinding] + [Window.IsActive(2006) | Window.IsActive(2005) | Window.IsActive(50)]</visible>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<width>1280</width>
+			<height>720</height>
+
+			<visible>!Player.Playing</visible>
+			<control type="label">
+				<visible>Player.Caching</visible>
+				<width>1280</width>
+				<height>720</height>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>$LOCALIZE[31400]</label>
+				<font>OSD_Alert</font>
+				<textcolor>c8e8e8db</textcolor>
+			</control>
+			<control type="group">
+				<visible>!Player.Caching</visible>
+				<control type="label">
+					<visible>Player.Paused</visible>
+					<width>1280</width>
+					<height>720</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31401]</label>
+					<font>OSD_Alert</font>
+					<textcolor>c8e8e8db</textcolor>
+				</control>		
+				<control type="label">
+					<visible>Player.Seeking</visible>
+					<width>1280</width>
+					<height>720</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31402]</label>
+					<font>OSD_Alert</font>
+					<textcolor>c8e8e8db</textcolor>
+				</control>			
+				<control type="label">
+					<visible>Player.Forwarding2x</visible>
+					<width>1280</width>
+					<height>720</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31403]</label>
+					<font>OSD_Alert</font>
+					<textcolor>c8e8e8db</textcolor>
+				</control>
+				<control type="label">
+					<visible>Player.Forwarding4x</visible>
+					<width>1280</width>
+					<height>720</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31404]</label>
+					<font>OSD_Alert</font>
+					<textcolor>c8e8e8db</textcolor>
+				</control>
+				<control type="label">
+					<visible>Player.Forwarding8x</visible>
+					<width>1280</width>
+					<height>720</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31405]</label>
+					<font>OSD_Alert</font>
+					<textcolor>c8e8e8db</textcolor>
+				</control>
+				<control type="label">
+					<visible>Player.Forwarding16x</visible>
+					<width>1280</width>
+					<height>720</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31406]</label>
+					<font>OSD_Alert</font>
+					<textcolor>c8e8e8db</textcolor>
+				</control>
+				<control type="label">
+					<visible>Player.Forwarding32x</visible>
+					<width>1280</width>
+					<height>720</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31407]</label>
+					<font>OSD_Alert</font>
+					<textcolor>c8e8e8db</textcolor>
+				</control>
+				<control type="label">
+					<visible>Player.Rewinding2x</visible>
+					<width>1280</width>
+					<height>720</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31408]</label>
+					<font>OSD_Alert</font>
+					<textcolor>c8e8e8db</textcolor>
+				</control>
+				<control type="label">
+					<visible>Player.Rewinding4x</visible>
+					<width>1280</width>
+					<height>720</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31409]</label>
+					<font>OSD_Alert</font>
+					<textcolor>c8e8e8db</textcolor>
+				</control>
+				<control type="label">
+					<visible>Player.Rewinding8x</visible>
+					<width>1280</width>
+					<height>720</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31410]</label>
+					<font>OSD_Alert</font>
+					<textcolor>c8e8e8db</textcolor>
+				</control>
+				<control type="label">
+					<visible>Player.Rewinding16x</visible>
+					<width>1280</width>
+					<height>720</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31411]</label>
+					<font>OSD_Alert</font>
+					<textcolor>c8e8e8db</textcolor>
+				</control>
+				<control type="label">
+					<visible>Player.Rewinding32x</visible>
+					<width>1280</width>
+					<height>720</height>
+					<align>center</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31412]</label>
+					<font>OSD_Alert</font>
+					<textcolor>c8e8e8db</textcolor>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<visible>Player.ChapterCount + !Window.IsActive(107)</visible>
+			<animation type="Visible" reversible="false">
+				<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300"/>
+				<effect type="fade" delay="200" start="0" end="100" time="300"/>
+			</animation>
+			<animation type="Hidden" reversible="false">
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+				<effect type="fade" start="100" end="0" time="300"/>
+			</animation>
+			
+			<posx>394.5</posx>
+			<posy>10</posy>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>491</width>
+				<height>46</height>
+				<texture>osd/background_chapters.png</texture>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="label">
+				<posx>0</posx>
+				<posy>6</posy>
+				<label>$INFO[Player.Chapter,$LOCALIZE[21396]: ]$INFO[Player.ChapterCount, / ] $INFO[Player.ChapterName, &#xB7; (,)]</label>
+				<font>OSD</font>
+				<textcolor>c8e8e8db</textcolor>
+				<orientation>horizontal</orientation>
+				<width>491</width>
+				<align>center</align>
+			</control>
+		</control>
+
+		<!--
+		<control type="label">
+			<visible>Player.ChapterCount</visible>
+			<width>1280</width>
+			<height>720</height>
+			<align>center</align>
+			<aligny>center</aligny>
+			<label>$INFO[Player.Chapter,$LOCALIZE[21396]: ]$INFO[Player.ChapterCount, / ]$INFO[Player.ChapterName,[COLOR=grey] - (,)[/COLOR]]</label>
+			<font>OSD_Alert</font>
+			<textcolor>c8e8e8db</textcolor>
+		</control>
+		-->
+		<control type="group">
+			<!--
+			<visible>Window.IsActive(videoosd) + ![Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings)]</visible>
+			-->
+			<visible>!Window.IsActive(2901)</visible>
+			<animation type="Visible" reversible="false">
+				<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300"/>
+				<effect type="fade" delay="200" start="0" end="100" time="300"/>
+			</animation>
+			<animation type="Hidden" reversible="false">
+				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+				<effect type="fade" start="100" end="0" time="300"/>
+			</animation>
+			
+		<control type="image">
+			<posx>149.5</posx>
+			<posy>604</posy>
+			<width>981</width>
+			<height>56</height>
+			<texture>osd/background_slim.png</texture>
+			<aspectratio>keep</aspectratio>
+		</control>
+		<control type="label">
+			<posx>160</posx>
+			<posy>617</posy>
+			<width>90</width>
+			<height>25</height>
+			<font>OSD</font>
+			<textcolor>ffffffff</textcolor>
+			<label>$INFO[Player.Time]</label>
+			<align>center</align>
+		</control>	
+		<control type="label">
+			<posx>1028</posx>
+			<posy>617</posy>
+			<width>90</width>
+			<height>25</height>
+			<font>OSD</font>
+			<textcolor>ffffffff</textcolor>
+			<label>$INFO[Player.Duration]</label>
+			<align>center</align>
+		</control>
+	
+		<control type="progress">
+			<posx>257</posx>
+			<posy>620</posy>
+			<width>766</width>
+			<height>22</height>
+			<visible>true</visible>
+			<reveal>true</reveal>
+			<texturebg>osd/progress_bg_outline.png</texturebg>
+			<midtexture>osd/progress_center.png</midtexture>
+			<lefttexture>osd/progress_left.png</lefttexture>
+			<righttexture>osd/progress_right.png</righttexture>
+			<overlaytexture>-</overlaytexture>
+			<info>Player.Progress</info>
+			<aspectratio>keep</aspectratio>
+		</control>
+		</control>
+	</controls>
+</window>

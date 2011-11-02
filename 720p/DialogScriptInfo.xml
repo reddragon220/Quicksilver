@@ -1,0 +1,35 @@
+<window id="2004">
+<defaultcontrol always="true">5</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+
+<coordinates>
+  <system>1</system>
+  <posx>100</posx>
+  <posy>80</posy>
+</coordinates>
+
+<controls>
+
+<include>DialogBack</include>
+
+ <control type="label">
+   <include>DialogID</include>
+   <label>DialogScriptInfo.xml</label>
+ </control>
+
+ <control type="textbox" id="5">
+   <description>Textarea</description>
+   <posx>10</posx>
+   <posy>40</posy>
+   <width>520</width>
+   <height>382</height>
+   <font>Small</font>
+   <textcolor>Black</textcolor>
+   <spinposx>0</spinposx>
+   <spinposy>0</spinposy>
+   <autoscroll delay="6000" time="2000" repeat="10000"></autoscroll>
+ </control>
+  
+</controls>
+  
+</window>

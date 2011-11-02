@@ -1,0 +1,265 @@
+<window id="129">
+	<defaultcontrol always="true">10</defaultcontrol> 
+	<allowoverlay>yes</allowoverlay>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+  
+	<controls>
+	    <include>dialog_overlay</include>
+		<control type="group">
+			<posx>216</posx>
+			<posy>110</posy>
+			<include>dialog_animation</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>848</width>
+				<height>500</height>
+				<texture>dialog/mediaSource/background.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			<control type="image">
+				<posx>662</posx>
+				<posy>14</posy>
+				<width>181</width>
+				<height>2</height>
+				<texture>dialog/mediaSource/side_button_divider.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			<control type="grouplist" id="9000">
+				<itemgap>0</itemgap>
+				<posx>662</posx>
+				<posy>16</posy>
+				<onleft>12</onleft>
+				<control type="button" id="18">
+					<description>Ok</description>
+					<width>181</width>
+					<height>47</height>
+					<font>SideButtons</font>
+					<textcolor>ffffffff</textcolor>
+					<label>$LOCALIZE[186]</label>
+					<texturefocus>dialog/mediaSource/side_button_highlight.png</texturefocus>
+					<texturenofocus>dialog/mediaSource/side_button.png</texturenofocus>
+				
+					<textoffsety>-12</textoffsety>
+					<aligny>bottom</aligny>
+				</control>
+				<control type="button" id="19">
+					<description>Cancel</description>
+					<width>181</width>
+					<height>47</height>
+					<font>SideButtons</font>
+					<textcolor>ffffffff</textcolor>
+					<label>$LOCALIZE[222]</label>
+					<texturefocus>dialog/mediaSource/side_button_highlight.png</texturefocus>
+					<texturenofocus>dialog/mediaSource/side_button.png</texturenofocus>
+				
+					<textoffsety>-12</textoffsety>
+					<aligny>bottom</aligny>
+				</control>
+
+				<control type="button" id="11">
+					<description>Browse</description>
+					<width>181</width>
+					<height>47</height>
+					<font>SideButtons</font>
+					<textcolor>ffffffff</textcolor>
+					<label>$LOCALIZE[1024]</label>
+					<texturefocus>dialog/mediaSource/side_button_highlight.png</texturefocus>
+					<texturenofocus>dialog/mediaSource/side_button.png</texturenofocus>
+				
+					<textoffsety>-12</textoffsety>
+					<aligny>bottom</aligny>
+				</control>
+				<control type="button" id="13">
+					<description>Add</description>
+					<width>181</width>
+					<height>47</height>
+					<font>SideButtons</font>
+					<textcolor>ffffffff</textcolor>
+					<label>$LOCALIZE[15019]</label>
+					<texturefocus>dialog/mediaSource/side_button_highlight.png</texturefocus>
+					<texturenofocus>dialog/mediaSource/side_button.png</texturenofocus>
+				
+					<textoffsety>-12</textoffsety>
+					<aligny>bottom</aligny>
+				</control>
+				<control type="button" id="14">
+					<description>remove</description>
+					<width>181</width>
+					<height>47</height>
+					<font>SideButtons</font>
+					<textcolor>ffffffff</textcolor>
+					<label>$LOCALIZE[1210]</label>
+					<texturefocus>dialog/mediaSource/side_button_highlight.png</texturefocus>
+					<texturenofocus>dialog/mediaSource/side_button.png</texturenofocus>
+				
+					<textoffsety>-12</textoffsety>
+					<aligny>bottom</aligny>
+				</control>
+				<control type="button" id="20">
+					<description>Set Content</description>
+					<width>181</width>
+					<height>47</height>
+					<font>SideButtons</font>
+					<textcolor>ffffffff</textcolor>
+					<label>$LOCALIZE[20333]</label>
+					<texturefocus>dialog/mediaSource/side_button_highlight.png</texturefocus>
+					<texturenofocus>dialog/mediaSource/side_button.png</texturenofocus>
+				
+					<textoffsety>-12</textoffsety>
+					<aligny>bottom</aligny>
+				</control>
+			
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>848</width>
+				<height>500</height>
+				<texture>dialog/mediaSource/silver.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+		
+			<control type="list" id="10">
+				<posx>10</posx>
+				<posy>157</posy>
+				<width>648</width>
+				<height>331</height>
+				<itemgap>0</itemgap>
+
+				<onleft>-</onleft>
+				<onright>9000</onright>
+				<onup>12</onup>
+				<ondown>-</ondown>
+				<itemlayout height="47">
+					<control type="image">
+						<width>648</width>
+						<height>47</height>
+						<texture>dialog/long_bar_button_divider.png</texture>
+					</control>
+					<control type="label">
+						<visible>!StringCompare(ListItem.Label,)</visible>
+						<posx>26</posx>
+						<posy>-2</posy>
+						<width>648</width>
+						<height>47</height>
+						<label>$INFO[ListItem.Label]</label>
+						<scroll>false</scroll>
+						<font>SettingItem</font>
+						<textcolor>ff000000</textcolor>
+					</control>
+					<control type="label">
+						<visible>StringCompare(ListItem.Label,)</visible>
+						<posx>26</posx>
+						<posy>-2</posy>
+						<width>648</width>
+						<height>47</height>
+						<label>$INFO[ListItem.FileName]</label>
+						<scroll>false</scroll>
+						<font>SettingItem</font>
+						<textcolor>ff000000</textcolor>
+					</control>
+				</itemlayout>
+				<focusedlayout height="47">
+					<control type="image">
+						<width>648</width>
+						<height>47</height>
+						<texture>dialog/long_bar_button.png</texture>
+					</control>
+					<control type="label">
+						<visible>!StringCompare(ListItem.Label,)</visible>
+						<posx>26</posx>
+						<posy>-2</posy>
+						<width>648</width>
+						<height>47</height>
+						<info>ListItem.Label</info>
+						<scroll>true</scroll>
+						<font>SettingItem</font>
+						<textcolor>ffffffff</textcolor>
+					</control>
+					<control type="label">
+						<visible>StringCompare(ListItem.Label,)</visible>
+						<posx>26</posx>
+						<posy>-2</posy>
+						<width>648</width>
+						<height>47</height>
+						<label>$INFO[ListItem.FileName]</label>
+						<scroll>true</scroll>
+						<font>SettingItem</font>
+						<textcolor>ffffffff</textcolor>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="label" id="0">
+				<description>Path Label</description>
+				<posx>10</posx>
+				<posy>115</posy>
+				<width>648</width>
+				<label>$LOCALIZE[1021]</label>
+				<scroll>true</scroll>
+				<font>SettingItem</font>
+				<textcolor>54ffffff</textcolor>
+			</control>
+			<control type="label" id="0">
+				<description>Path Label</description>
+				<posx>10</posx>
+				<posy>117</posy>
+				<width>648</width>
+				<label>$LOCALIZE[1021]</label>
+				<scroll>true</scroll>
+				<font>SettingItem</font>
+				<textcolor>ff000000</textcolor>
+			</control>
+		
+			<control type="button" id="12">
+				<description>Name</description>
+				<posx>10</posx>
+				<posy>63</posy>
+				<width>648</width>
+				<height>47</height>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7f7c7c72</disabledcolor>
+				<font>SettingItem</font>
+			
+				<onleft>-</onleft>
+				<onright>9000</onright>
+				<ondown>10</ondown>
+				<onup>-</onup>
+
+				<align>left</align>
+				<aligny>bottom</aligny>
+
+				<textoffsetx>26</textoffsetx>
+				<textoffsety>-5</textoffsety>
+
+				<texturefocus>dialog/mediaSource/long_bar_button.png</texturefocus>
+				<texturenofocus>dialog/mediaSource/long_bar_button_empty.png</texturenofocus>
+			</control>
+			<control type="label" id="0">
+				<description>Name Label</description>
+				<posx>10</posx>
+				<posy>20</posy>
+				<width>648</width>
+				<label>$LOCALIZE[1022]</label>
+				<scroll>true</scroll>
+				<font>SettingItem</font>
+				<textcolor>54ffffff</textcolor>
+			</control>
+			<control type="label" id="0">
+				<description>Name Label</description>
+				<posx>10</posx>
+				<posy>22</posy>
+				<width>648</width>
+				<label>$LOCALIZE[1022]</label>
+				<scroll>true</scroll>
+				<font>SettingItem</font>
+				<textcolor>ff000000</textcolor>
+			</control>
+		</control>
+	</controls>
+</window>

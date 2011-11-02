@@ -1,0 +1,97 @@
+<window id="130">
+<defaultcontrol always="true">5</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+
+<coordinates>
+  <system>1</system>
+  <posx>100</posx>
+  <posy>80</posy>
+</coordinates>
+
+<controls>
+
+<include>DialogBack</include>
+
+  <control type="label">
+	  <include>DialogID</include>
+	  <label>ProfileSettings.xml</label>
+  </control>
+
+	<control type="label" id="1000">
+		<description>Profile Name</description>
+		<posx>10</posx>
+		<posy>40</posy>
+    <width>500</width>
+	</control>
+	<control type="label" id="1001">
+		<description>Profile Directory</description>
+		<posx>10</posx>
+		<posy>72</posy>
+    <width>500</width>
+	</control>
+  <control type="image" id="2">
+    <description>profile image</description>
+    <posx>400</posx>
+    <posy>10</posy>
+    <width>110</width>
+    <height>110</height>
+    <align>center</align>
+    <aligny>top</aligny>
+    <aspectratio>keep</aspectratio>
+    <bordertexture border="14">ButtonNF.png</bordertexture>
+    <bordersize>5</bordersize>
+    <texture>unknown-user.png</texture>
+  </control>
+  
+	<control type="grouplist" id="5">
+		<description>control_area</description>
+		<posx>10</posx>
+		<posy>134</posy>
+    <width>500</width>
+		<height>300</height>
+    <itemgap>2</itemgap>
+    <orientation>vertical</orientation>
+		<pagecontrol>60</pagecontrol>
+		<onleft>28</onleft>
+		<onright>60</onright>
+		<onup>28</onup>
+		<ondown>28</ondown>
+	</control>
+	<control type="button" id="7">
+		<description>button</description>
+	</control>
+	<control type="radiobutton" id="8">
+		<description>radio_button</description>
+	</control>
+	<control type="spincontrolex" id="9">
+		<description>spin_controlex</description>
+	</control>
+
+  <control type="button" id="28">
+    <description>Ok</description>
+    <posx>200</posx>
+    <posy>390</posy>
+    <label>$LOCALIZE[186]</label>
+    <texturefocus border="1">ButtonFo.png</texturefocus>
+    <texturenofocus border="1">ButtonNF.png</texturenofocus>
+    <onleft>5</onleft>
+    <onright>29</onright>
+    <onup>5</onup>
+    <ondown>5</ondown>
+  </control>
+  <control type="button" id="29">
+    <description>Cancel</description>
+    <posx>360</posx>
+    <posy>390</posy>
+    <label>$LOCALIZE[222]</label>
+    <texturefocus border="1">ButtonFo.png</texturefocus>
+    <texturenofocus border="1">ButtonNF.png</texturenofocus>
+    <onleft>28</onleft>
+    <onright>5</onright>
+    <onup>5</onup>
+    <ondown>5</ondown>
+  </control>
+
+</controls>
+
+</window>

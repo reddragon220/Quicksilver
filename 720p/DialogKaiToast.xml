@@ -1,0 +1,46 @@
+<window id="107">
+<defaultcontrol always="true">402</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+
+
+<controls>
+	<control type="group">		
+		<include>dialog_animation</include>
+				
+		<posx>394.5</posx>
+		<posy>10</posy>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>491</width>
+			<height>46</height>
+			<texture>osd/background_chapters.png</texture>
+			<aspectratio>keep</aspectratio>
+		</control>
+		<control type="grouplist">
+			<posy>6</posy>
+			<posx>0</posx>
+			<orientation>horizontal</orientation>
+			<width>491</width>
+			<align>center</align>
+			<control type="label" id="401">
+				<description>heading</description>
+				<width min="1" max="1280">auto</width>
+				<label>-</label>
+				<font>OSD</font>
+				<textcolor>c8e8e8db</textcolor>
+			</control>
+
+			<control type="label" id="402">
+				<description>Line 1</description>
+				<width min="1" max="1280">auto</width>
+				<label>-</label>
+				<font>OSD</font>
+				<textcolor>c8e8e8db</textcolor>
+			</control>
+		</control>
+	</control>
+
+</controls>
+  
+</window>

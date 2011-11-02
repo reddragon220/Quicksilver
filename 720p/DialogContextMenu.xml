@@ -1,0 +1,52 @@
+﻿<window id="106">
+	<defaultcontrol>1000</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<allowoverlay>yes</allowoverlay>
+	<include>dialog_animation</include>
+	<controls>
+		<control type="image" id="999">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>383</width>
+			<texture>dialog/contextmenu/context_menu_bg_middle.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="button" width="373" id="1000">
+			<posx>0</posx>
+			<posy>0</posy>
+			<height>44</height>
+			<width>383</width>
+			<textcolor>ff000000</textcolor>
+			<focusedcolor>ffffffff</focusedcolor>
+			<disabledcolor>7fe8e8db</disabledcolor>
+			<alignx>center</alignx>
+			<aligny>bottom</aligny>
+			<font>Context</font>
+			<textoffsetx>8</textoffsetx>
+			<textoffsety>-7</textoffsety>
+			<texturefocus>dialog/contextmenu/highlight.png</texturefocus>
+			<!--><texturenofocus>dialog/contextmenu/divider.png</texturenofocus>-->
+		</control>
+		<control type="image" id="997">
+			<description>background top image</description>
+			<width>383</width>
+			<height>14</height>
+			<posy>-14</posy>
+			<posx>0</posx>
+			<texture>dialog/contextmenu/context_menu_bg_top.png</texture>
+			<aspectratio>-</aspectratio>
+		</control>
+		<control type="image" id="998">
+			<description>background bottom image</description>
+			<width>383</width>
+			<height>14</height>
+			<texture>dialog/contextmenu/context_menu_bg_bottom.png</texture>
+			<aspectratio>-</aspectratio>
+		</control>
+	</controls>
+</window>

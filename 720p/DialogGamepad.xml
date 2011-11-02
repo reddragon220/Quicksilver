@@ -1,0 +1,52 @@
+﻿<window id="110">
+<defaultcontrol always="true">0</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+
+<coordinates>
+  <system>1</system>
+  <posx>100</posx>
+  <posy>80</posy>
+</coordinates>
+
+<controls>
+
+<include>DialogBack</include>
+
+  <control type="label">
+    <include>DialogID</include>
+    <label>DialogGamepad.xml</label>
+  </control>
+
+  <control type="label" id="1">
+    <description>heading</description>
+    <posx>10</posx>
+    <posy>40</posy>
+    <width>500</width>
+    <label>-</label>
+  </control>
+
+  <control type="label" id="2">
+    <description>Line 1</description>
+    <posx>10</posx>
+    <posy>72</posy>
+    <width>500</width>
+    <label>-</label>
+  </control>
+  <control type="label" id="3">
+    <description>Line 2</description>
+    <posx>10</posx>
+    <posy>104</posy>
+    <width>500</width>
+    <label>-</label>
+  </control>
+  <control type="label" id="4">
+    <description>Line 3</description>
+    <posx>10</posx>
+    <posy>136</posy>
+    <width>500</width>
+    <label>-</label>
+  </control>
+  
+</controls>
+  
+</window>

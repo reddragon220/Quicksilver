@@ -1,0 +1,62 @@
+<window id="122">
+<defaultcontrol always="true">2</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+  
+<coordinates>
+  <system>1</system>
+  <posx>100</posx>
+  <posy>80</posy>
+</coordinates>
+  
+<controls>
+    
+<include>DialogBack</include>
+
+  <control type="label">
+	  <include>DialogID</include>
+	  <label>VisualisationPresetList.xml</label>
+  </control>
+
+  <control type="list" id="2">
+    <description>Preset List</description>
+	  <posx>10</posx>
+	  <posy>40</posy>
+    <width>500</width>
+	  <height>382</height>
+	  <onleft>-</onleft>
+	  <onright>-</onright>
+	  <onup>2</onup>
+	  <ondown>2</ondown>
+	  <itemlayout height="32">
+      <control type="image">
+        <width>500</width>
+        <height>30</height>
+        <texture>ButtonNF.png</texture>
+      </control>
+		  <control type="label">
+			  <posx>5</posx>
+			  <width>490</width>
+        <height>30</height>
+			  <info>ListItem.Label</info>
+        <scroll>false</scroll>
+		  </control>
+	  </itemlayout>
+	  <focusedlayout height="32">
+		  <control type="image">
+			  <width>500</width>
+			  <height>30</height>
+			  <texture>ButtonFo.png</texture>
+		  </control>
+		  <control type="label">
+			  <posx>5</posx>
+			  <width>490</width>
+			  <height>30</height>
+        <textcolor>White</textcolor>
+			  <info>ListItem.Label</info>
+		  </control>
+	  </focusedlayout>
+  </control>
+  
+</controls>
+
+</window>

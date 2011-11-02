@@ -1,0 +1,41 @@
+<window id="136">
+	<defaultcontrol always="true">-</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<include>info_fade</include>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+		<control type="image">
+			<visible>Window.IsActive(home)</visible>
+			<description>Dialog overlay</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<aspectratio>stretch</aspectratio>
+			<texture>background/dialog overlay.png</texture>
+			<fadetime>200</fadetime>
+			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+		</control>
+		<control type="image">
+			<posx>560</posx>
+			<posy>280</posy>
+			<width>160</width>
+			<height>161</height>
+			<texture>dialog/busy/plex.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="label">
+			<posy>440</posy>
+			<width>1280</width>
+			<font>Context</font>
+			<textcolor>ffffffff</textcolor>
+			<align>center</align>
+			<label>$LOCALIZE[31300]</label>
+		</control>
+	</controls>
+</window>

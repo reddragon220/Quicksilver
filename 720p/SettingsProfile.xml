@@ -1,0 +1,102 @@
+<window id="34">
+<defaultcontrol always="true">4</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+  
+<coordinates>
+  <system>1</system>
+  <posx>100</posx>
+  <posy>80</posy>
+</coordinates>
+  
+<controls>
+    
+<include>DialogBack</include>
+
+  <control type="label">
+	  <include>DialogID</include>
+	  <label>SettingsProfile.xml</label>
+  </control>
+  
+	<control type="radiobutton" id="4">
+		<description>Enable Login Screen</description>
+		<posx>10</posx>
+		<posy>40</posy>
+		<width>500</width>
+		<label>$LOCALIZE[20096]</label>
+    <align>left</align>
+		<onright>2</onright>
+		<onleft>2</onleft>
+    <onup>2</onup>
+    <ondown>2</ondown>
+	</control>
+  
+  <control type="list" id="2">
+	  <posx>10</posx>
+	  <posy>72</posy>
+	  <width>520</width>
+	  <height>382</height>
+	  <onleft>4</onleft>
+	  <onright>4</onright>
+	  <onup>4</onup>
+	  <ondown>4</ondown>
+	  <itemlayout height="32">
+      <control type="image">
+        <width>500</width>
+        <height>30</height>
+        <texture>ButtonNF.png</texture>
+      </control>
+      <control type="image">
+        <posy>2</posy>
+        <width>26</width>
+        <height>26</height>
+        <info>ListItem.Icon</info>
+      </control>
+		  <control type="label">
+			  <posx>30</posx>
+			  <width>465</width>
+        <height>30</height>
+			  <info>ListItem.Label</info>
+        <scroll>false</scroll>
+		  </control>
+      <control type="label">
+        <posx>460</posx>
+        <width>465</width>
+        <height>30</height>
+        <align>right</align>
+        <info>ListItem.Label2</info>
+        <scroll>false</scroll>
+      </control>
+	  </itemlayout>
+	  <focusedlayout height="32">
+		  <control type="image">
+			  <width>500</width>
+			  <height>30</height>
+			  <texture>ButtonFo.png</texture>
+		  </control>
+      <control type="image">
+        <posy>2</posy>
+        <width>26</width>
+        <height>26</height>
+        <info>ListItem.Icon</info>
+      </control>
+		  <control type="label">
+			  <posx>30</posx>
+			  <width>465</width>
+			  <height>30</height>
+        <textcolor>White</textcolor>
+			  <info>ListItem.Label</info>
+		  </control>
+      <control type="label">
+        <posx>460</posx>
+        <width>465</width>
+        <height>30</height>
+        <align>right</align>
+        <textcolor>White</textcolor>
+        <info>ListItem.Label2</info>
+      </control>
+	  </focusedlayout>
+  </control>
+  
+</controls>
+  
+</window>

@@ -1,0 +1,46 @@
+<window id="200">
+	<allowoverlay>yes</allowoverlay>
+	<include>info_fade</include>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	
+	<controls>
+		<control type="group">
+			<posx>0</posx>
+			<posy>225</posy>
+<!--
+			<control type="label" id="1">
+				<description>heading</description>
+				<font>Search</font>
+				<textcolor>ffffffff</textcolor>
+				<align>center</align>
+				<posx>0</posx>
+				<posy>10</posy>
+				<width>1280</width>
+				<label>Set Rating</label>
+			</control>
+-->
+			<control type="label" id="2">
+				<description>Line 1</description>
+				<font>Title</font>
+				<textcolor>ffffffff</textcolor>
+				<align>center</align>
+				<posx>0</posx>
+				<posy>55</posy>
+				<width>1280</width>
+				<label>$LOCALIZE[31301]</label>
+			</control>
+			<control type="image" id="10">
+				<width>344</width>
+				<height>60</height>
+				<posx>468</posx>
+				<posy>100</posy>
+				<texture>rating0.png</texture>
+				<!-- ><colordiffuse>FFFFCC00</colordiffuse>-->
+			</control>
+		</control>
+	</controls>
+</window>

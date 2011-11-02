@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<window id="11">
+	<defaultcontrol always="true">8</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+		<control type="videowindow" id="20">
+			<description>videowindow</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>720</width>
+			<height>576</height>
+		</control>
+		<control type="mover" id="8">
+			<description>top left mover</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>128</width>
+			<height>128</height>
+			<texturefocus>settings/SettingsScreenCalibration/CalibrateTopLeft.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+		</control>
+		<control type="mover" id="9">
+			<description>right bottom mover</description>
+			<posx>700</posx>
+			<posy>500</posy>
+			<width>128</width>
+			<height>128</height>
+			<texturefocus>settings/SettingsScreenCalibration/CalibrateBottomRight.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+		</control>
+		<control type="mover" id="10">
+			<description>subtitle position mover</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>512</width>
+			<height>32</height>
+			<texturefocus>settings/SettingsScreenCalibration/CalibrateSubtitles.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+		</control>
+		<control type="resize" id="11">
+			<description>pixel aspect ratio box</description>
+			<posx>0</posx>
+			<posy>270</posy>
+			<width>288</width>
+			<height>288</height>
+			<texturefocus>settings/SettingsScreenCalibration/CalibratePixelRatio.png</texturefocus>
+			<texturenofocus>-</texturenofocus>
+		</control>
+		<control type="image" id="1">
+			<description>Rectangle Image</description>
+			<posx>0</posx>
+			<posy>256</posy>
+			<width>720</width>
+			<height>57</height>
+			<texture>Bluebar.png</texture>
+		</control>
+		<control type="label" id="2">
+			<description>coordinates label</description>
+			<posx>0</posx>
+			<posy>40</posy>
+			<width>1280</width>
+			<align>center</align>
+			<label>-</label>
+			<font>OSD</font>
+			<textcolor>ffffffff</textcolor>
+		</control>
+		<control type="label" id="3">
+			<description>help information</description>
+			<posx>0</posx>
+			<posy>70</posy>
+			<width>1280</width>
+			<align>center</align>
+			<label>-</label>
+			<font>OSD</font>
+			<textcolor>ffffffff</textcolor>
+		</control>
+		
+	</controls>
+</window>

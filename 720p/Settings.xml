@@ -1,0 +1,257 @@
+<window id="4">
+	<defaultcontrol always="true">300</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<controls>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<visible>true</visible>
+			<texture>background/grain.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="image">
+			<description>top divider</description>
+			<posx>0</posx>
+			<posy>100</posy>
+			<width>318</width>
+			<height>2</height>
+			<visible>true</visible>
+			<texture>settings/divider.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="list" id="300">
+			<posx>0</posx>
+			<posy>102</posy>
+			<width>318</width>
+			<height>720</height>
+			<scrolltime>200</scrolltime>
+			<orientation>vertical</orientation>
+			<focusposition>1</focusposition>
+			<itemgap>0</itemgap>
+			<defaultcontrol always="true">0</defaultcontrol>
+			<itemlayout width="318" height="47">
+				<control type="image">
+					<posx>0</posx>
+					<!--><posy>0</posy>-->
+					<posy>-1</posy>
+					<width>318</width>
+					<height>47</height>
+					<visible>true</visible>
+					<texture>settings/bar_button.png</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="label">
+					<posx>20</posx>
+					<!--><posy>4</posy>-->
+					<posy>1</posy>
+					<width>298</width>
+					<info>ListItem.Label</info>
+					<textcolor>ffffffff</textcolor>
+					<scroll>false</scroll>
+					<font>Settings</font>
+					<align>left</align>
+				</control>
+			</itemlayout>
+			<focusedlayout width="318" height="47">
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>318</width>
+					<height>47</height>
+					<visible>true</visible>
+					<texture>settings/bar_button_highlight.png</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="label">
+					<posx>20</posx>
+					<posy>-1</posy>
+					<width>298</width>
+					<info>ListItem.Label</info>
+					<font>Settings</font>
+					<textcolor>4b000000</textcolor>
+					<align>left</align>
+				</control>
+				<control type="label">
+					<posx>20</posx>
+					<posy>1</posy>
+					<width>318</width>
+					<label>$INFO[ListItem.Label]</label>
+					<font>Settings</font>
+					<textcolor>ffffffff</textcolor>
+					<align>left</align>
+				</control>
+			</focusedlayout>
+			<content>
+				<item id="1">
+					<description>Videos</description>
+					<label>$LOCALIZE[3]</label>
+					<onclick>activatewindow(MyVideosSettings)</onclick>
+				</item>
+				<item id="2">
+					<description>Music</description>
+					<label>$LOCALIZE[2]</label>
+					<onclick>activatewindow(MyMusicSettings)</onclick>
+				</item>
+				<item id="3">
+					<description>Pictures</description>
+					<label>$LOCALIZE[1]</label>
+					<onclick>activatewindow(MyPicturesSettings)</onclick>
+				</item>
+				<item id="4">
+					<description>System</description>
+					<label>$LOCALIZE[13000]</label>
+					<onclick>activatewindow(SystemSettings)</onclick>
+				</item>
+				<item id="5">
+					<description>Appearance</description>
+					<label>$LOCALIZE[480]</label>
+					<onclick>activatewindow(AppearanceSettings)</onclick>
+				</item>
+				<item id="6">
+					<description>Custom Settings</description>
+					<label>$LOCALIZE[31200]</label>
+					<onclick>activatewindow(56)</onclick>
+				</item>
+			</content>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<visible>true</visible>
+			<texture>settings/silver_bg.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="image">
+			<posx>318</posx>
+			<posy>243</posy>
+			<width>962</width>
+			<height>278</height>
+			<visible>true</visible>
+			<texture>settings/image_floor.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+		<control type="group">
+			<animation effect="fade" time="200">WindowOpen</animation>
+			<control type="image">
+				<visible>Container(300).HasFocus(1)</visible>
+				<animation type="Visible" reversible="false">
+				  <effect type="fade" end="100" time="200" delay="0"/>
+				  <effect type="slide" start="100,0" end="0,0" time="200"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+				  <effect type="fade" end="0" time="200" delay="0"/>
+				  <effect type="slide" start="0,0" end="-100,0" time="200"/>
+				</animation>
+			
+				<posx>318</posx>
+				<posy>0</posy>
+				<width>962</width>
+				<height>720</height>
+				<visible>true</visible>
+				<texture>settings/videos.png</texture>
+				<aspectratio>scale</aspectratio>
+			</control>
+			<control type="image">
+				<visible>Container(300).HasFocus(2)</visible>
+				<animation type="Visible" reversible="false">
+				  <effect type="fade" end="100" time="200" delay="0"/>
+				  <effect type="slide" start="100,0" end="0,0" time="200"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+				  <effect type="fade" end="0" time="200" delay="0"/>
+				  <effect type="slide" start="0,0" end="-100,0" time="200"/>
+				</animation>
+			
+				<posx>318</posx>
+				<posy>0</posy>
+				<width>962</width>
+				<height>720</height>
+				<visible>true</visible>
+				<texture>settings/music.png</texture>
+				<aspectratio>scale</aspectratio>
+			</control>
+			<control type="image">
+				<visible>Container(300).HasFocus(3)</visible>
+				<animation type="Visible" reversible="false">
+				  <effect type="fade" end="100" time="200" delay="0"/>
+				  <effect type="slide" start="100,0" end="0,0" time="200"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+				  <effect type="fade" end="0" time="200" delay="0"/>
+				  <effect type="slide" start="0,0" end="-100,0" time="200"/>
+				</animation>
+			
+				<posx>318</posx>
+				<posy>0</posy>
+				<width>962</width>
+				<height>720</height>
+				<visible>true</visible>
+				<texture>settings/pictures.png</texture>
+				<aspectratio>scale</aspectratio>
+			</control>
+			<control type="image">
+				<visible>Container(300).HasFocus(4)</visible>
+				<animation type="Visible" reversible="false">
+				  <effect type="fade" end="100" time="200" delay="0"/>
+				  <effect type="slide" start="100,0" end="0,0" time="200"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+				  <effect type="fade" end="0" time="200" delay="0"/>
+				  <effect type="slide" start="0,0" end="-100,0" time="200"/>
+				</animation>
+			
+				<posx>318</posx>
+				<posy>0</posy>
+				<width>962</width>
+				<height>720</height>
+				<visible>true</visible>
+				<texture>settings/system.png</texture>
+				<aspectratio>scale</aspectratio>
+			</control>
+			<control type="image">
+				<visible>Container(300).HasFocus(5)</visible>
+				<animation type="Visible" reversible="false">
+				  <effect type="fade" end="100" time="200" delay="0"/>
+				  <effect type="slide" start="100,0" end="0,0" time="200"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+				  <effect type="fade" end="0" time="200" delay="0"/>
+				  <effect type="slide" start="0,0" end="-100,0" time="200"/>
+				</animation>
+			
+				<posx>318</posx>
+				<posy>0</posy>
+				<width>962</width>
+				<height>720</height>
+				<visible>true</visible>
+				<texture>settings/appearance.png</texture>
+				<aspectratio>scale</aspectratio>
+			</control>
+			<control type="image">
+				<visible>Container(300).HasFocus(6)</visible>
+				<animation type="Visible" reversible="false">
+				  <effect type="fade" end="100" time="200" delay="0"/>
+				  <effect type="slide" start="100,0" end="0,0" time="200"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+				  <effect type="fade" end="0" time="200" delay="0"/>
+				  <effect type="slide" start="0,0" end="-100,0" time="200"/>
+				</animation>
+			
+				<posx>318</posx>
+				<posy>0</posy>
+				<width>962</width>
+				<height>720</height>
+				<visible>true</visible>
+				<texture>settings/skin.png</texture>
+				<aspectratio>scale</aspectratio>
+			</control>
+		</control>
+
+		<include>header</include>
+	</controls>
+</window>

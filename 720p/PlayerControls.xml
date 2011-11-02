@@ -1,0 +1,400 @@
+<window type="dialog" id="400">
+	<defaultcontrol always="true">4</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+		<control type="group">
+			
+			<include>dialog_overlay</include>
+			<control type="group">
+				
+				<posx>405</posx>
+				<posy>247</posy>
+				<include>dialog_animation</include>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>470</width>
+					<height>286</height>
+					<texture>dialog/playerControls/background.png</texture>
+					<aspectratio>stretch</aspectratio>
+				</control>
+				<control type="image">
+					<posx>10</posx>
+					<posy>10</posy>
+					<width>204</width>
+					<height>204</height>
+					<info>MusicPlayer.cover</info>
+					<texture background="true" diffuse="views/covers/cover_big.png">NoThumb.png</texture>
+					<bordertexture border="5">views/covers/cover_big_shadow.png</bordertexture>
+					<bordersize>5</bordersize>
+					<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+				</control>
+				<control type="group">
+					<posx>226</posx>
+					<posy>25</posy>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>0</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[MusicPlayer.Title]</label>
+						<font>ContextHeader</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>40</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[MusicPlayer.Artist]</label>
+						<font>Context</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>75</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[MusicPlayer.Album]</label>
+						<font>Context</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>120</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[musicplayer.time] / $INFO[MusicPlayer.Duration]</label>
+						<font>Context</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+				</control>
+				<control type="group">
+					<posx>222</posx>
+					<posy>25</posy>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>0</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[MusicPlayer.Title]</label>
+						<font>ContextHeader</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>40</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[MusicPlayer.Artist]</label>
+						<font>Context</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>75</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[MusicPlayer.Album]</label>
+						<font>Context</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>120</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[musicplayer.time] / $INFO[MusicPlayer.Duration]</label>
+						<font>Context</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+				</control>
+				<control type="group">
+					<posx>224</posx>
+					<posy>27</posy>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>0</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[MusicPlayer.Title]</label>
+						<font>ContextHeader</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>40</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[MusicPlayer.Artist]</label>
+						<font>Context</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>75</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[MusicPlayer.Album]</label>
+						<font>Context</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>120</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[musicplayer.time] / $INFO[MusicPlayer.Duration]</label>
+						<font>Context</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+				</control>
+				<control type="group">
+					<posx>224</posx>
+					<posy>23</posy>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>0</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[MusicPlayer.Title]</label>
+						<font>ContextHeader</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>40</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[MusicPlayer.Artist]</label>
+						<font>Context</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>75</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[MusicPlayer.Album]</label>
+						<font>Context</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>120</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[musicplayer.time] / $INFO[MusicPlayer.Duration]</label>
+						<font>Context</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+				</control>
+				<control type="group">
+					<posx>224</posx>
+					<posy>25</posy>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>0</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[MusicPlayer.Title]</label>
+						<font>ContextHeader</font>
+						<textcolor>ffffffff</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>40</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[MusicPlayer.Artist]</label>
+						<font>Context</font>
+						<textcolor>ff95c9f7</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>75</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[MusicPlayer.Album]</label>
+						<font>Context</font>
+						<textcolor>ffffffff</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+					<control type="fadelabel">
+						<posx>0</posx>
+						<posy>120</posy>
+						<label>-</label>
+						<width>236</width>
+						<label>$INFO[musicplayer.time] / $INFO[MusicPlayer.Duration]</label>
+						<font>Context</font>
+						<textcolor>ff95c9f7</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+						<scrollout>false</scrollout>
+						<pauseatend>6000</pauseatend>
+					</control>
+				</control>
+				<control type="image">
+					<posx>224</posx>
+					<posy>153</posy>
+					<width>214</width>
+					<height>2</height>
+					<aspectratio>stretch</aspectratio>
+					<texture>dialog/playerControls/divider.png</texture>
+					<fadetime>200</fadetime>
+				</control>
+				<control type="grouplist" id="1">
+					<posx>12</posx>
+					<posy>217</posy>
+					<width>448</width>
+					<height>350</height>
+					<itemgap>20</itemgap>
+					<orientation>horizontal</orientation>
+					<onleft>-</onleft>
+					<onright>-</onright>
+					<onup>1</onup>
+					<ondown>1</ondown>
+					<control type="button" id="2">
+						<description>Skip Back</description>
+						<texturefocus>osd/buttons/previous_focus.png</texturefocus>
+						<texturenofocus>osd/buttons/previous.png</texturenofocus>
+						<onclick>xbmc.playercontrol(previous)</onclick>
+						<width>58</width>
+						<height>57</height>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="button" id="3">
+						<description>Rewind</description>
+						<texturefocus>osd/buttons/rewind_focus.png</texturefocus>
+						<texturenofocus>osd/buttons/rewind.png</texturenofocus>
+						<onclick>xbmc.playercontrol(rewind)</onclick>
+						<width>58</width>
+						<height>57</height>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="button" id="11">
+						<description>Play</description>
+						<texturefocus>osd/buttons/stop_focus.png</texturefocus>
+						<texturenofocus>osd/buttons/stop.png</texturenofocus>
+						<onclick>xbmc.playercontrol(stop)</onclick>
+						<onfocus>Dialog.Close(400)</onfocus>
+						<width>58</width>
+						<height>57</height>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="togglebutton" id="4">
+						<description>Play</description>
+						<onclick>xbmc.playercontrol(play)</onclick>
+						<onclick>SetFocus(4)</onclick>
+						<texturefocus>osd/buttons/pause_focus.png</texturefocus>
+						<texturenofocus>osd/buttons/pause.png</texturenofocus>
+						<alttexturefocus>osd/buttons/play_focus.png</alttexturefocus>
+						<alttexturenofocus>osd/buttons/play.png</alttexturenofocus>
+						<usealttexture>Player.Paused</usealttexture>
+						<width>58</width>
+						<height>57</height>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="button" id="5">
+						<description>Forward</description>
+						<texturefocus>osd/buttons/fastfoward_focus.png</texturefocus>
+						<texturenofocus>osd/buttons/fastfoward.png</texturenofocus>
+						<onclick>xbmc.playercontrol(forward)</onclick>
+						<width>58</width>
+						<height>57</height>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="button" id="6">
+						<description>Skip Forward</description>
+						<texturefocus>osd/buttons/next_focus.png</texturefocus>
+						<texturenofocus>osd/buttons/next.png</texturenofocus>
+						<onclick>xbmc.playercontrol(next)</onclick>
+						<width>58</width>
+						<height>57</height>
+						<aspectratio>keep</aspectratio>
+					</control>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

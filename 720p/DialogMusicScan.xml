@@ -1,0 +1,50 @@
+<window id="112">
+<defaultcontrol always="true">401</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+  
+<coordinates>
+  <system>1</system>
+  <posx>100</posx>
+  <posy>80</posy>
+</coordinates>
+
+<controls>
+
+<include>DialogBack</include>
+
+  <control type="label">
+    <include>DialogID</include>
+    <label>DialogMusicScan.xml</label>
+  </control>
+
+  <control type="label" id="401">
+    <description>Header Label</description>
+    <posx>10</posx>
+    <posy>40</posy>
+    <width>500</width>
+    <label>-</label>
+  </control>
+
+  <control type="label" id="402">
+    <description>Path Label</description>
+    <posx>10</posx>
+    <posy>72</posy>
+    <width>500</width>
+    <label>-</label>
+    <haspath>yes</haspath>
+  </control>
+  
+  <control type="progress" id="403">
+    <description>progress control</description>
+    <posx>10</posx>
+    <posy>104</posy>
+  </control>
+  <control type="progress" id="404">
+    <description>progress control</description>
+    <posx>10</posx>
+    <posy>136</posy>
+  </control>
+  
+</controls>
+  
+</window>

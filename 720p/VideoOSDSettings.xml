@@ -1,0 +1,116 @@
+<window id="123">
+	<defaultcontrol always="true">5</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<include>dialog_animation</include>
+	<controls>
+		<control type="group">
+			<posx>301.5</posx>
+			<posy>110</posy>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>667</width>
+				<height>500</height>
+				<texture>osd/settings/background.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			<control type="grouplist" id="5">
+				<description>Control Area</description>
+				<posx>9.5</posx>
+				<posy>15</posy>
+				<width>648</width>
+				<height>470</height>
+				<itemgap>0</itemgap>
+				<orientation>vertical</orientation>
+				<pagecontrol>60</pagecontrol>
+				<onleft>28</onleft>
+				<onright>28</onright>
+				<onup>28</onup>
+				<ondown>28</ondown>
+			</control>
+		</control>
+		<control type="button" id="7">
+			<description>Default Button</description>
+			<width>648</width>
+			<height>47</height>
+			<textcolor>ffffffff</textcolor>
+			<focusedcolor>ffffffff</focusedcolor>
+			<disabledcolor>7f7c7c72</disabledcolor>
+			<font>SettingItem</font>
+			<align>left</align>
+			<aligny>bottom</aligny>
+			<textoffsetx>26</textoffsetx>
+			<textoffsety>-5</textoffsety>
+			<texturefocus>osd/settings/long_bar_button.png</texturefocus>
+			<texturenofocus>dialog/long_bar_button_divider.png</texturenofocus>
+		</control>
+		<control type="radiobutton" id="8">
+			<description>Default Radio Button</description>
+			<width>648</width>
+			<height>47</height>
+			<textcolor>ffffffff</textcolor>
+			<focusedcolor>ffffffff</focusedcolor>
+			<disabledcolor>7f7c7c72</disabledcolor>
+			<font>SettingItem</font>
+			<align>left</align>
+			<aligny>bottom</aligny>
+			<textoffsetx>26</textoffsetx>
+			<textoffsety>-5</textoffsety>
+			<texturefocus>dialog/long_bar_button.png</texturefocus>
+			<texturenofocus>dialog/long_bar_button_divider.png</texturenofocus>
+			<radioposx>536</radioposx>
+			<radiowidth>86</radiowidth>
+			<radioheight>45</radioheight>
+			<textureradiofocus>buttons/radiobutton/on.png</textureradiofocus>
+			<textureradionofocus>buttons/radiobutton/off.png</textureradionofocus>
+		</control>
+		<control type="spincontrolex" id="9">
+			<description>Default Spin Control</description>
+			<width>648</width>
+			<height>47</height>
+			<textcolor>ffffffff</textcolor>
+			<focusedcolor>ffffffff</focusedcolor>
+			<disabledcolor>7f7c7c72</disabledcolor>
+			<font>SettingItem</font>
+			<align>left</align>
+			<aligny>bottom</aligny>
+			<textoffsetx>26</textoffsetx>
+			<textoffsety>-5</textoffsety>
+			<texturefocus>osd/settings/long_bar_spin_focus.png</texturefocus>
+			<texturenofocus>osd/settings/long_bar_spin.png</texturenofocus>
+			<spinposx>0</spinposx>
+			<spinposy>10</spinposy>
+			<spinwidth>43</spinwidth>
+			<spinheight>45</spinheight>
+			<textureup>buttons/spincontrolex/up.png</textureup>
+			<textureupfocus>buttons/spincontrolex/upfocus.png</textureupfocus>
+			<texturedown>buttons/spincontrolex/down.png</texturedown>
+			<texturedownfocus>buttons/spincontrolex/downfocus.png</texturedownfocus>
+		</control>
+		<control type="sliderex" id="10">
+			<description>Default Slide Control</description>
+			<width>648</width>
+			<height>47</height>
+			<textcolor>ffffffff</textcolor>
+			<focusedcolor>ffffffff</focusedcolor>
+			<disabledcolor>7f7c7c72</disabledcolor>
+			<font>SettingItem</font>
+			<align>left</align>
+			<aligny>bottom</aligny>
+			<textoffsetx>26</textoffsetx>
+			<textoffsety>-5</textoffsety>
+			<texturefocus>osd/settings/long_bar_slide_focus.png</texturefocus>
+			<texturenofocus>osd/settings/long_bar_slide.png</texturenofocus>
+			<sliderwidth>133</sliderwidth>
+			<sliderheight>39</sliderheight>
+			<texturesliderbar>buttons/sliderex/slide_bar_empty.png</texturesliderbar>
+			<textureslidernib>buttons/sliderex/off.png</textureslidernib>
+			<textureslidernibfocus>buttons/sliderex/on.png</textureslidernibfocus>
+		</control>
+	</controls>
+</window>

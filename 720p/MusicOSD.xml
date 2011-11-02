@@ -1,0 +1,182 @@
+﻿<window id="120">
+	<defaultcontrol always="true">4</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<include>dialog_animation</include>
+	<controls>
+		<control type="image">
+			<posx>149.5</posx>
+			<posy>604</posy>
+			<width>981</width>
+			<height>112</height>
+			<texture>osd/background.png</texture>
+			<aspectratio>keep</aspectratio>
+		</control>
+		<control type="label">
+			<posx>160</posx>
+			<posy>617</posy>
+			<width>90</width>
+			<height>25</height>
+			<font>OSD</font>
+			<textcolor>ffffffff</textcolor>
+			<label>$INFO[Player.Time]</label>
+			<align>center</align>
+		</control>	
+		<control type="label">
+			<posx>1028</posx>
+			<posy>617</posy>
+			<width>90</width>
+			<height>25</height>
+			<font>OSD</font>
+			<textcolor>ffffffff</textcolor>
+			<label>$INFO[Player.Duration]</label>
+			<align>center</align>
+		</control>
+		<control type="progress">
+			<posx>257</posx>
+			<posy>620</posy>
+			<width>766</width>
+			<height>22</height>
+			<visible>true</visible>
+			<reveal>true</reveal>
+			<texturebg>osd/progress_bg.png</texturebg>
+			<midtexture>osd/progress_center.png</midtexture>
+			<lefttexture>osd/progress_left.png</lefttexture>
+			<righttexture>osd/progress_right.png</righttexture>
+			<overlaytexture>-</overlaytexture>
+			<info>Player.Progress</info>
+			<aspectratio>keep</aspectratio>
+		</control>
+		
+		<control type="grouplist" id="1">
+			<posx>260</posx>
+			<posy>645</posy>
+			<width>1280</width>
+			<height>350</height>
+			<itemgap>20</itemgap>
+			<orientation>horizontal</orientation>
+			<onleft>-</onleft>
+			<onright>-</onright>
+			<onup>1</onup>
+			<ondown>1</ondown>
+			<control type="image" id="8">
+				<description>spacer</description>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<width>87</width>
+				<height>57</height>
+				<aspectratio>keep</aspectratio>
+			</control>
+
+			<control type="button" id="2">
+				<description>Skip Back</description>
+				<texturefocus>osd/buttons/previous_focus.png</texturefocus>
+				<texturenofocus>osd/buttons/previous.png</texturenofocus>
+				<onclick>xbmc.playercontrol(previous)</onclick>
+				<width>58</width>
+				<height>57</height>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="button" id="3">
+				<description>Rewind</description>
+				<texturefocus>osd/buttons/rewind_focus.png</texturefocus>
+				<texturenofocus>osd/buttons/rewind.png</texturenofocus>
+				<onclick>xbmc.playercontrol(rewind)</onclick>
+				<width>58</width>
+				<height>57</height>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="button" id="11">
+				<description>Play</description>
+				<texturefocus>osd/buttons/stop_focus.png</texturefocus>
+				<texturenofocus>osd/buttons/stop.png</texturenofocus>
+				<onclick>xbmc.playercontrol(stop)</onclick>
+				<width>58</width>
+				<height>57</height>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="togglebutton" id="4">
+				<description>Play</description>
+				<onclick>xbmc.playercontrol(play)</onclick>
+				<onclick>SetFocus(4)</onclick>
+				<texturefocus>osd/buttons/pause_focus.png</texturefocus>
+				<texturenofocus>osd/buttons/pause.png</texturenofocus>
+				<alttexturefocus>osd/buttons/play_focus.png</alttexturefocus>
+				<alttexturenofocus>osd/buttons/play.png</alttexturenofocus>
+				<usealttexture>Player.Paused</usealttexture>
+				<width>58</width>
+				<height>57</height>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="button" id="5">
+				<description>Forward</description>
+				<texturefocus>osd/buttons/fastfoward_focus.png</texturefocus>
+				<texturenofocus>osd/buttons/fastfoward.png</texturenofocus>
+				<onclick>xbmc.playercontrol(forward)</onclick>
+				<width>58</width>
+				<height>57</height>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="button" id="6">
+				<description>Skip Forward</description>
+				<texturefocus>osd/buttons/next_focus.png</texturefocus>
+				<texturenofocus>osd/buttons/next.png</texturenofocus>
+				<onclick>xbmc.playercontrol(next)</onclick>
+				<width>58</width>
+				<height>57</height>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="image" id="12">
+				<description>spacer</description>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+				<width>29</width>
+				<height>57</height>
+				<aspectratio>keep</aspectratio>
+			</control>
+
+			<control type="button" id="10">
+				<description>Video Settings</description>
+				<texturefocus>osd/buttons/playlist_focus.png</texturefocus>
+				<texturenofocus>osd/buttons/playlist.png</texturenofocus>
+				<onclick>xbmc.activatewindow(500)</onclick>
+				<width>58</width>
+				<height>57</height>
+				<aspectratio>keep</aspectratio>
+			</control>
+			<control type="button" id="9">
+				<description>Audio Settings</description>
+				<texturefocus>osd/buttons/audio_focus.png</texturefocus>
+				<texturenofocus>osd/buttons/audio.png</texturenofocus>
+				<onclick>xbmc.activatewindow(124)</onclick>
+				<width>58</width>
+				<height>57</height>
+				<aspectratio>keep</aspectratio>
+			</control>
+			
+			
+			<!--
+			<control type="button" id="8">
+				<description>Visualisation Presets</description>
+				<label>V $LOCALIZE[13388]</label>
+				<texturefocus border="1">ButtonFo.png</texturefocus>
+				<texturenofocus border="1">ButtonNF.png</texturenofocus>
+				<onclick>XBMC.ActivateWindow(122)</onclick>
+			</control>
+			<control type="button" id="9">
+				<description>Vis Settings</description>
+				<label>V $LOCALIZE[5]</label>
+				<texturefocus border="1">ButtonFo.png</texturefocus>
+				<texturenofocus border="1">ButtonNF.png</texturenofocus>
+				<onclick>XBMC.ActivateWindow(121)</onclick>
+			</control>
+			-->
+		</control>
+		
+		
+	</controls>
+</window>

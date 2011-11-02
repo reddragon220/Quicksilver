@@ -1,0 +1,54 @@
+<window id="20">
+<defaultcontrol always="true">50</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+  
+<controls>
+
+  <control type="label">
+    <include>WindowID</include>
+    <label>MyScripts.xml</label>
+  </control>
+  
+	<control type="grouplist" id="9000">
+		<posx>10</posx>
+		<posy>40</posy>
+		<width>150</width>
+    <height>480</height>
+		<itemgap>2</itemgap>
+    <onleft>50</onleft>
+    <onright>50</onright>
+		<onup>9000</onup>
+    <ondown>9000</ondown>
+		<orientation>vertical</orientation>
+		<control type="button" id="2">
+			<description>View</description>
+      <width>150</width>
+      <textcolor>White</textcolor>
+      <texturefocus border="1">ButtonFo.png</texturefocus>
+      <texturenofocus border="1">ButtonNF.png</texturenofocus>
+		</control>
+		<control type="button" id="3">
+			<description>Sort</description>
+			<width>150</width>
+      <textcolor>White</textcolor>
+      <texturefocus border="1">ButtonFo.png</texturefocus>
+      <texturenofocus border="1">ButtonNF.png</texturenofocus>
+		</control>
+		<control type="togglebutton" id="4">
+			<description>Ascending</description>
+      <width>150</width>
+      <label>$LOCALIZE[584]</label>
+      <altlabel>$LOCALIZE[585]</altlabel>
+			<textcolor>White</textcolor>
+      <texturenofocus border="1">ButtonNF.png</texturenofocus>
+      <texturefocus border="1">ButtonFo.png</texturefocus>
+      <alttexturenofocus border="1">ButtonNF.png</alttexturenofocus>
+      <alttexturefocus border="1">ButtonFo.png</alttexturefocus>
+		</control>
+	</control>
+    
+<include>list</include>
+    
+</controls>
+  
+</window>

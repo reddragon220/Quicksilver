@@ -1,0 +1,122 @@
+<strings>
+	<!--  strings 31000 thru 31999 reserved for skins  -->
+
+	<!-- Home Main Menu -->
+	<string id="31000">Search</string>
+	<string id="31001">DVD</string>
+	<string id="31002">Queue</string>
+	<string id="31003">Preferences</string>
+	<string id="31004">Channels</string>
+	<string id="31005">Video Channels</string>
+	<string id="31006">Music Channels</string>
+	<string id="31007">Picture Channels</string>
+	<string id="31008">Plex Channels</string>
+	<string id="31009">On Deck</string>
+	<string id="31010">Recently Added</string>
+	<string id="31011">Shared Content</string>
+	<string id="31012">No Library</string>
+	<string id="31013">Quit</string>
+
+	<!-- Home Menu Subtitles (Don't Translate $INFO[Container(300).ListItem.Label]) -->
+	<string id="31020">View libraries shared over my.Plexapp.com</string>
+	<string id="31021">There are no Plex Media Servers available</string>
+	<string id="31022">Quit Plex</string>
+	<string id="31023">View your $INFO[Container(300).ListItem.Label]</string>
+	<string id="31024">View your $INFO[Container(300).ListItem.Label] section</string>
+	<string id="31025">Search Plex's library and the Internet</string>
+	<string id="31026">Watch a Movie</string>
+	<string id="31027">Watch videos queued on myPlex</string>
+	<string id="31028">Netflix, iTunes video, etc.</string>
+	<string id="31029">iTunes music, Pandora, etc.</string>
+	<string id="31030">iPhoto, Flikr, etc.</string>
+	<string id="31031">Download more channels</string>
+	<string id="31032">Configure how Plex looks and behaves</string>
+
+	<!-- Views -->
+	<string id="31100">List</string>
+	<string id="31101">Cover</string>
+	<string id="31102">Flow</string>
+	<string id="31103">Fanart</string>
+	<string id="31104">Episodes</string>
+	<string id="31105">Rated:</string>
+	<string id="31106">N/A</string>
+	<string id="31107">Runtime:</string>
+	<string id="31108">Score:</string>
+
+	<!-- View Select -->
+	<string id="31109">View</string>
+	<string id="31110">Select a direction to</string>
+	<string id="31111">choose a view</string>
+
+	<!-- CustomSettings -->
+	<string id="31200">Quicksilver</string>
+	<string id="31201">Background</string>
+	<string id="31202">Developer</string>
+	<string id="31203">Ken Burns</string>
+	<string id="31204">Fanart</string>
+	<string id="31205">Custom Background</string>
+	<string id="31206">Stream</string>
+	<string id="31207">Bokeh</string>
+	<string id="31208">Developer Mode</string>
+	<string id="31209">Reset All Settings</string>
+	<string id="31210">Home</string>
+	<string id="33030">On Deck and Recently Added - Left/Right</string>
+	<string id="31212">On Deck and Recently Added - Down</string>
+	<string id="31213">Views</string>
+	<string id="31214">List Wrap</string>
+	<string id="31215">Cover Wrap</string>
+	<string id="31216">Fanart Wrap</string>
+	<string id="31217">Flow Wrap</string>
+
+	<!-- DialogBusy -->
+	<string id="31300">One moment please</string>
+
+	<!-- DialogRating -->
+	<string id="31301">Set Rating</string>
+
+	<!-- DialogSeekbar -->
+	<string id="31400">Caching...</string>
+	<string id="31401">Pause</string>
+	<string id="31402">Seeking</string>
+	<string id="31403">Fast Forward 2x</string>
+	<string id="31404">Fast Forward 4x</string>
+	<string id="31405">Fast Forward 8x</string>
+	<string id="31406">Fast Forward 16x</string>
+	<string id="31407">Fast Forward 32x</string>
+	<string id="31408">Rewind 2x</string>
+	<string id="31409">Rewind 4x</string>
+	<string id="31410">Rewind 8x</string>
+	<string id="31411">Rewind 16x</string>
+	<string id="31412">Rewind 32x</string>
+
+	<!-- DialogSeekbar -->
+	<string id="31500">Director:</string>
+	<string id="31502">Writer:</string>
+	<string id="31503">Genre:</string>
+
+	<!-- Includes -->
+	<string id="31600">View</string>
+	<string id="31601">Info</string>
+	<string id="31602">Search</string>
+	<string id="31603">Preferences</string>
+	<string id="31604">Shared Content</string>
+
+	<!-- Includes -->
+	<string id="31700">Movies</string>
+	<string id="31701">TV Shows</string>
+	<string id="31702">Episodes</string>
+	<string id="31703">Artists</string>
+	<string id="31704">Albums</string>
+	<string id="31705">Tracks</string>
+	<string id="31706">People</string>
+	<string id="31707">Clips</string>
+	<string id="31708">Searching...</string>
+	<string id="31709">People</string>
+
+	<!-- DialogButtonMenu -->
+	<string id="31800">Home</string>
+	<string id="31801">View</string>
+	<string id="31802">Information Pane</string>
+	
+	
+</strings>

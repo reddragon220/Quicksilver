@@ -1,0 +1,184 @@
+<window id="126">
+	<defaultcontrol always="true">450</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<coordinates>
+		<system>1</system>
+		<posx>98.5</posx>
+		<posy>110</posy>
+	</coordinates>
+	<include>dialog_animation</include>
+	<controls>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1083</width>
+			<height>500</height>
+			<texture>dialog/filebrowser/background.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="image">
+			<posx>662</posx>
+			<posy>14</posy>
+			<width>181</width>
+			<height>2</height>
+			<texture>dialog/pluginsettings/side_button_divider.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="grouplist" id="9000">
+			<itemgap>0</itemgap>
+			<posx>897</posx>
+			<posy>16</posy>
+			<onleft>450</onleft>
+			<control type="button" id="413">
+				<description>Ok</description>
+				<width>181</width>
+				<height>47</height>
+				<font>SideButtons</font>
+				<textcolor>ffffffff</textcolor>
+				<label>$LOCALIZE[186]</label>
+				<texturefocus>dialog/pluginsettings/side_button_highlight.png</texturefocus>
+				<texturenofocus>dialog/pluginsettings/side_button.png</texturenofocus>
+				<textoffsety>-12</textoffsety>
+				<aligny>bottom</aligny>
+			</control>
+			<control type="button" id="414">
+				<description>Cancel</description>
+				<width>181</width>
+				<height>47</height>
+				<font>SideButtons</font>
+				<textcolor>ffffffff</textcolor>
+				<label>$LOCALIZE[222]</label>
+				<texturefocus>dialog/pluginsettings/side_button_highlight.png</texturefocus>
+				<texturenofocus>dialog/pluginsettings/side_button.png</texturenofocus>
+				<textoffsety>-12</textoffsety>
+				<aligny>bottom</aligny>
+			</control>
+			<control type="button" id="415">
+				<description>Create Folder</description>
+				<width>181</width>
+				<height>47</height>
+				<font>SideButtons</font>
+				<textcolor>ffffffff</textcolor>
+				<disabledcolor>6fffffff</disabledcolor>
+				<label>$LOCALIZE[119]</label>
+				<texturefocus>dialog/pluginsettings/side_button_highlight.png</texturefocus>
+				<texturenofocus>dialog/pluginsettings/side_button.png</texturenofocus>
+				<textoffsety>-12</textoffsety>
+				<aligny>bottom</aligny>
+			</control>
+		</control>
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1083</width>
+			<height>500</height>
+			<texture>dialog/filebrowser/silver.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+
+		<control type="image">
+			<posx>21</posx>
+			<posy>70</posy>
+			<width>206</width>
+			<height>296</height>
+			<info>ListItem.thumb</info>
+			<!--><texture background="true" diffuse="views/covers/cover_big.png">NoThumb.png</texture>-->
+			<texture background="true">NoThumb.png</texture>
+			<bordertexture border="5">views/covers/cover_big_shadow.png</bordertexture>
+			<bordersize>5</bordersize>
+			<aspectratio align="center" aligny="center">keep</aspectratio>
+		</control>
+		<control type="label">
+			<visible>!StringCompare(ListItem.Label,)</visible>
+			<posx>10</posx>
+			<posy>371</posy>
+			<width>230</width>
+			<label>$INFO[ListItem.Label]</label>
+			<textcolor>ffffffff</textcolor>
+			<scroll>false</scroll>
+			<font>SettingItem</font>
+			<align>center</align>
+		</control>
+		<control type="label">
+			<visible>StringCompare(ListItem.Label,)</visible>
+			<posx>10</posx>
+			<posy>371</posy>
+			<width>230</width>
+			<label>$INFO[ListItem.FileName]</label>
+			<textcolor>ffffffff</textcolor>
+			<scroll>false</scroll>
+			<font>SettingItem</font>
+			<align>center</align>
+		</control>
+
+		<control type="list" id="450">
+			<posx>244</posx>
+			<posy>16</posy>
+			<width>648</width>
+			<height>472</height>
+			<itemgap>0</itemgap>
+			<onleft>2</onleft>
+			<onright>9000</onright>
+			<onup>2</onup>
+			<ondown>2</ondown>
+			<itemlayout height="47">
+				<control type="image">
+					<width>648</width>
+					<height>47</height>
+					<texture>dialog/long_bar_button_divider.png</texture>
+				</control>
+				<control type="label">
+					<visible>!StringCompare(ListItem.Label,)</visible>
+					<posx>26</posx>
+					<posy>-2</posy>
+					<width>648</width>
+					<height>47</height>
+					<label>$INFO[ListItem.Label]</label>
+					<scroll>false</scroll>
+					<font>SettingItem</font>
+					<textcolor>ff000000</textcolor>
+				</control>
+				<control type="label">
+					<visible>StringCompare(ListItem.Label,)</visible>
+					<posx>26</posx>
+					<posy>-2</posy>
+					<width>648</width>
+					<height>47</height>
+					<label>$INFO[ListItem.FileName]</label>
+					<scroll>false</scroll>
+					<font>SettingItem</font>
+					<textcolor>ff000000</textcolor>
+				</control>
+			</itemlayout>
+			<focusedlayout height="47">
+				<control type="image">
+					<width>648</width>
+					<height>47</height>
+					<texture>dialog/long_bar_button.png</texture>
+				</control>
+				<control type="label">
+					<visible>!StringCompare(ListItem.Label,)</visible>
+					<posx>26</posx>
+					<posy>-2</posy>
+					<width>648</width>
+					<height>47</height>
+					<info>ListItem.Label</info>
+					<scroll>true</scroll>
+					<font>SettingItem</font>
+					<textcolor>ffffffff</textcolor>
+				</control>
+				<control type="label">
+					<visible>StringCompare(ListItem.Label,)</visible>
+					<posx>26</posx>
+					<posy>-2</posy>
+					<width>648</width>
+					<height>47</height>
+					<label>$INFO[ListItem.FileName]</label>
+					<scroll>true</scroll>
+					<font>SettingItem</font>
+					<textcolor>ffffffff</textcolor>
+				</control>
+			</focusedlayout>
+		</control>
+	</controls>
+</window>

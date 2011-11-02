@@ -1,0 +1,79 @@
+<window id="2600">
+<defaultcontrol always="true">9000</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+  
+<controls>
+  
+  <control type="label">
+    <include>WindowID</include>
+    <label>MyWeather.xml</label>
+  </control>
+  
+	<control type="grouplist" id="9000">
+    <posx>10</posx>
+    <posy>40</posy>
+    <width>150</width>
+    <height>480</height>
+		<itemgap>2</itemgap>
+    <onleft>-</onleft>
+    <onright>-</onright>
+    <onup>9000</onup>
+    <ondown>9000</ondown>
+		<orientation>vertical</orientation>
+	  <control type="button" id="2">
+		  <description>Refresh</description>
+		  <label>$LOCALIZE[184]</label>
+      <width>150</width>
+      <textcolor>White</textcolor>
+      <texturefocus border="1">ButtonFo.png</texturefocus>
+      <texturenofocus border="1">ButtonNF.png</texturenofocus>
+	  </control>
+	  <control type="button" id="4">
+		  <description>Settings</description>
+		  <label>$LOCALIZE[5]</label>
+      <width>150</width>
+      <textcolor>White</textcolor>
+      <texturefocus border="1">ButtonFo.png</texturefocus>
+      <texturenofocus border="1">ButtonNF.png</texturenofocus>
+		  <onclick>XBMC.ActivateWindow(myweathersettings)</onclick>
+	  </control>
+	  <control type="spincontrolex" id="3">
+		  <description>Location Select</description>
+      <textcolor>White</textcolor>
+      <texturefocus border="1">ButtonFo.png</texturefocus>
+      <texturenofocus border="1">ButtonNF.png</texturenofocus>
+	  </control>
+	</control>
+  
+  <control type="label" id="31">
+	  <description>Day 0 Label</description>
+    <posx>0</posx>
+    <posy>181</posy>
+    <width>720</width>
+	  <label>-</label>
+    <font>Large</font>
+    <align>center</align>
+	  <textcolor>White</textcolor>
+  </control>
+  <control type="image" id="35">
+	  <description>Day 0 Icon</description>
+    <posx>296</posx>
+    <posy>224</posy>
+	  <height>128</height>
+	  <width>128</width>
+	  <texture>-</texture>
+  </control>
+  <control type="label" id="23">
+    <description>Day 0 Temp</description>
+    <posx>0</posx>
+    <posy>360</posy>
+    <width>720</width>
+    <label>-</label>
+    <font>Large</font>
+    <align>center</align>
+    <textcolor>White</textcolor>
+  </control>
+  
+</controls>
+  
+</window>

@@ -1,0 +1,1210 @@
+<includes>
+	<include file="Defaults.xml"/>
+	<include file="CommonViews.xml"/>
+	<include name="DialogBack">
+		<control type="image">
+			<width>520</width>
+			<height>424</height>
+			<texture>White.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+	</include>
+	<include name="DialogID">
+		<posx>10</posx>
+		<posy>10</posy>
+		<font>Small</font>
+		<textcolor>Red</textcolor>
+		<align>left</align>
+	</include>
+	<include name="WindowID">
+		<posx>10</posx>
+		<posy>10</posy>
+		<font>Small</font>
+		<textcolor>Red</textcolor>
+		<align>left</align>
+	</include>
+
+	<include name="views">
+		<!--
+			<control type="largeimage">
+				<description>Background Image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>$INFO[ListItem.Property(fanart_image)]</texture>
+				<fadetime>200</fadetime>
+			</control>
+			<control type="image">
+				<description>Background Overlay</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>background/overlay.png</texture>
+				<fadetime>200</fadetime>
+			</control>
+
+			<include>background</include>
+
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture>sample.png</texture>
+			</control>
+		-->
+		<control type="group">
+			<include>preferences_animation</include>
+			<include>background</include>
+			<control type="group">
+				<animation effect="fade" delay="200" start="0" end="100" time="300" condition="!Window.IsActive(2003) | Control.HasFocus(9100) | Control.HasFocus(9200) | Window.IsActive(busydialog) | Window.IsActive(progressdialog) | Window.IsActive(5001) | Window.IsActive(5002) | Window.IsActive(200)">Conditional</animation>
+				<animation effect="fade" delay="100" start="100" end="0" time="300" condition="Window.IsActive(2003) | Control.HasFocus(9100) | Control.HasFocus(9200) | Window.IsActive(busydialog) | Window.IsActive(progressdialog) | Window.IsActive(5001) | Window.IsActive(5002) | Window.IsActive(200)">Conditional</animation>
+				<include>list</include>
+				<include>infoList</include>
+				<include>covers</include>
+				<include>infoCovers</include>
+				<include>flow</include>
+				<include>infoflow</include> 
+				<include>fanart</include>
+				<include>infofanart</include>
+				<include>header</include>
+			</control>
+		</control>
+		<control type="group">
+			<description>Quick Prefs</description>
+			<include>preferences_animation</include>
+			<posy>-59</posy>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>59</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>quickprefs/background.png</texture>
+			</control>
+			<control type="group">
+				<control type="button" id="9010">
+					<visible>Control.IsVisible(50)</visible>
+					<onfocus>Container.SetViewMode(51)</onfocus>
+					<onfocus>Control.SetFocus(50)</onfocus>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>0</width>
+					<height>0</height>
+					<colordiffuse>-</colordiffuse>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label> </label>
+				</control>
+				<control type="button" id="9010">
+					<visible>Control.IsVisible(51)</visible>
+					<onfocus>Control.SetFocus(50)</onfocus>
+					<onfocus>Container.SetViewMode(50)</onfocus>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>0</width>
+					<height>0</height>
+					<colordiffuse>-</colordiffuse>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label> </label>
+				</control>
+				<control type="button" id="9010">
+					<visible>Control.IsVisible(52)</visible>
+					<onfocus>Control.SetFocus(50)</onfocus>
+					<onfocus>Container.SetViewMode(53)</onfocus>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>0</width>
+					<height>0</height>
+					<colordiffuse>-</colordiffuse>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label> </label>
+				</control>
+				<control type="button" id="9010">
+					<visible>Control.IsVisible(53)</visible>
+					<onfocus>Control.SetFocus(50)</onfocus>
+					<onfocus>Container.SetViewMode(52)</onfocus>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>0</width>
+					<height>0</height>
+					<colordiffuse>-</colordiffuse>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label> </label>
+				</control>
+				<control type="button" id="9010">
+					<visible>Control.IsVisible(54)</visible>
+					<onfocus>Control.SetFocus(50)</onfocus>
+					<onfocus>Container.SetViewMode(55)</onfocus>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>0</width>
+					<height>0</height>
+					<colordiffuse>-</colordiffuse>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label> </label>
+				</control>
+				<control type="button" id="9010">
+					<visible>Control.IsVisible(55)</visible>
+					<onfocus>Control.SetFocus(50)</onfocus>
+					<onfocus>Container.SetViewMode(54)</onfocus>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>0</width>
+					<height>0</height>
+					<colordiffuse>-</colordiffuse>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label> </label>
+				</control>
+				<control type="button" id="9010">
+					<visible>Control.IsVisible(56)</visible>
+					<onfocus>Control.SetFocus(50)</onfocus>
+					<onfocus>Container.SetViewMode(57)</onfocus>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>0</width>
+					<height>0</height>
+					<colordiffuse>-</colordiffuse>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label> </label>
+				</control>
+				<control type="button" id="9010">
+					<visible>Control.IsVisible(57)</visible>
+					<onfocus>Control.SetFocus(50)</onfocus>
+					<onfocus>Container.SetViewMode(56)</onfocus>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>0</width>
+					<height>0</height>
+					<colordiffuse>-</colordiffuse>
+					<texturefocus>-</texturefocus>
+					<texturenofocus>-</texturenofocus>
+					<label> </label>
+				</control>
+
+				
+				<control type="grouplist" id="9000">
+					<visible allowhiddenfocus="true">!Control.HasFocus(9100) + !Control.HasFocus(9101) + !Control.HasFocus(9102) + !Control.HasFocus(9103) + !Control.HasFocus(9104) + !Control.HasFocus(9200) + !Control.HasFocus(9201) + !Control.HasFocus(9202) + !Control.HasFocus(9203) + !Control.HasFocus(9204)</visible>
+					<orientation>horizontal</orientation>
+					<width>1280</width>
+					<height>50</height>
+					<posx>484</posx>
+					<posy>4.5</posy>
+					<control type="button" id="9001">
+						<visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(54) | Control.IsVisible(56)</visible>
+						<label>$LOCALIZE[31600]</label>
+						<onclick>Control.SetFocus(50)</onclick>
+						<onclick>ActivateWindow(5001)</onclick>
+						<ondown>Control.setfocus(50)</ondown>
+						
+						<font>ContextHeader</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<texturefocus>buttons/button/button_focus.png</texturefocus>
+						<texturenofocus>buttons/button/button.png</texturenofocus>
+						<width>174</width>
+						<height>50</height>
+						<aligny>bottom</aligny>
+						<textoffsety>-8</textoffsety>
+					</control>
+					<control type="button" id="9002">
+						<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(57)</visible>
+						<label>$LOCALIZE[31600]</label>
+						<onclick>Control.SetFocus(50)</onclick>
+						<onclick>ActivateWindow(5002)</onclick>
+						<ondown>setfocus(50)</ondown>
+						
+						<font>ContextHeader</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<texturefocus>buttons/button/button_focus.png</texturefocus>
+						<texturenofocus>buttons/button/button.png</texturenofocus>
+						<width>174</width>
+						<height>50</height>
+						<aligny>bottom</aligny>
+						<textoffsety>-8</textoffsety>
+					</control>
+
+
+					<control type="button" id="9003">
+						<visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(54) | Control.IsVisible(56)</visible>
+						<label>$LOCALIZE[31601]</label>
+						<onclick>Control.SetFocus(9010)</onclick>
+						<ondown>setfocus(50)</ondown>
+						
+						<font>ContextHeader</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<texturefocus>buttons/button/button_focus.png</texturefocus>
+						<texturenofocus>buttons/button/button.png</texturenofocus>
+						<width>174</width>
+						<height>50</height>
+						<aligny>bottom</aligny>
+						<textoffsety>-8</textoffsety>
+					</control>
+					<control type="button" id="9004">
+						<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(57)</visible>
+						<label>$LOCALIZE[31601]</label>
+						<ondown>setfocus(50)</ondown>
+						<onclick>Control.SetFocus(9010)</onclick>
+						<ondown>Control.SetFocus(50)</ondown>
+						
+						<font>ContextHeader</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<texturefocus>buttons/button/button_focus.png</texturefocus>
+						<texturenofocus>buttons/button/button.png</texturenofocus>
+						<width>174</width>
+						<height>50</height>
+						<aligny>bottom</aligny>
+						<textoffsety>-8</textoffsety>
+					</control>
+					
+					<!--
+						<control type="button" id="9005">
+						<posx>600</posx>
+						<font>QuickPrefs</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ff95c9f7</focusedcolor>
+						<texturefocus>-</texturefocus>
+					    <texturenofocus>-</texturenofocus>
+						<label>Preferences</label>
+						<ondown>setfocus(50)</ondown>
+						<onleft>Control.SetFocus(9003)</onleft>
+						<onright>Control.SetFocus(9005)</onright>
+					</control>
+					-->
+					<control type="button" id="9006">
+						<visible>Skin.HasSetting(developer)</visible>
+						<label>Dialog</label>
+						<!--
+						<onclick>Control.SetFocus(50)</onclick>
+						<onclick>ActivateWindow(5000)</onclick>
+						-->
+						<onclick>ActivateWindow(103)</onclick>
+
+						<ondown>setfocus(50)</ondown>
+						
+						<font>ContextHeader</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<texturefocus>buttons/button/button_focus.png</texturefocus>
+						<texturenofocus>buttons/button/button.png</texturenofocus>
+						<width>174</width>
+						<height>50</height>
+						<aligny>bottom</aligny>
+						<textoffsety>-8</textoffsety>
+					</control>
+					<control type="button" id="9007">
+						<visible>Skin.HasSetting(developer)</visible>
+						<label>$LOCALIZE[184]</label>
+						<onclick>XBMC.ReloadSkin()</onclick>
+						<ondown>setfocus(50)</ondown>
+						
+						<font>ContextHeader</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<texturefocus>buttons/button/button_focus.png</texturefocus>
+						<texturenofocus>buttons/button/button.png</texturenofocus>
+						<width>174</width>
+						<height>50</height>
+						<aligny>bottom</aligny>
+						<textoffsety>-8</textoffsety>
+					</control>
+
+					
+				</control>
+				<control type="grouplist">
+					<visible allowhiddenfocus="true">!Control.HasFocus(9100) + !Control.HasFocus(9101) + !Control.HasFocus(9102) + !Control.HasFocus(9103) + !Control.HasFocus(9104) + !Control.HasFocus(9200) + !Control.HasFocus(9201) + !Control.HasFocus(9202) + !Control.HasFocus(9203) + !Control.HasFocus(9204)</visible>
+					<orientation>horizontal</orientation>
+					<width>1280</width>
+					<height>50</height>
+					<posx>484</posx>
+					<posy>7.5</posy>
+					<control type="image" id="9001">
+						<visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(54) | Control.IsVisible(56)</visible>
+						<label> </label>						
+						<font>ContextHeader</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<texturefocus>-</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<width>174</width>
+						<height>50</height>
+						<aligny>top</aligny>
+						<textoffsety>-8</textoffsety>
+					</control>
+					<control type="image" id="9002">
+						<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(57)</visible>
+						<label> </label>						
+						<font>ContextHeader</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<texturefocus>-</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<width>174</width>
+						<height>50</height>
+						<aligny>top</aligny>
+						<textoffsety>-8</textoffsety>
+					</control>
+
+					<control type="image" id="9003">
+						<visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(54) | Control.IsVisible(56)</visible>
+						<label> </label>						
+						<font>ContextHeader</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<texturefocus>-</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<width>124</width>
+						<height>50</height>
+						<aligny>top</aligny>
+						<textoffsety>-8</textoffsety>
+					</control>
+					<control type="image" id="9004">
+						<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(57)</visible>
+						<label> </label>						
+						<font>ContextHeader</font>
+						<textcolor>ffffffff</textcolor>
+						<focusedcolor>ffffffff</focusedcolor>
+						<texturefocus>-</texturefocus>
+						<texturenofocus>-</texturenofocus>
+						<width>124</width>
+						<height>50</height>
+						<aligny>top</aligny>
+						<textoffsety>-8</textoffsety>
+					</control>
+
+					<control type="image" id="9113">
+						<visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(54) | Control.IsVisible(56)</visible>
+						<height>43</height>
+						<width>43</width>
+						<texture>quickprefs/nib_off.png</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					<control type="image" id="9114">
+						<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(57)</visible>
+						<height>43</height>
+						<width>43</width>
+						<texture>quickprefs/nib_on.png</texture>
+						<aspectratio>keep</aspectratio>
+					</control>
+					
+				</control>
+			</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>59</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>quickprefs/overlay.png</texture>
+			</control>
+		</control>
+
+		<control type="image">
+			<description>Background Image</description>
+			<visible>Window.IsActive(contextmenu)</visible>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<aspectratio>stretch</aspectratio>
+			<texture>background/dialog overlay.png</texture>
+			<fadetime>200</fadetime>
+			<animation effect="fade" start="0" end="100" time="300">Visible</animation>
+			<animation effect="fade" start="100" end="0" time="300">Hidden</animation>
+		</control>
+	</include>
+	
+	<include name="preferences_animation">
+		<animation effect="slide" end="0,59" time="200" condition="Control.HasFocus(9000) | Control.HasFocus(9001) | Control.HasFocus(9002) | Control.HasFocus(9003) | Control.HasFocus(9004) | Control.HasFocus(9005) | Control.HasFocus(9006) | Control.HasFocus(9007) | Control.HasFocus(9008) | Control.HasFocus(9009) | Control.HasFocus(9010) | Control.HasFocus(9011) | Control.HasFocus(9012) | Control.HasFocus(9013) | Control.HasFocus(9014) | Control.HasFocus(9015) | Control.HasFocus(9016) | Control.HasFocus(9017) | Control.HasFocus(9018) | Control.HasFocus(9019) | Control.HasFocus(9101) | Control.HasFocus(9102) | Control.HasFocus(9103) | Control.HasFocus(9104) | Control.HasFocus(9201) | Control.HasFocus(9202) | Control.HasFocus(9203) | Control.HasFocus(9204)">Conditional</animation>
+	</include>
+	
+	<include name="header">
+		<control type="group">
+			<control type="image">
+				<width>1280</width>
+				<height>191</height>
+				<texture>header/fade.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+
+			<control type="group">
+				<posx>972</posx>
+				<posy>3</posy>
+				<visible>Player.HasAudio</visible>
+				<control type="image">
+					<posy>-1</posy>
+					<posx>-1</posx>
+					<width>55</width>
+					<height>55</height>
+					<info>MusicPlayer.cover</info>
+					<texture diffuse="views/list/fat/album_thumb_mask.png">views/list/fat/thumb_shadow.png</texture>
+					<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+					<aligny>top</aligny>
+				</control>
+				<control type="image">
+					<posy>0</posy>
+					<posx>0</posx>
+					<width>55</width>
+					<height>55</height>
+					<info>MusicPlayer.cover</info>
+					<texture background="true" diffuse="views/list/fat/album_thumb_mask.png">NoThumb.png</texture>
+					<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+					<aligny>top</aligny>
+				</control>
+
+				<control type="group">
+					<posy>0</posy>
+					<posx>2</posx>
+					<control type="fadelabel" id="0">
+						<posx>60</posx>
+						<posy>-5</posy>
+						<label>-</label>
+						<width>120</width>
+						<label>$INFO[MusicPlayer.Title]</label>
+						<label>$INFO[MusicPlayer.Artist]</label>
+						<label>$INFO[MusicPlayer.Album]</label>
+						<font>MusicInfo</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+				        <scrollout>false</scrollout>
+				        <pauseatend>6000</pauseatend>
+					</control>
+					<control type="label" id="0">
+						<description>Play Time</description>
+						<posx>60</posx>
+						<posy>25</posy>
+						<label>-</label>
+						<width>120</width>
+						<label>$INFO[musicplayer.time] / $INFO[MusicPlayer.Duration]</label>
+						<font>Header Small</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+					</control>
+				</control>
+				<control type="group">
+					<posy>0</posy>
+					<posx>-2</posx>
+					<control type="fadelabel" id="0">
+						<posx>60</posx>
+						<posy>-5</posy>
+						<label>-</label>
+						<width>120</width>
+						<label>$INFO[MusicPlayer.Title]</label>
+						<label>$INFO[MusicPlayer.Artist]</label>
+						<label>$INFO[MusicPlayer.Album]</label>
+						<font>MusicInfo</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+				        <scrollout>false</scrollout>
+				        <pauseatend>6000</pauseatend>
+					</control>
+					<control type="label" id="0">
+						<description>Play Time</description>
+						<posx>60</posx>
+						<posy>25</posy>
+						<label>-</label>
+						<width>120</width>
+						<label>$INFO[musicplayer.time] / $INFO[MusicPlayer.Duration]</label>
+						<font>Header Small</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+					</control>
+				</control>
+				<control type="group">
+					<posy>2</posy>
+					<control type="fadelabel" id="0">
+						<posx>60</posx>
+						<posy>-5</posy>
+						<label>-</label>
+						<width>120</width>
+						<label>$INFO[MusicPlayer.Title]</label>
+						<label>$INFO[MusicPlayer.Artist]</label>
+						<label>$INFO[MusicPlayer.Album]</label>
+						<font>MusicInfo</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+				        <scrollout>false</scrollout>
+				        <pauseatend>6000</pauseatend>
+					</control>
+					<control type="label" id="0">
+						<description>Play Time</description>
+						<posx>60</posx>
+						<posy>25</posy>
+						<label>-</label>
+						<width>120</width>
+						<label>$INFO[musicplayer.time] / $INFO[MusicPlayer.Duration]</label>
+						<font>Header Small</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+					</control>
+				</control>			
+
+				<control type="group">
+					<posy>-2</posy>
+					<control type="fadelabel" id="0">
+						<posx>60</posx>
+						<posy>-5</posy>
+						<label>-</label>
+						<width>120</width>
+						<label>$INFO[MusicPlayer.Title]</label>
+						<label>$INFO[MusicPlayer.Artist]</label>
+						<label>$INFO[MusicPlayer.Album]</label>
+						<font>MusicInfo</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+				        <scrollout>false</scrollout>
+				        <pauseatend>6000</pauseatend>
+					</control>
+					<control type="label" id="0">
+						<description>Play Time</description>
+						<posx>60</posx>
+						<posy>25</posy>
+						<label>-</label>
+						<width>120</width>
+						<label>$INFO[musicplayer.time] / $INFO[MusicPlayer.Duration]</label>
+						<font>Header Small</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+					</control>
+				</control>			
+				<control type="group">
+					<control type="fadelabel" id="0">
+						<posx>60</posx>
+						<posy>-5</posy>
+						<label>-</label>
+						<width>120</width>
+						<label>$INFO[MusicPlayer.Title]</label>
+						<label>$INFO[MusicPlayer.Artist]</label>
+						<label>$INFO[MusicPlayer.Album]</label>
+						<font>MusicInfo</font>
+						<textcolor>ffffffff</textcolor>
+						<align>left</align>
+						<scroll>true</scroll>
+				        <scrollout>false</scrollout>
+				        <pauseatend>6000</pauseatend>
+					</control>
+					<control type="label" id="0">
+						<description>Play Time</description>
+						<posx>60</posx>
+						<posy>25</posy>
+						<label>-</label>
+						<width>120</width>
+						<label>$INFO[musicplayer.time] / $INFO[MusicPlayer.Duration]</label>
+						<font>Header Small</font>
+						<textcolor>ff95c9f7</textcolor>
+						<align>left</align>
+					</control>
+				</control>
+			</control>
+			
+			<control type="group">
+				<posx>1162</posx>
+				<posy>12</posy>
+
+
+				<control type="grouplist">
+					<description>right</description>
+					<posy>3</posy>
+					<posx>2</posx>
+					<orientation>horizontal</orientation>
+					<control type="label">
+						<height>25</height>
+						<width min="1" max="150">auto</width>
+						<info>System.Time(HH:MM)</info>
+						<font>Header</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+					</control>
+					<control type="label">
+						<width min="1" max="150">auto</width>
+						<height>33</height>
+						<posy>0</posy>
+						<label>AM</label>
+						<font>Header Small</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<visible>system.time(00:00,11:59)</visible>
+					</control>
+					<control type="label">
+						<width min="1" max="150">auto</width>
+						<height>33</height>
+						<label>PM</label>
+						<font>Header Small</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<visible>system.time(12:00,23:59)</visible>
+					</control>
+				</control>
+
+				<control type="grouplist">
+					<description>left</description>
+					<posy>3</posy>
+					<posx>-2</posx>
+					<orientation>horizontal</orientation>
+					<control type="label">
+						<height>25</height>
+						<width min="1" max="150">auto</width>
+						<info>System.Time(HH:MM)</info>
+						<font>Header</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+					</control>
+					<control type="label">
+						<width min="1" max="150">auto</width>
+						<height>33</height>
+						<posy>0</posy>
+						<label>AM</label>
+						<font>Header Small</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<visible>system.time(00:00,11:59)</visible>
+					</control>
+					<control type="label">
+						<width min="1" max="150">auto</width>
+						<height>33</height>
+						<label>PM</label>
+						<font>Header Small</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<visible>system.time(12:00,23:59)</visible>
+					</control>
+				</control>
+				
+				<control type="grouplist">
+					<description>bottom</description>
+					<posy>5</posy>
+					<orientation>horizontal</orientation>
+					<control type="label">
+						<height>25</height>
+						<width min="1" max="150">auto</width>
+						<info>System.Time(HH:MM)</info>
+						<font>Header</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+					</control>
+					<control type="label">
+						<width min="1" max="150">auto</width>
+						<height>33</height>
+						<posy>0</posy>
+						<label>AM</label>
+						<font>Header Small</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<visible>system.time(00:00,11:59)</visible>
+					</control>
+					<control type="label">
+						<width min="1" max="150">auto</width>
+						<height>33</height>
+						<label>PM</label>
+						<font>Header Small</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<visible>system.time(12:00,23:59)</visible>
+					</control>
+				</control>
+				
+				<control type="grouplist">
+					<description>top</description>
+					<posy>1</posy>
+					<orientation>horizontal</orientation>
+					<control type="label">
+						<height>25</height>
+						<width min="1" max="150">auto</width>
+						<info>System.Time(HH:MM)</info>
+						<font>Header</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+					</control>
+					<control type="label">
+						<width min="1" max="150">auto</width>
+						<height>33</height>
+						<posy>0</posy>
+						<label>AM</label>
+						<font>Header Small</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<visible>system.time(00:00,11:59)</visible>
+					</control>
+					<control type="label">
+						<width min="1" max="150">auto</width>
+						<height>33</height>
+						<label>PM</label>
+						<font>Header Small</font>
+						<textcolor>4b000000</textcolor>
+						<align>left</align>
+						<visible>system.time(12:00,23:59)</visible>
+					</control>
+				</control>
+
+				<control type="grouplist">
+					<posy>3</posy>
+					<orientation>horizontal</orientation>
+					<control type="label">
+						<height>25</height>
+						<width min="1" max="150">auto</width>
+						<info>System.Time(HH:MM)</info>
+						<font>Header</font>
+						<textcolor>White</textcolor>
+						<align>left</align>
+					</control>
+					<control type="label">
+						<width min="1" max="150">auto</width>
+						<height>33</height>
+						<label>AM</label>
+						<font>Header Small</font>
+						<textcolor>ff95c9f7</textcolor>
+						<align>left</align>
+						<visible>system.time(00:00,11:59)</visible>
+					</control>
+					<control type="label">
+						<width min="1" max="150">auto</width>
+						<height>33</height>
+						<label>PM</label>
+						<font>Header Small</font>
+						<textcolor>ff95c9f7</textcolor>
+						<align>left</align>
+						<visible>system.time(12:00,23:59)</visible>
+					</control>
+				</control>
+			</control>
+			
+			<control type="group">
+				<posx>20</posx>
+				<posy>0</posy>
+
+
+				<control type="grouplist">
+					<description>right</description>
+					<posy>3</posy>
+					<posx>2</posx>
+					<orientation>horizontal</orientation>
+					<include>header_title_shadow</include>
+				</control>
+				<control type="grouplist">
+					<description>left</description>
+					<posy>3</posy>
+					<posx>-2</posx>
+					<orientation>horizontal</orientation>
+					<include>header_title_shadow</include>
+				</control>
+				<control type="grouplist">
+					<description>bottom</description>
+					<posy>5</posy>
+					<orientation>horizontal</orientation>
+					<include>header_title_shadow</include>
+				</control>
+				<control type="grouplist">
+					<description>top</description>
+					<posy>1</posy>
+					<orientation>horizontal</orientation>
+					<include>header_title_shadow</include>
+				</control>
+
+				<control type="grouplist">
+					<posy>3</posy>
+					<orientation>horizontal</orientation>
+					<control type="image">
+						<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Window.IsActive(sharedcontent)</visible>
+						<width>75</width>
+						<height>55</height>
+						<texture>header/icons/television.png</texture>
+						<aspectratio>stretch</aspectratio>
+					</control>
+					<control type="image">
+						<visible>Container.Content(Movies) + !Window.IsActive(sharedcontent)</visible>
+						<width>71</width>
+						<height>55</height>
+						<texture>header/icons/movies.png</texture>
+						<aspectratio>stretch</aspectratio>
+					</control>
+					<control type="image">
+						<visible>[Container.Content(albums) | Container.Content(artists) | Container.Content(songs)] + !Window.IsActive(sharedcontent)</visible>
+						<width>55</width>
+						<height>55</height>
+						<texture>header/icons/music.png</texture>
+						<aspectratio>stretch</aspectratio>
+					</control>
+					<control type="image">
+						<visible>Container.Content(photos) + !Window.IsActive(sharedcontent)</visible>
+						<width>70</width>
+						<height>55</height>
+						<texture>header/icons/music.png</texture>
+						<aspectratio>stretch</aspectratio>
+					</control>
+					<control type="image">
+						<visible>Window.IsActive(51)</visible>
+						<width>68</width>
+						<height>55</height>
+						<texture>header/icons/search.png</texture>
+						<aspectratio>stretch</aspectratio>
+					</control>
+					<control type="image">
+						<visible>Container.Content(clip) | Window.IsActive(sharedcontent)</visible>
+						<width>53</width>
+						<height>55</height>
+						<texture>header/icons/myPlex.png</texture>
+						<aspectratio>stretch</aspectratio>
+					</control>
+					<control type="image">
+						<visible>Window.IsActive(4) | Window.IsActive(12) | Window.IsActive(13)  | Window.IsActive(14) | Window.IsActive(15) | Window.IsActive(16) | Window.IsActive(17) | Window.IsActive(18) | Window.IsActive(19) | Window.IsActive(56)</visible>
+						<width>55</width>
+						<height>55</height>
+						<texture>header/icons/preferences.png</texture>
+						<aspectratio>stretch</aspectratio>
+					</control>
+
+					<control type="label">
+						<description>First title</description>
+						<visible>!IsEmpty(Container.FirstTitle)</visible>
+						<label>$INFO[Container.FirstTitle]</label>
+						<font>Section Name</font>
+						<textcolor>ffffffff</textcolor>
+						<align>left</align>
+						<height>45</height>
+						<width min="1" max="1280">auto</width>
+					</control>
+					<control type="label">
+						<visible>!IsEmpty(Container.SecondTitle)</visible>
+						<description>Second title</description>
+						<label> [COLOR ff95c9f7]&#xB7;[/COLOR] $INFO[Container.SecondTitle]</label>
+						<font>Section Name</font>
+						<textcolor>ffffffff</textcolor>
+						<align>left</align>
+						<height>45</height>
+						<width min="1" max="1280">auto</width>
+					</control>
+					<control type="label">
+						<description>Search</description>
+						<visible>Window.IsActive(51)</visible>
+						<label>$LOCALIZE[31602]</label>
+						<font>Section Name</font>
+						<textcolor>ffffffff</textcolor>
+						<align>left</align>
+						<height>45</height>
+						<width min="1" max="1280">auto</width>
+					</control>
+					<control type="label">
+						<description>Preferences</description>
+						<visible>Window.IsActive(4) | Window.IsActive(12) | Window.IsActive(13)  | Window.IsActive(14) | Window.IsActive(15) | Window.IsActive(16) | Window.IsActive(17) | Window.IsActive(18) | Window.IsActive(19) | Window.IsActive(56)</visible>
+						<label>$LOCALIZE[31603]</label>
+						<font>Section Name</font>
+						<textcolor>ffffffff</textcolor>
+						<align>left</align>
+						<height>45</height>
+						<width min="1" max="1280">auto</width>
+					</control>
+					<control type="label">
+						<description>Video Plugins</description>
+						<visible>Window.IsActive(videofiles) + IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle)</visible>
+						<label>$LOCALIZE[31005]</label>
+						<font>Section Name</font>
+						<textcolor>ffffffff</textcolor>
+						<align>left</align>
+						<height>45</height>
+						<width min="1" max="1280">auto</width>
+					</control>
+					<control type="label">
+						<description>Music Plugins</description>
+						<visible>Window.IsActive(musicfiles) + IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle)</visible>
+						<label>$LOCALIZE[31006]</label>
+						<font>Section Name</font>
+						<textcolor>ffffffff</textcolor>
+						<align>left</align>
+						<height>45</height>
+						<width min="1" max="1280">auto</width>
+					</control>
+					<control type="label">
+						<description>Pictures Plugins</description>
+						<visible>Window.IsActive(pictures) + IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle)</visible>
+						<label>$LOCALIZE[31006]</label>
+						<font>Section Name</font>
+						<textcolor>ffffffff</textcolor>
+						<align>left</align>
+						<height>45</height>
+						<width min="1" max="1280">auto</width>
+					</control>
+					<control type="label">
+						<description>Shared Content</description>
+						<visible>Window.IsActive(sharedcontent) + IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle)</visible>
+						<label>$LOCALIZE[31604]</label>
+						<font>Section Name</font>
+						<textcolor>ffffffff</textcolor>
+						<align>left</align>
+						<height>45</height>
+						<width min="1" max="1280">auto</width>
+					</control>
+					
+				</control>
+			</control>
+		</control>
+	</include>
+	
+	<include name="header_title_shadow">
+		<control type="image">
+			<visible>[Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + !Window.IsActive(sharedcontent)</visible>
+			<width>75</width>
+			<height>55</height>
+			<texture>-</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="image">
+			<visible>Container.Content(Movies) + !Window.IsActive(sharedcontent)</visible>
+			<width>71</width>
+			<height>55</height>
+			<texture>-</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="image">
+			<visible>[Container.Content(albums) | Container.Content(artists) | Container.Content(songs)] + !Window.IsActive(sharedcontent)</visible>
+			<width>55</width>
+			<height>55</height>
+			<texture>-</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="image">
+			<visible>Container.Content(photos) + !Window.IsActive(sharedcontent)</visible>
+			<width>70</width>
+			<height>55</height>
+			<texture>-</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>					
+		<control type="image">
+			<visible>Window.IsActive(51)</visible>
+			<width>68</width>
+			<height>55</height>
+			<texture>-</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="image">
+			<visible>Container.Content(clip) | Window.IsActive(sharedcontent)</visible>
+			<width>53</width>
+			<height>55</height>
+			<texture>-</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="image">
+			<visible>Window.IsActive(4) | Window.IsActive(12) | Window.IsActive(13)  | Window.IsActive(14) | Window.IsActive(15) | Window.IsActive(16) | Window.IsActive(17) | Window.IsActive(18) | Window.IsActive(19) | Window.IsActive(56)</visible>
+			<width>55</width>
+			<height>55</height>
+			<texture>-</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		
+		<control type="label">
+			<description>First title</description>
+			<visible>!IsEmpty(Container.FirstTitle)</visible>
+			<label>$INFO[Container.FirstTitle]</label>
+			<font>Section Name</font>
+			<textcolor>4b000000</textcolor>
+			<align>left</align>		
+			<height>45</height>	
+			<width min="1" max="1280">auto</width>			
+		</control>
+		<control type="label">
+			<visible>!IsEmpty(Container.SecondTitle)</visible>
+			<description>Second title</description>
+			<label> &#xB7; $INFO[Container.SecondTitle]</label>
+			<font>Section Name</font>
+			<textcolor>4b000000</textcolor>
+			<align>left</align>
+			<height>45</height>
+			<width min="1" max="1280">auto</width>
+		</control>
+		<control type="label">
+			<description>Search</description>
+			<visible>Window.IsActive(51)</visible>
+			<label>$LOCALIZE[31602]</label>
+			<font>Section Name</font>
+			<textcolor>4b000000</textcolor>
+			<align>left</align>
+			<height>45</height>
+			<width min="1" max="1280">auto</width>
+		</control>
+		<control type="label">
+			<description>Preferences</description>
+			<visible>Window.IsActive(4) | Window.IsActive(12) | Window.IsActive(13)  | Window.IsActive(14) | Window.IsActive(15) | Window.IsActive(16) | Window.IsActive(17) | Window.IsActive(18) | Window.IsActive(19) | Window.IsActive(56)</visible>
+			<label>$LOCALIZE[31603]</label>
+			<font>Section Name</font>
+			<textcolor>4b000000</textcolor>
+			<align>left</align>
+			<height>45</height>
+			<width min="1" max="1280">auto</width>
+		</control>
+		<control type="label">
+			<description>Video Plugins</description>
+			<visible>Window.IsActive(videofiles) + IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle)</visible>
+			<label>$LOCALIZE[31005]</label>
+			<font>Section Name</font>
+			<textcolor>4b000000</textcolor>
+			<align>left</align>
+			<height>45</height>
+			<width min="1" max="1280">auto</width>
+		</control>
+		<control type="label">
+			<description>Music Plugins</description>
+			<visible>Window.IsActive(musicfiles) + IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle)</visible>
+			<label>$LOCALIZE[31006]</label>
+			<font>Section Name</font>
+			<textcolor>4b000000</textcolor>
+			<align>left</align>
+			<height>45</height>
+			<width min="1" max="1280">auto</width>
+		</control>
+		<control type="label">
+			<description>Pictures Plugins</description>
+			<visible>Window.IsActive(pictures) + IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle)</visible>
+			<label>$LOCALIZE[31006]</label>
+			<font>Section Name</font>
+			<textcolor>4b000000</textcolor>
+			<align>left</align>
+			<height>45</height>
+			<width min="1" max="1280">auto</width>
+		</control>
+		<control type="label">
+			<description>Shared Content</description>
+			<visible>Window.IsActive(sharedcontent) + IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle)</visible>
+			<label>$LOCALIZE[31604]</label>
+			<font>Section Name</font>
+			<textcolor>4b000000</textcolor>
+			<align>left</align>
+			<height>45</height>
+			<width min="1" max="1280">auto</width>
+		</control>
+		
+	</include>
+	
+	<!-- Home -->
+	<visible>Skin.HasSetting(quicklist_leftright)</visible>
+	<include name="home_quicklist_left_right">
+		<orientation>horizontal</orientation>
+	</include>
+	<include name="home_quicklist_up_down">
+		<orientation>vertical</orientation>
+	</include>
+	
+	<!-- Background -->
+	<include name="bg_animation">
+		<animation type="Conditional" condition="true" pulse="true">
+			<effect type="slide" start="40,40" end="0,0" time="19000" tween="linear"/>
+			<effect type="zoom" delay="19000" start="130" end="100" center="auto" time="85000" tween="linear"/>
+		</animation>
+		<!--
+		<animation type="Conditional" condition="true" pulse="true">
+			<effect type="slide" start="40,40" end="0,0" time="19000" tween="linear"/>
+			<effect type="zoom" delay="19000" start="130" end="100" center="auto" time="85000" tween="linear"/>
+		</animation>
+		-->
+	</include>
+	
+	<include name="fanart_image">
+		<control type="image">
+			<description>Background Image</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<aspectratio>scale</aspectratio>
+			<texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
+			<fadetime>200</fadetime>
+		</control>
+	</include>
+	<include name="Background1">
+		<texture background="true">background/stream.png</texture>
+	</include>
+	<include name="Background2">
+		<texture background="true">background/bokeh.png</texture>
+	</include>
+	<include name="Custom_Background">
+		<texture background="true">$INFO[Skin.String(Custom_Background)]</texture>
+	</include>
+	
+	<include name="background">
+		<control type="group">
+			<include condition="Skin.HasSetting(ken_burns)">bg_animation</include>
+			<control type="image">
+				<visible>IsEmpty(ListItem.Property(fanart_image)) | Skin.HasSetting(fanart)</visible>
+				<description>Background Image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>scale</aspectratio>
+
+				<include condition="Skin.String(Custom_Background)">Custom_Background</include>
+				<include condition="!Skin.String(Custom_Background) + !Skin.HasSetting(Background1)">Background1</include>
+				<include condition="!Skin.String(Custom_Background) + Skin.HasSetting(Background2)">Background2</include>
+				<!--
+				<include>Background2</include>
+				-->
+				<fadetime>200</fadetime>
+			</control>
+			
+			<include condition="!Skin.HasSetting(fanart)">fanart_image</include>
+			
+			<control type="image">
+				<description>Background Overlay</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>background/overlay.png</texture>
+				<fadetime>200</fadetime>
+			</control>
+		</control>
+	</include>
+	
+	<include name="background_reset">
+		<onclick>Skin.Reset(Custom_Background)</onclick>
+		<onclick>Skin.Reset(Background1)</onclick>
+		<onclick>Skin.Reset(Background2)</onclick>
+	</include>
+	
+	
+	<!-- Dialog -->
+	<include name="dialog_animation">
+		<animation type="WindowOpen" reversible="false">
+			<effect type="zoom" start="80" end="100" center="640,360" delay="200" easing="out" tween="back" time="300"/>
+			<effect type="fade" delay="200" start="0" end="100" time="300"/>
+		</animation>
+		<animation type="WindowClose" reversible="false">
+			<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="300"/>
+			<effect type="fade" start="100" end="0" time="300"/>
+		</animation>
+	</include>
+	<include name="info_fade">
+		<animation effect="fade" delay="200" start="0" end="100" time="300">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+	</include>
+	<include name="dialog_overlay">
+		<control type="image">
+			<description>Dialog overlay</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<aspectratio>stretch</aspectratio>
+			<texture>background/dialog overlay.png</texture>
+			<fadetime>200</fadetime>
+			<animation effect="fade" start="0" end="100" time="300">WindowOpen</animation>
+			<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>
+		</control>
+	</include>
+</includes>

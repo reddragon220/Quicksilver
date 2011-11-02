@@ -1,0 +1,28 @@
+<window id="113">
+<defaultcontrol always="true">901</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+  
+<coordinates>
+  <system>1</system>
+  <posx>10</posx>
+  <posy>480</posy>
+</coordinates>
+  
+<controls>
+
+  <control type="label">
+    <posx>45</posx>
+    <include>DialogID</include>
+    <label>DialogMuteBug.xml</label>
+  </control>
+  
+	<control type="image" id="901">
+		<description>Mute Image</description>
+		<width>40</width>
+		<height>40</height>
+		<texture>Mute.png</texture>
+	</control>
+    
+</controls>
+  
+</window>

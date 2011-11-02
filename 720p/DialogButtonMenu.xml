@@ -1,0 +1,149 @@
+<window type="dialog" id="111">
+	<defaultcontrol always="true">50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
+	<controls>
+		<include>dialog_overlay</include>
+		<control type="group">
+			<include>dialog_animation</include>
+			<posx>448.5</posx>
+			<posy>275</posy>
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>14</posy>
+			<width>383</width>
+			<height>142</height>
+			<texture>dialog/contextmenu/context_menu_bg_middle.png</texture>
+			<aspectratio>stretch</aspectratio>
+		</control>
+		<control type="image" id="997">
+			<description>background top image</description>
+			<width>383</width>
+			<height>14</height>
+			<posy>0</posy>
+			<posx>0</posx>
+			<texture>dialog/contextmenu/context_menu_bg_top.png</texture>
+			<aspectratio>-</aspectratio>
+		</control>
+		<control type="image" id="998">
+			<description>background bottom image</description>
+			<posy>156</posy>
+			<width>383</width>
+			<height>14</height>
+			<texture>dialog/contextmenu/context_menu_bg_bottom.png</texture>
+			<aspectratio>-</aspectratio>
+		</control>
+		<control type="grouplist" id="50">
+			<orientation>vertical</orientation>
+			<posx>0</posx>
+			<posy>14</posy>
+			<width>383</width>
+			<height>382</height>
+			<control type="button" height="44" width="373" id="3111">
+				<visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(54) | Control.IsVisible(56)</visible>
+				<posx>0</posx>
+				<posy>0</posy>
+				<height>44</height>
+				<width>383</width>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7fe8e8db</disabledcolor>
+				<alignx>center</alignx>
+				<aligny>bottom</aligny>
+				<font>Context</font>
+				<textoffsetx>8</textoffsetx>
+				<textoffsety>-7</textoffsety>
+				<texturefocus>dialog/contextmenu/highlight.png</texturefocus>
+				<!--><texturenofocus>dialog/contextmenu/divider.png</texturenofocus>-->
+				<description>View</description>
+				<label>$LOCALIZE[31801]</label>
+				<onclick>ActivateWindow(5001)</onclick>
+			</control>
+			<control type="button" height="44" width="373" id="3112">
+				<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(57)</visible>
+				<posx>0</posx>
+				<posy>0</posy>
+				<height>44</height>
+				<width>383</width>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7fe8e8db</disabledcolor>
+				<alignx>center</alignx>
+				<aligny>bottom</aligny>
+				<font>Context</font>
+				<textoffsetx>8</textoffsetx>
+				<textoffsety>-7</textoffsety>
+				<texturefocus>dialog/contextmenu/highlight.png</texturefocus>
+				<!--><texturenofocus>dialog/contextmenu/divider.png</texturenofocus>-->
+				<description>View</description>
+				<label>$LOCALIZE[31801]</label>
+				<onclick>ActivateWindow(5002)</onclick>
+			</control>
+			
+			<control type="button" height="44" width="373" id="3113">
+				<visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(54) | Control.IsVisible(56) | Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(57)</visible>
+				<posx>0</posx>
+				<posy>0</posy>
+				<height>44</height>
+				<width>383</width>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7fe8e8db</disabledcolor>
+				<alignx>center</alignx>
+				<aligny>bottom</aligny>
+				<font>Context</font>
+				<textoffsetx>8</textoffsetx>
+				<textoffsety>-7</textoffsety>
+				<texturefocus>dialog/contextmenu/highlight.png</texturefocus>
+				<!--><texturenofocus>dialog/contextmenu/divider.png</texturenofocus>-->
+				<description>Info</description>
+				<label>$LOCALIZE[31802]</label>
+				<onclick>Control.SetFocus(9010)</onclick>
+			</control>
+			<control type="button" height="44" width="373" id="3114">
+				<posx>0</posx>
+				<posy>0</posy>
+				<height>44</height>
+				<width>383</width>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7fe8e8db</disabledcolor>
+				<alignx>center</alignx>
+				<aligny>bottom</aligny>
+				<font>Context</font>
+				<textoffsetx>8</textoffsetx>
+				<textoffsety>-7</textoffsety>
+				<texturefocus>dialog/contextmenu/highlight.png</texturefocus>
+				<!--><texturenofocus>dialog/contextmenu/divider.png</texturenofocus>-->
+				<description>Preferences</description>
+				<label>$LOCALIZE[31003]</label>
+				<onclick>xbmc.activatewindow(settings)</onclick>
+			</control>
+		</control>
+		<control type="group">
+			<visible>false</visible>
+			<posx>333</posx>
+			<posy>66</posy>
+		<control type="image">
+			<visible>Control.IsVisible(50) | Control.IsVisible(52) | Control.IsVisible(54) | Control.IsVisible(56)</visible>
+			<height>43</height>
+			<width>43</width>
+			<texture>quickprefs/nib_off.png</texture>
+			<aspectratio>keep</aspectratio>
+		</control>
+		<control type="image">
+			<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(57)</visible>
+			<height>43</height>
+			<width>43</width>
+			<texture>quickprefs/nib_on.png</texture>
+			<aspectratio>keep</aspectratio>
+		</control>
+		</control>
+		</control>
+	</controls>
+</window>
