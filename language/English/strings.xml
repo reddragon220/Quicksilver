@@ -16,6 +16,7 @@
 	<string id="31011">Shared Content</string>
 	<string id="31012">No Library</string>
 	<string id="31013">Quit</string>
+	<string id="31014">Applications</string>
 
 	<!-- Home Menu Subtitles (Don't Translate $INFO[Container(300).ListItem.Label]) -->
 	<string id="31020">View libraries shared over my.Plexapp.com</string>

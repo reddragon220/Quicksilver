@@ -1207,7 +1207,11 @@
 							<visible>[!Skin.HasSetting(HidePictures)]</visible>
 							<onclick>XBMC.ActivateWindow(2)</onclick>
 						</item>
-
+						<item id="4">
+							<description>Applications</description>
+							<label>$LOCALIZE[31014]</label>
+							<onclick>XBMC.ActivateWindow(1)</onclick>
+						</item>
 						<item id="0">
 							<visible>IsEmpty(system.selectedplexmediaserver)</visible>
 							<description>No Library Plex Crash Bug</description>
@@ -1297,7 +1301,8 @@
 				<control type="label" id="900">
 					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
 					<visible>[Control.HasFocus(300) | Control.HasFocus(11000) | Control.HasFocus(11001)] + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[31000]) + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[31001]) + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[31005]) + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[31006]) + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[31007]) + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[31002]) + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[31011]) +
-!StringCompare(Container(300).ListItem.Label,$LOCALIZE[31012]) + IsEmpty(Container(300).ListItem.Label2)						
+!StringCompare(Container(300).ListItem.Label,$LOCALIZE[31012]) +
+!StringCompare(Container(300).ListItem.Label,$LOCALIZE[31014]) + IsEmpty(Container(300).ListItem.Label2)						
 					</visible>
 					<posx>0</posx>
 					<posy>1</posy>
@@ -1309,7 +1314,8 @@
 				</control>
 				<control type="label" id="900">
 					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
-					<visible>[Control.HasFocus(300) | Control.HasFocus(11002)] + [StringCompare(Container(300).ListItem.Label,$LOCALIZE[31001]) | StringCompare(Container(300).ListItem.Label,$LOCALIZE[31005]) | StringCompare(Container(300).ListItem.Label,$LOCALIZE[31006]) | StringCompare(Container(300).ListItem.Label,$LOCALIZE[31007])]</visible>
+					<visible>[Control.HasFocus(300) | Control.HasFocus(11002)] + [StringCompare(Container(300).ListItem.Label,$LOCALIZE[31001]) | StringCompare(Container(300).ListItem.Label,$LOCALIZE[31005]) | StringCompare(Container(300).ListItem.Label,$LOCALIZE[31006]) | StringCompare(Container(300).ListItem.Label,$LOCALIZE[31007]) |
+StringCompare(Container(300).ListItem.Label,$LOCALIZE[31014])]</visible>
 					<posx>0</posx>
 					<posy>1</posy>
 					<width>1280</width>
@@ -1331,7 +1337,7 @@
 				</control>
 				<control type="label" id="900">
 					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
-					<visible>Container(300).hasfocus(4)</visible>
+					<visible>Container(300).hasfocus(4) + !StringCompare(Container(300).ListItem.Label,$LOCALIZE[31014])</visible>
 					<posx>0</posx>
 					<posy>1</posy>
 					<width>1280</width>

@@ -950,6 +950,17 @@
 						<height>45</height>
 						<width min="1" max="1280">auto</width>
 					</control>
+					<control type="label">
+						<description>Shared Content</description>
+						<visible>Window.IsActive(programs) + IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle)</visible>
+						<label>$LOCALIZE[31014]</label>
+						<font>Section Name</font>
+						<textcolor>ffffffff</textcolor>
+						<align>left</align>
+						<height>45</height>
+						<width min="1" max="1280">auto</width>
+					</control>
+					
 					
 				</control>
 			</control>
@@ -1081,6 +1092,16 @@
 			<description>Shared Content</description>
 			<visible>Window.IsActive(sharedcontent) + IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle)</visible>
 			<label>$LOCALIZE[31604]</label>
+			<font>Section Name</font>
+			<textcolor>4b000000</textcolor>
+			<align>left</align>
+			<height>45</height>
+			<width min="1" max="1280">auto</width>
+		</control>
+		<control type="label">
+			<description>Shared Content</description>
+			<visible>Window.IsActive(programs) + IsEmpty(Container.SecondTitle) + IsEmpty(Container.FirstTitle)</visible>
+			<label>$LOCALIZE[31014]</label>
 			<font>Section Name</font>
 			<textcolor>4b000000</textcolor>
 			<align>left</align>
