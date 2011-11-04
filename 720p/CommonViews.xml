@@ -4965,6 +4965,7 @@
 				<aspectratio>keep</aspectratio>
 			</control>
 			<control type="label">
+				<visible>!Container.Content(episodes)</visible>
 				<description>Sort Letter</description>
 				<posx>0</posx>
 				<posy>35</posy>
@@ -4972,6 +4973,17 @@
 				<font>sort_letter</font>
 				<align>center</align>
 				<label>$INFO[ListItem.SortLetter]</label>
+				<textcolor>ffffffff</textcolor>
+			</control>
+			<control type="label">
+				<visible>Container.Content(episodes)</visible>
+				<description>Sort Letter</description>
+				<posx>0</posx>
+				<posy>35</posy>
+				<width>114</width>
+				<font>sort_letter</font>
+				<align>center</align>
+				<label>$INFO[ListItem.Season]</label>
 				<textcolor>ffffffff</textcolor>
 			</control>
 		</control>
