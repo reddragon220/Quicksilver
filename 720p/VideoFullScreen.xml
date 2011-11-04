@@ -1,5 +1,42 @@
 <window id="2005">
 	<defaultcontrol>-</defaultcontrol>
-	<controls>		
+	<controls>
+		<!-- codec infos -->
+			<control type="group">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>125</height>
+				<control type="label" id="10">
+					<description>row 1 label</description>
+					<posx>0</posx>
+					<posy>10</posy>
+					<label>-</label>
+					<align>center</align>
+					<textcolor>ffffffff</textcolor>
+					<width>1280</width>
+					<font>OSD</font>
+				</control>
+				<control type="label" id="11">
+					<description>row 2 label</description>
+					<posx>0</posx>
+					<posy>35</posy>
+					<label>-</label>
+					<align>center</align>
+					<textcolor>ffffffff</textcolor>
+					<width>1280</width>
+					<font>OSD</font>
+				</control>
+				<control type="label" id="12">
+					<description>row 3 label</description>
+					<posx>0</posx>
+					<posy>60</posy>
+					<label>-</label>
+					<align>center</align>
+					<textcolor>ffffffff</textcolor>
+					<width>1280</width>
+					<font>OSD</font>
+				</control>
+			</control>		
 	</controls>
 </window>
