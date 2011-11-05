@@ -795,13 +795,6 @@
 				
 			</control>
 			<control type="scrollbar" id="501">
-			      <animation type="Visible" reversible="false">
-					<effect type="fade" delay="200" start="0" end="100" time="100"/>
-				</animation>
-				<animation type="Hidden" reversible="false">
-					<effect type="fade" start="100" end="0" time="100"/>
-				</animation>
-				  <visible allowhiddenfocus="true">Control.HasFocus(501)</visible>
 			      <posx>1258</posx>
 			      <posy>64</posy>
 			      <width>22</width>
@@ -819,6 +812,8 @@
 			      <ondown>-</ondown>
 			      <onleft>50</onleft>
 			      <onright>-</onright>
+				<animation effect="fade" start="0" end="100" time="100">Focus</animation>
+				<animation effect="slide" start="0,0" end="0,720" time="0" condition="!Control.HasFocus(501)">Conditional</animation>
 			</control>
 			<control type="group">
 				<posx>583</posx>
@@ -1623,12 +1618,8 @@
 				<ondown>-</ondown>
 				<onleft>50</onleft>
 				<onright>-</onright>
-				<animation type="Visible" reversible="false">
-					<effect type="fade" delay="200" start="0" end="100" time="100"/>
-				</animation>
-				<animation type="Hidden" reversible="false">
-					<effect type="fade" start="100" end="0" time="100"/>
-				</animation>
+				<animation effect="fade" start="0" end="100" time="100">Focus</animation>
+				<animation effect="slide" start="0,0" end="0,720" time="0" condition="!Control.HasFocus(501)">Conditional</animation>
 			</control>
 			<control type="group">
 				<posx>345</posx>
@@ -1898,8 +1889,8 @@
 				<onup>9000</onup>
 				<ondown>-</ondown>
 				<onleft>9000</onleft>
-				<onright>501</onright>
-				<pagecontrol>501</pagecontrol>
+				<onright>502</onright>
+				<pagecontrol>502</pagecontrol>
 				<itemlayout width="210" height="226">
 					<control type="image">
 						<posx>14</posx>
@@ -2092,7 +2083,6 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="501">
-				<visible allowhiddenfocus="true">Control.HasFocus(501) + [Container.Content(movies) |  Container.Content(tvshows) | Container.Content(seasons)]</visible>
 				<posx>1258</posx>
 				<posy>90</posy>
 				<width>22</width>
@@ -2110,15 +2100,10 @@
 				<ondown>-</ondown>
 				<onleft>50</onleft>
 				<onright>-</onright>
-				<animation type="Visible" reversible="false">
-					<effect type="fade" delay="200" start="0" end="100" time="100"/>
-				</animation>
-				<animation type="Hidden" reversible="false">
-					<effect type="fade" start="100" end="0" time="100"/>
-				</animation>
+				<animation effect="fade" start="0" end="100" time="100">Focus</animation>
+				<animation effect="slide" start="0,0" end="0,720" time="0" condition="!Control.HasFocus(501)">Conditional</animation>
 			</control>
-			<control type="scrollbar" id="501">
-				<visible allowhiddenfocus="true">Control.HasFocus(501) + ![Container.Content(movies) |  Container.Content(tvshows) | Container.Content(seasons)]</visible>
+			<control type="scrollbar" id="502">
 				<posx>1258</posx>
 				<posy>65</posy>
 				<width>22</width>
@@ -2136,12 +2121,8 @@
 				<ondown>-</ondown>
 				<onleft>50</onleft>
 				<onright>-</onright>
-				<animation type="Visible" reversible="false">
-					<effect type="fade" delay="200" start="0" end="100" time="100"/>
-				</animation>
-				<animation type="Hidden" reversible="false">
-					<effect type="fade" start="100" end="0" time="100"/>
-				</animation>
+				<animation effect="fade" start="0" end="100" time="100">Focus</animation>
+				<animation effect="slide" start="0,0" end="0,720" time="0" condition="!Control.HasFocus(502)">Conditional</animation>
 			</control>
 			
 			<control type="group">
@@ -2413,8 +2394,8 @@
 				<onup>9000</onup>
 				<ondown>-</ondown>
 				<onleft>9000</onleft>
-				<onright>501</onright>
-				<pagecontrol>501</pagecontrol>
+				<onright>502</onright>
+				<pagecontrol>502</pagecontrol>
 				<itemlayout width="192" height="226">
 					<control type="image">
 						<posx>14</posx>
@@ -2605,7 +2586,6 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="501">
-				<visible allowhiddenfocus="true">Control.HasFocus(501) + [Container.Content(movies) |  Container.Content(tvshows) | Container.Content(seasons)]</visible>
 				<posx>783</posx>
 				<posy>90</posy>
 				<width>22</width>
@@ -2623,15 +2603,10 @@
 				<ondown>-</ondown>
 				<onleft>50</onleft>
 				<onright>-</onright>
-				<animation type="Visible" reversible="false">
-					<effect type="fade" delay="200" start="0" end="100" time="100"/>
-				</animation>
-				<animation type="Hidden" reversible="false">
-					<effect type="fade" start="100" end="0" time="100"/>
-				</animation>
+				<animation effect="fade" start="0" end="100" time="100">Focus</animation>
+				<animation effect="slide" start="0,0" end="0,720" time="0" condition="!Control.HasFocus(501)">Conditional</animation>
 			</control>
-			<control type="scrollbar" id="501">
-				<visible allowhiddenfocus="true">Control.HasFocus(501) + ![Container.Content(movies) |  Container.Content(tvshows) | Container.Content(seasons)]</visible>
+			<control type="scrollbar" id="502">
 				<posx>783</posx>
 				<posy>65</posy>
 				<width>22</width>
@@ -2649,12 +2624,8 @@
 				<ondown>-</ondown>
 				<onleft>50</onleft>
 				<onright>-</onright>
-				<animation type="Visible" reversible="false">
-					<effect type="fade" delay="200" start="0" end="100" time="100"/>
-				</animation>
-				<animation type="Hidden" reversible="false">
-					<effect type="fade" start="100" end="0" time="100"/>
-				</animation>
+				<animation effect="fade" start="0" end="100" time="100">Focus</animation>
+				<animation effect="slide" start="0,0" end="0,720" time="0" condition="!Control.HasFocus(502)">Conditional</animation>
 			</control>
 			
 			<control type="group">
@@ -3139,7 +3110,6 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="501">
-				<visible allowhiddenfocus="true">Control.HasFocus(501)</visible>
 				<posx>0</posx>
 				<posy>680</posy>
 				<width>1280</width>
@@ -3157,12 +3127,8 @@
 				<ondown>-</ondown>
 				<onleft>-</onleft>
 				<onright>-</onright>
-				<animation type="Visible" reversible="false">
-					<effect type="fade" delay="200" start="0" end="100" time="100"/>
-				</animation>
-				<animation type="Hidden" reversible="false">
-					<effect type="fade" start="100" end="0" time="100"/>
-				</animation>
+				<animation effect="fade" start="0" end="100" time="100">Focus</animation>
+				<animation effect="slide" start="0,0" end="0,720" time="0" condition="!Control.HasFocus(501)">Conditional</animation>
 			</control>
 			<control type="label">
 				<visible allowhiddenfocus="true">!Control.HasFocus(501)</visible>
@@ -3971,7 +3937,6 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="501">
-				<visible allowhiddenfocus="true">Control.HasFocus(501)</visible>
 				<posx>0</posx>
 				<posy>680</posy>
 				<width>1280</width>
@@ -3989,12 +3954,8 @@
 				<ondown>-</ondown>
 				<onleft>-</onleft>
 				<onright>-</onright>
-				<animation type="Visible" reversible="false">
-					<effect type="fade" delay="200" start="0" end="100" time="100"/>
-				</animation>
-				<animation type="Hidden" reversible="false">
-					<effect type="fade" start="100" end="0" time="100"/>
-				</animation>
+				<animation effect="fade" start="0" end="100" time="100">Focus</animation>
+				<animation effect="slide" start="0,0" end="0,720" time="0" condition="!Control.HasFocus(501)">Conditional</animation>
 			</control>
 			<control type="label">
 				<visible allowhiddenfocus="true">!Control.HasFocus(501)</visible>
@@ -4445,7 +4406,6 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="501">
-				<visible allowhiddenfocus="true">Control.HasFocus(501)</visible>
 				<posx>1258</posx>
 				<posy>90</posy>
 				<width>22</width>
@@ -4463,12 +4423,8 @@
 				<ondown>-</ondown>
 				<onleft>50</onleft>
 				<onright>-</onright>
-				<animation type="Visible" reversible="false">
-					<effect type="fade" delay="200" start="0" end="100" time="100"/>
-				</animation>
-				<animation type="Hidden" reversible="false">
-					<effect type="fade" start="100" end="0" time="100"/>
-				</animation>
+				<animation effect="fade" start="0" end="100" time="100">Focus</animation>
+				<animation effect="slide" start="0,0" end="0,720" time="0" condition="!Control.HasFocus(501)">Conditional</animation>
 			</control>
 			
 			<control type="group">
@@ -4887,7 +4843,6 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="501">
-				<visible allowhiddenfocus="true">Control.HasFocus(501)</visible>
 				<posx>783</posx>
 				<posy>90</posy>
 				<width>22</width>
@@ -4905,12 +4860,8 @@
 				<ondown>-</ondown>
 				<onleft>50</onleft>
 				<onright>-</onright>
-				<animation type="Visible" reversible="false">
-					<effect type="fade" delay="200" start="0" end="100" time="100"/>
-				</animation>
-				<animation type="Hidden" reversible="false">
-					<effect type="fade" start="100" end="0" time="100"/>
-				</animation>
+				<animation effect="fade" start="0" end="100" time="100">Focus</animation>
+				<animation effect="slide" start="0,0" end="0,720" time="0" condition="!Control.HasFocus(501)">Conditional</animation>
 			</control>
 			<control type="group">
 				<posx>345</posx>
