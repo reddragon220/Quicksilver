@@ -29,11 +29,12 @@
 				<width>1280</width>
 				<height>656</height>
 				<onleft>9000</onleft>
-				<onright>50</onright>
+				<onright>501</onright>
 				<onup>9000</onup>
 				<ondown>-</ondown>
 				<viewtype label="$LOCALIZE[31100]">list</viewtype>
 				<scrolltime>200</scrolltime>
+				<pagecontrol>501</pagecontrol>
 				<itemlayout condition="Container.Content(secondary) | Container.Content(songs)" height="44">
 					<control type="image">
 						<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
@@ -793,6 +794,32 @@
 				</focusedlayout>
 				
 			</control>
+			<control type="scrollbar" id="501">
+			      <animation type="Visible" reversible="false">
+					<effect type="fade" delay="200" start="0" end="100" time="100"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="100"/>
+				</animation>
+				  <visible allowhiddenfocus="true">Control.HasFocus(501)</visible>
+			      <posx>1258</posx>
+			      <posy>64</posy>
+			      <width>22</width>
+			      <height>656</height>
+			      <visible>true</visible>
+			      <texturesliderbackground>views/scrollbar.png</texturesliderbackground>
+			      <texturesliderbar>-</texturesliderbar>
+			      <texturesliderbarfocus>-</texturesliderbarfocus>
+			      <textureslidernib>views/scrollNib.png</textureslidernib>
+			      <textureslidernibfocus>views/scrollNib.png</textureslidernibfocus>
+			      <pulseonselect></pulseonselect>
+			      <orientation>vertical</orientation>
+			      <showonepage>false</showonepage>
+			      <onup>-</onup>
+			      <ondown>-</ondown>
+			      <onleft>50</onleft>
+			      <onright>-</onright>
+			</control>
 			<control type="group">
 				<posx>583</posx>
 				<posy>335</posy>
@@ -830,11 +857,12 @@
 				<width>805</width>
 				<height>656</height>
 				<onleft>9000</onleft>
-				<onright>50</onright>
+				<onright>501</onright>
 				<onup>9000</onup>
 				<ondown>-</ondown>
 				<viewtype label="$LOCALIZE[31100]">list</viewtype>
 				<scrolltime>200</scrolltime>
+				<pagecontrol>501</pagecontrol>
 				<itemlayout condition="Container.Content(secondary) | Container.Content(songs)" height="44">
 					<control type="image">
 						<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) +  !Container.Content(tvshows) + !Container.Content(seasons)</visible>
@@ -1575,7 +1603,32 @@
 					</control>
 					
 				</focusedlayout>
-
+			</control>
+			<control type="scrollbar" id="501">
+				<visible allowhiddenfocus="true">Control.HasFocus(501)</visible>
+				<posx>783</posx>
+				<posy>64</posy>
+				<width>22</width>
+				<height>656</height>
+				<visible>true</visible>
+				<texturesliderbackground>views/scrollbar.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>views/scrollNib.png</textureslidernib>
+				<textureslidernibfocus>views/scrollNib.png</textureslidernibfocus>
+				<pulseonselect></pulseonselect>
+				<orientation>vertical</orientation>
+				<showonepage>false</showonepage>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<onleft>50</onleft>
+				<onright>-</onright>
+				<animation type="Visible" reversible="false">
+					<effect type="fade" delay="200" start="0" end="100" time="100"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="100"/>
+				</animation>
 			</control>
 			<control type="group">
 				<posx>345</posx>
@@ -1598,7 +1651,8 @@
 				<onup>9000</onup>
 				<ondown>-</ondown>
 				<onleft>9000</onleft>
-				<onright>-</onright>
+				<onright>501</onright>
+				<pagecontrol>501</pagecontrol>
 				<itemlayout width="210" height="303">
 					<control type="image">
 						<posx>19</posx>
@@ -1844,7 +1898,8 @@
 				<onup>9000</onup>
 				<ondown>-</ondown>
 				<onleft>9000</onleft>
-				<onright>-</onright>
+				<onright>501</onright>
+				<pagecontrol>501</pagecontrol>
 				<itemlayout width="210" height="226">
 					<control type="image">
 						<posx>14</posx>
@@ -2036,6 +2091,59 @@
 					</control>
 				</focusedlayout>
 			</control>
+			<control type="scrollbar" id="501">
+				<visible allowhiddenfocus="true">Control.HasFocus(501) + [Container.Content(movies) |  Container.Content(tvshows) | Container.Content(seasons)]</visible>
+				<posx>1258</posx>
+				<posy>90</posy>
+				<width>22</width>
+				<height>630</height>
+				<visible>true</visible>
+				<texturesliderbackground>views/scrollbar.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>views/scrollNib.png</textureslidernib>
+				<textureslidernibfocus>views/scrollNib.png</textureslidernibfocus>
+				<pulseonselect></pulseonselect>
+				<orientation>vertical</orientation>
+				<showonepage>false</showonepage>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<onleft>50</onleft>
+				<onright>-</onright>
+				<animation type="Visible" reversible="false">
+					<effect type="fade" delay="200" start="0" end="100" time="100"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="100"/>
+				</animation>
+			</control>
+			<control type="scrollbar" id="501">
+				<visible allowhiddenfocus="true">Control.HasFocus(501) + ![Container.Content(movies) |  Container.Content(tvshows) | Container.Content(seasons)]</visible>
+				<posx>1258</posx>
+				<posy>65</posy>
+				<width>22</width>
+				<height>655</height>
+				<visible>true</visible>
+				<texturesliderbackground>views/scrollbar.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>views/scrollNib.png</textureslidernib>
+				<textureslidernibfocus>views/scrollNib.png</textureslidernibfocus>
+				<pulseonselect></pulseonselect>
+				<orientation>vertical</orientation>
+				<showonepage>false</showonepage>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<onleft>50</onleft>
+				<onright>-</onright>
+				<animation type="Visible" reversible="false">
+					<effect type="fade" delay="200" start="0" end="100" time="100"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="100"/>
+				</animation>
+			</control>
+			
 			<control type="group">
 				<posx>583</posx>
 				<posy>335</posy>
@@ -2057,7 +2165,8 @@
 				<onup>9000</onup>
 				<ondown>-</ondown>
 				<onleft>9000</onleft>
-				<onright>-</onright>
+				<onright>501</onright>
+				<pagecontrol>501</pagecontrol>
 				<itemlayout width="192" height="303">
 					<control type="image">
 						<posx>19</posx>
@@ -2304,7 +2413,8 @@
 				<onup>9000</onup>
 				<ondown>-</ondown>
 				<onleft>9000</onleft>
-				<onright>-</onright>
+				<onright>501</onright>
+				<pagecontrol>501</pagecontrol>
 				<itemlayout width="192" height="226">
 					<control type="image">
 						<posx>14</posx>
@@ -2494,6 +2604,59 @@
 					</control>
 				</focusedlayout>
 			</control>
+			<control type="scrollbar" id="501">
+				<visible allowhiddenfocus="true">Control.HasFocus(501) + [Container.Content(movies) |  Container.Content(tvshows) | Container.Content(seasons)]</visible>
+				<posx>783</posx>
+				<posy>90</posy>
+				<width>22</width>
+				<height>630</height>
+				<visible>true</visible>
+				<texturesliderbackground>views/scrollbar.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>views/scrollNib.png</textureslidernib>
+				<textureslidernibfocus>views/scrollNib.png</textureslidernibfocus>
+				<pulseonselect></pulseonselect>
+				<orientation>vertical</orientation>
+				<showonepage>false</showonepage>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<onleft>50</onleft>
+				<onright>-</onright>
+				<animation type="Visible" reversible="false">
+					<effect type="fade" delay="200" start="0" end="100" time="100"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="100"/>
+				</animation>
+			</control>
+			<control type="scrollbar" id="501">
+				<visible allowhiddenfocus="true">Control.HasFocus(501) + ![Container.Content(movies) |  Container.Content(tvshows) | Container.Content(seasons)]</visible>
+				<posx>783</posx>
+				<posy>65</posy>
+				<width>22</width>
+				<height>655</height>
+				<visible>true</visible>
+				<texturesliderbackground>views/scrollbar.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>views/scrollNib.png</textureslidernib>
+				<textureslidernibfocus>views/scrollNib.png</textureslidernibfocus>
+				<pulseonselect></pulseonselect>
+				<orientation>vertical</orientation>
+				<showonepage>false</showonepage>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<onleft>50</onleft>
+				<onright>-</onright>
+				<animation type="Visible" reversible="false">
+					<effect type="fade" delay="200" start="0" end="100" time="100"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="100"/>
+				</animation>
+			</control>
+			
 			<control type="group">
 				<posx>345</posx>
 				<posy>335</posy>
@@ -2521,13 +2684,13 @@
 				<visible>true</visible>
 				<viewtype label="$LOCALIZE[31102]">list</viewtype>
 				<orientation>horizontal</orientation>
-				<pagecontrol>25</pagecontrol>
-				<scrolltime>200</scrolltime>
+ 				<scrolltime>200</scrolltime>
 				<focusposition>4</focusposition>
 				<onup>9000</onup>
-				<ondown>-</ondown>
+				<ondown>501</ondown>
 				<onleft>-</onleft>
 				<onright>-</onright>
+				<pagecontrol>501</pagecontrol>
 				<itemlayout width="172" height="224">
 					<control type="image">
 						<posx>7</posx>
@@ -2677,13 +2840,13 @@
 				<visible>true</visible>
 				<viewtype label="$LOCALIZE[31102]">list</viewtype>
 				<orientation>horizontal</orientation>
-				<pagecontrol>25</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<focusposition>2</focusposition>
 				<onup>9000</onup>
-				<ondown>-</ondown>
+				<ondown>501</ondown>
 				<onleft>-</onleft>
 				<onright>-</onright>
+				<pagecontrol>501</pagecontrol>
 				<itemlayout width="398" height="228">
 					<control type="image">
 						<posx>18</posx>
@@ -2940,13 +3103,13 @@
 				<visible>true</visible>
 				<viewtype label="$LOCALIZE[31102]">list</viewtype>
 				<orientation>horizontal</orientation>
-				<pagecontrol>25</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<focusposition>3</focusposition>
 				<onup>9000</onup>
-				<ondown>-</ondown>
+				<ondown>501</ondown>
 				<onleft>-</onleft>
 				<onright>-</onright>
+				<pagecontrol>501</pagecontrol>
 				<itemlayout width="248" height="248">
 					<control type="image">
 						<posx>17</posx>
@@ -2975,19 +3138,53 @@
 					</control>
 				</focusedlayout>
 			</control>
+			<control type="scrollbar" id="501">
+				<visible allowhiddenfocus="true">Control.HasFocus(501)</visible>
+				<posx>0</posx>
+				<posy>680</posy>
+				<width>1280</width>
+				<height>22</height>
+				<visible>true</visible>
+				<texturesliderbackground>views/scrollbar_horizontal.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>views/scrollNib_horizontal.png</textureslidernib>
+				<textureslidernibfocus>views/scrollNib_horizontal.png</textureslidernibfocus>
+				<pulseonselect></pulseonselect>
+				<orientation>horizontal</orientation>
+				<showonepage>false</showonepage>
+				<onup>54</onup>
+				<ondown>-</ondown>
+				<onleft>-</onleft>
+				<onright>-</onright>
+				<animation type="Visible" reversible="false">
+					<effect type="fade" delay="200" start="0" end="100" time="100"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="100"/>
+				</animation>
+			</control>
 			<control type="label">
+				<visible allowhiddenfocus="true">!Control.HasFocus(501)</visible>
 				<posx>0</posx>
 				<posy>663</posy>
 				<width>1280</width>
 				<height>48</height>
 				<textcolor>4b000000</textcolor>
-<selectedcolor>4b000000</selectedcolor>
+				<selectedcolor>4b000000</selectedcolor>
 				<font>Title</font>
 				<info>ListItem.Label</info>
 				<scroll>false</scroll>
 				<align>center</align>
+				<animation type="Visible" reversible="false">
+					<effect type="fade" delay="200" start="0" end="100" time="100"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="100"/>
+				</animation>
 			</control>
 			<control type="label">
+				<visible allowhiddenfocus="true">!Control.HasFocus(501)</visible>
 				<posx>0</posx>
 				<posy>665</posy>
 				<width>1280</width>
@@ -2997,6 +3194,13 @@
 				<info>ListItem.Label</info>
 				<scroll>false</scroll>
 				<align>center</align>
+				<animation type="Visible" reversible="false">
+					<effect type="fade" delay="200" start="0" end="100" time="100"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="100"/>
+				</animation>
+				
 			</control>
 			<control type="group">
 				<posx>583</posx>
@@ -3312,11 +3516,11 @@
 				<visible>true</visible>
 				<viewtype label="$LOCALIZE[31102]">list</viewtype>
 				<orientation>horizontal</orientation>
-				<pagecontrol>25</pagecontrol>
+				<pagecontrol>501</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<focusposition>4</focusposition>
 				<onup>9000</onup>
-				<ondown>-</ondown>
+				<ondown>501</ondown>
 				<onleft>-</onleft>
 				<onright>-</onright>
 				<itemlayout width="172" height="224">
@@ -3468,11 +3672,11 @@
 				<visible>true</visible>
 				<viewtype label="$LOCALIZE[31102]">list</viewtype>
 				<orientation>horizontal</orientation>
-				<pagecontrol>25</pagecontrol>
+				<pagecontrol>501</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<focusposition>2</focusposition>
 				<onup>9000</onup>
-				<ondown>-</ondown>
+				<ondown>501</ondown>
 				<onleft>-</onleft>
 				<onright>-</onright>
 				<itemlayout width="398" height="228">
@@ -3731,11 +3935,11 @@
 				<visible>true</visible>
 				<viewtype label="$LOCALIZE[31102]">list</viewtype>
 				<orientation>horizontal</orientation>
-				<pagecontrol>25</pagecontrol>
+				<pagecontrol>501</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<focusposition>3</focusposition>
 				<onup>9000</onup>
-				<ondown>-</ondown>
+				<ondown>501</ondown>
 				<onleft>-</onleft>
 				<onright>-</onright>
 				<itemlayout width="248" height="248">
@@ -3766,7 +3970,34 @@
 					</control>
 				</focusedlayout>
 			</control>
+			<control type="scrollbar" id="501">
+				<visible allowhiddenfocus="true">Control.HasFocus(501)</visible>
+				<posx>0</posx>
+				<posy>680</posy>
+				<width>1280</width>
+				<height>22</height>
+				<visible>true</visible>
+				<texturesliderbackground>views/scrollbar_horizontal.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>views/scrollNib_horizontal.png</textureslidernib>
+				<textureslidernibfocus>views/scrollNib_horizontal.png</textureslidernibfocus>
+				<pulseonselect></pulseonselect>
+				<orientation>horizontal</orientation>
+				<showonepage>false</showonepage>
+				<onup>54</onup>
+				<ondown>-</ondown>
+				<onleft>-</onleft>
+				<onright>-</onright>
+				<animation type="Visible" reversible="false">
+					<effect type="fade" delay="200" start="0" end="100" time="100"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="100"/>
+				</animation>
+			</control>
 			<control type="label">
+				<visible allowhiddenfocus="true">!Control.HasFocus(501)</visible>
 				<posx>0</posx>
 				<posy>663</posy>
 				<width>1280</width>
@@ -3777,8 +4008,15 @@
 				<info>ListItem.Label</info>
 				<scroll>false</scroll>
 				<align>center</align>
+				<animation type="Visible" reversible="false">
+					<effect type="fade" delay="200" start="0" end="100" time="100"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="100"/>
+				</animation>
 			</control>
 			<control type="label">
+				<visible allowhiddenfocus="true">!Control.HasFocus(501)</visible>
 				<posx>0</posx>
 				<posy>665</posy>
 				<width>1280</width>
@@ -3788,6 +4026,12 @@
 				<info>ListItem.Label</info>
 				<scroll>false</scroll>
 				<align>center</align>
+				<animation type="Visible" reversible="false">
+					<effect type="fade" delay="200" start="0" end="100" time="100"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="100"/>
+				</animation>
 			</control>
 			<control type="group">
 				<posx>583</posx>
@@ -3809,7 +4053,8 @@
 				<onup>9000</onup>
 				<ondown>-</ondown>
 				<onleft>9000</onleft>
-				<onright>-</onright>				
+				<onright>501</onright>
+				<pagecontrol>501</pagecontrol>			
 				<itemlayout condition="!Container.Content(episodes) + !Container.Content(seasons) + !Container.Content(clip) + !Container.Content(plugincontent) + !Container.Content(plugins)" width="420" height="257">
 					<control type="image">
 						<posx>19</posx>
@@ -4199,6 +4444,33 @@
 					</control>
 				</focusedlayout>
 			</control>
+			<control type="scrollbar" id="501">
+				<visible allowhiddenfocus="true">Control.HasFocus(501)</visible>
+				<posx>1258</posx>
+				<posy>90</posy>
+				<width>22</width>
+				<height>630</height>
+				<visible>true</visible>
+				<texturesliderbackground>views/scrollbar.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>views/scrollNib.png</textureslidernib>
+				<textureslidernibfocus>views/scrollNib.png</textureslidernibfocus>
+				<pulseonselect></pulseonselect>
+				<orientation>vertical</orientation>
+				<showonepage>false</showonepage>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<onleft>50</onleft>
+				<onright>-</onright>
+				<animation type="Visible" reversible="false">
+					<effect type="fade" delay="200" start="0" end="100" time="100"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="100"/>
+				</animation>
+			</control>
+			
 			<control type="group">
 				<posx>583</posx>
 				<posy>335</posy>
@@ -4212,6 +4484,7 @@
 			<visible>Control.IsVisible(57) + !Container.Content(secondary) + !Window.IsActive(sharedcontent)</visible>
 			<include>infoPane</include>			
 			<control type="panel" id="57">
+				<animation effect="slide" end="-10,0" time="100" condition="Control.HasFocus(501)">Conditional</animation>
 				<viewtype label="$LOCALIZE[31103]">panel</viewtype>
 				<width>840</width>
 				<height>677</height>
@@ -4220,7 +4493,8 @@
 				<onup>9000</onup>
 				<ondown>-</ondown>
 				<onleft>9000</onleft>
-				<onright>-</onright>				
+				<onright>501</onright>	
+				<pagecontrol>501</pagecontrol>			
 				<itemlayout condition="!Container.Content(episodes) + !Container.Content(seasons) + !Container.Content(clip) + !Container.Content(plugincontent) + !Container.Content(plugins)" width="394" height="257">
 					<control type="image">
 						<posx>19</posx>
@@ -4611,6 +4885,32 @@
 						</control>
 					</control>
 				</focusedlayout>
+			</control>
+			<control type="scrollbar" id="501">
+				<visible allowhiddenfocus="true">Control.HasFocus(501)</visible>
+				<posx>783</posx>
+				<posy>90</posy>
+				<width>22</width>
+				<height>630</height>
+				<visible>true</visible>
+				<texturesliderbackground>views/scrollbar.png</texturesliderbackground>
+				<texturesliderbar>-</texturesliderbar>
+				<texturesliderbarfocus>-</texturesliderbarfocus>
+				<textureslidernib>views/scrollNib.png</textureslidernib>
+				<textureslidernibfocus>views/scrollNib.png</textureslidernibfocus>
+				<pulseonselect></pulseonselect>
+				<orientation>vertical</orientation>
+				<showonepage>false</showonepage>
+				<onup>-</onup>
+				<ondown>-</ondown>
+				<onleft>50</onleft>
+				<onright>-</onright>
+				<animation type="Visible" reversible="false">
+					<effect type="fade" delay="200" start="0" end="100" time="100"/>
+				</animation>
+				<animation type="Hidden" reversible="false">
+					<effect type="fade" start="100" end="0" time="100"/>
+				</animation>
 			</control>
 			<control type="group">
 				<posx>345</posx>
