@@ -840,7 +840,7 @@
 						</control>
 					</control>
 					<control type="fixedlist" id="11000">
-						<visible>!Container.ListItem(0).Type(movie) + !Container.ListItem(0).Type(movie) + !Container.ListItem(0).Type(episode) + !Container.ListItem(0).Type(episode) + Container(11000).ListItem(0).Type(album)</visible>
+						<visible>Container(11000).ListItem(0).Type(album)</visible>
 						<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
 						<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
 						<onup>300</onup>
@@ -896,8 +896,6 @@
 							</control>
 						</focusedlayout>
 					</control>
-				
-				
 				
 					<control type="fixedlist" id="11003">
 						<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
@@ -1012,8 +1010,6 @@
 							</control>
 						</focusedlayout>
 					</control>
-
-				
 
 					<control type="label">
 						<visible>Control.HasFocus(11000) + Container(11000).ListItem(0).Type(movie)</visible>
@@ -1142,8 +1138,6 @@
 				<aspectratio>stretch</aspectratio>
 			</control>			
 
-			
-			
 			<!-- Main Menu -->
 			<control type="grouplist" id="299">
 				<posy>11</posy>
