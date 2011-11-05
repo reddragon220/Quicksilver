@@ -61,13 +61,11 @@
 	<string id="31208">Developer Mode</string>
 	<string id="31209">Reset All Settings</string>
 	<string id="31210">Home</string>
-	<string id="33030">On Deck and Recently Added - Left/Right</string>
-	<string id="31212">On Deck and Recently Added - Down</string>
-	<string id="31213">Views</string>
-	<string id="31214">List Wrap</string>
-	<string id="31215">Cover Wrap</string>
-	<string id="31216">Fanart Wrap</string>
-	<string id="31217">Flow Wrap</string>
+	<string id="31211">Left      Right</string>
+	<string id="31212">Down   Up</string>
+	<string id="31213">On Deck & Recently Added switching</string>
+	<string id="31214">On Deck & Recently Added</string>
+	<string id="31215">Low Home Menu</string>
 
 	<!-- DialogBusy -->
 	<string id="31300">One moment please</string>
