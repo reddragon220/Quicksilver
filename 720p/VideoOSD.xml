@@ -73,21 +73,24 @@
 				<align>center</align>
 			</control>
 	
+	
+			
 			<control type="progress">
 				<posx>257</posx>
-				<posy>620</posy>
+				<posy>615</posy>
 				<width>766</width>
-				<height>22</height>
+				<height>33</height>
 				<visible>true</visible>
 				<reveal>true</reveal>
-				<texturebg>osd/progress_bg_outline.png</texturebg>
+				<texturebg>osd/progress_bg.png</texturebg>
 				<midtexture>osd/progress_center.png</midtexture>
 				<lefttexture>osd/progress_left.png</lefttexture>
-				<righttexture>osd/progress_right.png</righttexture>
+				<righttexture>osd/off.png</righttexture>
 				<overlaytexture>-</overlaytexture>
 				<info>Player.Progress</info>
 				<aspectratio>keep</aspectratio>
 			</control>
+			
 
 			<control type="grouplist" id="1">
 				<posx>260</posx>

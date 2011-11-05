@@ -30,10 +30,10 @@
 			<height>22</height>
 			<visible>true</visible>
 			<reveal>true</reveal>
-			<texturebg>osd/progress_bg.png</texturebg>
-			<midtexture>osd/progress_center.png</midtexture>
-			<lefttexture>osd/progress_left.png</lefttexture>
-			<righttexture>osd/progress_right.png</righttexture>
+			<texturebg>dialog/progress/progress_bg.png</texturebg>
+			<midtexture>dialog/progress/progress_center.png</midtexture>
+			<lefttexture>dialog/progress/progress_left.png</lefttexture>
+			<righttexture>dialog/progress/progress_right.png</righttexture>
 			<overlaytexture>-</overlaytexture>
 			<aspectratio>keep</aspectratio>
 		</control>
