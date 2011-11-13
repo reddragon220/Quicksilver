@@ -17,6 +17,8 @@
 	<string id="31012">No Library</string>
 	<string id="31013">Quit</string>
 	<string id="31014">Applications</string>
+	<string id="31015">Sleep</string>
+	<string id="31016">Shut Down</string>
 
 	<!-- Home Menu Subtitles (Don't Translate $INFO[Container(300).ListItem.Label]) -->
 	<string id="31020">View libraries shared over my.Plexapp.com</string>
@@ -32,6 +34,8 @@
 	<string id="31030">iPhoto, Flikr, etc.</string>
 	<string id="31031">Download more channels</string>
 	<string id="31032">Configure how Plex looks and behaves</string>
+	<string id="31033">Send your system to sleep</string>
+	<string id="31034">Turn your system off</string>
 
 	<!-- Views -->
 	<string id="31100">List</string>
@@ -66,6 +70,10 @@
 	<string id="31213">On Deck & Recently Added switching</string>
 	<string id="31214">On Deck & Recently Added</string>
 	<string id="31215">Low Home Menu</string>
+	<string id="31216">Quit</string>
+	<string id="31217">Sleep</string>
+	<string id="31218">Shut Down</string>
+	<string id="31219">Menu items</string>
 
 	<!-- DialogBusy -->
 	<string id="31300">One moment please</string>

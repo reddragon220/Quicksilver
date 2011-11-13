@@ -1298,11 +1298,24 @@
 							<onclick>xbmc.activatewindow(settings)</onclick>
 						</item>
 						<item id="6">
+							<visible>!Skin.HasSetting(quit_off)</visible>
 							<description>Quit</description>
 							<label>$LOCALIZE[31013]</label>
 							<onclick>xbmc.ShutDown</onclick>
 						</item>
 						<item id="7">
+							<visible>Skin.HasSetting(sleep_on)</visible>
+							<description>Sleep</description>
+							<label>$LOCALIZE[31015]</label>
+							<onclick>xbmc.Suspend</onclick>
+						</item>
+						<item id="8">
+							<visible>Skin.HasSetting(shutdown_on)</visible>
+							<description>Shut Down</description>
+							<label>$LOCALIZE[31016]</label>
+							<onclick>xbmc.Powerdown</onclick>
+						</item>
+						<item id="9">
 							<visible>Skin.HasSetting(developer)</visible>
 							<description>Refresh</description>
 							<label>$LOCALIZE[184]</label>
@@ -1471,6 +1484,28 @@ StringCompare(Container(300).ListItem.Label,$LOCALIZE[31014])]</visible>
 					<posy>1</posy>
 					<width>1280</width>
 					<label>$LOCALIZE[31022]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>Control.HasFocus(301) + Container(301).hasfocus(7)</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<label>$LOCALIZE[31033]</label>
+					<font>RSS</font>
+					<textcolor>ff95c9f7</textcolor>
+					<align>center</align>
+				</control>
+				<control type="label" id="900">
+					<animation effect="fade" time="200" delay="200">VisibleChange</animation>
+					<visible>Control.HasFocus(301) + Container(301).hasfocus(8)</visible>
+					<posx>0</posx>
+					<posy>1</posy>
+					<width>1280</width>
+					<label>$LOCALIZE[31034]</label>
 					<font>RSS</font>
 					<textcolor>ff95c9f7</textcolor>
 					<align>center</align>

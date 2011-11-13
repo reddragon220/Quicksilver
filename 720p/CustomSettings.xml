@@ -406,7 +406,121 @@
 			<onup>-</onup>
 			<ondown>-</ondown>
 			<orientation>vertical</orientation>
-			<control type="radiobutton" id="100">
+			<control type="button" id="100">
+				<label>$LOCALIZE[31219]</label>
+				<onclick>Skin.ToggleSetting(settings_menu_item_switch)</onclick>
+				
+				<width>927</width>
+				<height>47</height>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7f7c7c72</disabledcolor>
+				<font>SettingItem</font>
+
+				<aligny>top</aligny>
+				<align>left</align>
+
+				<textoffsetx>26</textoffsetx>
+				<textoffsety>-5</textoffsety>
+
+				<texturefocus>settings/long_bar_button.png</texturefocus>
+				<texturenofocus>settings/long_bar_button_divider.png</texturenofocus>
+			</control>
+			<control type="radiobutton" id="106">
+				<visible>Skin.HasSetting(settings_menu_item_switch)</visible>
+				<label>$LOCALIZE[31216]</label>
+				<selected>!Skin.HasSetting(quit_off)</selected>
+				<onclick>Skin.ToggleSetting(quit_off)</onclick>
+				
+				
+				<width>927</width>
+				<height>47</height>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7f7c7c72</disabledcolor>
+				<font>SettingItem</font>
+
+				<align>left</align>
+				<aligny>top</aligny>
+
+				<textoffsetx>52</textoffsetx>
+				<textoffsety>-5</textoffsety>
+
+				<texturefocus>settings/long_bar_button.png</texturefocus>
+				<texturenofocus>settings/long_bar_button_divider.png</texturenofocus>
+				<!--
+				<radioposx>576</radioposx>
+				-->
+				<radioposx>815</radioposx>
+				<radiowidth>86</radiowidth>
+				<radioheight>45</radioheight>
+				<textureradiofocus>buttons/radiobutton/on.png</textureradiofocus>
+				<textureradionofocus>buttons/radiobutton/off.png</textureradionofocus>
+			</control>
+			<control type="radiobutton" id="107">
+				<visible>Skin.HasSetting(settings_menu_item_switch)</visible>
+				<label>$LOCALIZE[31217]</label>
+				<selected>Skin.HasSetting(sleep_on)</selected>
+				<onclick>Skin.ToggleSetting(sleep_on)</onclick>
+				
+				
+				<width>927</width>
+				<height>47</height>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7f7c7c72</disabledcolor>
+				<font>SettingItem</font>
+
+				<align>left</align>
+				<aligny>top</aligny>
+
+				<textoffsetx>52</textoffsetx>
+				<textoffsety>-5</textoffsety>
+
+				<texturefocus>settings/long_bar_button.png</texturefocus>
+				<texturenofocus>settings/long_bar_button_divider.png</texturenofocus>
+				<!--
+				<radioposx>576</radioposx>
+				-->
+				<radioposx>815</radioposx>
+				<radiowidth>86</radiowidth>
+				<radioheight>45</radioheight>
+				<textureradiofocus>buttons/radiobutton/on.png</textureradiofocus>
+				<textureradionofocus>buttons/radiobutton/off.png</textureradionofocus>
+			</control>
+			<control type="radiobutton" id="108">
+				<visible>Skin.HasSetting(settings_menu_item_switch)</visible>
+				<label>$LOCALIZE[31218]</label>
+				<selected>Skin.HasSetting(shutdown_on)</selected>
+				<onclick>Skin.ToggleSetting(shutdown_on)</onclick>
+				
+				
+				<width>927</width>
+				<height>47</height>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7f7c7c72</disabledcolor>
+				<font>SettingItem</font>
+
+				<align>left</align>
+				<aligny>top</aligny>
+
+				<textoffsetx>52</textoffsetx>
+				<textoffsety>-5</textoffsety>
+
+				<texturefocus>settings/long_bar_button.png</texturefocus>
+				<texturenofocus>settings/long_bar_button_divider.png</texturenofocus>
+				<!--
+				<radioposx>576</radioposx>
+				-->
+				<radioposx>815</radioposx>
+				<radiowidth>86</radiowidth>
+				<radioheight>45</radioheight>
+				<textureradiofocus>buttons/radiobutton/on.png</textureradiofocus>
+				<textureradionofocus>buttons/radiobutton/off.png</textureradionofocus>
+			</control>
+
+			<control type="radiobutton" id="105">
 				<label>$LOCALIZE[31215]</label>
 				<selected>Skin.HasSetting(settings_menu_low)</selected>
 				<onclick>Skin.ToggleSetting(settings_menu_low)</onclick>
@@ -549,7 +663,6 @@
 				<textureradiofocus>buttons/radiobutton/on.png</textureradiofocus>
 				<textureradionofocus>buttons/radiobutton/off.png</textureradionofocus>
 			</control>
-			
 		</control>
 		
 		<control type="grouplist" id="201">
