@@ -4,18 +4,53 @@
   
 <coordinates>
   <system>1</system>
-  <posx>10</posx>
-  <posy>480</posy>
+  <posx>0</posx>
+  <posy>0</posy>
 </coordinates>
-
+<include>dialog_animation</include>
 <controls>
-    
-  <control type="label">
-    <posy>40</posy>
-    <include>DialogID</include>
-    <label>[COLOR=White]$INFO[player.volume][/COLOR] DialogVolumeBar.xml</label>
-  </control>
-  
+	<control type="group">
+		<posx>521</posx>
+		<posy>240.5</posy>
+	    <control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>238</width>
+			<height>239</height>
+			<texture>dialog/volumeBar/background.png</texture>
+		</control>
+		<control type="image">
+			<visible>!Player.Muted</visible>
+			<posx>29</posx>
+			<posy>20</posy>
+			<width>180</width>
+			<height>166</height>
+			<texture>dialog/volumeBar/audio.png</texture>
+		</control>
+		<control type="image">
+			<visible>Player.Muted</visible>
+			<posx>29</posx>
+			<posy>20</posy>
+			<width>180</width>
+			<height>166</height>
+			<texture>dialog/volumeBar/audio_mute.png</texture>
+		</control>
+		<control type="progress">
+			<posx>5</posx>
+			<posy>191</posy>
+			<width>228</width>
+			<height>33</height>
+			<visible>true</visible>
+			<reveal>true</reveal>
+			<texturebg>dialog/volumeBar/progress_bg.png</texturebg>
+			<midtexture>dialog/volumeBar/progress_center.png</midtexture>
+			<lefttexture>dialog/volumeBar/progress_left.png</lefttexture>
+			<righttexture>dialog/volumeBar/off.png</righttexture>
+			<overlaytexture>-</overlaytexture>
+			<info>Player.Volume</info>
+			<aspectratio>keep</aspectratio>
+		</control>
+	</control>
 </controls>
   
 </window>
