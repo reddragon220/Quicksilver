@@ -5,7 +5,7 @@
 		<control type="group">
 			<include condition="Skin.HasSetting(ken_burns)">bg_animation</include>
 			<control type="image">
-				<animation effect="fade" start="0" end="100" time="1000" condition="Control.HasFocus(301) | Skin.HasSetting(fanart)">Conditional</animation>
+				<animation effect="fade" start="0" end="100" time="1000" condition="Control.HasFocus(301) | Skin.HasSetting(fanart) | !IsEmpty(system.selectedplexmediaserver)">Conditional</animation>
 				<description>Background Image</description>
 				<posx>0</posx>
 				<posy>0</posy>
