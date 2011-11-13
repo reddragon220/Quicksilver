@@ -131,79 +131,81 @@
 				      <label> </label>
 				 	  <onfocus>Setfocus(10999)</onfocus>
 				</control>
+
+				<control type="button" id="1">
+					  <visible>Container(11000).ListItem(0).Type(album) | Container(11000).ListItem(0).Type(photo)</visible>
+				      <description>quick</description>
+				      <posx>0</posx>
+				      <posy>0</posy>
+				      <width>0</width>
+				      <height>0</height>
+				      <visible>true</visible>
+				      <colordiffuse>-</colordiffuse>
+				      <texturefocus>-</texturefocus>
+				      <texturenofocus>-</texturenofocus>
+				      <label> </label>
+				 	  <onfocus>Setfocus(11000)</onfocus>
+				</control>				
 				<control type="group">
-					<visible>!Container(11000).ListItem(0).Type(album)</visible>
-				<control type="button" id="1">
-					  <visible>Container(11000).ListItem(0).Type(movie) + !IsEmpty(Container(11000).ListItem(0).label)</visible>
-				      <description>quick</description>
-				      <posx>0</posx>
-				      <posy>0</posy>
-				      <width>0</width>
-				      <height>0</height>
-				      <visible>true</visible>
-				      <colordiffuse>-</colordiffuse>
-				      <texturefocus>-</texturefocus>
-				      <texturenofocus>-</texturenofocus>
-				      <label> </label>
-				 	  <onfocus>Setfocus(11000)</onfocus>
+					<visible>!Container(11000).ListItem(0).Type(album) + !Container(11000).ListItem(0).Type(photos)</visible>
+					<control type="button" id="1">
+						  <visible>Container(11000).ListItem(0).Type(movie) + !IsEmpty(Container(11000).ListItem(0).label)</visible>
+					      <description>quick</description>
+					      <posx>0</posx>
+					      <posy>0</posy>
+					      <width>0</width>
+					      <height>0</height>
+					      <visible>true</visible>
+					      <colordiffuse>-</colordiffuse>
+					      <texturefocus>-</texturefocus>
+					      <texturenofocus>-</texturenofocus>
+					      <label> </label>
+					 	  <onfocus>Setfocus(11000)</onfocus>
+					</control>
+					<control type="button" id="1">
+						  <visible>Container(11001).ListItem(0).Type(movie) + IsEmpty(Container(11000).ListItem(0).label)</visible>
+					      <description>quick</description>
+					      <posx>0</posx>
+					      <posy>0</posy>
+					      <width>0</width>
+					      <height>0</height>
+					      <visible>true</visible>
+					      <colordiffuse>-</colordiffuse>
+					      <texturefocus>-</texturefocus>
+					      <texturenofocus>-</texturenofocus>
+					      <label> </label>
+					 	  <onfocus>Setfocus(11001)</onfocus>
+					</control>
+					<control type="button" id="1">
+						  <visible>Container(11001).ListItem(0).Type(episode) + !IsEmpty(Container(11001).ListItem(0).label)</visible>
+					      <description>quick</description>
+					      <posx>0</posx>
+					      <posy>0</posy>
+					      <width>0</width>
+					      <height>0</height>
+					      <visible>true</visible>
+					      <colordiffuse>-</colordiffuse>
+					      <texturefocus>-</texturefocus>
+					      <texturenofocus>-</texturenofocus>
+					      <label> </label>
+					 	  <onfocus>Setfocus(11001)</onfocus>
+					</control>
+					<control type="button" id="1">
+						  <visible>Container(11000).ListItem(0).Type(episode) + IsEmpty(Container(11001).ListItem(0).label)</visible>
+					      <description>quick</description>
+					      <posx>0</posx>
+					      <posy>0</posy>
+					      <width>0</width>
+					      <height>0</height>
+					      <visible>true</visible>
+					      <colordiffuse>-</colordiffuse>
+					      <texturefocus>-</texturefocus>
+					      <texturenofocus>-</texturenofocus>
+					      <label> </label>
+					 	  <onfocus>Setfocus(11000)</onfocus>
+					</control>
 				</control>
-				<control type="button" id="1">
-					  <visible>Container(11001).ListItem(0).Type(movie) + IsEmpty(Container(11000).ListItem(0).label)</visible>
-				      <description>quick</description>
-				      <posx>0</posx>
-				      <posy>0</posy>
-				      <width>0</width>
-				      <height>0</height>
-				      <visible>true</visible>
-				      <colordiffuse>-</colordiffuse>
-				      <texturefocus>-</texturefocus>
-				      <texturenofocus>-</texturenofocus>
-				      <label> </label>
-				 	  <onfocus>Setfocus(11001)</onfocus>
-				</control>
-				<control type="button" id="1">
-					  <visible>Container(11001).ListItem(0).Type(episode) + !IsEmpty(Container(11001).ListItem(0).label)</visible>
-				      <description>quick</description>
-				      <posx>0</posx>
-				      <posy>0</posy>
-				      <width>0</width>
-				      <height>0</height>
-				      <visible>true</visible>
-				      <colordiffuse>-</colordiffuse>
-				      <texturefocus>-</texturefocus>
-				      <texturenofocus>-</texturenofocus>
-				      <label> </label>
-				 	  <onfocus>Setfocus(11001)</onfocus>
-				</control>
-				<control type="button" id="1">
-					  <visible>Container(11000).ListItem(0).Type(episode) + IsEmpty(Container(11001).ListItem(0).label)</visible>
-				      <description>quick</description>
-				      <posx>0</posx>
-				      <posy>0</posy>
-				      <width>0</width>
-				      <height>0</height>
-				      <visible>true</visible>
-				      <colordiffuse>-</colordiffuse>
-				      <texturefocus>-</texturefocus>
-				      <texturenofocus>-</texturenofocus>
-				      <label> </label>
-				 	  <onfocus>Setfocus(11000)</onfocus>
-				</control>
-				</control>
-				<control type="button" id="1">
-					  <visible>Container(11000).ListItem(0).Type(album)</visible>
-				      <description>quick</description>
-				      <posx>0</posx>
-				      <posy>0</posy>
-				      <width>0</width>
-				      <height>0</height>
-				      <visible>true</visible>
-				      <colordiffuse>-</colordiffuse>
-				      <texturefocus>-</texturefocus>
-				      <texturenofocus>-</texturenofocus>
-				      <label> </label>
-				 	  <onfocus>Setfocus(11000)</onfocus>
-				</control>
+
 
 				<!-- The Quick lists -->
 				<control type="group" id="10999">
@@ -425,7 +427,7 @@
 						
 						</control>
 					</control>
-				
+
 					<control type="fixedlist" id="11002">
 						<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
 						<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
@@ -468,10 +470,331 @@
 							</control>
 						</focusedlayout>
 					</control>
-				
+
+					<control type="fixedlist" id="11000">
+						<visible>Container(11000).ListItem(0).Type(album)</visible>
+						<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+						<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+						<onup>300</onup>
+						<ondown>-</ondown>
+						<posx>-228</posx>
+						<posy>110</posy>
+						<width>1736</width>
+						<height>300</height>
+						<visible>true</visible>
+						<viewtype label="flow">list</viewtype>
+						<orientation>horizontal</orientation>
+						<pagecontrol>25</pagecontrol>
+						<scrolltime>200</scrolltime>
+						<focusposition>3</focusposition>
+						<itemlayout width="248" height="248">
+							<!--
+							<control type="image">
+								<posx>17</posx>
+								<posy>17</posy>
+								<width>214</width>
+								<height>214</height>
+								<info>ListItem.Icon</info>
+								<texture diffuse="views/flow/wide_thumb_mask.png"/>
+								<bordersize>5</bordersize>
+								<bordertexture border="5">views/flow/wide_thumb_shadow.png</bordertexture>
+								<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+							</control>
+							-->
+							<control type="image">
+								<posx>17</posx>
+								<posy>17</posy>
+								<width>214</width>
+								<height>214</height>
+								<info background="true">ListItem.Icon</info>
+								<texture background="true" diffuse="views/flow/wide_thumb_mask.png">NoThumb.png</texture>
+								<bordersize>5</bordersize>
+								<bordertexture border="5">views/flow/wide_thumb_shadow.png</bordertexture>
+								<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+							</control>
+						</itemlayout>
+						<focusedlayout width="248" height="248">
+							<control type="image">
+								<animation effect="zoom" start="86" end="100" center="auto" time="200">Focus</animation>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>248</width>
+								<height>248</height>
+								<info background="true">ListItem.Icon</info>
+								<texture background="true" diffuse="views/flow/wide_thumb_mask.png">NoThumb.png</texture>
+								<bordersize>5</bordersize>
+								<bordertexture border="5">views/flow/large_square_thumb_shadow_highlight.png</bordertexture>
+								<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
+							</control>
+						</focusedlayout>
+					</control>
+					<control type="fixedlist" id="11000">
+						<visible>Container(11000).ListItem(0).Type(photo)</visible>
+						<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
+						<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
+						<onup>300</onup>
+						<ondown>-</ondown>
+						<posx>-355</posx>
+						<posy>110</posy>
+						<width>1640</width>
+						<height>300</height>
+						<visible>true</visible>
+						<viewtype label="flow">list</viewtype>
+						<orientation>horizontal</orientation>
+						<pagecontrol>25</pagecontrol>
+						<scrolltime>200</scrolltime>
+						<focusposition>2</focusposition>
+						<itemlayout width="398" height="228">
+							<control type="image">
+								<posx>18</posx>
+								<posy>10</posy>
+								<width>362</width>
+								<height>208</height>
+								<info>ListItem.Icon</info>
+								<texture background="true" diffuse="views/flow/wide_thumb_mask.png">NoThumb.png</texture>
+								<bordersize>5</bordersize>
+								<bordertexture border="5">views/flow/wide_thumb_shadow.png</bordertexture>
+								<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+							</control>
+							<control type="group">
+								<visible>Container.Content(episodes)</visible>
+								<posy>203</posy>
+								<control type="label">
+									<posx>185</posx>
+									<posy>0</posy>
+									<width>370</width>
+									<height>48</height>
+									<textcolor>4b000000</textcolor>
+			<selectedcolor>4b000000</selectedcolor>
+									<font>Cover_title</font>
+									<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+									<scroll>false</scroll>
+									<align>center</align>
+								</control>
+								<control type="label">
+									<posx>185</posx>
+									<posy>2</posy>
+									<width>370</width>
+									<height>48</height>
+									<textcolor>ffffffff</textcolor>
+									<font>Cover_title</font>
+									<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+									<scroll>false</scroll>
+									<align>center</align>
+								</control>
+							</control>
+							<control type="group">
+								<visible>Container.Content(clip)</visible>
+								<posy>203</posy>
+								<control type="label">
+									<posx>185</posx>
+									<posy>0</posy>
+									<width>370</width>
+									<height>48</height>
+									<textcolor>4b000000</textcolor>
+									<selectedcolor>4b000000</selectedcolor>
+									<font>Cover_title</font>
+									<label>$INFO[ListItem.Property(sourceTitle)]</label>
+									<scroll>false</scroll>
+									<align>center</align>
+								</control>
+								<control type="label">
+									<posx>185</posx>
+									<posy>2</posy>
+									<width>370</width>
+									<height>48</height>
+									<textcolor>ffffffff</textcolor>
+									<font>Cover_title</font>
+									<label>$INFO[ListItem.Property(sourceTitle)]</label>
+									<scroll>false</scroll>
+									<align>center</align>
+								</control>
+							</control>
+							<control type="group">
+								<posx>316</posx>
+								<posy>30</posy>
+								<control type="image">
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<posx>0</posx>
+									<posy>0</posy>
+									<width>67</width>
+									<height>50</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>views/flow/new.png</texture>
+								</control>
+								<control type="image">
+									<visible>StringCompare(ListItem.Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<posx>0</posx>
+									<posy>0</posy>
+									<width>67</width>
+									<height>50</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>views/flow/inprogress.png</texture>
+								</control>
+								<control type="image">
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+									<posx>0</posx>
+									<posy>0</posy>
+									<width>67</width>
+									<height>50</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>views/covers/newep.png</texture>
+								</control>
+								<control type="label">
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+									<posx>36</posx>
+									<posy>-1</posy>
+									<width>67</width>
+									<height>44</height>
+									<textcolor>54000000</textcolor>
+									<font>Ep_flag</font>
+									<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+									<scroll>false</scroll>
+									<align>center</align>
+								</control>
+								<control type="label">
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+									<posx>36</posx>
+									<posy>-2</posy>
+									<width>67</width>
+									<height>44</height>
+									<textcolor>White</textcolor>
+									<font>Ep_flag</font>
+									<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+									<scroll>false</scroll>
+									<align>center</align>
+								</control>
+							</control>
+						</itemlayout>
+						<focusedlayout width="398" height="228">
+							<control type="image">
+								<animation effect="zoom" start="90" end="100" center="auto" time="200">Focus</animation>
+								<posx>0</posx>
+								<posy>0</posy>
+								<width>398</width>
+								<height>228</height>
+								<info>ListItem.Icon</info>
+								<texture background="true" diffuse="views/flow/large_wide_thumb_mask.png">NoThumb.png</texture>
+								<bordersize>5</bordersize>
+								<bordertexture border="5">views/flow/large_wide_thumb_shadow_highlight.png</bordertexture>
+								<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+							</control>
+							<control type="group">
+								<visible>Container.Content(episodes)</visible>
+								<posy>213</posy>
+								<control type="label">
+									<posx>199</posx>
+									<posy>0</posy>
+									<width>398</width>
+									<height>48</height>
+									<textcolor>4b000000</textcolor>
+			<selectedcolor>4b000000</selectedcolor>
+									<font>Cover_title</font>
+									<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+									<scroll>false</scroll>
+									<align>center</align>
+								</control>
+								<control type="label">
+									<posx>199</posx>
+									<posy>2</posy>
+									<width>398</width>
+									<height>48</height>
+									<textcolor>ffffffff</textcolor>
+									<font>Cover_title</font>
+									<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+									<scroll>false</scroll>
+									<align>center</align>
+								</control>
+							</control>
+							<control type="group">
+								<visible>Container.Content(clip)</visible>
+								<posy>213</posy>
+								<control type="label">
+									<posx>185</posx>
+									<posy>0</posy>
+									<width>370</width>
+									<height>48</height>
+									<textcolor>4b000000</textcolor>
+									<selectedcolor>4b000000</selectedcolor>
+									<font>Cover_title</font>
+									<label>$INFO[ListItem.Property(sourceTitle)]</label>
+									<scroll>false</scroll>
+									<align>center</align>
+								</control>
+								<control type="label">
+									<posx>185</posx>
+									<posy>2</posy>
+									<width>370</width>
+									<height>48</height>
+									<textcolor>ffffffff</textcolor>
+									<font>Cover_title</font>
+									<label>$INFO[ListItem.Property(sourceTitle)]</label>
+									<scroll>false</scroll>
+									<align>center</align>
+								</control>
+							</control>
+							<control type="group">
+								<animation effect="slide" end="18,-10" time="200">Focus</animation>
+								<posx>316</posx>
+								<posy>30</posy>
+								<control type="image">
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<posx>0</posx>
+									<posy>0</posy>
+									<width>67</width>
+									<height>50</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>views/flow/new.png</texture>
+								</control>
+								<control type="image">
+									<visible>StringCompare(ListItem.Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<posx>0</posx>
+									<posy>0</posy>
+									<width>67</width>
+									<height>50</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>views/flow/inprogress.png</texture>
+								</control>
+								<control type="image">
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+									<posx>0</posx>
+									<posy>0</posy>
+									<width>67</width>
+									<height>50</height>
+									<aspectratio>stretch</aspectratio>
+									<texture>views/covers/newep.png</texture>
+								</control>
+								<control type="label">
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+									<posx>36</posx>
+									<posy>-1</posy>
+									<width>67</width>
+									<height>44</height>
+									<textcolor>54000000</textcolor>
+									<font>Ep_flag</font>
+									<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+									<scroll>false</scroll>
+									<align>center</align>
+								</control>
+								<control type="label">
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+									<posx>36</posx>
+									<posy>-2</posy>
+									<width>67</width>
+									<height>44</height>
+									<textcolor>White</textcolor>
+									<font>Ep_flag</font>
+									<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+									<scroll>false</scroll>
+									<align>center</align>
+								</control>
+							</control>
+						</focusedlayout>
+					</control>
+					
 
 					<control type="group">
-						<visible>!Container(11000).ListItem(0).Type(album) + !Control.isVisible(11002)</visible>
+						<visible>!Container(11000).ListItem(0).Type(album) + !Container(11000).ListItem(0).Type(photo) + !Control.isVisible(11002)</visible>
 						<control type="grouplist">
 							<include condition="!Skin.HasSetting(quicklist_left_right)">home_quicklist_left_right</include>
 							<include condition="Skin.HasSetting(quicklist_left_right)">home_quicklist_up_down</include>
@@ -839,63 +1162,7 @@
 							</control>
 						</control>
 					</control>
-					<control type="fixedlist" id="11000">
-						<visible>Container(11000).ListItem(0).Type(album)</visible>
-						<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
-						<animation effect="fade" end="0" time="300" delay="0">Hidden</animation>
-						<onup>300</onup>
-						<ondown>-</ondown>
-						<posx>-228</posx>
-						<posy>110</posy>
-						<width>1736</width>
-						<height>300</height>
-						<visible>true</visible>
-						<viewtype label="flow">list</viewtype>
-						<orientation>horizontal</orientation>
-						<pagecontrol>25</pagecontrol>
-						<scrolltime>200</scrolltime>
-						<focusposition>3</focusposition>
-						<itemlayout width="248" height="248">
-							<!--
-							<control type="image">
-								<posx>17</posx>
-								<posy>17</posy>
-								<width>214</width>
-								<height>214</height>
-								<info>ListItem.Icon</info>
-								<texture diffuse="views/flow/wide_thumb_mask.png"/>
-								<bordersize>5</bordersize>
-								<bordertexture border="5">views/flow/wide_thumb_shadow.png</bordertexture>
-								<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
-							</control>
-							-->
-							<control type="image">
-								<posx>17</posx>
-								<posy>17</posy>
-								<width>214</width>
-								<height>214</height>
-								<info background="true">ListItem.Icon</info>
-								<texture background="true" diffuse="views/flow/wide_thumb_mask.png">NoThumb.png</texture>
-								<bordersize>5</bordersize>
-								<bordertexture border="5">views/flow/wide_thumb_shadow.png</bordertexture>
-								<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
-							</control>
-						</itemlayout>
-						<focusedlayout width="248" height="248">
-							<control type="image">
-								<animation effect="zoom" start="86" end="100" center="auto" time="200">Focus</animation>
-								<posx>0</posx>
-								<posy>0</posy>
-								<width>248</width>
-								<height>248</height>
-								<info background="true">ListItem.Icon</info>
-								<texture background="true" diffuse="views/flow/wide_thumb_mask.png">NoThumb.png</texture>
-								<bordersize>5</bordersize>
-								<bordertexture border="5">views/flow/large_square_thumb_shadow_highlight.png</bordertexture>
-								<aspectratio scalediffuse="false" align="center" aligny="bottom">scale</aspectratio>
-							</control>
-						</focusedlayout>
-					</control>
+
 				
 					<control type="fixedlist" id="11003">
 						<animation effect="fade" end="100" time="300" delay="0">Visible</animation>

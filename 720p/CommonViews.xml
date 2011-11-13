@@ -2803,7 +2803,7 @@
 				</focusedlayout>
 			</control>
 			<control type="fixedlist" id="54">
-				<visible>Container.Content(episodes) | Container.Content(clip) | Container.Content(photos)</visible>
+				<visible>Container.Content(episodes) | Container.Content(clip) | Container.Content(photo)</visible>
 				<posx>-355</posx>
 				<posy>420</posy>
 				<width>1640</width>
@@ -3066,7 +3066,7 @@
 				</focusedlayout>
 			</control>
 			<control type="fixedlist" id="54">
-				<visible>![Container.Content(movies) |  Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(clip) | Container.Content(photos)]</visible>
+				<visible>![Container.Content(movies) |  Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(clip) | Container.Content(photo)]</visible>
 				<posx>-228</posx>
 				<posy>420</posy>
 				<width>1736</width>
@@ -3407,7 +3407,7 @@
 				</control>
 			</control>
 			<control type="image">
-				<visible>!Container.Content(episodes) + !Container.Content(albums) + !Container.Content(songs)</visible>
+				<visible>!Container.Content(episodes) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(photo)</visible>
 				<posx>685</posx>
 				<posy>100</posy>
 				<width>556</width>
@@ -3429,7 +3429,7 @@
 				<align>left</align>
 			</control>
 			<control type="image">
-				<visible>Container.Content(episodes) | Container.Content(clip)</visible>
+				<visible>Container.Content(episodes) | Container.Content(clip) | Container.Content(photo)</visible>
 				<posx>685</posx>
 				<posy>100</posy>
 				<width>556</width>
@@ -3630,7 +3630,7 @@
 				</focusedlayout>
 			</control>
 			<control type="fixedlist" id="55">
-				<visible>Container.Content(episodes) | Container.Content(clip) | Container.Content(photos)</visible>
+				<visible>Container.Content(episodes) | Container.Content(clip) | Container.Content(photo)</visible>
 				<posx>-355</posx>
 				<posy>420</posy>
 				<width>1640</width>
@@ -3893,7 +3893,7 @@
 				</focusedlayout>
 			</control>
 			<control type="fixedlist" id="55">
-				<visible>![Container.Content(movies) |  Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(clip) | Container.Content(photos)]</visible>
+				<visible>![Container.Content(movies) |  Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(clip) | Container.Content(photo)]</visible>
 				<posx>-228</posx>
 				<posy>420</posy>
 				<width>1736</width>
@@ -4016,7 +4016,7 @@
 				<onleft>9000</onleft>
 				<onright>501</onright>
 				<pagecontrol>501</pagecontrol>			
-				<itemlayout condition="!Container.Content(episodes) + !Container.Content(seasons) + !Container.Content(clip) + !Container.Content(plugincontent) + !Container.Content(plugins)" width="420" height="257">
+				<itemlayout condition="!Container.Content(episodes) + !Container.Content(seasons) + !Container.Content(clip) + !Container.Content(plugincontent) + !Container.Content(plugins) + !Container.Content(photo)" width="420" height="257">
 					<control type="image">
 						<posx>19</posx>
 						<posy>20</posy>
@@ -4113,7 +4113,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout condition="!Container.Content(episodes) + !Container.Content(seasons) + !Container.Content(clip) + !Container.Content(plugincontent) + !Container.Content(plugins)" width="420" height="257">
+				<focusedlayout condition="!Container.Content(episodes) + !Container.Content(seasons) + !Container.Content(clip) + !Container.Content(plugincontent) + !Container.Content(plugins) + !Container.Content(photo)" width="420" height="257">
 					<control type="image">
 						<animation effect="zoom" start="84" end="100" center="auto" time="100">Focus</animation>
 						<posx>0</posx>
@@ -4210,7 +4210,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout condition="Container.Content(episodes) | Container.Content(seasons) | Container.Content(clip) | Container.Content(plugincontent) | Container.Content(plugins)" width="420" height="257">
+				<itemlayout condition="Container.Content(episodes) | Container.Content(seasons) | Container.Content(clip) | Container.Content(plugincontent) | Container.Content(plugins) | Container.Content(photo)" width="420" height="257">
 					<control type="image">
 						<posx>19</posx>
 						<posy>20</posy>
@@ -4307,7 +4307,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout condition="Container.Content(episodes) | Container.Content(seasons) | Container.Content(clip) | Container.Content(plugincontent) | Container.Content(plugins)" width="420" height="257">
+				<focusedlayout condition="Container.Content(episodes) | Container.Content(seasons) | Container.Content(clip) | Container.Content(plugincontent) | Container.Content(plugins) | Container.Content(photo)" width="420" height="257">
 					<control type="image">
 						<animation effect="zoom" start="84" end="100" center="auto" time="100">Focus</animation>
 						<posx>0</posx>
@@ -4451,7 +4451,7 @@
 				<onleft>9000</onleft>
 				<onright>501</onright>	
 				<pagecontrol>501</pagecontrol>			
-				<itemlayout condition="!Container.Content(episodes) + !Container.Content(seasons) + !Container.Content(clip) + !Container.Content(plugincontent) + !Container.Content(plugins)" width="394" height="257">
+				<itemlayout condition="!Container.Content(episodes) + !Container.Content(seasons) + !Container.Content(clip) + !Container.Content(plugincontent) + !Container.Content(plugins) + !Container.Content(photo)" width="394" height="257">
 					<control type="image">
 						<posx>19</posx>
 						<posy>20</posy>
@@ -4548,7 +4548,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout condition="!Container.Content(episodes) + !Container.Content(seasons) + !Container.Content(clip) + !Container.Content(plugincontent) + !Container.Content(plugins)" width="420" height="257">
+				<focusedlayout condition="!Container.Content(episodes) + !Container.Content(seasons) + !Container.Content(clip) + !Container.Content(plugincontent) + !Container.Content(plugins) + !Container.Content(photo)" width="420" height="257">
 
 					<control type="image">
 						<animation effect="zoom" start="84" end="100" center="auto" time="100">Focus</animation>
@@ -4646,7 +4646,7 @@
 						</control>
 					</control>
 				</focusedlayout>
-				<itemlayout condition="Container.Content(episodes) | Container.Content(seasons) | Container.Content(clip) | Container.Content(plugincontent) | Container.Content(plugins)" width="394" height="257">
+				<itemlayout condition="Container.Content(episodes) | Container.Content(seasons) | Container.Content(clip) | Container.Content(plugincontent) | Container.Content(plugins) | Container.Content(photo)" width="394" height="257">
 					<control type="image">
 						<posx>19</posx>
 						<posy>20</posy>
@@ -4743,7 +4743,7 @@
 						</control>
 					</control>
 				</itemlayout>
-				<focusedlayout condition="Container.Content(episodes) | Container.Content(seasons) | Container.Content(clip) | Container.Content(plugincontent) | Container.Content(plugins)" width="420" height="257">
+				<focusedlayout condition="Container.Content(episodes) | Container.Content(seasons) | Container.Content(clip) | Container.Content(plugincontent) | Container.Content(plugins) | Container.Content(photo)" width="420" height="257">
 					<control type="image">
 						<animation effect="zoom" start="84" end="100" center="auto" time="100">Focus</animation>
 						<posx>0</posx>
@@ -5163,7 +5163,7 @@
 					<align>left</align>
 				</control>
 				<control type="image">
-					<visible>Container.Content(episodes) | Container.Content(clip)</visible>
+					<visible>Container.Content(episodes) | Container.Content(clip) | Container.Content(photo)</visible>
 					<posx>0</posx>
 					<posy>0</posy>
 					<width>453</width>

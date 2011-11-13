@@ -1057,7 +1057,7 @@
 					</control>
 
 					<control type="grouplist">
-						<visible>!Container.Content(Secondary) + !Container.Content(episodes) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(plugins) + !Container.Content(clip)</visible>
+						<visible>!Container.Content(Secondary) + !Container.Content(episodes) + !Container.Content(artists) + !Container.Content(albums) + !Container.Content(songs) + !Container.Content(plugins) + !Container.Content(clip) + !Container.Content(photo)</visible>
 						<posx>25</posx>
 						<posy>420</posy>
 						<width>1280</width>
@@ -1580,7 +1580,7 @@
 						
 					</control>
 					<control type="grouplist">
-						<visible>!Container.Content(Secondary) + [Container.Content(episodes) | Container.Content(clip)]</visible>
+						<visible>!Container.Content(Secondary) + [Container.Content(episodes) | Container.Content(clip) | Container.Content(photo)]</visible>
 						<posx>14</posx>
 						<posy>420</posy>
 						<width>1280</width>
@@ -4878,7 +4878,7 @@
 					<height>313</height>
 
 					<control type="grouplist">
-						<visible>!Container.Content(episodes) + !Container.Content(seasons) + !Container.Content(clip) + !Container.Content(plugincontent) + !Container.Content(plugins)</visible>
+						<visible>!Container.Content(episodes) + !Container.Content(seasons) + !Container.Content(clip) + !Container.Content(plugincontent) + !Container.Content(plugins) + !Container.Content(photo)</visible>
 						<width>1280</width>
 						<height>315</height>
 						<posy>10</posy>
@@ -5155,7 +5155,7 @@
 						</control>
 					</control>		
 					<control type="grouplist">
-						<visible>!Container.Content(episodes) + !Container.Content(seasons) + !Container.Content(clip) + !Container.Content(plugincontent) + !Container.Content(plugins)</visible>
+						<visible>!Container.Content(episodes) + !Container.Content(seasons) + !Container.Content(clip) + !Container.Content(plugincontent) + !Container.Content(plugins) + !Container.Content(photo)</visible>
 						<width>1280</width>
 						<height>315</height>
 						<posy>274</posy>
@@ -5434,7 +5434,7 @@
 					</control>		
 
 					<control type="grouplist">
-						<visible>Container.Content(episodes) | Container.Content(seasons) | Container.Content(clip) | Container.Content(plugincontent) | Container.Content(plugins)</visible>
+						<visible>Container.Content(episodes) | Container.Content(seasons) | Container.Content(clip) | Container.Content(plugincontent) | Container.Content(plugins) | Container.Content(photo)</visible>
 						<width>1280</width>
 						<height>315</height>
 						<posy>10</posy>
@@ -5711,7 +5711,7 @@
 						</control>
 					</control>		
 					<control type="grouplist">
-						<visible>Container.Content(episodes) | Container.Content(seasons) | Container.Content(clip) | Container.Content(plugincontent) | Container.Content(plugins)</visible>
+						<visible>Container.Content(episodes) | Container.Content(seasons) | Container.Content(clip) | Container.Content(plugincontent) | Container.Content(plugins) | Container.Content(photo)</visible>
 						<width>1280</width>
 						<height>315</height>
 						<posy>274</posy>

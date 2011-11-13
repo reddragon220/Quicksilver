@@ -842,10 +842,10 @@
 						<aspectratio>stretch</aspectratio>
 					</control>
 					<control type="image">
-						<visible>Container.Content(photos) + !Window.IsActive(sharedcontent)</visible>
-						<width>70</width>
+						<visible>Container.Content(photo) + !Window.IsActive(sharedcontent)</visible>
+						<width>72</width>
 						<height>55</height>
-						<texture>header/icons/music.png</texture>
+						<texture>header/icons/pictures.png</texture>
 						<aspectratio>stretch</aspectratio>
 					</control>
 					<control type="image">
@@ -990,8 +990,8 @@
 			<aspectratio>stretch</aspectratio>
 		</control>
 		<control type="image">
-			<visible>Container.Content(photos) + !Window.IsActive(sharedcontent)</visible>
-			<width>70</width>
+			<visible>Container.Content(photo) + !Window.IsActive(sharedcontent)</visible>
+			<width>72</width>
 			<height>55</height>
 			<texture>-</texture>
 			<aspectratio>stretch</aspectratio>
