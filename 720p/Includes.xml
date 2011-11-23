@@ -1118,6 +1118,8 @@
 	</include>
 	<include name="home_quicklist_up_down">
 		<orientation>vertical</orientation>
+		<onleft>-</onleft>
+		<onright>-</onright>
 	</include>
 	
 	<!-- Background -->

@@ -696,7 +696,7 @@
 			</control>
 			<control type="radiobutton" id="103">
 				<visible>Skin.HasSetting(settings_quicklist_switch) + !Skin.HasSetting(settings_quicklist_off)</visible>
-				<label>$LOCALIZE[31211]</label>
+				<label>$LOCALIZE[31212]</label>
 				<selected>!Skin.HasSetting(quicklist_left_right)</selected>
 				<onclick>Skin.ToggleSetting(quicklist_left_right)</onclick>
 				
@@ -727,7 +727,7 @@
 			</control>
 			<control type="radiobutton" id="104">
 				<visible>Skin.HasSetting(settings_quicklist_switch) + !Skin.HasSetting(settings_quicklist_off)</visible>
-				<label>$LOCALIZE[31212]</label>
+				<label>$LOCALIZE[31211]</label>
 				<selected>Skin.HasSetting(quicklist_left_right)</selected>
 				<onclick>Skin.ToggleSetting(quicklist_left_right)</onclick>
 				

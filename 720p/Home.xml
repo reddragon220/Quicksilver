@@ -226,7 +226,7 @@
 					</control>
 
 					<control type="group">
-						<visible>!Skin.HasSetting(quicklist_left_right)</visible>
+						<visible>Skin.HasSetting(quicklist_left_right)</visible>
 						<control type="group">
 							<visible>Container(11001).ListItem(0).Type(episode) + Control.HasFocus(11001) + Control.IsVisible(11000)</visible>
 							<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
@@ -326,7 +326,7 @@
 						</control>
 					</control>
 					<control type="group">
-						<visible>Skin.HasSetting(quicklist_left_right)</visible>
+						<visible>!Skin.HasSetting(quicklist_left_right)</visible>
 						<control type="group">
 							<visible>Container(11001).ListItem(0).Type(episode) + Control.HasFocus(11001) + Control.IsVisible(11000)</visible>
 							<animation effect="fade" end="100" time="300" delay="0">Visible</animation>
@@ -577,8 +577,8 @@
 					<control type="group">
 						<visible>!Container(11000).ListItem(0).Type(album) + !Container(11000).ListItem(0).Type(photo) + !Control.isVisible(11002)</visible>
 						<control type="grouplist">
-							<include condition="!Skin.HasSetting(quicklist_left_right)">home_quicklist_left_right</include>
-							<include condition="Skin.HasSetting(quicklist_left_right)">home_quicklist_up_down</include>
+							<include condition="Skin.HasSetting(quicklist_left_right)">home_quicklist_left_right</include>
+							<include condition="!Skin.HasSetting(quicklist_left_right)">home_quicklist_up_down</include>
 							<onup>300</onup>
 							<ondown>-</ondown>
 							<posx>-148</posx>
@@ -747,8 +747,8 @@
 						</control>
 
 						<control type="grouplist">
-							<include condition="!Skin.HasSetting(quicklist_left_right)">home_quicklist_left_right</include>
-							<include condition="Skin.HasSetting(quicklist_left_right)">home_quicklist_up_down</include>
+							<include condition="Skin.HasSetting(quicklist_left_right)">home_quicklist_left_right</include>
+							<include condition="!Skin.HasSetting(quicklist_left_right)">home_quicklist_up_down</include>
 							<onup>300</onup>
 							<ondown>-</ondown>
 							<posx>-148</posx>
@@ -1283,7 +1283,7 @@
 						<item id="3">
 							<description>Picture Plug-ins</description>
 							<label>$LOCALIZE[31007]</label>
-							<visible>!Skin.HasSetting(pictures_off)</visible>
+							<visible>!Skin.HasSetting(pictures_off_off)</visible>
 							<onclick>XBMC.ActivateWindow(2)</onclick>
 						</item>
 						<item id="4">
