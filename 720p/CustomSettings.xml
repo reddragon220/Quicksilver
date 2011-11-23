@@ -253,14 +253,14 @@
 							</control>
 
 							<control type="image">
-								<visible>StringCompare(ListItem.label,$LOCALIZE[31206]) + Skin.HasSetting(Background1)</visible>
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31206]) + [Skin.HasSetting(Background1) | !IsEmpty(Skin.String(Custom_Background))]</visible>
 								<height>43</height>
 								<width>43</width>
 								<texture>settings/nib_off.png</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="image">
-								<visible>StringCompare(ListItem.label,$LOCALIZE[31206]) + !Skin.HasSetting(Background1)</visible>
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31206]) + !Skin.HasSetting(Background1) + IsEmpty(Skin.String(Custom_Background))</visible>
 								<height>43</height>
 								<width>43</width>
 								<texture>settings/nib_on.png</texture>
@@ -268,14 +268,14 @@
 							</control>
 
 							<control type="image">
-								<visible>StringCompare(ListItem.label,$LOCALIZE[31207]) + !Skin.HasSetting(Background1)</visible>
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31207]) + [!Skin.HasSetting(Background1) | !IsEmpty(Skin.String(Custom_Background))]</visible>
 								<height>43</height>
 								<width>43</width>
 								<texture>settings/nib_off.png</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="image">
-								<visible>StringCompare(ListItem.label,$LOCALIZE[31207]) + Skin.HasSetting(Background1)</visible>
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31207]) + Skin.HasSetting(Background1) + IsEmpty(Skin.String(Custom_Background))</visible>
 								<height>43</height>
 								<width>43</width>
 								<texture>settings/nib_on.png</texture>
@@ -329,14 +329,14 @@
 							</control>
 
 							<control type="image">
-								<visible>StringCompare(ListItem.label,$LOCALIZE[31206]) + Skin.HasSetting(Background1)</visible>
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31206]) + [Skin.HasSetting(Background1) | !IsEmpty(Skin.String(Custom_Background))]</visible>
 								<height>43</height>
 								<width>43</width>
 								<texture>settings/nib_off.png</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="image">
-								<visible>StringCompare(ListItem.label,$LOCALIZE[31206]) + !Skin.HasSetting(Background1)</visible>
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31206]) + !Skin.HasSetting(Background1) + IsEmpty(Skin.String(Custom_Background))</visible>
 								<height>43</height>
 								<width>43</width>
 								<texture>settings/nib_on.png</texture>
@@ -344,14 +344,14 @@
 							</control>
 
 							<control type="image">
-								<visible>StringCompare(ListItem.label,$LOCALIZE[31207]) + !Skin.HasSetting(Background1)</visible>
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31207]) + [!Skin.HasSetting(Background1) | !IsEmpty(Skin.String(Custom_Background))]</visible>
 								<height>43</height>
 								<width>43</width>
 								<texture>settings/nib_off.png</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="image">
-								<visible>StringCompare(ListItem.label,$LOCALIZE[31207]) + Skin.HasSetting(Background1)</visible>
+								<visible>StringCompare(ListItem.label,$LOCALIZE[31207]) + Skin.HasSetting(Background1) + IsEmpty(Skin.String(Custom_Background))</visible>
 								<height>43</height>
 								<width>43</width>
 								<texture>settings/nib_on.png</texture>
