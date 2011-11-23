@@ -1283,7 +1283,7 @@
 						<item id="3">
 							<description>Picture Plug-ins</description>
 							<label>$LOCALIZE[31007]</label>
-							<visible>!Skin.HasSetting(pictures_off_off)</visible>
+							<visible>!Skin.HasSetting(pictures_off)</visible>
 							<onclick>XBMC.ActivateWindow(2)</onclick>
 						</item>
 						<item id="4">
