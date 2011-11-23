@@ -1600,7 +1600,6 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="501">
-				<visible allowhiddenfocus="true">Control.HasFocus(501)</visible>
 				<posx>783</posx>
 				<posy>64</posy>
 				<width>22</width>
