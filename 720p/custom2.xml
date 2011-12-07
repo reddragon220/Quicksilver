@@ -399,7 +399,7 @@
 								</control>
 
 								<control type="image">
-									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>16</posy>
 									<width>58</width>
@@ -463,7 +463,7 @@
 								</control>
 
 								<control type="image">
-									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>16</posy>
 									<width>58</width>
@@ -583,7 +583,7 @@
 									<info>ListItem(1).firstGenre</info>
 								</control>
 								<control type="image">
-									<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>16</posy>
 									<width>58</width>
@@ -638,7 +638,7 @@
 								</control>
 
 								<control type="image">
-									<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>16</posy>
 									<width>58</width>
@@ -758,7 +758,7 @@
 									<info>ListItem(2).firstGenre</info>
 								</control>
 								<control type="image">
-									<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>16</posy>
 									<width>58</width>
@@ -813,7 +813,7 @@
 								</control>
 
 								<control type="image">
-									<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>16</posy>
 									<width>58</width>
@@ -933,7 +933,7 @@
 									<info>ListItem(3).firstGenre</info>
 								</control>
 								<control type="image">
-									<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>16</posy>
 									<width>58</width>
@@ -988,7 +988,7 @@
 								</control>
 
 								<control type="image">
-									<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>16</posy>
 									<width>58</width>
@@ -1267,7 +1267,7 @@
 								<posy>25</posy>
 								<animation effect="slide" end="9,-11" time="200" >Focus</animation>
 								<control type="image">
-									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible> 
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible> 
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
@@ -1658,7 +1658,7 @@
 								<posx>316</posx>
 								<posy>30</posy>
 								<control type="image">
-									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
@@ -1775,7 +1775,7 @@
 								<posx>335</posx>
 								<posy>30</posy>
 								<control type="image">
-									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
@@ -1890,7 +1890,7 @@
 								<posx>316</posx>
 								<posy>30</posy>
 								<control type="image">
-									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
@@ -2046,7 +2046,7 @@
 								</control>
 								<control type="group">
 									<control type="image">
-										<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 										<posx>126</posx>
 										<posy>49</posy>
 										<width>67</width>
@@ -3312,7 +3312,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -3398,7 +3398,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -3484,7 +3484,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -3570,7 +3570,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -3656,7 +3656,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(4).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(4).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -3742,7 +3742,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(5).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(5).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -3834,7 +3834,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(6).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(6).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -3920,7 +3920,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(7).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(7).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -4006,7 +4006,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(8).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(8).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -4092,7 +4092,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(9).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(9).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -4178,7 +4178,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(10).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(10).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -4264,7 +4264,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(11).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(11).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -4356,7 +4356,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(12).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(12).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -4442,7 +4442,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(13).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(13).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -4528,7 +4528,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(14).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(14).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -4614,7 +4614,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(15).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(15).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -4700,7 +4700,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(16).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(16).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -4786,7 +4786,7 @@
 										<posx>4</posx>
 										<animation effect="slide" end="17,-21" time="100">Focus</animation>
 										<control type="image">
-											<visible>StringCompare(ListItem(17).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+											<visible>StringCompare(ListItem(17).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 											<posx>126</posx>
 											<posy>49</posy>
 											<width>67</width>
@@ -4868,7 +4868,7 @@
 					<posy>227</posy>
 				</control>
 			</control>
-			<control type="group">
+StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)			<control type="group">
 				<visible>![Container.Content(secondary) | Container.Content(songs) | Container.Content(albums) | Window.IsActive(sharedcontent)]</visible>
 				<posy>226</posy>
 				<posx>424</posx>
@@ -4901,7 +4901,7 @@
 								<posx>337</posx>
 								<posy>40</posy>
 								<control type="image">
-									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
@@ -4991,7 +4991,7 @@
 								<posx>337</posx>
 								<posy>40</posy>
 								<control type="image">
-									<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
@@ -5081,7 +5081,7 @@
 								<posx>337</posx>
 								<posy>40</posy>
 								<control type="image">
-									<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
@@ -5178,7 +5178,7 @@
 								<posx>337</posx>
 								<posy>40</posy>
 								<control type="image">
-									<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
@@ -5268,7 +5268,7 @@
 								<posx>337</posx>
 								<posy>40</posy>
 								<control type="image">
-									<visible>StringCompare(ListItem(4).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(4).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
@@ -5358,7 +5358,7 @@
 								<posx>337</posx>
 								<posy>40</posy>
 								<control type="image">
-									<visible>StringCompare(ListItem(5).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(5).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
@@ -5457,7 +5457,7 @@
 								<posx>337</posx>
 								<posy>40</posy>
 								<control type="image">
-									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
@@ -5547,7 +5547,7 @@
 								<posx>337</posx>
 								<posy>40</posy>
 								<control type="image">
-									<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
@@ -5637,7 +5637,7 @@
 								<posx>337</posx>
 								<posy>40</posy>
 								<control type="image">
-									<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
@@ -5734,7 +5734,7 @@
 								<posx>337</posx>
 								<posy>40</posy>
 								<control type="image">
-									<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
@@ -5824,7 +5824,7 @@
 								<posx>337</posx>
 								<posy>40</posy>
 								<control type="image">
-									<visible>StringCompare(ListItem(4).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(4).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
@@ -5914,7 +5914,7 @@
 								<posx>337</posx>
 								<posy>40</posy>
 								<control type="image">
-									<visible>StringCompare(ListItem(5).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+									<visible>StringCompare(ListItem(5).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
 									<posx>0</posx>
 									<posy>0</posy>
 									<width>67</width>
