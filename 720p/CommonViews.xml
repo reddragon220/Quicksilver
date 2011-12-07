@@ -2834,21 +2834,21 @@
 						<visible>Container.Content(episodes)</visible>
 						<posy>203</posy>
 						<control type="label">
-							<posx>185</posx>
+							<posx>199</posx>
 							<posy>0</posy>
-							<width>370</width>
+							<width>398</width>
 							<height>48</height>
 							<textcolor>4b000000</textcolor>
-<selectedcolor>4b000000</selectedcolor>
+	<selectedcolor>4b000000</selectedcolor>
 							<font>Cover_title</font>
 							<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
 							<scroll>false</scroll>
 							<align>center</align>
 						</control>
 						<control type="label">
-							<posx>185</posx>
+							<posx>199</posx>
 							<posy>2</posy>
-							<width>370</width>
+							<width>398</width>
 							<height>48</height>
 							<textcolor>ffffffff</textcolor>
 							<font>Cover_title</font>
@@ -2955,7 +2955,8 @@
 					</control>
 					<control type="group">
 						<visible>Container.Content(episodes)</visible>
-						<posy>213</posy>
+						<posy>203</posy>
+						<animation effect="slide" start="0,0" end="0,10" center="auto" time="200">Focus</animation>
 						<control type="label">
 							<posx>199</posx>
 							<posy>0</posy>
@@ -3661,9 +3662,9 @@
 						<visible>Container.Content(episodes)</visible>
 						<posy>203</posy>
 						<control type="label">
-							<posx>185</posx>
+							<posx>199</posx>
 							<posy>0</posy>
-							<width>370</width>
+							<width>398</width>
 							<height>48</height>
 							<textcolor>4b000000</textcolor>
 	<selectedcolor>4b000000</selectedcolor>
@@ -3673,9 +3674,9 @@
 							<align>center</align>
 						</control>
 						<control type="label">
-							<posx>185</posx>
+							<posx>199</posx>
 							<posy>2</posy>
-							<width>370</width>
+							<width>398</width>
 							<height>48</height>
 							<textcolor>ffffffff</textcolor>
 							<font>Cover_title</font>
@@ -3782,7 +3783,8 @@
 					</control>
 					<control type="group">
 						<visible>Container.Content(episodes)</visible>
-						<posy>213</posy>
+						<posy>203</posy>
+						<animation effect="slide" start="0,0" end="0,10" center="auto" time="200">Focus</animation>
 						<control type="label">
 							<posx>199</posx>
 							<posy>0</posy>
