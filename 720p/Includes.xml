@@ -2630,7 +2630,7 @@
 					</control>
 					<control type="grouplist">
 						<visible>!Container.Content(Secondary) + [Container.Content(episodes) | Container.Content(clip) | Container.Content(photo)]</visible>
-						<posx>14</posx>
+						<posx>30</posx>
 						<posy>420</posy>
 						<width>1280</width>
 						<height>300</height>
@@ -2771,7 +2771,7 @@
 								<control type="label">
 									<posx>30</posx>
 									<posy>0</posy>
-									<width>398</width>
+									<width>370</width>
 									<height>48</height>
 									<textcolor>4b000000</textcolor>
 		<selectedcolor>4b000000</selectedcolor>
@@ -2783,7 +2783,7 @@
 								<control type="label">
 									<posx>30</posx>
 									<posy>2</posy>
-									<width>398</width>
+									<width>370</width>
 									<height>48</height>
 									<textcolor>ffffffff</textcolor>
 									<font>Cover_title</font>
@@ -2885,7 +2885,7 @@
 								<visible>Container.Content(episodes)</visible>
 								<posy>203</posy>
 								<control type="label">
-									<posx>185</posx>
+									<posx>30</posx>
 									<posy>0</posy>
 									<width>370</width>
 									<height>48</height>
@@ -2897,7 +2897,7 @@
 									<align>center</align>
 								</control>
 								<control type="label">
-									<posx>185</posx>
+									<posx>30</posx>
 									<posy>2</posy>
 									<width>370</width>
 									<height>48</height>
