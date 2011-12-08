@@ -1451,6 +1451,7 @@
 							<description>Search</description>
 							<label>$LOCALIZE[31000]</label>
 							<onclick>Plex.ActivateWindow(10051)</onclick>
+							<visible>!Skin.HasSetting(search_off)</visible>
 						</item>
 						<item id="1">
 							<description>Video Plug-ins</description>
