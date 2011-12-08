@@ -15,6 +15,15 @@
 				<texture>views/list/thin/background.png</texture>
 			</control>
 			<control type="image">
+				<visible>Container.Content(episodes)</visible>
+				<posx>171</posx>
+				<posy>64</posy>
+				<width>110</width>
+				<height>656</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>views/list/fat/background_episode_bay.png</texture>
+			</control>
+			<control type="image">
 				<visible>!Container.Content(secondary) + !Container.Content(songs)</visible>
 				<posx>0</posx>
 				<posy>0</posy>
@@ -23,6 +32,7 @@
 				<aspectratio>stretch</aspectratio>
 				<texture>views/list/fat/background.png</texture>
 			</control>
+
 			<control type="list" id="50">
 				<posx>0</posx>
 				<posy>64</posy>
@@ -269,24 +279,28 @@
 					<!-- Episodes -->
 					<control type="label">
 						<visible>Container.Content(episodes)</visible>
-						<posx>179</posx>
-						<posy>5</posy>
-						<width>1120</width>
-						<height>30</height>
-						<textcolor>White</textcolor>
+						<posx>226</posx>
+						<posy>-2</posy>
+						<width>110</width>
+						<height>77</height>
+						<textcolor>ffffffff</textcolor>
+						<selectedcolor>ffffffff</selectedcolor>
 						<font>Title</font>
-						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]  $INFO[ListItem.Label]</label>
-						<scroll>false</scroll>
+						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+						<align>center</align>
+						<aligny>center</aligny>
 					</control>
 					<control type="label">
 						<visible>Container.Content(episodes)</visible>
-						<posx>179</posx>
-						<posy>40</posy>
-						<width>1120</width>
-						<height>30</height>
-						<textcolor>ffffffff</textcolor>
-						<font>Title2</font>
-						<info>ListItem.firstGenre</info>
+						<posx>291</posx>
+						<posy>-2</posy>
+						<width>976</width>
+						<height>77</height>
+						<textcolor>White</textcolor>
+						<font>Title</font>
+						<label>$INFO[ListItem.Label]</label>
+						<scroll>false</scroll>
+						<aligny>center</aligny>
 					</control>
 					<!-- Clips -->
 					<control type="label">
@@ -461,47 +475,64 @@
 						<label>$INFO[ListItem.Property(WatchedEpisodes)]/$INFO[ListItem.Episode]</label>
 					</control>
 					<!-- Episodes -->
+					<control type="image">
+						<visible>Container.Content(episodes)</visible>
+						<posx>171</posx>
+						<posy>0</posy>	
+						<width>110</width>
+						<height>77</height>
+						<texture>views/list/fat/highlight_episode_bay.png</texture>
+					</control>
 					<control type="label">
 						<visible>Container.Content(episodes)</visible>
-						<posx>179</posx>
-						<posy>3</posy>
-						<width>1120</width>
-						<height>30</height>
+						<posx>226</posx>
+						<posy>-4</posy>
+						<width>110</width>
+						<height>77</height>
 						<textcolor>4b000000</textcolor>
 <selectedcolor>4b000000</selectedcolor>
 						<font>Title</font>
-						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]  $INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+						<align>center</align>
+						<aligny>center</aligny>
 					</control>
 					<control type="label">
 						<visible>Container.Content(episodes)</visible>
-						<posx>179</posx>
-						<posy>5</posy>
-						<width>1120</width>
-						<height>30</height>
+						<posx>226</posx>
+						<posy>-2</posy>
+						<width>110</width>
+						<height>77</height>
 						<textcolor>ffffffff</textcolor>
+						<selectedcolor>ffffffff</selectedcolor>
 						<font>Title</font>
-						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]  $INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+						<align>center</align>
+						<aligny>center</aligny>
 					</control>
+					
 					<control type="label">
 						<visible>Container.Content(episodes)</visible>
-						<posx>179</posx>
-						<posy>38</posy>
-						<width>1120</width>
-						<height>30</height>
+						<posx>291</posx>
+						<posy>-4</posy>
+						<width>976</width>
+						<height>77</height>
 						<textcolor>4b000000</textcolor>
-<selectedcolor>4b000000</selectedcolor>
-						<font>Title2</font>
-						<info>ListItem.firstGenre</info>
+						<selectedcolor>4b000000</selectedcolor>
+						<font>Title</font>
+						<label>$INFO[ListItem.Label]</label>
+						<aligny>center</aligny>
 					</control>
 					<control type="label">
 						<visible>Container.Content(episodes)</visible>
-						<posx>179</posx>
-						<posy>40</posy>
-						<width>1120</width>
-						<height>30</height>
-						<textcolor>ffffffff</textcolor>
-						<font>Title2</font>
-						<info>ListItem.firstGenre</info>
+						<posx>291</posx>
+						<posy>-2</posy>
+						<width>976</width>
+						<height>77</height>
+						<textcolor>White</textcolor>
+						<font>Title</font>
+						<label>$INFO[ListItem.Label]</label>
+						<scroll>false</scroll>
+						<aligny>center</aligny>
 					</control>
 					<!-- Clips -->
 					<control type="label">
@@ -838,6 +869,15 @@
 				<texture>views/list/thin/background.png</texture>
 			</control>
 			<control type="image">
+				<visible>Container.Content(episodes)</visible>
+				<posx>171</posx>
+				<posy>64</posy>
+				<width>110</width>
+				<height>656</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>views/list/fat/background_episode_bay.png</texture>
+			</control>
+			<control type="image">
 				<visible>!Container.Content(secondary) + !Container.Content(songs)</visible>
 				<posx>0</posx>
 				<posy>0</posy>
@@ -1092,24 +1132,28 @@
 					<!-- Episodes -->
 					<control type="label">
 						<visible>Container.Content(episodes)</visible>
-						<posx>179</posx>
-						<posy>5</posy>
-						<width>612</width>
-						<height>30</height>
-						<textcolor>White</textcolor>
+						<posx>226</posx>
+						<posy>-2</posy>
+						<width>110</width>
+						<height>77</height>
+						<textcolor>ffffffff</textcolor>
+						<selectedcolor>ffffffff</selectedcolor>
 						<font>Title</font>
-						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]  $INFO[ListItem.Label]</label>
-						<scroll>false</scroll>
+						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+						<align>center</align>
+						<aligny>center</aligny>
 					</control>
 					<control type="label">
 						<visible>Container.Content(episodes)</visible>
-						<posx>179</posx>
-						<posy>40</posy>
-						<width>612</width>
-						<height>30</height>
-						<textcolor>ffffffff</textcolor>
-						<font>Title2</font>
-						<info>ListItem.firstGenre</info>
+						<posx>291</posx>
+						<posy>-2</posy>
+						<width>500</width>
+						<height>77</height>
+						<textcolor>White</textcolor>
+						<font>Title</font>
+						<label>$INFO[ListItem.Label]</label>
+						<scroll>false</scroll>
+						<aligny>center</aligny>
 					</control>
 					<!-- Clips -->
 					<control type="label">
@@ -1284,47 +1328,64 @@
 						<label>$INFO[ListItem.Property(WatchedEpisodes)]/$INFO[ListItem.Episode]</label>
 					</control>
 					<!-- Episodes -->
+					<control type="image">
+						<visible>Container.Content(episodes)</visible>
+						<posx>171</posx>
+						<posy>0</posy>	
+						<width>110</width>
+						<height>77</height>
+						<texture>views/list/fat/highlight_episode_bay.png</texture>
+					</control>
 					<control type="label">
 						<visible>Container.Content(episodes)</visible>
-						<posx>179</posx>
-						<posy>3</posy>
-						<width>612</width>
-						<height>30</height>
+						<posx>226</posx>
+						<posy>-4</posy>
+						<width>110</width>
+						<height>77</height>
 						<textcolor>4b000000</textcolor>
 <selectedcolor>4b000000</selectedcolor>
 						<font>Title</font>
-						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]  $INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+						<align>center</align>
+						<aligny>center</aligny>
 					</control>
 					<control type="label">
 						<visible>Container.Content(episodes)</visible>
-						<posx>179</posx>
-						<posy>5</posy>
-						<width>612</width>
-						<height>30</height>
+						<posx>226</posx>
+						<posy>-2</posy>
+						<width>110</width>
+						<height>77</height>
 						<textcolor>ffffffff</textcolor>
+						<selectedcolor>ffffffff</selectedcolor>
 						<font>Title</font>
-						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]  $INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+						<align>center</align>
+						<aligny>center</aligny>
 					</control>
+
 					<control type="label">
 						<visible>Container.Content(episodes)</visible>
-						<posx>179</posx>
-						<posy>38</posy>
-						<width>612</width>
-						<height>30</height>
+						<posx>291</posx>
+						<posy>-4</posy>
+						<width>500</width>
+						<height>77</height>
 						<textcolor>4b000000</textcolor>
 						<selectedcolor>4b000000</selectedcolor>
-						<font>Title2</font>
-						<info>ListItem.firstGenre</info>
+						<font>Title</font>
+						<label>$INFO[ListItem.Label]</label>
+						<aligny>center</aligny>
 					</control>
 					<control type="label">
 						<visible>Container.Content(episodes)</visible>
-						<posx>179</posx>
-						<posy>40</posy>
-						<width>612</width>
-						<height>30</height>
-						<textcolor>ffffffff</textcolor>
-						<font>Title2</font>
-						<info>ListItem.firstGenre</info>
+						<posx>291</posx>
+						<posy>-2</posy>
+						<width>500</width>
+						<height>77</height>
+						<textcolor>White</textcolor>
+						<font>Title</font>
+						<label>$INFO[ListItem.Label]</label>
+						<scroll>false</scroll>
+						<aligny>center</aligny>
 					</control>
 					<!-- Clips -->
 					<control type="label">
