@@ -6,6 +6,15 @@
 			</visible>
 			<description>List View</description>
 			<control type="image">
+				<visible>Container.Content(songs)</visible>
+				<posx>40</posx>
+				<posy>64</posy>
+				<width>110</width>
+				<height>656</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>views/list/thin/background_bay.png</texture>
+			</control>
+			<control type="image">
 				<visible>Container.Content(secondary) | Container.Content(songs)</visible>
 				<posx>0</posx>
 				<posy>0</posy>
@@ -98,7 +107,7 @@
 						<align>center</align>
 					</control>
 					<control type="label">
-						<visible>!Container.Content(episodes)</visible>
+						<visible>!Container.Content(songs)</visible>
 						<posx>60</posx>
 						<posy>3</posy>
 						<width>1206</width>
@@ -108,17 +117,30 @@
 						<info>ListItem.label</info>
 						<scroll>false</scroll>
 					</control>
-					<!-- Episodes -->
 					<control type="label">
-						<visible>Container.Content(episodes)</visible>
-						<posx>60</posx>
-						<posy>3</posy>
-						<width>1206</width>
-						<height>30</height>
+						<visible>Container.Content(songs)</visible>
+						<posx>95</posx>
+						<posy>-4</posy>
+						<width>110</width>
+						<height>44</height>
+						<textcolor>ffffffff</textcolor>
+						<selectedcolor>ffffffff</selectedcolor>
+						<font>Title</font>
+						<label>$INFO[ListItem.TrackNumber]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="label">
+						<visible>Container.Content(songs)</visible>
+						<posx>160</posx>
+						<posy>-4</posy>
+						<width>1032</width>
+						<height>44</height>
 						<textcolor>White</textcolor>
 						<font>Title</font>
-						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]  $INFO[ListItem.Label]</label>
+						<info>ListItem.Title</info>
 						<scroll>false</scroll>
+						<aligny>center</aligny>
 					</control>
 				</itemlayout>
 				<focusedlayout condition="Container.Content(secondary) | Container.Content(songs)" height="44">
@@ -178,20 +200,20 @@
 						<scroll>false</scroll>
 						<align>center</align>
 					</control>
+
 					<control type="label">
-						<visible>!Container.Content(episodes)</visible>
+						<visible>!Container.Content(songs)</visible>
 						<posx>60</posx>
 						<posy>1</posy>
 						<width>1206</width>
 						<height>30</height>
 						<textcolor>4b000000</textcolor>
-<selectedcolor>4b000000</selectedcolor>
 						<selectedcolor>4b000000</selectedcolor>
 						<font>Title</font>
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<visible>!Container.Content(episodes)</visible>
+						<visible>!Container.Content(songs)</visible>
 						<posx>60</posx>
 						<posy>3</posy>
 						<width>1206</width>
@@ -200,28 +222,67 @@
 						<font>Title</font>
 						<info>ListItem.Label</info>
 					</control>
-					<!-- Episodes -->
+					
+					<control type="image">
+						<visible>Container.Content(songs)</visible>
+						<posx>40</posx>
+						<posy>0</posy>	
+						<width>110</width>
+						<height>44</height>
+						<texture>views/list/fat/highlight_episode_bay.png</texture>
+					</control>
 					<control type="label">
-						<visible>Container.Content(episodes)</visible>
-						<posx>60</posx>
-						<posy>1</posy>
-						<width>1206</width>
-						<height>30</height>
+						<visible>Container.Content(songs)</visible>
+						<posx>95</posx>
+						<posy>-6</posy>
+						<width>110</width>
+						<height>44</height>
 						<textcolor>4b000000</textcolor>
-<selectedcolor>4b000000</selectedcolor>
+						<selectedcolor>4b000000</selectedcolor>
 						<font>Title</font>
-						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]  $INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.TrackNumber]</label>
+						<align>center</align>
+						<aligny>center</aligny>
 					</control>
 					<control type="label">
-						<visible>Container.Content(episodes)</visible>
-						<posx>60</posx>
-						<posy>3</posy>
-						<width>1206</width>
-						<height>30</height>
+						<visible>Container.Content(songs)</visible>
+						<posx>95</posx>
+						<posy>-4</posy>
+						<width>110</width>
+						<height>44</height>
 						<textcolor>ffffffff</textcolor>
+						<selectedcolor>ffffffff</selectedcolor>
 						<font>Title</font>
-						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]  $INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.TrackNumber]</label>
+						<align>center</align>
+						<aligny>center</aligny>
 					</control>
+					<control type="label">
+						<visible>Container.Content(songs)</visible>
+						<posx>160</posx>
+						<posy>-6</posy>
+						<width>1032</width>
+						<height>44</height>
+						<textcolor>4b000000</textcolor>
+						<selectedcolor>4b000000</selectedcolor>
+						<font>Title</font>
+						<info>ListItem.Title</info>
+						<scroll>false</scroll>
+						<aligny>center</aligny>
+					</control>
+					<control type="label">
+						<visible>Container.Content(songs)</visible>
+						<posx>160</posx>
+						<posy>-4</posy>
+						<width>1032</width>
+						<height>44</height>
+						<textcolor>White</textcolor>
+						<font>Title</font>
+						<info>ListItem.Title</info>
+						<scroll>false</scroll>
+						<aligny>center</aligny>
+					</control>
+					
 				</focusedlayout>
 
 				<!-- Thumb -->
@@ -860,6 +921,15 @@
 			<description>List View</description>
 			<include>infoPane</include>
 			<control type="image">
+				<visible>Container.Content(songs)</visible>
+				<posx>40</posx>
+				<posy>64</posy>
+				<width>110</width>
+				<height>656</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>views/list/thin/background_bay.png</texture>
+			</control>
+			<control type="image">
 				<visible>Container.Content(secondary) | Container.Content(songs)</visible>
 				<posx>0</posx>
 				<posy>0</posy>
@@ -952,7 +1022,7 @@
 						<align>center</align>
 					</control>
 					<control type="label">
-						<visible>!Container.Content(episodes)</visible>
+						<visible>!Container.Content(songs)</visible>
 						<posx>60</posx>
 						<posy>3</posy>
 						<width>733</width>
@@ -962,17 +1032,30 @@
 						<info>ListItem.label</info>
 						<scroll>false</scroll>
 					</control>
-					<!-- Episodes -->
 					<control type="label">
-						<visible>Container.Content(episodes)</visible>
-						<posx>60</posx>
-						<posy>3</posy>
-						<width>733</width>
-						<height>30</height>
+						<visible>Container.Content(songs)</visible>
+						<posx>95</posx>
+						<posy>-4</posy>
+						<width>110</width>
+						<height>44</height>
+						<textcolor>ffffffff</textcolor>
+						<selectedcolor>ffffffff</selectedcolor>
+						<font>Title</font>
+						<label>$INFO[ListItem.TrackNumber]</label>
+						<align>center</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="label">
+						<visible>Container.Content(songs)</visible>
+						<posx>160</posx>
+						<posy>-4</posy>
+						<width>631</width>
+						<height>44</height>
 						<textcolor>White</textcolor>
 						<font>Title</font>
-						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]  $INFO[ListItem.Label]</label>
+						<info>ListItem.Title</info>
 						<scroll>false</scroll>
+						<aligny>center</aligny>
 					</control>
 				</itemlayout>
 				<focusedlayout condition="Container.Content(secondary) |  Container.Content(songs)" height="44">
@@ -1033,7 +1116,7 @@
 						<align>center</align>
 					</control>
 					<control type="label">
-						<visible>!Container.Content(episodes)</visible>
+						<visible>!Container.Content(songs)</visible>
 						<posx>60</posx>
 						<posy>1</posy>
 						<width>733</width>
@@ -1044,7 +1127,7 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<visible>!Container.Content(episodes)</visible>
+						<visible>!Container.Content(songs)</visible>
 						<posx>60</posx>
 						<posy>3</posy>
 						<width>733</width>
@@ -1053,28 +1136,67 @@
 						<font>Title</font>
 						<info>ListItem.Label</info>
 					</control>
-					<!-- Episodes -->
+					
+					<control type="image">
+						<visible>Container.Content(songs)</visible>
+						<posx>40</posx>
+						<posy>0</posy>	
+						<width>110</width>
+						<height>44</height>
+						<texture>views/list/fat/highlight_episode_bay.png</texture>
+					</control>
 					<control type="label">
-						<visible>Container.Content(episodes)</visible>
-						<posx>60</posx>
-						<posy>1</posy>
-						<width>733</width>
-						<height>30</height>
+						<visible>Container.Content(songs)</visible>
+						<posx>95</posx>
+						<posy>-6</posy>
+						<width>110</width>
+						<height>44</height>
 						<textcolor>4b000000</textcolor>
-<selectedcolor>4b000000</selectedcolor>
+						<selectedcolor>4b000000</selectedcolor>
 						<font>Title</font>
-						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]  $INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.TrackNumber]</label>
+						<align>center</align>
+						<aligny>center</aligny>
 					</control>
 					<control type="label">
-						<visible>Container.Content(episodes)</visible>
-						<posx>60</posx>
-						<posy>3</posy>
-						<width>791</width>
-						<height>30</height>
+						<visible>Container.Content(songs)</visible>
+						<posx>95</posx>
+						<posy>-4</posy>
+						<width>110</width>
+						<height>44</height>
 						<textcolor>ffffffff</textcolor>
+						<selectedcolor>ffffffff</selectedcolor>
 						<font>Title</font>
-						<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]  $INFO[ListItem.Label]</label>
+						<label>$INFO[ListItem.TrackNumber]</label>
+						<align>center</align>
+						<aligny>center</aligny>
 					</control>
+					<control type="label">
+						<visible>Container.Content(songs)</visible>
+						<posx>160</posx>
+						<posy>-6</posy>
+						<width>1032</width>
+						<height>44</height>
+						<textcolor>4b000000</textcolor>
+						<selectedcolor>4b000000</selectedcolor>
+						<font>Title</font>
+						<info>ListItem.Title</info>
+						<scroll>false</scroll>
+						<aligny>center</aligny>
+					</control>
+					<control type="label">
+						<visible>Container.Content(songs)</visible>
+						<posx>160</posx>
+						<posy>-4</posy>
+						<width>1032</width>
+						<height>44</height>
+						<textcolor>White</textcolor>
+						<font>Title</font>
+						<info>ListItem.Title</info>
+						<scroll>false</scroll>
+						<aligny>center</aligny>
+					</control>
+					
 				</focusedlayout>
 
 				<!-- Thumb -->
