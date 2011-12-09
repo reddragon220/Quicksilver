@@ -3019,7 +3019,8 @@
 				</control>
 			</control>
 			<control type="group">
-				<visible>!Container.Content(secondary) + !Container.Content(episodes) + !Window.IsActive(sharedcontent)</visible>
+				<description>Cover</description>
+				<visible>!Container.Content(secondary) + !Window.IsActive(sharedcontent)</visible>
 				<posy>220</posy>
 				<posx>-425</posx>
 				<control type="group">
@@ -4338,526 +4339,615 @@
 
 					<control type="group">
 						<animation effect="zoom" start="100" end="29" center="640,40" time="0" condition="True">Conditional</animation>
-						<visible>![Container.Content(movies) |  Container.Content(tvshows) | Container.Content(seasons)]</visible>
+						<visible>Container.Content(episodes)</visible>
 						<control type="grouplist">
 							<width>1280</width>
 							<height>226</height>
 							<orientation>horizontal</orientation>
 							<control type="group">
-								<width>210</width>
-								<height>226</height>
+								<width>252</width>
+								<height>200</height>
+								<control type="image">
+									<posx>12</posx>
+									<posy>29</posy>
+									<width>250</width>
+									<height>145</height>
+									<info>ListItem.thumb</info>
+									<texture background="true" diffuse="views/covers/episode.png">NoThumb.png</texture>
+									<bordertexture border="5">views/covers/episode_shadow.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>72</posx>
+									<animation effect="slide" end="17,-21" time="100">Focus</animation>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem.thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem.Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
 									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
-				<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem.Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem.Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/newep.png</texture>
 									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>54000000</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem.Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>White</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+								<control type="group">
+									<posx>0</posx>
+									<posy>172</posy>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+			<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<info>ListItem.Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<info>ListItem.Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<!-- Episodes -->
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+			<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem.Season].$INFO[ListItem.Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+								</control>
 							</control>
 							<control type="group">
-								<width>210</width>
-								<height>226</height>
+								<width>252</width>
+								<height>200</height>
+								<control type="image">
+									<posx>12</posx>
+									<posy>29</posy>
+									<width>250</width>
+									<height>145</height>
+									<info>ListItem(1).thumb</info>
+									<texture background="true" diffuse="views/covers/episode.png">NoThumb.png</texture>
+									<bordertexture border="5">views/covers/episode_shadow.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>72</posx>
+									<animation effect="slide" end="17,-21" time="100">Focus</animation>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(1).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(1).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(1).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(1).Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
 									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
-				<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(1).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(1).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/newep.png</texture>
 									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>54000000</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(1).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(1).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>White</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(1).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+								<control type="group">
+									<posx>0</posx>
+									<posy>172</posy>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+							<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<info>ListItem(1).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<info>ListItem(1).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<!-- Episodes -->
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+										<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(1).Season].$INFO[ListItem(1).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(1).Season].$INFO[ListItem(1).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+								</control>
 							</control>
 							<control type="group">
-								<width>210</width>
-								<height>226</height>
+								<width>252</width>
+								<height>200</height>
+								<control type="image">
+									<posx>12</posx>
+									<posy>29</posy>
+									<width>250</width>
+									<height>145</height>
+									<info>ListItem(2).thumb</info>
+									<texture background="true" diffuse="views/covers/episode.png">NoThumb.png</texture>
+									<bordertexture border="5">views/covers/episode_shadow.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>72</posx>
+									<animation effect="slide" end="17,-21" time="100">Focus</animation>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(2).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(2).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(2).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(2).Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
 									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
-				<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(2).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(2).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/newep.png</texture>
 									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>54000000</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(2).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(2).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>White</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(2).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+								<control type="group">
+									<posx>0</posx>
+									<posy>172</posy>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+							<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<info>ListItem(2).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<info>ListItem(2).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<!-- Episodes -->
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+										<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(2).Season].$INFO[ListItem(2).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(2).Season].$INFO[ListItem(2).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+								</control>
 							</control>
 							<control type="group">
-								<width>210</width>
-								<height>226</height>
+								<width>252</width>
+								<height>200</height>
+								<control type="image">
+									<posx>12</posx>
+									<posy>29</posy>
+									<width>250</width>
+									<height>145</height>
+									<info>ListItem(3).thumb</info>
+									<texture background="true" diffuse="views/covers/episode.png">NoThumb.png</texture>
+									<bordertexture border="5">views/covers/episode_shadow.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>72</posx>
+									<animation effect="slide" end="17,-21" time="100">Focus</animation>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(3).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(3).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(3).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(3).Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
 									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
-				<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(3).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(3).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/newep.png</texture>
 									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>54000000</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(3).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(3).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>White</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(3).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+								<control type="group">
+									<posx>0</posx>
+									<posy>172</posy>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+							<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<info>ListItem(3).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<info>ListItem(3).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<!-- Episodes -->
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+										<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(3).Season].$INFO[ListItem(3).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(3).Season].$INFO[ListItem(3).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+								</control>
 							</control>
 							<control type="group">
-								<width>210</width>
-								<height>226</height>
+								<width>252</width>
+								<height>200</height>
+								<control type="image">
+									<posx>12</posx>
+									<posy>29</posy>
+									<width>250</width>
+									<height>145</height>
+									<info>ListItem(4).thumb</info>
+									<texture background="true" diffuse="views/covers/episode.png">NoThumb.png</texture>
+									<bordertexture border="5">views/covers/episode_shadow.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>72</posx>
+									<animation effect="slide" end="17,-21" time="100">Focus</animation>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(4).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(4).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(4).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(4).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(4).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(4).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(4).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(4).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
-				<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(4).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(4).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-									</control>
-							</control>
-							<control type="group">
-								<width>210</width>
-								<height>226</height>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(5).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(4).Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(5).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(5).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(5).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(5).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(5).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(5).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(4).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/newep.png</texture>
 									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
-				<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(5).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(5).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(4).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>54000000</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(4).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
 									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(4).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>White</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(4).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+								<control type="group">
+									<posx>0</posx>
+									<posy>172</posy>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+							<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<info>ListItem(4).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<info>ListItem(4).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<!-- Episodes -->
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+										<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(4).Season].$INFO[ListItem(4).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(4).Season].$INFO[ListItem(4).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+								</control>
 							</control>
 						</control>	
 						<control type="grouplist">
@@ -4866,520 +4956,609 @@
 							<orientation>horizontal</orientation>
 							<posy>226</posy>
 							<control type="group">
-								<width>210</width>
-								<height>226</height>
+								<width>252</width>
+								<height>200</height>
+								<control type="image">
+									<posx>12</posx>
+									<posy>29</posy>
+									<width>250</width>
+									<height>145</height>
+									<info>ListItem(5).thumb</info>
+									<texture background="true" diffuse="views/covers/episode.png">NoThumb.png</texture>
+									<bordertexture border="5">views/covers/episode_shadow.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>72</posx>
+									<animation effect="slide" end="17,-21" time="100">Focus</animation>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(6).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(5).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(6).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(6).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(6).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(6).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(6).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(6).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(5).Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
 									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
-				<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(6).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(6).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(5).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/newep.png</texture>
 									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(5).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>54000000</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(5).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(5).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>White</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(5).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+								<control type="group">
+									<posx>0</posx>
+									<posy>172</posy>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+							<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<info>ListItem(5).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<info>ListItem(5).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<!-- Episodes -->
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+										<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(5).Season].$INFO[ListItem(5).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(5).Season].$INFO[ListItem(5).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+								</control>
 							</control>
 							<control type="group">
-								<width>210</width>
-								<height>226</height>
+								<width>252</width>
+								<height>200</height>
+								<control type="image">
+									<posx>12</posx>
+									<posy>29</posy>
+									<width>250</width>
+									<height>145</height>
+									<info>ListItem(6).thumb</info>
+									<texture background="true" diffuse="views/covers/episode.png">NoThumb.png</texture>
+									<bordertexture border="5">views/covers/episode_shadow.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>72</posx>
+									<animation effect="slide" end="17,-21" time="100">Focus</animation>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(7).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(6).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(7).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(7).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(7).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(7).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(7).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(7).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(6).Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
 									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
-				<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(7).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(7).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(6).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/newep.png</texture>
 									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(6).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>54000000</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(6).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(6).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>White</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(6).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+								<control type="group">
+									<posx>0</posx>
+									<posy>172</posy>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+							<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<info>ListItem(6).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<info>ListItem(6).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<!-- Episodes -->
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+										<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(6).Season].$INFO[ListItem(6).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(6).Season].$INFO[ListItem(6).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+								</control>
 							</control>
 							<control type="group">
-								<width>210</width>
-								<height>226</height>
+								<width>252</width>
+								<height>200</height>
+								<control type="image">
+									<posx>12</posx>
+									<posy>29</posy>
+									<width>250</width>
+									<height>145</height>
+									<info>ListItem(7).thumb</info>
+									<texture background="true" diffuse="views/covers/episode.png">NoThumb.png</texture>
+									<bordertexture border="5">views/covers/episode_shadow.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>72</posx>
+									<animation effect="slide" end="17,-21" time="100">Focus</animation>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(8).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(7).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(8).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(8).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(8).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(8).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(8).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(8).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(7).Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
 									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
-				<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(8).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(8).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(7).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/newep.png</texture>
 									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(7).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>54000000</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(7).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(7).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>White</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(7).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+								<control type="group">
+									<posx>0</posx>
+									<posy>172</posy>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+							<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<info>ListItem(7).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<info>ListItem(7).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<!-- Episodes -->
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+										<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(7).Season].$INFO[ListItem(7).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(7).Season].$INFO[ListItem(7).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+								</control>
 							</control>
 							<control type="group">
-								<width>210</width>
-								<height>226</height>
+								<width>252</width>
+								<height>200</height>
+								<control type="image">
+									<posx>12</posx>
+									<posy>29</posy>
+									<width>250</width>
+									<height>145</height>
+									<info>ListItem(8).thumb</info>
+									<texture background="true" diffuse="views/covers/episode.png">NoThumb.png</texture>
+									<bordertexture border="5">views/covers/episode_shadow.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>72</posx>
+									<animation effect="slide" end="17,-21" time="100">Focus</animation>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(9).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(8).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(9).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(9).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(9).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(9).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(9).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(9).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(8).Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
 									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
-				<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(9).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(9).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(8).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/newep.png</texture>
 									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(8).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>54000000</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(8).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(8).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>White</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(8).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+								<control type="group">
+									<posx>0</posx>
+									<posy>172</posy>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+							<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<info>ListItem(8).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<info>ListItem(8).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<!-- Episodes -->
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+										<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(8).Season].$INFO[ListItem(8).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(8).Season].$INFO[ListItem(8).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+								</control>
 							</control>
 							<control type="group">
-								<width>210</width>
-								<height>226</height>
+								<width>252</width>
+								<height>200</height>
+								<control type="image">
+									<posx>12</posx>
+									<posy>29</posy>
+									<width>250</width>
+									<height>145</height>
+									<info>ListItem(9).thumb</info>
+									<texture background="true" diffuse="views/covers/episode.png">NoThumb.png</texture>
+									<bordertexture border="5">views/covers/episode_shadow.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>72</posx>
+									<animation effect="slide" end="17,-21" time="100">Focus</animation>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(10).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(9).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(10).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(10).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(10).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(10).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(10).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(10).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
-				<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(10).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(10).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-									</control>
-							</control>
-							<control type="group">
-								<width>210</width>
-								<height>226</height>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(11).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(9).Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(11).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(11).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(11).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(11).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(11).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(11).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(9).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/newep.png</texture>
 									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
-				<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(11).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(11).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(9).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>54000000</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(9).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
 									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(9).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>White</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(9).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+								<control type="group">
+									<posx>0</posx>
+									<posy>172</posy>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+							<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<info>ListItem(9).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<info>ListItem(9).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<!-- Episodes -->
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+										<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(9).Season].$INFO[ListItem(9).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(9).Season].$INFO[ListItem(9).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+								</control>
 							</control>
 						</control>
 						<control type="grouplist">
@@ -5388,522 +5567,610 @@
 							<orientation>horizontal</orientation>
 							<posy>452</posy>
 							<control type="group">
-								<width>210</width>
-								<height>226</height>
+								<width>252</width>
+								<height>200</height>
+								<control type="image">
+									<posx>12</posx>
+									<posy>29</posy>
+									<width>250</width>
+									<height>145</height>
+									<info>ListItem(10).thumb</info>
+									<texture background="true" diffuse="views/covers/episode.png">NoThumb.png</texture>
+									<bordertexture border="5">views/covers/episode_shadow.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>72</posx>
+									<animation effect="slide" end="17,-21" time="100">Focus</animation>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(12).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(10).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(12).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(12).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(12).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(12).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(12).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(12).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(10).Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
 									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
+									<control type="image">
+										<visible>StringCompare(ListItem(10).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/newep.png</texture>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(10).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>54000000</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(10).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(10).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>White</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(10).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+								<control type="group">
+									<posx>0</posx>
+									<posy>172</posy>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
 							<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(12).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(12).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
+										<font>Cover_title</font>
+										<info>ListItem(10).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
 									</control>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<info>ListItem(10).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<!-- Episodes -->
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+										<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(10).Season].$INFO[ListItem(10).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(10).Season].$INFO[ListItem(10).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+								</control>
 							</control>
 							<control type="group">
-								<width>210</width>
-								<height>226</height>
+								<width>252</width>
+								<height>200</height>
+								<control type="image">
+									<posx>12</posx>
+									<posy>29</posy>
+									<width>250</width>
+									<height>145</height>
+									<info>ListItem(11).thumb</info>
+									<texture background="true" diffuse="views/covers/episode.png">NoThumb.png</texture>
+									<bordertexture border="5">views/covers/episode_shadow.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>72</posx>
+									<animation effect="slide" end="17,-21" time="100">Focus</animation>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(13).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(11).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(13).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(13).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(13).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(13).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(13).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(13).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(11).Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
 									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
+									<control type="image">
+										<visible>StringCompare(ListItem(11).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/newep.png</texture>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(11).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>54000000</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(11).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(11).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>White</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(11).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+								<control type="group">
+									<posx>0</posx>
+									<posy>172</posy>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
 							<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(13).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(13).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
+										<font>Cover_title</font>
+										<info>ListItem(11).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
 									</control>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<info>ListItem(11).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<!-- Episodes -->
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+										<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(11).Season].$INFO[ListItem(11).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(11).Season].$INFO[ListItem(11).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+								</control>
 							</control>
 							<control type="group">
-								<width>210</width>
-								<height>226</height>
+								<width>252</width>
+								<height>200</height>
+								<control type="image">
+									<posx>12</posx>
+									<posy>29</posy>
+									<width>250</width>
+									<height>145</height>
+									<info>ListItem(12).thumb</info>
+									<texture background="true" diffuse="views/covers/episode.png">NoThumb.png</texture>
+									<bordertexture border="5">views/covers/episode_shadow.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>72</posx>
+									<animation effect="slide" end="17,-21" time="100">Focus</animation>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(14).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(12).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(14).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(14).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(14).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(14).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(14).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(14).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(12).Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
 									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
+									<control type="image">
+										<visible>StringCompare(ListItem(12).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/newep.png</texture>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(12).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>54000000</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(12).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(12).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>White</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(12).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+								<control type="group">
+									<posx>0</posx>
+									<posy>172</posy>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
 							<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(14).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(14).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
+										<font>Cover_title</font>
+										<info>ListItem(12).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
 									</control>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<info>ListItem(12).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<!-- Episodes -->
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+										<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(12).Season].$INFO[ListItem(12).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(12).Season].$INFO[ListItem(12).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+								</control>
 							</control>
 							<control type="group">
-								<width>210</width>
-								<height>226</height>
+								<width>252</width>
+								<height>200</height>
+								<control type="image">
+									<posx>12</posx>
+									<posy>29</posy>
+									<width>250</width>
+									<height>145</height>
+									<info>ListItem(13).thumb</info>
+									<texture background="true" diffuse="views/covers/episode.png">NoThumb.png</texture>
+									<bordertexture border="5">views/covers/episode_shadow.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>72</posx>
+									<animation effect="slide" end="17,-21" time="100">Focus</animation>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(15).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(13).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(15).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(15).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(15).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(15).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(15).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(15).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(13).Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
 									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
+									<control type="image">
+										<visible>StringCompare(ListItem(13).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/newep.png</texture>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(13).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>54000000</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(13).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(13).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>White</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(13).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+								<control type="group">
+									<posx>0</posx>
+									<posy>172</posy>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
 							<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(15).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(15).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
+										<font>Cover_title</font>
+										<info>ListItem(13).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
 									</control>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<info>ListItem(13).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<!-- Episodes -->
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+										<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(13).Season].$INFO[ListItem(13).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(13).Season].$INFO[ListItem(13).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+								</control>
 							</control>
 							<control type="group">
-								<width>210</width>
-								<height>226</height>
+								<width>252</width>
+								<height>200</height>
+								<control type="image">
+									<posx>12</posx>
+									<posy>29</posy>
+									<width>250</width>
+									<height>145</height>
+									<info>ListItem(14).thumb</info>
+									<texture background="true" diffuse="views/covers/episode.png">NoThumb.png</texture>
+									<bordertexture border="5">views/covers/episode_shadow.png</bordertexture>
+									<bordersize>5</bordersize>
+									<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+								</control>
+								<control type="group">
+									<posx>72</posx>
+									<animation effect="slide" end="17,-21" time="100">Focus</animation>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(16).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(14).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/new.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(16).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(16).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(16).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(16).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(16).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(16).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
-							<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(16).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(16).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-									</control>
-							</control>
-							<control type="group">
-								<width>210</width>
-								<height>226</height>
 									<control type="image">
-										<posx>14</posx>
-										<posy>14</posy>
-										<width>182</width>
-										<height>182</height>
-										<info>ListItem(17).thumb</info>
-										<texture background="true" diffuse="views/covers/album_big.png">NoThumb.png</texture>
-										<bordertexture border="5">views/covers/album_shadow.png</bordertexture>
-										<bordersize>5</bordersize>
-										<aspectratio scalediffuse="false" align="center" aligny="center">scale</aspectratio>
+										<visible>StringCompare(ListItem(14).Overlay,OverlayInProgress.png) + !Container.Content(tvshows) + !Container.Content(seasons)</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/inprogress.png</texture>
 									</control>
-									<control type="group">
-										<posx>4</posx>
-										<animation effect="slide" end="17,-21" time="100">Focus</animation>
-										<control type="image">
-											<visible>StringCompare(ListItem(17).Overlay,OverlayUnwatched.png) + !Container.Content(tvshows) + !Container.Content(seasons) + !Container.Content(photo)</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/new.png</texture>
-										</control>
-										<control type="image">
-											<visible>StringCompare(ListItem(17).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>126</posx>
-											<posy>49</posy>
-											<width>67</width>
-											<height>50</height>
-											<aspectratio>stretch</aspectratio>
-											<texture>views/covers/newep.png</texture>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(17).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>54000000</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(17).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
-										<control type="label">
-											<visible>StringCompare(ListItem(17).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
-											<posx>162</posx>
-											<posy>48</posy>
-											<width>67</width>
-											<height>44</height>
-											<textcolor>White</textcolor>
-											<font>Ep_flag</font>
-											<label>$INFO[ListItem(17).Property(UnWatchedEpisodes)]</label>
-											<scroll>false</scroll>
-											<align>center</align>
-										</control>
+									<control type="image">
+										<visible>StringCompare(ListItem(14).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>126</posx>
+										<posy>49</posy>
+										<width>67</width>
+										<height>50</height>
+										<aspectratio>stretch</aspectratio>
+										<texture>views/covers/newep.png</texture>
 									</control>
-									<control type="group">
-										<posx>15</posx>
-										<posy>193</posy>
-										<control type="label">
-											<posy>0</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>4b000000</textcolor>
+									<control type="label">
+										<visible>StringCompare(ListItem(14).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>54000000</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(14).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+									<control type="label">
+										<visible>StringCompare(ListItem(14).Overlay,OverlayUnwatched.png) + [ Container.Content(tvshows) | Container.Content(seasons)]</visible>
+										<posx>162</posx>
+										<posy>48</posy>
+										<width>67</width>
+										<height>44</height>
+										<textcolor>White</textcolor>
+										<font>Ep_flag</font>
+										<label>$INFO[ListItem(14).Property(UnWatchedEpisodes)]</label>
+										<scroll>false</scroll>
+										<align>center</align>
+									</control>
+								</control>
+								<control type="group">
+									<posx>0</posx>
+									<posy>172</posy>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
 							<selectedcolor>4b000000</selectedcolor>
-											<font>Cover_title</font>
-											<info>ListItem(17).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
-										<control type="label">
-											<posy>2</posy>
-											<width>172</width>
-											<height>30</height>
-											<textcolor>ffffffff</textcolor>
-											<font>Cover_title</font>
-											<info>ListItem(17).Label</info>
-											<align>center</align>
-											<scroll>false</scroll>
-										</control>
+										<font>Cover_title</font>
+										<info>ListItem(14).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
 									</control>
+									<control type="label">
+										<visible>!Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<info>ListItem(14).Label</info>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<!-- Episodes -->
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>0</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>4b000000</textcolor>
+										<selectedcolor>4b000000</selectedcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(14).Season].$INFO[ListItem(14).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+									<control type="label">
+										<visible>Container.Content(episodes)</visible>
+										<posy>2</posy>
+										<width>250</width>
+										<height>30</height>
+										<textcolor>ffffffff</textcolor>
+										<font>Cover_title</font>
+										<label>$INFO[ListItem(14).Season].$INFO[ListItem(14).Episode]</label>
+										<align>center</align>
+										<scroll>false</scroll>
+									</control>
+								</control>
 							</control>
-							
 						</control>							
 					</control>
 				</control>

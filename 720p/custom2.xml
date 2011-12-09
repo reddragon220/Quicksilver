@@ -46,6 +46,8 @@
 					<onup>Dialog.Close(5001)</onup>
 					<ondown>Container.SetViewMode(54)</ondown>
 					<ondown>Dialog.Close(5001)</ondown>
+					<onright>Container.SetViewMode(52)</onright>
+					<onright>Dialog.Close(5001)</onright>
 					<onright>Container.SetViewMode(56)</onright>
 					<onright>Dialog.Close(5001)</onright>
 					<onclick>Dialog.Close(5001)</onclick>
@@ -114,6 +116,8 @@
 					<onup>Dialog.Close(5002)</onup>
 					<ondown>Container.SetViewMode(55)</ondown>
 					<ondown>Dialog.Close(5002)</ondown>
+					<onleft>Container.SetViewMode(53)</onleft>
+					<onleft>Dialog.Close(5002)</onleft>
 					<onright>Container.SetViewMode(57)</onright>
 					<onright>Dialog.Close(5002)</onright>
 					<onclick>Dialog.Close(5002)</onclick>
@@ -181,7 +185,7 @@
 				<aspectratio>stretch</aspectratio>
 			</control>
 			<control type="image">
-				<visible>![Container.Content(secondary) | Container.Content(episodes) | Window.IsActive(sharedcontent)]</visible>
+				<visible>![Container.Content(secondary) | Window.IsActive(sharedcontent)]</visible>
 				<texture>quickprefs/left_arrow.png</texture>
 				<posx>431</posx>
 				<posy>345</posy>
