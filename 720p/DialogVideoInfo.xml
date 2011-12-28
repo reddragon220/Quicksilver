@@ -8,6 +8,7 @@
 		<posy>0</posy>
 	</coordinates>
 	<controls>
+		<include>dialog_overlay</include>
 		<control type="image" id="3">
 			<visible>!Container.Content(episodes)</visible>
 			<description>Cover Image</description>
@@ -132,7 +133,7 @@
 			<spinposy>-30</spinposy>
 			<spinwidth>20</spinwidth>
 			<spinheight>11</spinheight>
-			<font>Title2</font>
+			<font>Info_title</font>
 			<textcolor>ffffffff</textcolor>
 			<textureup>-</textureup>
 			<texturedown flipy="true">-</texturedown>
