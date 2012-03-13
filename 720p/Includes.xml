@@ -76,6 +76,7 @@
 			</control>
 		</control>
 		<control type="group">
+			<visible>!Skin.HasSetting(kioskMode)</visible>
 			<description>Quick Prefs</description>
 			<include>preferences_animation</include>
 			<posy>-59</posy>

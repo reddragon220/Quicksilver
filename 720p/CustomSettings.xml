@@ -807,6 +807,35 @@
 			<orientation>vertical</orientation>
 			<control type="radiobutton" id="100">
 				<label>$LOCALIZE[31221]</label>
+				<selected>Skin.HasSetting(kioskMode)</selected>
+				<onclick>Skin.ToggleSetting(kioskMode)</onclick>
+				
+				<width>927</width>
+				<height>47</height>
+				<textcolor>ff000000</textcolor>
+				<focusedcolor>ffffffff</focusedcolor>
+				<disabledcolor>7f7c7c72</disabledcolor>
+				<font>SettingItem</font>
+
+				<align>left</align>
+				<aligny>top</aligny>
+
+				<textoffsetx>26</textoffsetx>
+				<textoffsety>-5</textoffsety>
+
+				<texturefocus>settings/long_bar_button.png</texturefocus>
+				<texturenofocus>settings/long_bar_button_divider.png</texturenofocus>
+				<!--
+				<radioposx>576</radioposx>
+				-->
+				<radioposx>815</radioposx>
+				<radiowidth>86</radiowidth>
+				<radioheight>45</radioheight>
+				<textureradiofocus>buttons/radiobutton/on.png</textureradiofocus>
+				<textureradionofocus>buttons/radiobutton/off.png</textureradionofocus>
+			</control>
+			<control type="radiobutton" id="101">
+				<label>$LOCALIZE[31222]</label>
 				<selected>Skin.HasSetting(mediaflags)</selected>
 				<onclick>Skin.ToggleSetting(mediaflags)</onclick>
 				
