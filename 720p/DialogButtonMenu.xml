@@ -57,7 +57,7 @@
 				<aligny>bottom</aligny>
 				<font>Context</font>
 				<textoffsetx>8</textoffsetx>
-				<textoffsety>-7</textoffsety>
+				<textoffsety>-3</textoffsety>
 				<texturefocus>dialog/contextmenu/highlight.png</texturefocus>
 				<!--><texturenofocus>dialog/contextmenu/divider.png</texturenofocus>-->
 				<description>View</description>
@@ -77,7 +77,7 @@
 				<aligny>bottom</aligny>
 				<font>Context</font>
 				<textoffsetx>8</textoffsetx>
-				<textoffsety>-7</textoffsety>
+				<textoffsety>-3</textoffsety>
 				<texturefocus>dialog/contextmenu/highlight.png</texturefocus>
 				<!--><texturenofocus>dialog/contextmenu/divider.png</texturenofocus>-->
 				<description>View</description>
@@ -98,7 +98,7 @@
 				<aligny>bottom</aligny>
 				<font>Context</font>
 				<textoffsetx>8</textoffsetx>
-				<textoffsety>-7</textoffsety>
+				<textoffsety>-3</textoffsety>
 				<texturefocus>dialog/contextmenu/highlight.png</texturefocus>
 				<!--><texturenofocus>dialog/contextmenu/divider.png</texturenofocus>-->
 				<description>Info</description>
@@ -117,7 +117,7 @@
 				<aligny>bottom</aligny>
 				<font>Context</font>
 				<textoffsetx>8</textoffsetx>
-				<textoffsety>-7</textoffsety>
+				<textoffsety>-3</textoffsety>
 				<texturefocus>dialog/contextmenu/highlight.png</texturefocus>
 				<!--><texturenofocus>dialog/contextmenu/divider.png</texturenofocus>-->
 				<description>Preferences</description>

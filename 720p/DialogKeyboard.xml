@@ -14,7 +14,7 @@
 			<control type="label" id="311">
 				<description>Heading Label</description>
 				<posx>0</posx>
-				<posy>-50</posy>
+				<posy>-70</posy>
 				<width>1280</width>
 				<height>38</height>
 				<align>center</align>
@@ -34,7 +34,7 @@
 				<control type="label" id="310">
 					<description>text field</description>
 					<posx>-25</posx>
-					<posy>-5</posy>
+					<posy>-3</posy>
 					<font>Search</font>
 					<textcolor>ff000000</textcolor>
 					<focusedcolor>ff000000</focusedcolor>
@@ -70,7 +70,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="49">
@@ -84,7 +84,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="50">
@@ -98,7 +98,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="51">
@@ -112,7 +112,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="52">
@@ -126,7 +126,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="53">
@@ -140,7 +140,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="54">
@@ -154,7 +154,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="55">
@@ -168,7 +168,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="56">
@@ -182,7 +182,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="57">
@@ -196,7 +196,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 				</control>
@@ -220,7 +220,7 @@
 						<focusedcolor>ffffffff</focusedcolor>
 						<font>Search</font>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="66">
@@ -234,7 +234,7 @@
 						<focusedcolor>ffffffff</focusedcolor>
 						<font>Search</font>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="67">
@@ -249,7 +249,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="68">
@@ -264,7 +264,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="69">
@@ -279,7 +279,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="70">
@@ -294,7 +294,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="71">
@@ -309,7 +309,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="72">
@@ -324,7 +324,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="73">
@@ -339,7 +339,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="74">
@@ -354,7 +354,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="75">
@@ -369,7 +369,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="76">
@@ -384,7 +384,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="77">
@@ -399,7 +399,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="78">
@@ -414,7 +414,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="79">
@@ -429,7 +429,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="80">
@@ -444,7 +444,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="81">
@@ -459,7 +459,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="82">
@@ -474,7 +474,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="83">
@@ -489,7 +489,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="84">
@@ -504,7 +504,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="85">
@@ -519,7 +519,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="86">
@@ -534,7 +534,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="87">
@@ -549,7 +549,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="88">
@@ -564,7 +564,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="89">
@@ -579,7 +579,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="90">
@@ -594,7 +594,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 				</control>
@@ -616,7 +616,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<onfocus>Control.SetFocus(304)</onfocus>
 						<texturefocus></texturefocus>
 					</control>
@@ -633,7 +633,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 						<alttexturefocus>search/letter_highlight.png</alttexturefocus>
 						<alttexturenofocus>search/letter_highlight_toggle.png</alttexturenofocus>
@@ -651,7 +651,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/shift_highlight.png</texturefocus>
 						<texturenofocus>search/shift.png</texturenofocus>
 						<alttexturefocus>search/shift_highlight.png</alttexturefocus>
@@ -670,7 +670,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/caps_highlight.png</texturefocus>
 						<texturenofocus>search/caps.png</texturenofocus>
 						<alttexturefocus>search/caps_highlight.png</alttexturefocus>
@@ -687,7 +687,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturefocus>search/letter_highlight.png</texturefocus>
 					</control>
 					<control type="button" id="8">
@@ -701,7 +701,7 @@
 						<textcolor>ffffffff</textcolor>
 						<focusedcolor>ffffffff</focusedcolor>
 						<aligny>bottom</aligny>
-						<textoffsety>-9</textoffsety>
+						<textoffsety>-7</textoffsety>
 						<texturenofocus>search/backspace.png</texturenofocus>
 						<texturefocus>search/backspace_highlight.png</texturefocus>
 					</control>
@@ -737,7 +737,7 @@
 					<onup>352</onup>
 					<ondown>-</ondown>
 					<aligny>bottom</aligny>
-					<textoffsety>-8</textoffsety>
+					<textoffsety>-4</textoffsety>
 				</control>
 			</control>
 		</control>

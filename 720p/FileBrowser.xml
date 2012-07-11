@@ -38,7 +38,7 @@
 				<label>$LOCALIZE[186]</label>
 				<texturefocus>dialog/pluginsettings/side_button_highlight.png</texturefocus>
 				<texturenofocus>dialog/pluginsettings/side_button.png</texturenofocus>
-				<textoffsety>-12</textoffsety>
+				<textoffsety>-8</textoffsety>
 				<aligny>bottom</aligny>
 			</control>
 			<control type="button" id="414">
@@ -50,7 +50,7 @@
 				<label>$LOCALIZE[222]</label>
 				<texturefocus>dialog/pluginsettings/side_button_highlight.png</texturefocus>
 				<texturenofocus>dialog/pluginsettings/side_button.png</texturenofocus>
-				<textoffsety>-12</textoffsety>
+				<textoffsety>-8</textoffsety>
 				<aligny>bottom</aligny>
 			</control>
 			<control type="button" id="415">
@@ -63,7 +63,7 @@
 				<label>$LOCALIZE[119]</label>
 				<texturefocus>dialog/pluginsettings/side_button_highlight.png</texturefocus>
 				<texturenofocus>dialog/pluginsettings/side_button.png</texturenofocus>
-				<textoffsety>-12</textoffsety>
+				<textoffsety>-8</textoffsety>
 				<aligny>bottom</aligny>
 			</control>
 		</control>
@@ -156,6 +156,30 @@
 					<height>47</height>
 					<texture>dialog/long_bar_button.png</texture>
 				</control>
+				<control type="label">
+					<visible>!StringCompare(ListItem.Label,)</visible>
+					<posx>26</posx>
+					<posy>-4</posy>
+					<width>648</width>
+					<height>47</height>
+					<info>ListItem.Label</info>
+					<scroll>true</scroll>
+					<font>SettingItem</font>
+					<textcolor>4b000000</textcolor>
+				</control>
+				<control type="label">
+					<visible>StringCompare(ListItem.Label,)</visible>
+					<posx>26</posx>
+					<posy>-4</posy>
+					<width>648</width>
+					<height>47</height>
+					<label>$INFO[ListItem.FileName]</label>
+					<scroll>true</scroll>
+					<font>SettingItem</font>
+					<textcolor>4b000000</textcolor>
+				</control>
+				
+				
 				<control type="label">
 					<visible>!StringCompare(ListItem.Label,)</visible>
 					<posx>26</posx>

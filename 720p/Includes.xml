@@ -217,7 +217,7 @@
 						<width>174</width>
 						<height>50</height>
 						<aligny>bottom</aligny>
-						<textoffsety>-8</textoffsety>
+						<textoffsety>-3</textoffsety>
 					</control>
 					<control type="button" id="9002">
 						<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(57)</visible>
@@ -234,7 +234,7 @@
 						<width>174</width>
 						<height>50</height>
 						<aligny>bottom</aligny>
-						<textoffsety>-8</textoffsety>
+						<textoffsety>-3</textoffsety>
 					</control>
 
 
@@ -252,7 +252,7 @@
 						<width>174</width>
 						<height>50</height>
 						<aligny>bottom</aligny>
-						<textoffsety>-8</textoffsety>
+						<textoffsety>-3</textoffsety>
 					</control>
 					<control type="button" id="9004">
 						<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(57)</visible>
@@ -269,7 +269,7 @@
 						<width>174</width>
 						<height>50</height>
 						<aligny>bottom</aligny>
-						<textoffsety>-8</textoffsety>
+						<textoffsety>-3</textoffsety>
 					</control>
 					
 					<!--
@@ -293,7 +293,7 @@
 						<onclick>Control.SetFocus(50)</onclick>
 						<onclick>ActivateWindow(5000)</onclick>
 						-->
-						<onclick>ActivateWindow(103)</onclick>
+						<onclick>ActivateWindow(126)</onclick>
 
 						<ondown>setfocus(50)</ondown>
 						
@@ -305,11 +305,11 @@
 						<width>174</width>
 						<height>50</height>
 						<aligny>bottom</aligny>
-						<textoffsety>-8</textoffsety>
+						<textoffsety>-3</textoffsety>
 					</control>
 					<control type="button" id="9007">
 						<visible>Skin.HasSetting(developer)</visible>
-						<label>$LOCALIZE[184]</label>
+						<label>$LOCALIZE[184] a</label>
 						<onclick>XBMC.ReloadSkin()</onclick>
 						<ondown>setfocus(50)</ondown>
 						
@@ -321,7 +321,11 @@
 						<width>174</width>
 						<height>50</height>
 						<aligny>bottom</aligny>
+						<textoffsety>-3</textoffsety>
+						<!--
+						<aligny>bottom</aligny>
 						<textoffsety>-8</textoffsety>
+						-->
 					</control>
 
 					
@@ -343,8 +347,8 @@
 						<texturenofocus>-</texturenofocus>
 						<width>174</width>
 						<height>50</height>
-						<aligny>top</aligny>
-						<textoffsety>-8</textoffsety>
+						<aligny>bottom</aligny>
+						<textoffsety>-3</textoffsety>
 					</control>
 					<control type="image" id="9002">
 						<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(57)</visible>
@@ -356,8 +360,8 @@
 						<texturenofocus>-</texturenofocus>
 						<width>174</width>
 						<height>50</height>
-						<aligny>top</aligny>
-						<textoffsety>-8</textoffsety>
+						<aligny>bottom</aligny>
+						<textoffsety>-3</textoffsety>
 					</control>
 
 					<control type="image" id="9003">
@@ -370,8 +374,8 @@
 						<texturenofocus>-</texturenofocus>
 						<width>124</width>
 						<height>50</height>
-						<aligny>top</aligny>
-						<textoffsety>-8</textoffsety>
+						<aligny>bottom</aligny>
+						<textoffsety>-3</textoffsety>
 					</control>
 					<control type="image" id="9004">
 						<visible>Control.IsVisible(51) | Control.IsVisible(53) | Control.IsVisible(55) | Control.IsVisible(57)</visible>
@@ -383,8 +387,8 @@
 						<texturenofocus>-</texturenofocus>
 						<width>124</width>
 						<height>50</height>
-						<aligny>top</aligny>
-						<textoffsety>-8</textoffsety>
+						<aligny>bottom</aligny>
+						<textoffsety>-3</textoffsety>
 					</control>
 
 					<control type="image" id="9113">

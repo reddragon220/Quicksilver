@@ -45,7 +45,7 @@
 			<align>left</align>
 			<aligny>bottom</aligny>
 			<textoffsetx>26</textoffsetx>
-			<textoffsety>-5</textoffsety>
+			<textoffsety>-2</textoffsety>
 			<texturefocus>osd/settings/long_bar_button.png</texturefocus>
 			<texturenofocus>dialog/long_bar_button_divider.png</texturenofocus>
 		</control>
@@ -60,7 +60,7 @@
 			<align>left</align>
 			<aligny>bottom</aligny>
 			<textoffsetx>26</textoffsetx>
-			<textoffsety>-5</textoffsety>
+			<textoffsety>-2</textoffsety>
 			<texturefocus>dialog/long_bar_button.png</texturefocus>
 			<texturenofocus>dialog/long_bar_button_divider.png</texturenofocus>
 			<radioposx>536</radioposx>
@@ -80,7 +80,7 @@
 			<align>left</align>
 			<aligny>bottom</aligny>
 			<textoffsetx>26</textoffsetx>
-			<textoffsety>-5</textoffsety>
+			<textoffsety>-2</textoffsety>
 			<texturefocus>osd/settings/long_bar_spin_focus.png</texturefocus>
 			<texturenofocus>osd/settings/long_bar_spin.png</texturenofocus>
 			<spinposx>0</spinposx>
@@ -103,7 +103,7 @@
 			<align>left</align>
 			<aligny>bottom</aligny>
 			<textoffsetx>26</textoffsetx>
-			<textoffsety>-5</textoffsety>
+			<textoffsety>-2</textoffsety>
 			<texturefocus>osd/settings/long_bar_slide_focus.png</texturefocus>
 			<texturenofocus>osd/settings/long_bar_slide.png</texturenofocus>
 			<sliderwidth>133</sliderwidth>

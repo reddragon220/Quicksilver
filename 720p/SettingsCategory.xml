@@ -132,7 +132,7 @@
 			<aligny>bottom</aligny>
 			
 			<textoffsetx>26</textoffsetx>
-			<textoffsety>-5</textoffsety>
+			<textoffsety>-2</textoffsety>
 			
 			<texturefocus>settings/long_bar_button.png</texturefocus>
 			<texturenofocus>settings/long_bar_button_divider.png</texturenofocus>
@@ -150,7 +150,7 @@
 			<aligny>bottom</aligny>
 			
 			<textoffsetx>26</textoffsetx>
-			<textoffsety>-5</textoffsety>
+			<textoffsety>-2</textoffsety>
 			
 			<texturefocus>settings/long_bar_button.png</texturefocus>
 			<texturenofocus>settings/long_bar_button_divider.png</texturenofocus>
@@ -170,7 +170,7 @@
 			<disabledcolor>7f7c7c72</disabledcolor>
 			<font>SettingItem</font>
 			<textoffsetx>26</textoffsetx>
-			<textoffsety>-5</textoffsety>
+			<textoffsety>-2</textoffsety>
 
 			<align>left</align>
 			<aligny>bottom</aligny>
@@ -200,7 +200,7 @@
 			<align>left</align>
 			
 			<textoffsetx>20</textoffsetx>
-			<textoffsety>-12</textoffsety>
+			<textoffsety>-7</textoffsety>
 
 			<texturefocus>settings/bar_button_highlight.png</texturefocus>
 			<texturenofocus>settings/bar_button.png</texturenofocus>

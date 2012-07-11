@@ -12,7 +12,7 @@
 		<control type="group">
 			<posx>216</posx>
 			<posy>110</posy>
-		<include>dialog_animation</include>		
+		<include>dialog_animation</include>	
 		<control type="image">
 			<posx>0</posx>
 			<posy>0</posy>
@@ -60,7 +60,7 @@
 				<texturefocus>dialog/pluginsettings/side_button_highlight.png</texturefocus>
 				<texturenofocus>dialog/pluginsettings/side_button.png</texturenofocus>
 				
-				<textoffsety>-12</textoffsety>
+				<textoffsety>-8</textoffsety>
 				<aligny>bottom</aligny>
 			</control>
 			<control type="button" id="11">
@@ -73,7 +73,7 @@
 				<texturefocus>dialog/pluginsettings/side_button_highlight.png</texturefocus>
 				<texturenofocus>dialog/pluginsettings/side_button.png</texturenofocus>
 				
-				<textoffsety>-12</textoffsety>
+				<textoffsety>-8</textoffsety>
 				<aligny>bottom</aligny>
 			</control>
 			<control type="button" id="12">
@@ -86,7 +86,7 @@
 				<texturefocus>dialog/pluginsettings/side_button_highlight.png</texturefocus>
 				<texturenofocus>dialog/pluginsettings/side_button.png</texturenofocus>
 				
-				<textoffsety>-12</textoffsety>
+				<textoffsety>-8</textoffsety>
 				<aligny>bottom</aligny>
 			</control>
 		</control>
@@ -121,10 +121,10 @@
 
 			<align>left</align>
 			<aligny>bottom</aligny>
-			
+
 			<textoffsetx>26</textoffsetx>
-			<textoffsety>-5</textoffsety>
-			
+			<textoffsety>-2</textoffsety>
+
 			<texturefocus>dialog/long_bar_button.png</texturefocus>
 			<texturenofocus>dialog/long_bar_button_divider.png</texturenofocus>
 		</control>
@@ -141,7 +141,7 @@
 			<aligny>bottom</aligny>
 			
 			<textoffsetx>26</textoffsetx>
-			<textoffsety>-5</textoffsety>
+			<textoffsety>-2</textoffsety>
 			
 			<texturefocus>dialog/long_bar_button.png</texturefocus>
 			<texturenofocus>dialog/long_bar_button_divider.png</texturenofocus>
@@ -165,7 +165,7 @@
 			<aligny>bottom</aligny>
 			
 			<textoffsetx>26</textoffsetx>
-			<textoffsety>-5</textoffsety>
+			<textoffsety>-2</textoffsety>
 			
 			<texturefocus>dialog/long_bar_spin_focus.png</texturefocus>
 			<texturenofocus>dialog/long_bar_spin.png</texturenofocus>

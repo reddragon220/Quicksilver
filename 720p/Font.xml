@@ -3,126 +3,107 @@
 		<!-- Home -->
 		<font>
 			<name>Section</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Bold</variant>
+			<filename>texgyreheros-bold.otf</filename>
 			<size>60</size>
 		</font>
 		<font>
 			<name>RSS</name>
-			<filename>Helvetica</filename>
-			<variant>Bold</variant>
+			<filename>texgyreheros-bold.otf</filename>
 			<size>20</size>
 		</font>
 		<font>
 			<name>RecentList</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Condensed Bold</variant>
+			<filename>texgyreheroscn-bold.otf</filename>
 			<size>30</size>
 		</font>
 	
 		<!-- Dialog -->
 		<font>
 			<name>Context</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Condensed Bold</variant>
+			<filename>texgyreheroscn-bold.otf</filename>
 			<size>34</size>
 		</font>
 		<font>
 			<name>SideButtons</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Condensed Bold</variant>
-			<size>40</size>
+			<filename>texgyreheroscn-bold.otf</filename>
+			<size>38</size>
 		</font>
 		<font>
 			<name>ContextHeader</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Condensed Bold</variant>
+			<filename>texgyreheroscn-bold.otf</filename>
 			<size>38</size>
 		</font>
 		<font>
 			<name>ContextSmall</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Condensed Bold</variant>
+			<filename>texgyreheroscn-bold.otf</filename>
 			<size>25</size>
 		</font>
 		<font>
 			<name>InfoDialogTitle</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Bold</variant>
+			<filename>texgyreheros-bold.otf</filename>
 			<size>48</size>
 		</font>
 	
 		<!-- Music Overlay -->
 		<font>
 			<name>MusicInfo</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Condensed Bold</variant>
+			<filename>texgyreheroscn-bold.otf</filename>
 			<size>25</size>
 		</font>
 	
 		<!-- QuickPrefs -->
 		<font>
 			<name>QuickPrefs</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Bold</variant>
+			<filename>texgyreheros-bold.otf</filename>
 			<size>25</size>
 		</font>
 	
 		<!-- Header -->
 		<font>
 			<name>Header</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Bold</variant>
+			<filename>texgyreheros-bold.otf</filename>
 			<size>25</size>
 		</font>
 		<font>
 			<name>Section Name</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Bold</variant>
+			<filename>texgyreheros-bold.otf</filename>
 			<size>40</size>
 		</font>
 		<font>
 			<name>Header Small</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Bold</variant>
+			<filename>texgyreheros-bold.otf</filename>
 			<size>15</size>
 		</font>
 	
 		<!-- Views -->
 		<font>
 			<name>Title</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Bold</variant>
+			<filename>texgyreheros-bold.otf</filename>
 			<size>38</size>
 		</font>
 		<font>
 			<name>Title2</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Regular</variant>
+			<filename>texgyreheros-regular.otf</filename>
 			<size>25</size>
 		</font>
 		<font>
 			<name>Info_title</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Bold</variant>
+			<filename>texgyreheros-bold.otf</filename>
 			<size>25</size>
 		</font>
 		<font>
 			<name>Cover_title</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Condensed Bold</variant>
+			<filename>texgyreheroscn-bold.otf</filename>
 			<size>30</size>
 		</font>
 		<font>
 			<name>Ep_flag</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Condensed Bold</variant>
-			<size>18</size>
+			<filename>texgyreheroscn-bold.otf</filename>
+			<size>20</size>
 		</font>
 		<font>
 			<name>sort_letter</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Bold</variant>
+			<filename>texgyreheros-bold.otf</filename>
 			<size>90</size>
 		</font>
 
@@ -131,56 +112,48 @@
 		<!-- Settings -->
 		<font>
 			<name>Settings</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Condensed Bold</variant>
+			<filename>texgyreheroscn-bold.otf</filename>
 			<size>38</size>
 		</font>
 		<font>
 			<name>SettingItem</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Condensed Bold</variant>
+			<filename>texgyreheroscn-bold.otf</filename>
 			<size>32</size>
 		</font>
   
 		<!-- OSD -->
 		<font>
 			<name>OSD</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Condensed Bold</variant>
+			<filename>texgyreheroscn-bold.otf</filename>
 			<size>25</size>
 		</font>
 		<font>
 			<name>OSD_miniAlert</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Condensed Bold</variant>
+			<filename>texgyreheroscn-bold.otf</filename>
 			<size>90</size>
 		</font>
 		<font>
 			<name>OSD_Alert</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Condensed Bold</variant>
+			<filename>texgyreheroscn-bold.otf</filename>
 			<size>190</size>
 		</font>
 
 		<!-- Search -->
 		<font>
 			<name>Search</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Condensed Bold</variant>
+			<filename>texgyreheroscn-bold.otf</filename>
 			<size>38</size>
 		</font>
 	
 		<!-- Music Visualizer -->
 		<font>
 			<name>Visualizer_Song</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Bold</variant>
+			<filename>texgyreheros-bold.otf</filename>
 			<size>48</size>
 		</font>
 		<font>
 			<name>Visualizer_Info</name>
-			<filename>HelveticaNeue</filename>
-			<variant>Bold</variant>
+			<filename>texgyreheros-bold.otf</filename>
 			<size>34</size>
 		</font>
 
@@ -204,212 +177,4 @@
 	  </font>
   
 	</fontset>
-	<fontset id="Unicode" unicode="true">
-		<!-- Home -->
-		<font>
-			<name>Section</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>60</size>
-		</font>
-		<font>
-			<name>RSS</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>20</size>
-		</font>
-		<font>
-			<name>RecentList</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>30</size>
-		</font>
-
-		<!-- Dialog -->
-		<font>
-			<name>Context</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>34</size>
-		</font>
-		<font>
-			<name>SideButtons</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>40</size>
-		</font>
-		<font>
-			<name>ContextHeader</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>38</size>
-		</font>
-		<font>
-			<name>ContextSmall</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>25</size>
-		</font>
-		<font>
-			<name>InfoDialogTitle</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>48</size>
-		</font>
-
-		<!-- Music Overlay -->
-		<font>
-			<name>MusicInfo</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>25</size>
-		</font>
-
-		<!-- QuickPrefs -->
-		<font>
-			<name>QuickPrefs</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>25</size>
-		</font>
-
-		<!-- Header -->
-		<font>
-			<name>Header</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>25</size>
-		</font>
-		<font>
-			<name>Section Name</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>40</size>
-		</font>
-		<font>
-			<name>Header Small</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>15</size>
-		</font>
-
-		<!-- Views -->
-		<font>
-			<name>Title</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>38</size>
-		</font>
-		<font>
-			<name>Title2</name>
-			<filename>Arial.ttf</filename>
-			<variant>Regular</variant>
-			<size>25</size>
-		</font>
-		<font>
-			<name>Info_title</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>25</size>
-		</font>
-		<font>
-			<name>Cover_title</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>30</size>
-		</font>
-		<font>
-			<name>Ep_flag</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>18</size>
-		</font>
-		<font>
-			<name>sort_letter</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>90</size>
-		</font>
-
-
-
-		<!-- Settings -->
-		<font>
-			<name>Settings</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>38</size>
-		</font>
-		<font>
-			<name>SettingItem</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>32</size>
-		</font>
-
-		<!-- OSD -->
-		<font>
-			<name>OSD</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>25</size>
-		</font>
-		<font>
-			<name>OSD_miniAlert</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>90</size>
-		</font>
-		<font>
-			<name>OSD_Alert</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>190</size>
-		</font>
-
-		<!-- Search -->
-		<font>
-			<name>Search</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>38</size>
-		</font>
-
-		<!-- Music Visualizer -->
-		<font>
-			<name>Visualizer_Song</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>48</size>
-		</font>
-		<font>
-			<name>Visualizer_Info</name>
-			<filename>Arial.ttf</filename>
-			<variant>Bold</variant>
-			<size>34</size>
-		</font>
-
-		<font>
-			<name>Large</name>
-			<filename>Arial.ttf</filename>
-			<size>36</size>
-		</font>
-		<font>
-			<name>Small</name>
-			<filename>Arial.ttf</filename>
-			<size>14</size>
-		</font>
-
-
-	  <!-- Required for system -->
-	  <font>
-	    <name>font13</name>
-	    <filename>Arial.ttf</filename>
-	    <size>14</size>
-	  </font>
-
-	</fontset>
-	<aliases>
-		<alias font="HelveticaNeue" variant="Condensed Bold" alias="Arial" aliasStyle="bold" />
-	</aliases>
 </fonts>

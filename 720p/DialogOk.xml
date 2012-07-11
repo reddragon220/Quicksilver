@@ -82,7 +82,7 @@
 			<ondown>11</ondown>
 			<onclick>Dialog.Close(2002)</onclick>
 			<aligny>bottom</aligny>
-			<textoffsety>-8</textoffsety>
+			<textoffsety>-4</textoffsety>
 		</control>
 	</controls>
 </window>

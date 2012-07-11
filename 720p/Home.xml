@@ -1573,7 +1573,7 @@
 				</control>
 			</control>
 			<control type="group">
-				<posy>75</posy>
+				<posy>74</posy>
 
 				<control type="label" id="900">
 					<animation effect="fade" time="200" delay="200">VisibleChange</animation>

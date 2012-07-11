@@ -44,7 +44,7 @@
 					<texturefocus>dialog/mediaSource/side_button_highlight.png</texturefocus>
 					<texturenofocus>dialog/mediaSource/side_button.png</texturenofocus>
 				
-					<textoffsety>-12</textoffsety>
+					<textoffsety>-8</textoffsety>
 					<aligny>bottom</aligny>
 				</control>
 				<control type="button" id="19">
@@ -57,7 +57,7 @@
 					<texturefocus>dialog/mediaSource/side_button_highlight.png</texturefocus>
 					<texturenofocus>dialog/mediaSource/side_button.png</texturenofocus>
 				
-					<textoffsety>-12</textoffsety>
+					<textoffsety>-8</textoffsety>
 					<aligny>bottom</aligny>
 				</control>
 
@@ -71,7 +71,7 @@
 					<texturefocus>dialog/mediaSource/side_button_highlight.png</texturefocus>
 					<texturenofocus>dialog/mediaSource/side_button.png</texturenofocus>
 				
-					<textoffsety>-12</textoffsety>
+					<textoffsety>-8</textoffsety>
 					<aligny>bottom</aligny>
 				</control>
 				<control type="button" id="13">
@@ -84,7 +84,7 @@
 					<texturefocus>dialog/mediaSource/side_button_highlight.png</texturefocus>
 					<texturenofocus>dialog/mediaSource/side_button.png</texturenofocus>
 				
-					<textoffsety>-12</textoffsety>
+					<textoffsety>-8</textoffsety>
 					<aligny>bottom</aligny>
 				</control>
 				<control type="button" id="14">
@@ -97,7 +97,7 @@
 					<texturefocus>dialog/mediaSource/side_button_highlight.png</texturefocus>
 					<texturenofocus>dialog/mediaSource/side_button.png</texturenofocus>
 				
-					<textoffsety>-12</textoffsety>
+					<textoffsety>-8</textoffsety>
 					<aligny>bottom</aligny>
 				</control>
 				<control type="button" id="20">
@@ -110,7 +110,7 @@
 					<texturefocus>dialog/mediaSource/side_button_highlight.png</texturefocus>
 					<texturenofocus>dialog/mediaSource/side_button.png</texturenofocus>
 				
-					<textoffsety>-12</textoffsety>
+					<textoffsety>-8</textoffsety>
 					<aligny>bottom</aligny>
 				</control>
 			

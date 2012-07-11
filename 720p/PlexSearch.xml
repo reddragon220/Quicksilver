@@ -143,7 +143,7 @@
 						</control>
 						<control type="label">
 							<posx>57</posx>
-							<posy>-7</posy>
+							<posy>-5</posy>
 							<width>1224</width>
 							<height>56</height>
 							<textcolor>ffffffff</textcolor>
@@ -153,7 +153,7 @@
 						</control>
 						<control type="label">
 							<posx>1220</posx>
-							<posy>-7</posy>
+							<posy>-5</posy>
 							<width>200</width>
 							<height>56</height>
 							<textcolor>ffffffff</textcolor>
@@ -413,7 +413,7 @@
 					</control>
 					<control type="label">
 						<posx>57</posx>
-						<posy>-7</posy>
+						<posy>-5</posy>
 						<width>1224</width>
 						<height>56</height>
 						<textcolor>ffffffff</textcolor>
@@ -423,7 +423,7 @@
 					</control>
 					<control type="label">
 						<posx>1220</posx>
-						<posy>-7</posy>
+						<posy>-5</posy>
 						<width>200</width>
 						<height>56</height>
 						<textcolor>ffffffff</textcolor>
@@ -683,7 +683,7 @@
 					</control>
 					<control type="label">
 						<posx>57</posx>
-						<posy>-7</posy>
+						<posy>-5</posy>
 						<width>1224</width>
 						<height>56</height>
 						<textcolor>ffffffff</textcolor>
@@ -693,7 +693,7 @@
 					</control>
 					<control type="label">
 						<posx>1220</posx>
-						<posy>-7</posy>
+						<posy>-5</posy>
 						<width>200</width>
 						<height>56</height>
 						<textcolor>ffffffff</textcolor>
@@ -918,7 +918,7 @@
 					</control>
 					<control type="label">
 						<posx>57</posx>
-						<posy>-7</posy>
+						<posy>-5</posy>
 						<width>1224</width>
 						<height>56</height>
 						<textcolor>ffffffff</textcolor>
@@ -928,7 +928,7 @@
 					</control>
 					<control type="label">
 						<posx>1220</posx>
-						<posy>-7</posy>
+						<posy>-5</posy>
 						<width>200</width>
 						<height>56</height>
 						<textcolor>ffffffff</textcolor>
@@ -1053,7 +1053,7 @@
 					</control>
 					<control type="label">
 						<posx>57</posx>
-						<posy>-7</posy>
+						<posy>-5</posy>
 						<width>1224</width>
 						<height>56</height>
 						<textcolor>ffffffff</textcolor>
@@ -1063,7 +1063,7 @@
 					</control>
 					<control type="label">
 						<posx>1220</posx>
-						<posy>-7</posy>
+						<posy>-5</posy>
 						<width>200</width>
 						<height>56</height>
 						<textcolor>ffffffff</textcolor>
@@ -1188,7 +1188,7 @@
 					</control>
 					<control type="label">
 						<posx>57</posx>
-						<posy>-7</posy>
+						<posy>-5</posy>
 						<width>1224</width>
 						<height>56</height>
 						<textcolor>ffffffff</textcolor>
@@ -1198,7 +1198,7 @@
 					</control>
 					<control type="label">
 						<posx>1220</posx>
-						<posy>-7</posy>
+						<posy>-5</posy>
 						<width>200</width>
 						<height>56</height>
 						<textcolor>ffffffff</textcolor>
@@ -1324,7 +1324,7 @@
 					</control>
 					<control type="label">
 						<posx>57</posx>
-						<posy>-7</posy>
+						<posy>-5</posy>
 						<width>1224</width>
 						<height>56</height>
 						<textcolor>ffffffff</textcolor>
@@ -1334,7 +1334,7 @@
 					</control>
 					<control type="label">
 						<posx>1220</posx>
-						<posy>-7</posy>
+						<posy>-5</posy>
 						<width>200</width>
 						<height>56</height>
 						<textcolor>ffffffff</textcolor>
@@ -1460,7 +1460,7 @@
 					</control>
 					<control type="label">
 						<posx>57</posx>
-						<posy>-7</posy>
+						<posy>-5</posy>
 						<width>1224</width>
 						<height>56</height>
 						<textcolor>ffffffff</textcolor>
@@ -1470,7 +1470,7 @@
 					</control>
 					<control type="label">
 						<posx>1220</posx>
-						<posy>-7</posy>
+						<posy>-5</posy>
 						<width>200</width>
 						<height>56</height>
 						<textcolor>ffffffff</textcolor>
@@ -1625,7 +1625,7 @@
 			<control type="label" id="310">
 				<description>text field</description>
 				<posx>0</posx>
-				<posy>-5</posy>
+				<posy>-3</posy>
 				<font>Search</font>
 				<textcolor>ff000000</textcolor>
 				<focusedcolor>ff000000</focusedcolor>
@@ -1667,7 +1667,7 @@
 					<focusedcolor>ffffffff</focusedcolor>
 					<font>Search</font>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="66">
@@ -1681,7 +1681,7 @@
 					<focusedcolor>ffffffff</focusedcolor>
 					<font>Search</font>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="67">
@@ -1696,7 +1696,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="68">
@@ -1711,7 +1711,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="69">
@@ -1726,7 +1726,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="70">
@@ -1741,7 +1741,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="71">
@@ -1756,7 +1756,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="72">
@@ -1771,7 +1771,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="73">
@@ -1786,7 +1786,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="74">
@@ -1801,7 +1801,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="75">
@@ -1816,7 +1816,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="76">
@@ -1831,7 +1831,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="77">
@@ -1846,7 +1846,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="78">
@@ -1861,7 +1861,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="79">
@@ -1876,7 +1876,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="80">
@@ -1891,7 +1891,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="81">
@@ -1906,7 +1906,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="82">
@@ -1921,7 +1921,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="83">
@@ -1936,7 +1936,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="84">
@@ -1951,7 +1951,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="85">
@@ -1966,7 +1966,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="86">
@@ -1981,7 +1981,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="87">
@@ -1996,7 +1996,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="88">
@@ -2011,7 +2011,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="89">
@@ -2026,7 +2026,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="90">
@@ -2041,7 +2041,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="12083">
@@ -2056,7 +2056,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 					<onclick>Control.SetFocus(352)</onclick>
 				</control>
@@ -2073,7 +2073,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturenofocus>search/backspace.png</texturenofocus>
 					<texturefocus>search/backspace_highlight.png</texturefocus>
 				</control>
@@ -2088,7 +2088,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="10">
@@ -2102,7 +2102,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-8</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 			</control>
@@ -2123,7 +2123,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<onfocus>Control.SetFocus(91)</onfocus>
 					<texturefocus></texturefocus>
 				</control>
@@ -2138,7 +2138,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="92">
@@ -2152,7 +2152,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="93">
@@ -2166,7 +2166,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="94">
@@ -2180,7 +2180,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="95">
@@ -2194,7 +2194,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="96">
@@ -2208,7 +2208,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="97">
@@ -2222,7 +2222,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="98">
@@ -2236,7 +2236,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="99">
@@ -2250,7 +2250,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="100">
@@ -2264,7 +2264,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 				</control>
 				<control type="button" id="12084">
@@ -2279,7 +2279,7 @@
 					<textcolor>ffffffff</textcolor>
 					<focusedcolor>ffffffff</focusedcolor>
 					<aligny>bottom</aligny>
-					<textoffsety>-9</textoffsety>
+					<textoffsety>-4</textoffsety>
 					<texturefocus>search/letter_highlight.png</texturefocus>
 					<onclick>Control.SetFocus(351)</onclick>
 				</control>

@@ -77,7 +77,7 @@
 			<onup>10</onup>
 			<ondown>10</ondown>
 			<aligny>bottom</aligny>
-			<textoffsety>-8</textoffsety>
+			<textoffsety>-4</textoffsety>
 			<onclick>Dialog.Close(2002)</onclick>
 		</control>
 		<control type="button" id="11">
@@ -96,7 +96,7 @@
 			<onup>11</onup>
 			<ondown>11</ondown>
 			<aligny>bottom</aligny>
-			<textoffsety>-8</textoffsety>
+			<textoffsety>-4</textoffsety>
 			<onclick>Dialog.Close(2002)</onclick>
 		</control>
 	</controls>

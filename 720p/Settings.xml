@@ -45,7 +45,7 @@
 				<control type="label">
 					<posx>20</posx>
 					<!--><posy>4</posy>-->
-					<posy>1</posy>
+					<posy>3</posy>
 					<width>298</width>
 					<info>ListItem.Label</info>
 					<textcolor>ffffffff</textcolor>
@@ -66,7 +66,7 @@
 				</control>
 				<control type="label">
 					<posx>20</posx>
-					<posy>-1</posy>
+					<posy>1</posy>
 					<width>298</width>
 					<info>ListItem.Label</info>
 					<font>Settings</font>
@@ -75,7 +75,7 @@
 				</control>
 				<control type="label">
 					<posx>20</posx>
-					<posy>1</posy>
+					<posy>3</posy>
 					<width>318</width>
 					<label>$INFO[ListItem.Label]</label>
 					<font>Settings</font>

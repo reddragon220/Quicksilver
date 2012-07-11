@@ -73,7 +73,7 @@
 			<texturefocus>buttons/button/button_focus.png</texturefocus>
 			<texturenofocus>buttons/button/button.png</texturenofocus>
 			<aligny>bottom</aligny>
-			<textoffsety>-8</textoffsety>
+			<textoffsety>-4</textoffsety>
 			<onleft>10</onleft>
 			<onright>10</onright>
 			<onup>10</onup>

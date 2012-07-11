@@ -13,6 +13,9 @@ All images and icons unless otherwise stated included within the skin are the so
 
 Plex and myPlex icons used with permission from Plex Inc.
 
+Tex Gyre Heroes distributed under the Gust Font Source License. 
+For more details see the accompanying Gust e-foundry License in ~/fonts
+
 ---------------------------
 Skinners and Modders
 ---------------------------
