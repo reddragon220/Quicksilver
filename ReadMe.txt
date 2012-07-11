@@ -9,7 +9,7 @@ Description: Quicksilver - A simple yet beautiful high definition media center e
 ---------------------------
 Notes/Comments
 ---------------------------
-All images and icons unless otherwise stated included within the skin are the sole property of the skins author and are not to be reused without express written permission.
+All images and icons unless otherwise stated included within the skin are the sole property of the skins author and are not to be reused elsewhere without express written permission.
 
 Plex and myPlex icons used with permission from Plex Inc.
 
