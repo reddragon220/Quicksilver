@@ -13,176 +13,176 @@
 			<posx>216</posx>
 			<posy>110</posy>
 			<include>dialog_animation</include>
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>848</width>
-			<height>500</height>
-			<texture>dialog/select/background.png</texture>
-			<aspectratio>stretch</aspectratio>
-		</control>
-		<control type="image">
-			<posx>662</posx>
-			<posy>14</posy>
-			<width>181</width>
-			<height>2</height>
-			<texture>dialog/select/side_button_divider.png</texture>
-			<aspectratio>stretch</aspectratio>
-		</control>
-		<control type="grouplist" id="9000">
-			<itemgap>0</itemgap>
-			<posx>662</posx>
-			<posy>16</posy>
-			<onleft>3</onleft>
-			<control type="button" id="11">
-				<description>Cancel</description>
-				<width>181</width>
-				<height>47</height>
-				<font>SideButtons</font>
-				<textcolor>ffffffff</textcolor>
-				<label>$LOCALIZE[222]</label>
-				<texturefocus>dialog/select/side_button_highlight.png</texturefocus>
-				<texturenofocus>dialog/select/side_button.png</texturenofocus>
-				
-				<textoffsety>-8</textoffsety>
-				<aligny>bottom</aligny>
-				<onclick>Dialog.Close(2000)</onclick>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>848</width>
+				<height>500</height>
+				<texture>dialog/select/background.png</texture>
+				<aspectratio>stretch</aspectratio>
 			</control>
-		</control>
+			<control type="image">
+				<posx>662</posx>
+				<posy>14</posy>
+				<width>181</width>
+				<height>2</height>
+				<texture>dialog/select/side_button_divider.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
+			<control type="grouplist" id="9000">
+				<itemgap>0</itemgap>
+				<posx>662</posx>
+				<posy>16</posy>
+				<onleft>3</onleft>
+				<control type="button" id="11">
+					<description>Cancel</description>
+					<width>181</width>
+					<height>47</height>
+					<font>SideButtons</font>
+					<textcolor>ffffffff</textcolor>
+					<label>$LOCALIZE[222]</label>
+					<texturefocus>dialog/select/side_button_highlight.png</texturefocus>
+					<texturenofocus>dialog/select/side_button.png</texturenofocus>
+				
+					<textoffsety>-8</textoffsety>
+					<aligny>bottom</aligny>
+					<onclick>Dialog.Close(2000)</onclick>
+				</control>
+			</control>
 
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>848</width>
-			<height>500</height>
-			<texture>dialog/select/silver.png</texture>
-			<aspectratio>stretch</aspectratio>
-		</control>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>848</width>
+				<height>500</height>
+				<texture>dialog/select/silver.png</texture>
+				<aspectratio>stretch</aspectratio>
+			</control>
 		
-		<control type="list" id="3">
-			<posx>10</posx>
-			<posy>16</posy>
-			<width>648</width>
-			<height>472</height>
-			<itemgap>0</itemgap>
+			<control type="list" id="3">
+				<posx>10</posx>
+				<posy>16</posy>
+				<width>648</width>
+				<height>472</height>
+				<itemgap>0</itemgap>
 			
-			<onleft>-</onleft>
-			<onright>9000</onright>
-			<onup>3</onup>
-			<ondown>3</ondown>
-			<itemlayout height="79">
-				<control type="image">
-					<posy>0</posy>
-					<posx>0</posx>
-					<width>648</width>
-					<height>79</height>
-					<texture>dialog/select/divider.png</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-				</control>
-				<control type="image">
-					<posy>3</posy>
-					<posx>34</posx>
-					<width>71</width>
-					<height>71</height>
-					<info>ListItem.Icon</info>
-					<texture background="true" diffuse="dialog/select/thumb_mask.png">NoThumb.png</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-				</control>
-				<control type="label">
-					<posx>124</posx>
-					<posy>5</posy>
-					<width>524</width>
-					<height>30</height>
-					<textcolor>ff000000</textcolor>
-					<font>Title</font>
-					<info>ListItem.Label</info>
-					<scroll>false</scroll>
-				</control>
-				<control type="label">
-					<posx>124</posx>
-					<posy>40</posy>
-					<width>524</width>
-					<height>30</height>
-					<textcolor>ff000000</textcolor>
-					<font>Title2</font>
-					<info>ListItem.Label2</info>
-				</control>
-			</itemlayout>
-			<focusedlayout height="79">
-				<control type="image">
-					<posy>0</posy>
-					<posx>0</posx>
-					<width>648</width>
-					<height>79</height>
-					<texture>dialog/select/highlight.png</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-				</control>
-				<control type="image">
-					<posy>2</posy>
-					<posx>33</posx>
-					<width>73</width>
-					<height>73</height>
-					<texture diffuse="views/list/fat/album_thumb_mask.png">dialog/select/thumb_shadow.png</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-				</control>
-				<control type="image">
-					<posy>3</posy>
-					<posx>34</posx>
-					<width>71</width>
-					<height>71</height>
-					<info>ListItem.Icon</info>
-					<texture background="true" diffuse="dialog/select/thumb_mask.png">NoThumb.png</texture>
-					<aspectratio scalediffuse="false">scale</aspectratio>
-				</control>
-				<control type="label">
-					<posx>124</posx>
-					<posy>3</posy>
-					<width>524</width>
-					<height>30</height>
-					<textcolor>4b000000</textcolor>
-					<font>Title</font>
-					<info>ListItem.Label</info>
-				</control>
-				<control type="label">
-					<posx>124</posx>
-					<posy>5</posy>
-					<width>524</width>
-					<height>30</height>
-					<textcolor>ffffffff</textcolor>
-					<font>Title</font>
-					<info>ListItem.Label</info>
-					<scroll>false</scroll>
-				</control>
-				<control type="label">
-					<posx>124</posx>
-					<posy>40</posy>
-					<width>524</width>
-					<height>30</height>
-					<textcolor>4b000000</textcolor>
-					<font>Title2</font>
-					<info>ListItem.Label2</info>
-				</control>
-				<control type="label">
-					<posx>124</posx>
-					<posy>42</posy>
-					<width>524</width>
-					<height>30</height>
-					<textcolor>ffffffff</textcolor>
-					<font>Title2</font>
-					<info>ListItem.Label2</info>
-				</control>
-			</focusedlayout>
-		</control>
-		<control type="label" id="2">
-			<description>Number Of Files</description>
-			<posx>828</posx>
-			<posy>459.5</posy>
-			<width>100</width>
-			<label>-</label>
-			<align>right</align>
-			<font>ContextSmall</font>
-			<textcolor>ffffffff</textcolor>
-		</control>
+				<onleft>-</onleft>
+				<onright>9000</onright>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<itemlayout height="79">
+					<control type="image">
+						<posy>0</posy>
+						<posx>0</posx>
+						<width>648</width>
+						<height>79</height>
+						<texture>dialog/select/divider.png</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+					</control>
+					<control type="image">
+						<posy>3</posy>
+						<posx>34</posx>
+						<width>71</width>
+						<height>71</height>
+						<info>ListItem.Icon</info>
+						<texture background="true" diffuse="dialog/select/thumb_mask.png">NoThumb.png</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+					</control>
+					<control type="label">
+						<posx>124</posx>
+						<posy>5</posy>
+						<width>524</width>
+						<height>30</height>
+						<textcolor>ff000000</textcolor>
+						<font>Title</font>
+						<info>ListItem.Label</info>
+						<scroll>false</scroll>
+					</control>
+					<control type="label">
+						<posx>124</posx>
+						<posy>40</posy>
+						<width>524</width>
+						<height>30</height>
+						<textcolor>ff000000</textcolor>
+						<font>Title2</font>
+						<info>ListItem.Label2</info>
+					</control>
+				</itemlayout>
+				<focusedlayout height="79">
+					<control type="image">
+						<posy>0</posy>
+						<posx>0</posx>
+						<width>648</width>
+						<height>79</height>
+						<texture>dialog/select/highlight.png</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+					</control>
+					<control type="image">
+						<posy>2</posy>
+						<posx>33</posx>
+						<width>73</width>
+						<height>73</height>
+						<texture diffuse="views/list/fat/album_thumb_mask.png">dialog/select/thumb_shadow.png</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+					</control>
+					<control type="image">
+						<posy>3</posy>
+						<posx>34</posx>
+						<width>71</width>
+						<height>71</height>
+						<info>ListItem.Icon</info>
+						<texture background="true" diffuse="dialog/select/thumb_mask.png">NoThumb.png</texture>
+						<aspectratio scalediffuse="false">scale</aspectratio>
+					</control>
+					<control type="label">
+						<posx>124</posx>
+						<posy>3</posy>
+						<width>524</width>
+						<height>30</height>
+						<textcolor>4b000000</textcolor>
+						<font>Title</font>
+						<info>ListItem.Label</info>
+					</control>
+					<control type="label">
+						<posx>124</posx>
+						<posy>5</posy>
+						<width>524</width>
+						<height>30</height>
+						<textcolor>ffffffff</textcolor>
+						<font>Title</font>
+						<info>ListItem.Label</info>
+						<scroll>false</scroll>
+					</control>
+					<control type="label">
+						<posx>124</posx>
+						<posy>40</posy>
+						<width>524</width>
+						<height>30</height>
+						<textcolor>4b000000</textcolor>
+						<font>Title2</font>
+						<info>ListItem.Label2</info>
+					</control>
+					<control type="label">
+						<posx>124</posx>
+						<posy>42</posy>
+						<width>524</width>
+						<height>30</height>
+						<textcolor>ffffffff</textcolor>
+						<font>Title2</font>
+						<info>ListItem.Label2</info>
+					</control>
+				</focusedlayout>
+			</control>
+			<control type="label" id="2">
+				<description>Number Of Files</description>
+				<posx>828</posx>
+				<posy>459.5</posy>
+				<width>160</width>
+				<label>-</label>
+				<align>right</align>
+				<font>ContextSmall</font>
+				<textcolor>ffffffff</textcolor>
+			</control>
 		</control>
 	</controls>
 </window>
