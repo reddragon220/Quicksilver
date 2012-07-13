@@ -3987,7 +3987,7 @@
 						<height>256</height>
 						<font>Title2</font>
 						<textcolor>FFFFFFFF</textcolor>
-						<label>aaaaa$INFO[listitem.Plot]</label>
+						<label>$INFO[listitem.Plot]</label>
 						<autoscroll delay="9000" time="2000" repeat="10000">true</autoscroll>
 					</control>
 					<control type="textbox">
