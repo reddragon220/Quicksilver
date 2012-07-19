@@ -3905,6 +3905,7 @@
 						<align>right</align>
 					</control>
 					<control type="image">
+						<visible>!Skin.HasSetting(numericalRating)</visible>
 						<posx>126</posx>
 						<posy>127</posy>
 						<width>180</width>
@@ -3912,6 +3913,30 @@
 						<info>listitem.StarRating</info>
 						<aspectratio>stretch</aspectratio>
 					</control>
+					<control type="label">
+						<visible>Skin.HasSetting(numericalRating)</visible>
+						<posx>120</posx>
+						<posy>130</posy>
+						<width>299</width>
+						<textcolor>ffffffff</textcolor>
+						<font>Title2</font>
+						<label> $INFO[ListItem.rating]</label>
+						<scroll>false</scroll>
+						<align>left</align>
+					</control>
+					<control type="label">
+						<visible>IsEmpty(ListItem.rating) + Skin.HasSetting(numericalRating)</visible>
+						<posx>120</posx>
+						<posy>130</posy>
+						<width>299</width>
+						<textcolor>ffffffff</textcolor>
+						<font>Title2</font>
+						<label> $LOCALIZE[31106]</label>
+						<scroll>false</scroll>
+						<align>left</align>
+					</control>
+					
+					
 					<control type="group">
 						<visible>!Container.Content(episodes)</visible>
 						<control type="label">
@@ -4187,12 +4212,35 @@
 						<align>right</align>
 					</control>
 					<control type="image">
+						<visible>!Skin.HasSetting(numericalRating)</visible>
 						<posx>126</posx>
 						<posy>127</posy>
 						<width>180</width>
 						<height>38</height>
 						<info>listitem.StarRating</info>
 						<aspectratio>stretch</aspectratio>
+					</control>
+					<control type="label">
+						<visible>Skin.HasSetting(numericalRating)</visible>
+						<posx>120</posx>
+						<posy>130</posy>
+						<width>299</width>
+						<textcolor>ffffffff</textcolor>
+						<font>Title2</font>
+						<label> $INFO[ListItem.rating]</label>
+						<scroll>false</scroll>
+						<align>left</align>
+					</control>
+					<control type="label">
+						<visible>IsEmpty(ListItem.rating) + Skin.HasSetting(numericalRating)</visible>
+						<posx>120</posx>
+						<posy>130</posy>
+						<width>299</width>
+						<textcolor>ffffffff</textcolor>
+						<font>Title2</font>
+						<label> $LOCALIZE[31106]</label>
+						<scroll>false</scroll>
+						<align>left</align>
 					</control>
 					<control type="group">
 						<visible>!Container.Content(episodes)</visible>
@@ -6146,6 +6194,7 @@
 							<align>right</align>
 						</control>
 						<control type="image">
+							<visible>!Skin.HasSetting(numericalRating)</visible>
 							<posx>6</posx>
 							<posy>0</posy>
 							<width>180</width>
@@ -6153,6 +6202,29 @@
 							<info>listitem.StarRating</info>
 							<aspectratio>stretch</aspectratio>
 						</control>
+						<control type="label">
+							<visible>Skin.HasSetting(numericalRating)</visible>
+							<posx>0</posx>
+							<posy>3</posy>
+							<width>299</width>
+							<textcolor>ffffffff</textcolor>
+							<font>Title2</font>
+							<label> $INFO[ListItem.rating]</label>
+							<scroll>false</scroll>
+							<align>left</align>
+						</control>
+						<control type="label">
+							<visible>IsEmpty(ListItem.rating) + Skin.HasSetting(numericalRating)</visible>
+							<posx>0</posx>
+							<posy>3</posy>
+							<width>299</width>
+							<textcolor>ffffffff</textcolor>
+							<font>Title2</font>
+							<label> $LOCALIZE[31106]</label>
+							<scroll>false</scroll>
+							<align>left</align>
+						</control>
+						
 					</control>
 					<control type="group">
 						<visible>!Container.Content(episodes)</visible>
@@ -6252,12 +6324,35 @@
 							<align>right</align>
 						</control>
 						<control type="image">
+							<visible>!Skin.HasSetting(numericalRating)</visible>
 							<posx>6</posx>
 							<posy>0</posy>
 							<width>180</width>
 							<height>38</height>
 							<info>listitem.StarRating</info>
 							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="label">
+							<visible>Skin.HasSetting(numericalRating)</visible>
+							<posx>0</posx>
+							<posy>3</posy>
+							<width>299</width>
+							<textcolor>ffffffff</textcolor>
+							<font>Title2</font>
+							<label> $INFO[ListItem.rating]</label>
+							<scroll>false</scroll>
+							<align>left</align>
+						</control>
+						<control type="label">
+							<visible>IsEmpty(ListItem.rating) + Skin.HasSetting(numericalRating)</visible>
+							<posx>0</posx>
+							<posy>3</posy>
+							<width>299</width>
+							<textcolor>ffffffff</textcolor>
+							<font>Title2</font>
+							<label> $LOCALIZE[31106]</label>
+							<scroll>false</scroll>
+							<align>left</align>
 						</control>
 					</control>
 					<control type="group">
@@ -6480,12 +6575,35 @@
 							<align>right</align>
 						</control>
 						<control type="image">
+							<visible>!Skin.HasSetting(numericalRating)</visible>
 							<posx>6</posx>
 							<posy>0</posy>
 							<width>180</width>
 							<height>38</height>
 							<info>listitem.StarRating</info>
 							<aspectratio>stretch</aspectratio>
+						</control>
+						<control type="label">
+							<visible>Skin.HasSetting(numericalRating)</visible>
+							<posx>0</posx>
+							<posy>3</posy>
+							<width>299</width>
+							<textcolor>ffffffff</textcolor>
+							<font>Title2</font>
+							<label> $INFO[ListItem.rating]</label>
+							<scroll>false</scroll>
+							<align>left</align>
+						</control>
+						<control type="label">
+							<visible>IsEmpty(ListItem.rating) + Skin.HasSetting(numericalRating)</visible>
+							<posx>0</posx>
+							<posy>3</posy>
+							<width>299</width>
+							<textcolor>ffffffff</textcolor>
+							<font>Title2</font>
+							<label> $LOCALIZE[31106]</label>
+							<scroll>false</scroll>
+							<align>left</align>
 						</control>
 					</control>
 					<control type="group">
