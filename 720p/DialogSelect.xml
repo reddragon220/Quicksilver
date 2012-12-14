@@ -34,7 +34,7 @@
 				<posx>662</posx>
 				<posy>16</posy>
 				<onleft>3</onleft>
-				<control type="button" id="11">
+				<control type="button" id="12">
 					<description>Cancel</description>
 					<width>181</width>
 					<height>47</height>
@@ -140,6 +140,7 @@
 						<width>524</width>
 						<height>30</height>
 						<textcolor>4b000000</textcolor>
+						<selectedcolor>4b000000</selectedcolor>
 						<font>Title</font>
 						<info>ListItem.Label</info>
 					</control>
